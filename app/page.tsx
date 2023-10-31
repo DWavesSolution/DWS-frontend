@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
-import AbcIcon from "@mui/icons-material/Abc";
+import HomePage from "./template";
 export default function Home() {
   return (
     <Box>
-      <AbcIcon />
+      <HomePage />
     </Box>
   );
 }

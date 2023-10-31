@@ -1,4 +1,5 @@
 export const styles = {
+  Appbar: { backgroundColor: "transparent" },
   MainGrid: {
     display: "flex",
     justifyContent: "space-between",

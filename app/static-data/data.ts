@@ -4,8 +4,19 @@ export const HeaderData = [
     link: "about-us",
   },
   {
+    id: 1,
     name: "Services",
     link: "services",
+    subMenu: [
+      {
+        name: "Services",
+        link: "services",
+      },
+      {
+        name: "Services",
+        link: "services",
+      },
+    ],
   },
   {
     name: "Portfolio",
