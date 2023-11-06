@@ -19,7 +19,7 @@ const LandingBanner = () => {
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
                 <Typography
-                  fontSize={"60px"}
+                  fontSize={{ xs: "28px", sm: "60px" }}
                   fontWeight={600}
                   sx={{ color: "white" }}
                 >

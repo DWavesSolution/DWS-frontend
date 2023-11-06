@@ -1,5 +1,9 @@
 export const styles = {
-  Appbar: { backgroundColor: "transparent" },
+  Header: {
+    backdropFilter: "blur(30px)",
+    background: "hsla(0,0%,99%,.365)",
+    borderBottom: ".3px solid #fff",
+  },
   MainGrid: {
     display: "flex",
     justifyContent: "space-between",
