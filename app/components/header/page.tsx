@@ -24,8 +24,6 @@ import { Link as ScrollLink } from "react-scroll";
 const Header = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
-  console.log("condition", useMediaQuery(theme.breakpoints.down("lg")));
-
   return (
     <AppBar elevation={0} sx={styles.Header}>
       <Toolbar>
@@ -68,7 +66,7 @@ const Header = () => {
                     to="contact"
                     spy={true}
                     smooth={true}
-                    offset={150}
+                    offset={-150}
                     duration={1000}
                   >
                     <Button
