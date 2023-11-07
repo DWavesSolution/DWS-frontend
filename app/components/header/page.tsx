@@ -23,7 +23,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <AppBar elevation={0} sx={styles.Header}>
       <Toolbar>
