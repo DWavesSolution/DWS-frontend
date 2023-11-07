@@ -108,3 +108,38 @@ export const Scores_Card = [
     name: "Skill-gaps filled through staff augmentation",
   },
 ];
+export const Capability_Data = [
+  { name: "Web App Development" },
+  { name: "Mobile App Development" },
+  { name: "Flutter Development" },
+  { name: "Ruby on Rails Development" },
+  { name: "React JS Development" },
+  { name: "AWS Cloud Services" },
+  { name: "Google Cloud Services" },
+  { name: "Microsoft Azure Development" },
+  { name: "React Native Development" },
+  { name: "Machine Learning" },
+  { name: "Cross-Platform Development" },
+  { name: "Enterprise App Development" },
+  { name: "Custom Software Development" },
+  { name: "Blockchain Development" },
+  { name: "UI/UX Services" },
+];
+export const Services_Data = [
+  { name: "Digital Product Development" },
+  { name: "Staff Augmentation" },
+  { name: "Data Analytics and Management" },
+  { name: "Digital Strategy Consultation" },
+];
+export const Project_Data = [
+  { name: "Aligner 4D" },
+  { name: "BDD" },
+  { name: "Messy FM" },
+  { name: "Carbonhound" },
+];
+export const socialIcons = [
+  { id: 1, logo: "/linkedin.svg" },
+  { id: 2, logo: "/twitter.svg" },
+  { id: 3, logo: "/instagram.svg" },
+  { id: 4, logo: "/behance.svg" },
+];

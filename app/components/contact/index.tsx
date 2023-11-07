@@ -12,18 +12,29 @@ import { styles } from "./styles";
 const ContactUs = () => {
   return (
     <Container sx={{ padding: "100px 0px" }}>
-      <Grid container id="contact">
-        <Grid item xs={12} sm={12} md={12} lg={7}>
+      <Grid
+        container
+        id="contact"
+        sx={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid item xs={11} sm={7} md={7} lg={7}>
           <Typography
             fontSize={"44px"}
             lineHeight={"54px"}
-            sx={{ color: "#004ca2", marginBottom: "32px", width: "50%" }}
+            sx={{
+              color: "#004ca2",
+              marginBottom: "32px",
+              width: { xs: "100%", md: "70%", lg: "50%" },
+            }}
           >
             {"Have a project? Let's discuss"}
           </Typography>
           <Typography
             fontSize={"14px"}
-            sx={{ marginBottom: "48px", width: "45%" }}
+            sx={{
+              marginBottom: "48px",
+              width: { xs: "100%", sm: "65%", lg: "40%" },
+            }}
           >
             Once you submit this form, expect to hear back from us within 24
             hours.
@@ -43,7 +54,7 @@ const ContactUs = () => {
             +1 (647) 374 5600
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={5}>
+        <Grid item xs={11} sm={5} md={5} lg={5}>
           <TextField label="Name" fullWidth sx={{ marginBottom: "15px" }} />
           <Grid container gap={1}>
             <Grid item xs={12} sm={12} md={12} lg={5.9}>
