@@ -36,27 +36,27 @@ const Footer = () => {
                   flexWrap: "wrap",
                 }}
               >
-                {Capability_Data.slice(0, 5).map((item) => {
+                {Capability_Data.slice(0, 5).map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={4}>
+                    <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
                       <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                         {item.name}
                       </Typography>
                     </Grid>
                   );
                 })}
-                {Capability_Data.slice(5, 10).map((item) => {
+                {Capability_Data.slice(5, 10).map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={4}>
+                    <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
                       <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                         {item.name}
                       </Typography>
                     </Grid>
                   );
                 })}
-                {Capability_Data.slice(10, 15).map((item) => {
+                {Capability_Data.slice(10, 15).map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={4}>
+                    <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
                       <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                         {item.name}
                       </Typography>
@@ -68,9 +68,9 @@ const Footer = () => {
             <Grid item xs={12} sm={3.9} lg={2}>
               <Typography sx={{ color: "#676767" }}>Services</Typography>
               <Divider sx={styles.Divider} />
-              {Services_Data.map((item) => {
+              {Services_Data.map((item, index) => {
                 return (
-                  <Grid item xs={12} sm={12} md={12} lg={12}>
+                  <Grid item xs={12} sm={12} md={12} lg={12} key={index}>
                     <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                       {item.name}
                     </Typography>
@@ -81,9 +81,9 @@ const Footer = () => {
             <Grid item xs={12} sm={3.9} lg={1}>
               <Typography sx={{ color: "#676767" }}>Projects</Typography>
               <Divider sx={styles.Divider} />
-              {Project_Data.map((item) => {
+              {Project_Data.map((item, index) => {
                 return (
-                  <Grid item xs={12} sm={12} md={12} lg={12}>
+                  <Grid item xs={12} sm={12} md={12} lg={12} key={index}>
                     <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                       {item.name}
                     </Typography>
@@ -146,9 +146,9 @@ const Footer = () => {
                 </Link>
               </Grid>
               <Grid container item xs={12} sm={4} lg={3} sx={styles.Icons}>
-                {socialIcons.map((item) => {
+                {socialIcons.map((item, index) => {
                   return (
-                    <Box sx={{ height: 25, width: 25 }}>
+                    <Box sx={{ height: 25, width: 25 }} key={index}>
                       <DWSImage src={item.logo} alt="Logos" />
                     </Box>
                   );
