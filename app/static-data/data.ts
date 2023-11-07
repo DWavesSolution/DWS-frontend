@@ -90,3 +90,21 @@ export const Services_Card = [
     logo: "/bulb.webp",
   },
 ];
+export const Scores_Card = [
+  {
+    number: "75+",
+    name: "Projects successfully completed",
+  },
+  {
+    number: "12+",
+    name: "Industries targeted to expand horizons",
+  },
+  {
+    number: "150+",
+    name: "Skilled professionals",
+  },
+  {
+    number: "20+",
+    name: "Skill-gaps filled through staff augmentation",
+  },
+];

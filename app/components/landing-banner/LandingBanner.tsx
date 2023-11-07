@@ -28,7 +28,9 @@ const LandingBanner = () => {
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
                 <Button variant="outlined" sx={styles.Button}>
-                  <Typography sx={{ color: "white" }}>Let's Talk</Typography>
+                  <Typography sx={{ color: "white" }}>
+                    {"Let's Talk"}
+                  </Typography>
                 </Button>
               </Grid>
             </Grid>

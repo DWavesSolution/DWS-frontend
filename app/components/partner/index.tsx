@@ -11,9 +11,9 @@ const Partners = () => {
       <Container>
         <Grid container sx={styles.MainGrid}>
           <Grid container item xs={12} sm={5.5} lg={6.5}>
-            {Brand_Logo.map((item, index) => {
+            {Brand_Logo.map((item) => {
               return (
-                <Grid item xs={4} lg={4} sx={styles.brandGrid} key={index}>
+                <Grid item xs={4} lg={4} sx={styles.brandGrid} key={item.id}>
                   <Box
                     sx={{
                       width: 200,

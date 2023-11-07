@@ -51,7 +51,13 @@ const ServicesSection = () => {
             >
               {Services_Card.map((item) => {
                 return (
-                  <Grid item xs={12}>
+                  <Grid
+                    item
+                    xs={12}
+                    md={5.9}
+                    key={item.id}
+                    sx={{ display: "flex", justifyContent: "space-between" }}
+                  >
                     <Card sx={styles.Card}>
                       <Grid
                         container
@@ -60,7 +66,7 @@ const ServicesSection = () => {
                           justifyContent: "space-between",
                         }}
                       >
-                        <Grid item xs={12} sm={12} md={12} lg={6}>
+                        <Grid item xs={12} sm={8} md={8} lg={9}>
                           <Typography fontSize={"16px"} sx={styles.TypoMargin}>
                             {item.id}
                           </Typography>
@@ -71,7 +77,7 @@ const ServicesSection = () => {
                             {item.description}
                           </Typography>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={4}>
+                        <Grid item xs={12} sm={4} md={4} lg={3}>
                           <Box
                             sx={{
                               height: 170,
@@ -90,14 +96,19 @@ const ServicesSection = () => {
                         {item.types.map((subTypes) => {
                           return (
                             <Grid
+                              key={subTypes.id}
                               item
-                              lg={3}
+                              lg={5.8}
                               sx={{
                                 borderRight: "1px solid white",
                                 textAlign: "center",
+                                margin: "0px 5px 10px 0px",
                               }}
                             >
-                              <Typography fontSize={"14px"}>
+                              <Typography
+                                fontSize={"12px"}
+                                sx={{ margin: "0px 5px 0px 0px" }}
+                              >
                                 {subTypes.name}
                               </Typography>
                             </Grid>
