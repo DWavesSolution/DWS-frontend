@@ -29,7 +29,7 @@ const Header = () => {
       <Toolbar>
         <Container>
           <Grid container sx={styles.MainGrid}>
-            <Grid item xs={10} sm={9} md={6} lg={6.5}>
+            <Grid item xs={10} sm={9} md={5.5} lg={6.5}>
               <Box sx={{ width: 150, height: 70 }}>
                 <DWSImage
                   src={HeaderLogo}
@@ -61,7 +61,7 @@ const Header = () => {
                     </Box>
                   ))}
                 </Grid>
-                <Grid item xs={12} sm={12} md={2} sx={styles.ButtonGrid}>
+                <Grid item xs={12} sm={12} md={2.5} sx={styles.ButtonGrid}>
                   <ScrollLink
                     to="contact"
                     spy={true}
