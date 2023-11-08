@@ -143,3 +143,45 @@ export const socialIcons = [
   { id: 3, logo: "/instagram.svg" },
   { id: 4, logo: "/behance.svg" },
 ];
+export const Testimonials_Data = [
+  {
+    id: 1,
+    logo: "/akamai.webp",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    company: "Microsoft",
+    poisition: "CEO",
+  },
+  {
+    id: 2,
+    logo: "/deloitte-home.webp",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    company: "Apple",
+    poisition: "Director",
+  },
+  {
+    id: 3,
+    logo: "/fidelity-home.webp",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    company: "Samsung",
+    poisition: "Manager",
+  },
+  {
+    id: 4,
+    logo: "/kaseya-logo.webp",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    company: "IBM",
+    poisition: "Owner",
+  },
+  {
+    id: 5,
+    logo: "/l&t-home.webp",
+    content:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    company: "Blackberry",
+    poisition: "CEO",
+  },
+];

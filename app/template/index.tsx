@@ -8,6 +8,7 @@ import ServicesSection from "../components/services";
 import Scores from "../components/score";
 import WorkWithUs from "../components/work-with-us";
 import ContactUs from "../components/contact";
+import Testimonials from "../components/testimonials";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <ServicesSection />
       <Scores />
       <WorkWithUs />
+      <Testimonials />
       <ContactUs />
     </Box>
   );
