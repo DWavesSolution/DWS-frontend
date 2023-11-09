@@ -13,18 +13,9 @@ const Technologies = () => {
   return (
     <Box sx={styles.MainBox}>
       <Container>
-        <Tabs
-          value={selectedTab}
-          onChange={handleTabChange}
-          centered
-          sx={{ color: "black" }}
-        >
+        <Tabs value={selectedTab} onChange={handleTabChange} centered>
           {Technologies_Tabs.map((item: any, index) => {
-            return (
-              <Tab sx={{ color: "black" }} key={index}>
-                {item.TechName}
-              </Tab>
-            );
+            return <Tab key={index}>{item.TechName}</Tab>;
           })}
         </Tabs>
         <div>
