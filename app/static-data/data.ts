@@ -201,3 +201,37 @@ export const Testimonials_Data = [
     poisition: "CEO",
   },
 ];
+export const Technologies_Tabs = [
+  {
+    TechName: "BackEnd",
+    content: [{ title: "Node js", logo: "/node-js.webp" }],
+  },
+  {
+    TechName: "FrontEnd",
+    content: [{ title: "Next js", logo: "/next-js.webp" }],
+  },
+  {
+    TechName: "Mobile",
+    content: [{ title: "React Native", logo: "/react.webp" }],
+  },
+  {
+    TechName: "Database",
+    content: [{ title: "MongoDB", logo: "/mongodb.webp" }],
+  },
+  {
+    TechName: "Integrations",
+    content: [{ title: "Stripe", logo: "/stripe.webp" }],
+  },
+  {
+    TechName: "ML/AI",
+    content: [{ title: "Apache Mahout", logo: "/apache-mahout.webp" }],
+  },
+  {
+    TechName: "Tools",
+    content: [{ title: "Figma", logo: "/figma.webp" }],
+  },
+  {
+    TechName: "Others",
+    content: [{ title: "Rasberry Pi", logo: "/raspberry-pi.webp" }],
+  },
+];

@@ -9,6 +9,7 @@ import Scores from "../components/score";
 import WorkWithUs from "../components/work-with-us";
 import ContactUs from "../components/contact";
 import Testimonials from "../components/testimonials";
+import Technologies from "../components/technologies";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Scores />
       <WorkWithUs />
       <Testimonials />
+      <Technologies />
       <ContactUs />
     </Box>
   );
