@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "./styles";
 import {
   AppBar,
@@ -20,10 +20,22 @@ import HeaderLogo from "../../../public/headerLogo.png";
 import ResponsiveHeader from "./responsiveHeader";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link as ScrollLink } from "react-scroll";
+import CustomMenu from "./HeaderPopUp";
 
 const Header = () => {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const [showModal, setShowModal] = useState(false);
+  const handleClick = (index: number) => () => {
+    if (index == 1) {
+      setShowModal(true);
+      return;
+    }
+    setShowModal(false);
+  };
+  const handlePopoverClose = () => {
+    setShowModal(false);
+  };
   return (
     <AppBar elevation={0} sx={styles.Header}>
       <Toolbar>
@@ -43,12 +55,14 @@ const Header = () => {
             ) : (
               <>
                 <Grid item xs={12} sm={12} md={4} lg={3} sx={styles.headerdata}>
-                  {HeaderData.map((item) => (
+                  {HeaderData.map((item, index) => (
                     <Box key={item.id}>
                       {item.name === "Services" ? (
                         <Box sx={{ display: "flex", color: "black" }}>
                           <Typography>{item.name}</Typography>
-                          <KeyboardArrowDownIcon />
+                          <KeyboardArrowDownIcon
+                            onMouseEnter={handleClick(index)}
+                          />
                         </Box>
                       ) : (
                         <Link
@@ -82,6 +96,14 @@ const Header = () => {
           </Grid>
         </Container>
       </Toolbar>
+      {showModal && (
+        <CustomMenu
+          onMouseLeave={handlePopoverClose}
+          hideModel={() => {
+            setShowModal(false);
+          }}
+        />
+      )}
     </AppBar>
   );
 };

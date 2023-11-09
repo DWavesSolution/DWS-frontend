@@ -134,7 +134,7 @@ const Footer = () => {
               </Grid>
             </Grid>
             <Grid container item xs={12} sm={12} md={6}>
-              <Grid item xs={12} sm={3} md={5} lg={4}>
+              <Grid item xs={12} sm={3} md={5} lg={5}>
                 <Link
                   href={"mailto:hello@rootquotient.com"}
                   target="new_blank"
@@ -145,7 +145,7 @@ const Footer = () => {
                   </Typography>
                 </Link>
               </Grid>
-              <Grid container item xs={12} sm={4} lg={3} sx={styles.Icons}>
+              <Grid container item xs={12} sm={4} lg={4} sx={styles.Icons}>
                 {socialIcons.map((item, index) => {
                   return (
                     <Box sx={{ height: 25, width: 25 }} key={index}>

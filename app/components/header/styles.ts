@@ -31,4 +31,28 @@ export const styles = {
     padding: "0.7rem 1.2rem",
     textDecoration: "none",
   },
+  container: {
+    display: "flex",
+    position: "absolute",
+    marginTop: "71px",
+    minHeight: "300px",
+    width: "100%",
+    background: "#ebf2ff",
+    clipPath:
+      "polygon(100% 0,100% calc(100% - 105px),calc(100% - 202px) 100%,0 calc(100% - 50px),0 0)",
+    borderRadius: "0px",
+  },
+  mainGrid: {
+    display: "flex",
+    justifyContent: "center",
+    zIndex: "999",
+    position: "absolute",
+    width: "100%",
+    height: "auto",
+  },
+  services: {
+    display: "flex",
+    width: "260px",
+    paddingLeft: "40px",
+  },
 };

@@ -9,6 +9,9 @@ import {
 } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
+import { socialIcons } from "@/app/static-data/data";
+import DWSImage from "../DWSImage";
+import Link from "next/link";
 
 const LandingBanner = () => {
   return (
@@ -34,6 +37,19 @@ const LandingBanner = () => {
                 </Button>
               </Grid>
             </Grid>
+          </Grid>
+          <Grid container sx={{ marginTop: "50px" }}>
+            {socialIcons.map((item, index) => {
+              return (
+                <Grid item xs={12} sx={{ marginBottom: "20px" }} key={index}>
+                  <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
+                    <Link href={item.link} target="blank">
+                      <DWSImage src={item.logo} alt="Social Icons" />
+                    </Link>
+                  </Box>
+                </Grid>
+              );
+            })}
           </Grid>
         </Container>
       </CardMedia>

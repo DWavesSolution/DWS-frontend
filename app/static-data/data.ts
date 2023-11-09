@@ -138,10 +138,10 @@ export const Project_Data = [
   { name: "Carbonhound" },
 ];
 export const socialIcons = [
-  { id: 1, logo: "/linkedin.svg" },
-  { id: 2, logo: "/twitter.svg" },
-  { id: 3, logo: "/instagram.svg" },
-  { id: 4, logo: "/behance.svg" },
+  { id: 1, logo: "/linkedin.svg", link: "https://linkedin.com" },
+  { id: 2, logo: "/twitter.svg", link: "https://twitter.com" },
+  { id: 3, logo: "/instagram.svg", link: "https://instagram.com" },
+  { id: 4, logo: "/behance.svg", link: "https://www.behance.net/" },
 ];
 export const Testimonials_Data = [
   {
