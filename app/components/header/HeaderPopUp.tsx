@@ -1,15 +1,15 @@
 import React from "react";
 import { styles } from "./styles";
-import { Grid, GridProps, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Link from "next/link";
 import { Services_Menu } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import Link from "next/link";
+
 const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
   return (
     <Grid sx={styles.mainGrid} onClick={hideModel} onMouseLeave={onMouseLeave}>
@@ -22,14 +22,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
             alignItems: "center",
           }}
         >
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={12}
-            lg={4}
-            sx={{ borderRight: "1px solid" }}
-          >
+          <Grid item xs={12} sm={12} md={4} sx={{ borderRight: "1px solid" }}>
             <Swiper
               spaceBetween={50}
               centeredSlides={true}
@@ -62,7 +55,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
               ))}
             </Swiper>
           </Grid>
-          <Grid container item xs={12} sm={12} md={12} lg={7}>
+          <Grid container item xs={12} sm={12} md={7}>
             {Services_Menu.map((item, index) => (
               <Grid
                 item
@@ -81,7 +74,13 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
-                <Link href={item.link} style={{ textDecoration: "none" }}>
+                <Link
+                  href={item.link}
+                  style={{
+                    textDecoration: "none",
+                    color: "#707070",
+                  }}
+                >
                   <Typography>{item.title}</Typography>
                 </Link>
               </Grid>
