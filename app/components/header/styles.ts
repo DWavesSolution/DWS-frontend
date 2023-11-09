@@ -35,12 +35,13 @@ export const styles = {
     display: "flex",
     position: "absolute",
     marginTop: "71px",
-    minHeight: "300px",
+    minHeight: "400px",
     width: "100%",
     background: "#ebf2ff",
     clipPath:
       "polygon(100% 0,100% calc(100% - 105px),calc(100% - 202px) 100%,0 calc(100% - 50px),0 0)",
     borderRadius: "0px",
+    justifyContent: "center",
   },
   mainGrid: {
     display: "flex",
@@ -49,10 +50,5 @@ export const styles = {
     position: "absolute",
     width: "100%",
     height: "auto",
-  },
-  services: {
-    display: "flex",
-    width: "260px",
-    paddingLeft: "40px",
   },
 };

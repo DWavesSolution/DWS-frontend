@@ -7,20 +7,32 @@ export const HeaderData = [
     id: 1,
     name: "Services",
     link: "services",
-    subMenu: [
-      {
-        name: "Services",
-        link: "services",
-      },
-      {
-        name: "Services",
-        link: "services",
-      },
-    ],
   },
   {
     name: "Portfolio",
     link: "portfolio",
+  },
+];
+export const Services_Menu = [
+  {
+    id: 1,
+    title: "Digital Product Development",
+    logo: "/gear.webp",
+  },
+  {
+    id: 2,
+    title: "Staff Augmentation",
+    logo: "/peoples.webp",
+  },
+  {
+    id: 3,
+    title: "Data Analytics and Management",
+    logo: "/database.webp",
+  },
+  {
+    id: 4,
+    title: "Digital Strategy Consultation",
+    logo: "/bulb.webp",
   },
 ];
 export const Brand_Logo = [
