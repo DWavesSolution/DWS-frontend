@@ -23,13 +23,7 @@ const Technologies = () => {
             >
               {Technologies_Tabs.map((item: any, index) => {
                 return (
-                  <Tab
-                    key={`${item?.id}-${index}`}
-                    label={item.TechName}
-                    id={`simple-tab-${index}`}
-                    aria-controls={`simple-tabpanel-${index}`}
-                    aria-hidden="true"
-                  />
+                  <Tab key={`${item?.id}-${index}`} label={item.TechName} />
                 );
               })}
             </Tabs>
