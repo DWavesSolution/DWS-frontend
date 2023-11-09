@@ -81,7 +81,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
-                <Link href={""} style={{ textDecoration: "none" }}>
+                <Link href={item.link} style={{ textDecoration: "none" }}>
                   <Typography>{item.title}</Typography>
                 </Link>
               </Grid>
