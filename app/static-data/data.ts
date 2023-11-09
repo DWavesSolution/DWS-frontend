@@ -18,21 +18,25 @@ export const Services_Menu = [
     id: 1,
     title: "Digital Product Development",
     logo: "/gear.webp",
+    link: "/digital-product-development",
   },
   {
     id: 2,
     title: "Staff Augmentation",
     logo: "/peoples.webp",
+    link: "/staff-augmentation",
   },
   {
     id: 3,
     title: "Data Analytics and Management",
     logo: "/database.webp",
+    link: "/data-analytics",
   },
   {
     id: 4,
     title: "Digital Strategy Consultation",
     logo: "/bulb.webp",
+    link: "/digital-strategy-consultation",
   },
 ];
 export const Brand_Logo = [

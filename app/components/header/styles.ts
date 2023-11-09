@@ -51,4 +51,21 @@ export const styles = {
     width: "100%",
     height: "auto",
   },
+  ResponsiveDataGrid: {
+    borderBottom: "1px solid hsla(0,0%,100%,.09)",
+  },
+  DrawarBox: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingBottom: "15px",
+  },
+  DrawarPapar: {
+    width: { xs: "100%", sm: "50%", md: "30%" },
+    boxShadow: "none",
+    background:
+      "transparent radial-gradient(farthest-corner at 300% 260%,#004ca2 0,#000 100%) 0 0 no-repeat padding-box",
+  },
+  LinkTypo: { margin: "15px 0px" },
 };

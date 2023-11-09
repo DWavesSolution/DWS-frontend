@@ -21,8 +21,10 @@ import ResponsiveHeader from "./responsiveHeader";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link as ScrollLink } from "react-scroll";
 import CustomMenu from "./HeaderPopUp";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const route = useRouter();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   const [showModal, setShowModal] = useState(false);
@@ -36,13 +38,16 @@ const Header = () => {
   const handlePopoverClose = () => {
     setShowModal(false);
   };
+  const HomePageRoute = () => {
+    route.push("/");
+  };
   return (
     <AppBar elevation={0} sx={styles.Header}>
       <Toolbar>
         <Container>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={10} sm={9} md={5.5} lg={6.5}>
-              <Box sx={{ width: 150, height: 70 }}>
+              <Box sx={{ width: 150, height: 70 }} onClick={HomePageRoute}>
                 <DWSImage
                   src={HeaderLogo}
                   alt="Header Logo"

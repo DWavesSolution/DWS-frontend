@@ -12,6 +12,7 @@ import { styles } from "./styles";
 import { socialIcons } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
 import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 const LandingBanner = () => {
   return (
@@ -22,7 +23,7 @@ const LandingBanner = () => {
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
                 <Typography
-                  fontSize={{ xs: "28px", sm: "60px" }}
+                  fontSize={{ xs: "36px", sm: "60px" }}
                   fontWeight={600}
                   sx={{ color: "white" }}
                 >
@@ -30,11 +31,19 @@ const LandingBanner = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
-                <Button variant="outlined" sx={styles.Button}>
-                  <Typography sx={{ color: "white" }}>
-                    {"Let's Talk"}
-                  </Typography>
-                </Button>
+                <ScrollLink
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={1000}
+                >
+                  <Button variant="outlined" sx={styles.Button}>
+                    <Typography sx={{ color: "white" }}>
+                      {"Let's Talk"}
+                    </Typography>
+                  </Button>
+                </ScrollLink>
               </Grid>
             </Grid>
           </Grid>
