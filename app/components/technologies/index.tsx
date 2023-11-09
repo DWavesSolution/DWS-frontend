@@ -13,7 +13,13 @@ const Technologies = () => {
   return (
     <Box sx={styles.MainBox}>
       <Container>
-        <Tabs value={selectedTab} onChange={handleTabChange} centered>
+        <Tabs
+          value={selectedTab}
+          onChange={handleTabChange}
+          centered
+          variant="scrollable"
+          scrollButtons="auto"
+        >
           {Technologies_Tabs.map((item: any, index) => {
             return <Tab key={index}>{item.TechName}</Tab>;
           })}
