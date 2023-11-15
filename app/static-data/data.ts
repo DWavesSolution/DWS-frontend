@@ -15,28 +15,24 @@ export const HeaderData = [
 ];
 export const Services_Menu = [
   {
-    id: 1,
     title: "Digital Product Development",
     logo: "/gear.webp",
-    link: "/digital-product-development",
+    id: "/digital-product-development",
   },
   {
-    id: 2,
     title: "Staff Augmentation",
     logo: "/peoples.webp",
-    link: "/staff-augmentation",
+    id: "/staff-augmentation",
   },
   {
-    id: 3,
     title: "Data Analytics and Management",
     logo: "/database.webp",
-    link: "/data-analytics",
+    id: "/data-analytics",
   },
   {
-    id: 4,
     title: "Digital Strategy Consultation",
     logo: "/bulb.webp",
-    link: "/digital-strategy-consultation",
+    id: "/digital-strategy-consultation",
   },
 ];
 export const Brand_Logo = [
@@ -233,5 +229,25 @@ export const Technologies_Tabs = [
   {
     TechName: "Others",
     content: [{ title: "Rasberry Pi", logo: "/raspberry-pi.webp" }],
+  },
+];
+export const Our_Vision = [
+  {
+    logo: "/Democratize.webp",
+    title: "Democratize",
+    desription:
+      "To change the very fabric of the society by democratizing technology, thereby touching the lives of millions, positively",
+  },
+  {
+    logo: "/Strategize.webp",
+    title: "Strategize",
+    desription:
+      "Being a strategic partner for Startups and Enterprises in trialing and implementation of Industry 4.0",
+  },
+  {
+    logo: "/Accelerate.webp",
+    title: "Accelerate",
+    desription:
+      "Accelerating AI, Blockchain, & HCI through global research collaborations with top universities and labs",
   },
 ];

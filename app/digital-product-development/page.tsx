@@ -1,10 +1,10 @@
 import React from "react";
-import ServicesPage from "./template";
+import DigitalProductDevelopment from "./template";
 
 const page = () => {
   return (
     <div>
-      <ServicesPage />
+      <DigitalProductDevelopment />
     </div>
   );
 };

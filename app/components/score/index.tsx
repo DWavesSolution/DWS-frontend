@@ -1,4 +1,5 @@
-import { Box, Card, Container, Grid, Typography } from "@mui/material";
+"use client";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import { Scores_Card } from "@/app/static-data/data";

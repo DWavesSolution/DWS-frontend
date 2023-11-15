@@ -81,7 +81,7 @@ const ResponsiveHeader = () => {
             return (
               <Grid item xs={10} sx={styles.ResponsiveDataGrid} key={item.id}>
                 <Link
-                  href={item.link}
+                  href={item.id}
                   style={{
                     textDecoration: "none",
                     color: "hsla(0,0%,100%,.5)",

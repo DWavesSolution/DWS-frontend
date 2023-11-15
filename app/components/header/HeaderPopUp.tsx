@@ -75,7 +75,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                   />
                 </Box>
                 <Link
-                  href={item.link}
+                  href={item.id}
                   style={{
                     textDecoration: "none",
                     color: "#707070",
