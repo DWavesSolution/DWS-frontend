@@ -16,9 +16,16 @@ const OurVision = () => {
             </Typography>
           </Grid>
           <Grid container sx={styles.ImagesGrid}>
-            {Our_Vision.map((item) => {
+            {Our_Vision.map((item, index) => {
               return (
-                <Grid item xs={12} sm={3.9} md={3} sx={styles.VisionData}>
+                <Grid
+                  item
+                  xs={12}
+                  sm={3.9}
+                  md={3}
+                  sx={styles.VisionData}
+                  key={index}
+                >
                   <Box sx={{ height: 240, width: 240, marginBottom: "16px" }}>
                     <DWSImage src={item.logo} alt={item.title} />
                   </Box>
