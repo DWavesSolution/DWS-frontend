@@ -10,6 +10,7 @@ import WorkWithUs from "../components/work-with-us";
 import ContactUs from "../components/contact";
 import Testimonials from "../components/testimonials";
 import Technologies from "../components/technologies";
+import OurPromise from "../components/promise";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Testimonials />
       <Technologies />
       <ContactUs />
+      <OurPromise />
     </Box>
   );
 };

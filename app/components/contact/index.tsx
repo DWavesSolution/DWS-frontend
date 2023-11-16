@@ -76,7 +76,7 @@ const ContactUs = () => {
             </Grid>
             <TextField label="Email" fullWidth sx={{ marginBottom: "15px" }} />
             <TextField
-              label="How Did you hear about us?"
+              label="How did you hear about us?"
               fullWidth
               sx={{ marginBottom: "15px" }}
             />

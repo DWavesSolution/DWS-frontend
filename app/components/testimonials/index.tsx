@@ -23,7 +23,7 @@ const Testimonials = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Typography sx={{ width: "45%" }}>
+            <Typography sx={{ width: { xs: "100%", md: "45%" } }}>
               Trust and success stories from our clients underscore our
               commitment to delivering purpose-driven solutions with excellence.
             </Typography>

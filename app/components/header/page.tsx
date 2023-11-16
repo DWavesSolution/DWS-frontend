@@ -19,7 +19,6 @@ import DWSImage from "../DWSImage";
 import HeaderLogo from "../../../public/headerLogo.png";
 import ResponsiveHeader from "./responsiveHeader";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Link as ScrollLink } from "react-scroll";
 import CustomMenu from "./HeaderPopUp";
 import { useRouter } from "next/navigation";
 
@@ -81,20 +80,14 @@ const Header = () => {
                   ))}
                 </Grid>
                 <Grid item xs={12} sm={12} md={2.5} sx={styles.ButtonGrid}>
-                  <ScrollLink
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-150}
-                    duration={1000}
-                  >
+                  <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
                     <Button
                       sx={styles.headerButton}
                       endIcon={<ArrowForwardIcon />}
                     >
                       Contact Us
                     </Button>
-                  </ScrollLink>
+                  </Link>
                 </Grid>
               </>
             )}

@@ -5,6 +5,7 @@ import ContactUs from "../components/contact";
 import Testimonials from "../components/testimonials";
 import AboutCulture from "../components/about-culture";
 import OurVision from "../components/vision";
+import OurPromise from "../components/promise";
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
       <OurVision />
       <Testimonials />
       <ContactUs />
+      <OurPromise />
     </Box>
   );
 };

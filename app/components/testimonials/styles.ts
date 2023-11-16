@@ -6,6 +6,7 @@ export const styles = {
     backgroundColor: "#004ca2",
     padding: { xs: "2rem 2rem", sm: "5rem 5rem" },
     borderRadius: "10px",
+    borderBottomRightRadius: "180px",
   },
   SwiperGrid: {
     display: "flex",
