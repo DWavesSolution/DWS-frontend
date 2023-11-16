@@ -42,9 +42,9 @@ const Testimonials = () => {
               modules={[Autoplay, Pagination]}
               className="mySwiper"
             >
-              {Testimonials_Data.map((item) => {
+              {Testimonials_Data.map((item, index) => {
                 return (
-                  <SwiperSlide key={item.id}>
+                  <SwiperSlide key={`${item?.id}-${index}`}>
                     <Box sx={styles.SwiperBox}>
                       <Grid container sx={styles.SwiperGrid}>
                         <Grid

@@ -31,7 +31,10 @@ const Technologies = () => {
           <Grid container item xs={12} sx={styles.TabsImages}>
             {Technologies_Tabs[selectedTab].content.map((item: any, index) => {
               return (
-                <Box sx={{ height: 100, width: 100 }} key={index}>
+                <Box
+                  sx={{ height: 100, width: 100 }}
+                  key={`${item?.id}-${index}`}
+                >
                   <DWSImage
                     src={item.logo}
                     alt={item.title}

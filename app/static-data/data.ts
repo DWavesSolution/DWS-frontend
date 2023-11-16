@@ -104,50 +104,50 @@ export const Services_Card = [
 ];
 export const Scores_Card = [
   {
+    id: 1,
     number: "75+",
     name: "Projects successfully completed",
   },
   {
+    id: 2,
     number: "12+",
     name: "Industries targeted to expand horizons",
   },
+  { id: 3, number: "150+", name: "Skilled professionals" },
   {
-    number: "150+",
-    name: "Skilled professionals",
-  },
-  {
+    id: 4,
     number: "20+",
     name: "Skill-gaps filled through staff augmentation",
   },
 ];
 export const Capability_Data = [
-  { name: "Web App Development" },
-  { name: "Mobile App Development" },
-  { name: "Flutter Development" },
-  { name: "Ruby on Rails Development" },
-  { name: "React JS Development" },
-  { name: "AWS Cloud Services" },
-  { name: "Google Cloud Services" },
-  { name: "Microsoft Azure Development" },
-  { name: "React Native Development" },
-  { name: "Machine Learning" },
-  { name: "Cross-Platform Development" },
-  { name: "Enterprise App Development" },
-  { name: "Custom Software Development" },
-  { name: "Blockchain Development" },
-  { name: "UI/UX Services" },
+  {id:1, name: "Web App Development" },
+  {id:2, name: "Mobile App Development" },
+  {id:3, name: "Flutter Development" },
+  {id:4, name: "Ruby on Rails Development" },
+  {id:5, name: "React JS Development" },
+  {id:6, name: "AWS Cloud Services" },
+  {id:7, name: "Google Cloud Services" },
+  {id:8, name: "Microsoft Azure Development" },
+  {id:9, name: "React Native Development" },
+  {id:10, name: "Machine Learning" },
+  {id:11, name: "Cross-Platform Development" },
+  {id:12, name: "Enterprise App Development" },
+  {id:13, name: "Custom Software Development" },
+  {id:14, name: "Blockchain Development" },
+  {id:15, name: "UI/UX Services" },
 ];
 export const Services_Data = [
-  { name: "Digital Product Development" },
-  { name: "Staff Augmentation" },
-  { name: "Data Analytics and Management" },
-  { name: "Digital Strategy Consultation" },
+  {id:1, name: "Digital Product Development" },
+  {id:2, name: "Staff Augmentation" },
+  {id:3, name: "Data Analytics and Management" },
+  {id:4, name: "Digital Strategy Consultation" },
 ];
 export const Project_Data = [
-  { name: "Aligner 4D" },
-  { name: "BDD" },
-  { name: "Messy FM" },
-  { name: "Carbonhound" },
+  {id:1, name: "Aligner 4D" },
+  {id:2, name: "BDD" },
+  {id:3, name: "Messy FM" },
+  {id:4, name: "Carbonhound" },
 ];
 export const socialIcons = [
   { id: 1, logo: "/linkedin.svg", link: "https://linkedin.com" },
@@ -233,18 +233,21 @@ export const Technologies_Tabs = [
 ];
 export const Our_Vision = [
   {
+    id: 1,
     logo: "/Democratize.webp",
     title: "Democratize",
     desription:
       "To change the very fabric of the society by democratizing technology, thereby touching the lives of millions, positively",
   },
   {
+    id: 2,
     logo: "/Strategize.webp",
     title: "Strategize",
     desription:
       "Being a strategic partner for Startups and Enterprises in trialing and implementation of Industry 4.0",
   },
   {
+    id: 3,
     logo: "/Accelerate.webp",
     title: "Accelerate",
     desription:

@@ -50,7 +50,7 @@ const Header = () => {
                 <DWSImage
                   src={HeaderLogo}
                   alt="Header Logo"
-                  style={{ objectFit: "contain" }}
+                  style={{ objectFit: "contain", cursor: "pointer" }}
                 />
               </Box>
             </Grid>
@@ -60,7 +60,7 @@ const Header = () => {
               <>
                 <Grid item xs={12} sm={12} md={4} lg={3} sx={styles.headerdata}>
                   {HeaderData.map((item, index) => (
-                    <Box key={item.id}>
+                    <Box key={`${item?.id}-${index}`}>
                       {item.name === "Services" ? (
                         <Box sx={{ display: "flex", color: "black" }}>
                           <Typography>{item.name}</Typography>

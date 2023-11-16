@@ -30,9 +30,16 @@ const ServicesSection = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} sm={3} lg={3} sx={{ display: "flex" }}>
-                {Services_Images.map((item) => {
+                {Services_Images.map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={3} key={item.id}>
+                    <Grid
+                      item
+                      xs={12}
+                      sm={12}
+                      md={12}
+                      lg={3}
+                      key={`${item?.id}-${index}`}
+                    >
                       <Box sx={{ weight: 55, height: 55 }}>
                         <DWSImage
                           src={item.logo}
@@ -49,13 +56,13 @@ const ServicesSection = () => {
               container
               sx={{ display: "flex", justifyContent: "space-between" }}
             >
-              {Services_Card.map((item) => {
+              {Services_Card.map((item, index) => {
                 return (
                   <Grid
                     item
                     xs={12}
                     md={5.9}
-                    key={item.id}
+                    key={`${item?.id}-${index}`}
                     sx={{ display: "flex", justifyContent: "space-between" }}
                   >
                     <Card sx={styles.Card}>
@@ -96,7 +103,7 @@ const ServicesSection = () => {
                         {item.types.map((subTypes) => {
                           return (
                             <Grid
-                              key={subTypes.id}
+                              key={`${subTypes?.id}-${index}`}
                               item
                               lg={5.8}
                               sx={{

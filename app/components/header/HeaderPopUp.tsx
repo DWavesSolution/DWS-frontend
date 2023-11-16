@@ -36,9 +36,9 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
               modules={[Autoplay]}
               className="mySwiper"
             >
-              {Services_Menu.map((item) => (
+              {Services_Menu.map((item, index) => (
                 <SwiperSlide
-                  key={item.id}
+                  key={`${item?.id}-${index}`}
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -75,7 +75,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                   />
                 </Box>
                 <Link
-                  href={item.id}
+                  href={`/services/${item.id}`}
                   style={{
                     textDecoration: "none",
                     color: "#707070",

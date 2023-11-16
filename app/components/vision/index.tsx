@@ -24,7 +24,7 @@ const OurVision = () => {
                   sm={3.9}
                   md={3}
                   sx={styles.VisionData}
-                  key={index}
+                  key={`${item?.id}-${index}`}
                 >
                   <Box sx={{ height: 240, width: 240, marginBottom: "16px" }}>
                     <DWSImage src={item.logo} alt={item.title} />

@@ -47,7 +47,12 @@ const AboutPage = () => {
           <Grid container sx={{ marginTop: "50px" }}>
             {socialIcons.map((item, index) => {
               return (
-                <Grid item xs={12} sx={{ marginBottom: "20px" }} key={index}>
+                <Grid
+                  item
+                  xs={12}
+                  sx={{ marginBottom: "20px" }}
+                  key={`${item?.id}-${index}`}
+                >
                   <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
                     <Link href={item.link} target="blank">
                       <DWSImage src={item.logo} alt="Social Icons" />

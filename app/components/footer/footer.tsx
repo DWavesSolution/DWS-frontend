@@ -38,7 +38,14 @@ const Footer = () => {
               >
                 {Capability_Data.slice(0, 5).map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
+                    <Grid
+                      item
+                      xs={12}
+                      sm={12}
+                      md={12}
+                      lg={4}
+                      key={`${item?.id}-${index}`}
+                    >
                       <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                         {item.name}
                       </Typography>
@@ -47,7 +54,14 @@ const Footer = () => {
                 })}
                 {Capability_Data.slice(5, 10).map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
+                    <Grid
+                      item
+                      xs={12}
+                      sm={12}
+                      md={12}
+                      lg={4}
+                      key={`${item?.id}-${index}`}
+                    >
                       <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                         {item.name}
                       </Typography>
@@ -56,7 +70,14 @@ const Footer = () => {
                 })}
                 {Capability_Data.slice(10, 15).map((item, index) => {
                   return (
-                    <Grid item xs={12} sm={12} md={12} lg={4} key={index}>
+                    <Grid
+                      item
+                      xs={12}
+                      sm={12}
+                      md={12}
+                      lg={4}
+                      key={`${item?.id}-${index}`}
+                    >
                       <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                         {item.name}
                       </Typography>
@@ -70,7 +91,7 @@ const Footer = () => {
               <Divider sx={styles.Divider} />
               {Services_Data.map((item, index) => {
                 return (
-                  <Grid item xs={12} sm={12} md={12} lg={12} key={index}>
+                  <Grid item xs={12} sm={12} md={12} lg={12} key={`${item?.id}-${index}`}>
                     <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                       {item.name}
                     </Typography>
@@ -83,7 +104,7 @@ const Footer = () => {
               <Divider sx={styles.Divider} />
               {Project_Data.map((item, index) => {
                 return (
-                  <Grid item xs={12} sm={12} md={12} lg={12} key={index}>
+                  <Grid item xs={12} sm={12} md={12} lg={12} key={`${item?.id}-${index}`}>
                     <Typography fontSize={"12px"} sx={styles.FooterSubText}>
                       {item.name}
                     </Typography>
@@ -148,7 +169,7 @@ const Footer = () => {
               <Grid container item xs={12} sm={4} lg={4} sx={styles.Icons}>
                 {socialIcons.map((item, index) => {
                   return (
-                    <Box sx={{ height: 25, width: 25 }} key={index}>
+                    <Box sx={{ height: 25, width: 25 }} key={`${item?.id}-${index}`}>
                       <DWSImage src={item.logo} alt="Logos" />
                     </Box>
                   );

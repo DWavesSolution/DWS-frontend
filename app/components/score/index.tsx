@@ -19,7 +19,7 @@ const Scores = () => {
           {Scores_Card.map((item, index) => {
             return (
               <Grid
-                key={index}
+                key={`${item?.id}-${index}`}
                 item
                 xs={5.8}
                 sm={2.8}

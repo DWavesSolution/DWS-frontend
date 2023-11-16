@@ -7,6 +7,7 @@ export const styles = {
     padding: { xs: "2rem 2rem", sm: "5rem 5rem" },
     borderRadius: "10px",
     borderBottomRightRadius: "180px",
+    borderTopLeftRadius: "180px",
   },
   SwiperGrid: {
     display: "flex",

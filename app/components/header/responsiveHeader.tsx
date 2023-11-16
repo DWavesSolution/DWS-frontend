@@ -77,11 +77,16 @@ const ResponsiveHeader = () => {
               </Typography>
             </Link>
           </Grid>
-          {Services_Menu.map((item) => {
+          {Services_Menu.map((item, index) => {
             return (
-              <Grid item xs={10} sx={styles.ResponsiveDataGrid} key={item.id}>
+              <Grid
+                item
+                xs={10}
+                sx={styles.ResponsiveDataGrid}
+                key={`${item?.id}-${index}`}
+              >
                 <Link
-                  href={item.id}
+                  href={`/services/${item.id}`}
                   style={{
                     textDecoration: "none",
                     color: "hsla(0,0%,100%,.5)",

@@ -24,8 +24,8 @@ export const styles = {
     padding: "50px",
     marginBottom: "10px",
     borderRadius: "16px",
-    borderBottomRightRadius: "20%",
-    borderTopLeftRadius: "20%",
+    borderBottomRightRadius: "100px",
+    borderTopLeftRadius: "100px",
   },
   TypoMargin: {
     marginBottom: "16px",
