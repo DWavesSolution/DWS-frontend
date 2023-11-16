@@ -121,33 +121,33 @@ export const Scores_Card = [
   },
 ];
 export const Capability_Data = [
-  {id:1, name: "Web App Development" },
-  {id:2, name: "Mobile App Development" },
-  {id:3, name: "Flutter Development" },
-  {id:4, name: "Ruby on Rails Development" },
-  {id:5, name: "React JS Development" },
-  {id:6, name: "AWS Cloud Services" },
-  {id:7, name: "Google Cloud Services" },
-  {id:8, name: "Microsoft Azure Development" },
-  {id:9, name: "React Native Development" },
-  {id:10, name: "Machine Learning" },
-  {id:11, name: "Cross-Platform Development" },
-  {id:12, name: "Enterprise App Development" },
-  {id:13, name: "Custom Software Development" },
-  {id:14, name: "Blockchain Development" },
-  {id:15, name: "UI/UX Services" },
+  { id: 1, name: "Web App Development" },
+  { id: 2, name: "Mobile App Development" },
+  { id: 3, name: "Flutter Development" },
+  { id: 4, name: "Ruby on Rails Development" },
+  { id: 5, name: "React JS Development" },
+  { id: 6, name: "AWS Cloud Services" },
+  { id: 7, name: "Google Cloud Services" },
+  { id: 8, name: "Microsoft Azure Development" },
+  { id: 9, name: "React Native Development" },
+  { id: 10, name: "Machine Learning" },
+  { id: 11, name: "Cross-Platform Development" },
+  { id: 12, name: "Enterprise App Development" },
+  { id: 13, name: "Custom Software Development" },
+  { id: 14, name: "Blockchain Development" },
+  { id: 15, name: "UI/UX Services" },
 ];
 export const Services_Data = [
-  {id:1, name: "Digital Product Development" },
-  {id:2, name: "Staff Augmentation" },
-  {id:3, name: "Data Analytics and Management" },
-  {id:4, name: "Digital Strategy Consultation" },
+  { id: 1, name: "Digital Product Development" },
+  { id: 2, name: "Staff Augmentation" },
+  { id: 3, name: "Data Analytics and Management" },
+  { id: 4, name: "Digital Strategy Consultation" },
 ];
 export const Project_Data = [
-  {id:1, name: "Aligner 4D" },
-  {id:2, name: "BDD" },
-  {id:3, name: "Messy FM" },
-  {id:4, name: "Carbonhound" },
+  { id: 1, name: "Aligner 4D" },
+  { id: 2, name: "BDD" },
+  { id: 3, name: "Messy FM" },
+  { id: 4, name: "Carbonhound" },
 ];
 export const socialIcons = [
   { id: 1, logo: "/linkedin.svg", link: "https://linkedin.com" },
@@ -252,5 +252,70 @@ export const Our_Vision = [
     title: "Accelerate",
     desription:
       "Accelerating AI, Blockchain, & HCI through global research collaborations with top universities and labs",
+  },
+];
+
+export const Accordion_Data = [
+  {
+    question: "What is your typical project timeline from start to finish?",
+    answer:
+      "The project timeline for any project can vary depending on the complexity of the product and the requirements of the project. However, we typically follow a structured approach that includes ideation, design, prototyping, testing, and production. The duration for each phase can vary, but we always look forward to working closely with our clients in order to ensure, we meet deadlines by delivering high-quality products.",
+  },
+  {
+    question:
+      "How do you handle intellectual property and confidentiality for your projects?",
+    answer:
+      "We work with our clients to ensure all proprietary information is kept secure and protected throughout the product development process. We typically use non-disclosure agreements (NDAs) to safeguard your intellectual property and confidential information. Additionally, we have strict security protocols in place to ensure our team members only have access to the information they need to complete their work on the project.",
+  },
+  {
+    question:
+      "Can you provide references or examples of past projects you've completed?",
+    answer:
+      "We make our work speaks for itself and we are proud of the successful projects we've done for our clients. You can access our portfolio page to refer to case studies of similar projects we have completed in your industry. Apart from this, you can connect with us to discuss your specific needs and learn more about our past projects.",
+  },
+  {
+    question:
+      "How do you ensure that the final product meets the requirements and specifications?",
+    answer:
+      "We ensure that the final product meets the requirements and specifications through our rigorous approach to quality assurance. Our product development process includes multiple stages of review and testing, as well as close collaboration with our clients for feedback and input. We also use various tools and techniques to meet all standards, regulations, and industry-specific requirements.",
+  },
+];
+
+export const Core_Values_Data = [
+  {
+    id: "01",
+    title: "People first",
+    description:
+      "We please everyone, those who work with us and those we work for as we focus on establishing relationships that would make a positive difference in everyone's lives",
+  },
+  {
+    id: "02",
+    title: "Passion-Driven",
+    description:
+      "Fueling success by harnessing our love for what we do for purpose-driven results in every aspect of professional and personal life.",
+  },
+  {
+    id: "03",
+    title: "Embracing challenges",
+    description:
+      "To go that extra mile we challenge ourselves to take risks responsibly and ensure our works are the mark of our focused excellence.",
+  },
+  {
+    id: "04",
+    title: "Dream Big, Act Fast",
+    description:
+      "We prioritize the little steps that pave the way to the bigger picture, allowing us to move swiftly and efficiently toward our goals.",
+  },
+  {
+    id: "05",
+    title: "Deliver Exceptional Results",
+    description:
+      "We strongly believe that as we focus on the end user, everything else will follow. Through an iterative approach, we strive to exceed expectations with out focus on the end user.",
+  },
+  {
+    id: "06",
+    title: "Collaborative Learning & Winning",
+    description:
+      "We give more than we take, sharing everything we learn and leveraging our collective energy and intelligence to achieve success.",
   },
 ];

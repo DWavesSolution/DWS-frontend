@@ -1,15 +1,17 @@
 "use client";
-import { Technologies_Tabs } from "@/app/static-data/data";
-import { Box, Container, Grid, Tab, Tabs } from "@mui/material";
 import React, { useState } from "react";
+import { Box, Container, Grid, Tab, Tabs } from "@mui/material";
 import DWSImage from "../DWSImage";
+import { Technologies_Tabs } from "@/app/static-data/data";
 import { styles } from "./styles";
 
 const Technologies = () => {
   const [selectedTab, setSelectedTab] = useState(0);
+
   const handleTabChange = (event: any, newValue: any) => {
     setSelectedTab(newValue);
   };
+
   return (
     <Box sx={styles.MainBox}>
       <Container>
@@ -21,19 +23,25 @@ const Technologies = () => {
               variant="scrollable"
               scrollButtons="auto"
             >
-              {Technologies_Tabs.map((item: any, index) => {
-                return (
-                  <Tab key={`${item?.id}-${index}`} label={item.TechName} />
-                );
-              })}
+              <Tab key="all-tab" label="ALL" />
+              {Technologies_Tabs.map((item: any, index) => (
+                <Tab key={`${item?.id}-${index}`} label={item.TechName} />
+              ))}
             </Tabs>
           </Grid>
           <Grid container item xs={12} sx={styles.TabsImages}>
-            {Technologies_Tabs[selectedTab].content.map((item: any, index) => {
-              return (
+            {Technologies_Tabs.flatMap((tab, tabIndex) =>
+              tab.content.map((item: any, logoIndex) => (
                 <Box
-                  sx={{ height: 100, width: 100 }}
-                  key={`${item?.id}-${index}`}
+                  sx={{
+                    height: 100,
+                    width: 100,
+                    opacity:
+                      selectedTab === 0 || selectedTab === tabIndex + 1
+                        ? 1
+                        : 0.5,
+                  }}
+                  key={`${item?.id}-${logoIndex}`}
                 >
                   <DWSImage
                     src={item.logo}
@@ -41,8 +49,8 @@ const Technologies = () => {
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
-              );
-            })}
+              ))
+            )}
           </Grid>
         </Grid>
       </Container>

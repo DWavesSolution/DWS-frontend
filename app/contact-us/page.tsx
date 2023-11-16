@@ -3,6 +3,7 @@ import ConatctUs from "./template";
 import OurPromise from "../components/promise";
 import { Box } from "@mui/material";
 import { convertSeo } from "../utils/seo";
+import ContactAccordion from "../components/accordion";
 
 export async function generateMetadata() {
   const PageTitle = "Contact Us";
@@ -12,6 +13,7 @@ const page = () => {
   return (
     <Box>
       <ConatctUs />
+      <ContactAccordion />
       <OurPromise />
     </Box>
   );

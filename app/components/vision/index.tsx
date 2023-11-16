@@ -51,7 +51,7 @@ const OurVision = () => {
                 <DWSImage src={"/hire_img_1.webp"} alt="" />
               </Box>
               <Grid item xs={12} sx={styles.Description}>
-                <Box sx={{ width: "50%" }}>
+                <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
                   <Typography sx={{ paddingTop: "80px" }}>
                     We envision a future where we are the go-to partner for
                     digital strategy, consultation, and implementation in
@@ -61,7 +61,12 @@ const OurVision = () => {
                 </Box>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={5.8} sx={{ marginTop: "240px" }}>
+            <Grid
+              item
+              xs={12}
+              md={5.8}
+              sx={{ marginTop: { xs: "70px", md: "240px" } }}
+            >
               <Box sx={{ height: 860, width: "100%" }}>
                 <DWSImage src={"/hire_img_2.webp"} alt="" />
               </Box>
