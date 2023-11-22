@@ -1,6 +1,11 @@
 import React from "react";
 import StaffAugmentation from "./template";
 import { convertSeo } from "@/app/utils/seo";
+import { Box } from "@mui/material";
+import OurCoreValues from "@/app/components/core-value";
+import Testimonials from "@/app/components/testimonials";
+import ContactAccordion from "@/app/components/accordion";
+import OurPromise from "@/app/components/promise";
 
 export async function generateMetadata() {
   const PageTitle = "Staff Augmentation";
@@ -8,9 +13,13 @@ export async function generateMetadata() {
 }
 const page = () => {
   return (
-    <div>
+    <Box>
       <StaffAugmentation />
-    </div>
+      <Testimonials />
+      <OurCoreValues />
+      <ContactAccordion />
+      <OurPromise />
+    </Box>
   );
 };
 

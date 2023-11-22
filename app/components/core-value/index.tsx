@@ -1,5 +1,5 @@
 "use client";
-import { Box, Card, Container, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import { Core_Values_Data } from "@/app/static-data/data";

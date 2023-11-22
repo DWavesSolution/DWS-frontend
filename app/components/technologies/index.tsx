@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Box, Container, Grid, Tab, Tabs } from "@mui/material";
+import { Box, Container, Grid, Tab, Tabs, Typography } from "@mui/material";
 import DWSImage from "../DWSImage";
 import { Technologies_Tabs } from "@/app/static-data/data";
 import { styles } from "./styles";

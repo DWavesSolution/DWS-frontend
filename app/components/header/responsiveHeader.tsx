@@ -24,7 +24,7 @@ const ResponsiveHeader = () => {
   };
   return (
     <div>
-      <MenuIcon onClick={onClickDrawer} />
+      <MenuIcon sx={{ color: "black" }} onClick={onClickDrawer} />
       <Drawer
         anchor="right"
         open={opendrawer}
