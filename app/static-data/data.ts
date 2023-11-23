@@ -20,19 +20,19 @@ export const Services_Menu = [
     id: "/digital-product-development",
   },
   {
-    title: "Staff Augmentation",
+    title: "Social Media Marketing",
     logo: "/peoples.webp",
-    id: "/staff-augmentation",
+    id: "/social-media-marketing",
   },
   {
-    title: "Data Analytics and Management",
+    title: "Search Engine Optimization",
     logo: "/database.webp",
-    id: "/data-analytics",
+    id: "/search-engine-optimization",
   },
   {
-    title: "Digital Strategy Consultation",
+    title: "AI / ML",
     logo: "/bulb.webp",
-    id: "/digital-strategy-consultation",
+    id: "/ai-ml",
   },
 ];
 export const Brand_Logo = [
@@ -67,7 +67,7 @@ export const Services_Card = [
   },
   {
     id: "02",
-    title: "Staff Augmentation",
+    title: "Social Media Marketing",
     description:
       "Supplementing highly skilled resources to scale up the workforce with limitless efforts. Hire-on-the-go and bridge the skill gaps with the right set of talents for optimal performance.",
     types: [
@@ -80,7 +80,7 @@ export const Services_Card = [
   },
   {
     id: "03",
-    title: "Data Analytics and Management",
+    title: "Search Engine Optimization",
     description:
       "Transforming complex data into valuable insights for informed decisions, offering a deeper understanding of operations, customers and market trends with advanced analytical techniques.",
     types: [
@@ -92,7 +92,7 @@ export const Services_Card = [
   },
   {
     id: "04",
-    title: "Digital Strategy Consultation",
+    title: "AI / ML",
     description:
       "Implementing a comprehensive plan for leveraging digital technologies to achieve their business goals with the intent to provide expert guidance and practical solutions for digital transformation.",
     types: [
@@ -317,5 +317,88 @@ export const Core_Values_Data = [
     title: "Collaborative Learning & Winning",
     description:
       "We give more than we take, sharing everything we learn and leveraging our collective energy and intelligence to achieve success.",
+  },
+];
+export const Streamline_Data = [
+  {
+    id: "01",
+    logo: "/mobile_app_dev.webp",
+    title: "Mobile App Development",
+    description:
+      "Immerse yourself in seamless convenience and enhanced connectivity through a robust mobile presence. Elevate your business objectives with tailor-made mobile applications designed to streamline processes, expand outreach to new audiences, and deliver an enhanced user experience.",
+  },
+  {
+    id: "02",
+    logo: "/pic2.webp",
+    title: "Web Application Development",
+    description:
+      "Uncover a fluid and captivating user experience through a rapid, user-friendly, and visually striking web application or Progressive Web App. Elevate your business growth by enhancing your bottom line through an enhanced digital presence.",
+  },
+  {
+    id: "03",
+    logo: "/new_ui_ux.webp",
+    title: "User Experience & User Interface Design",
+    description:
+      "Our enthusiasm lies in technology, continuous learning, and the exchange of knowledge within the digital realm. As diligent individuals, we thrive on overcoming challenges, demonstrating proficiency in comprehending both technical intricacies and business obstacles.",
+  },
+  {
+    id: "04",
+    logo: "/new_blockchain.webp",
+    title: "Integration Services",
+    description:
+      "Stay ahead of the curve and embrace new technologies with custom-built solutions that offer increased security, efficiency, and transparency in your business operations.",
+  },
+];
+
+export const Why_DWS = [
+  {
+    id: "01",
+    title: "High-Quality Deliverables",
+    description:
+      "Drawing upon extensive expertise in product design and development, coupled with a profound understanding of cutting-edge technologies and methodologies, we bring forth functional, visually appealing, and user-friendly digital products. Our commitment is to deliver solutions precisely tailored to meet your specific requirements.",
+  },
+  {
+    id: "02",
+    title: "Dedicated Support",
+    description:
+      "We offer continuous support and assistance for your customised product engineering projects, ensuring their success and seamless operation. Our commitment is to provide prompt and effective solutions that evolve alongside the needs of your business.",
+  },
+  {
+    id: "03",
+    title: "State-of-the-art Security Measures",
+    description:
+      "Security is our top priority. We employ the latest measures and techniques, such as encryption, firewalls, and multi-factor authentication, to build robust products that safeguard applications and data from potential threats.",
+  },
+  {
+    id: "04",
+    title: "Building Scalable Applications",
+    description:
+      "Our proficient team offers efficient and effective scalable solutions, ensuring reliable performance that accommodates increasing user numbers, expands functionality, and handles additional data seamlessly.",
+  },
+];
+export const Meticulously_Question = [
+  {
+    id: "01",
+    question: "High-Quality Deliverables",
+    answer:
+      "Drawing upon extensive expertise in product design and development, coupled with a profound understanding of cutting-edge technologies and methodologies, we bring forth functional, visually appealing, and user-friendly digital products. Our commitment is to deliver solutions precisely tailored to meet your specific requirements.",
+  },
+  {
+    id: "02",
+    question: "Dedicated Support",
+    answer:
+      "We offer continuous support and assistance for your customised product engineering projects, ensuring their success and seamless operation. Our commitment is to provide prompt and effective solutions that evolve alongside the needs of your business.",
+  },
+  {
+    id: "03",
+    question: "State-of-the-art Security Measures",
+    answer:
+      "Security is our top priority. We employ the latest measures and techniques, such as encryption, firewalls, and multi-factor authentication, to build robust products that safeguard applications and data from potential threats.",
+  },
+  {
+    id: "04",
+    question: "Building Scalable Applications",
+    answer:
+      "Our proficient team offers efficient and effective scalable solutions, ensuring reliable performance that accommodates increasing user numbers, expands functionality, and handles additional data seamlessly.",
   },
 ];

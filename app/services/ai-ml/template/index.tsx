@@ -14,7 +14,7 @@ import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "@/app/components/DWSImage";
 
-const StaffAugmentation = () => {
+const AIML = () => {
   return (
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={""}>
@@ -27,7 +27,7 @@ const StaffAugmentation = () => {
                   fontWeight={600}
                   sx={{ color: "black" }}
                 >
-                  {"services > staff augmentation"}
+                  {"Services > AI / ML"}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={9}>
@@ -37,13 +37,15 @@ const StaffAugmentation = () => {
                   lineHeight={{ xs: "46px", sm: "62px" }}
                   sx={{ color: "#004ca2" }}
                 >
-                  Transform your business with expert staff augmentation
+                  Discover the power of digital strategy consultation, tailored
+                  to your needs
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
                 <Typography sx={{ color: "black" }}>
-                  Get access to highly skilled and scalable professionals,
-                  tailored to meet your dynamic needs & requirements.
+                  Get personalized guidance, data-driven insights, and
+                  strategies to leverage digital technologies for your business
+                  growth, improved online presence, and customer engagement.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
@@ -113,4 +115,4 @@ const StaffAugmentation = () => {
   );
 };
 
-export default StaffAugmentation;
+export default AIML;

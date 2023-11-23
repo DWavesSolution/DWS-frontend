@@ -27,7 +27,7 @@ const DigitalProductDevelopment = () => {
                   fontWeight={600}
                   sx={{ color: "black" }}
                 >
-                  {"services > digital product development"}
+                  {"Services > Digital Product Development"}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={9}>

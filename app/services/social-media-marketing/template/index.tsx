@@ -14,7 +14,7 @@ import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "@/app/components/DWSImage";
 
-const DigitalStrategyConsultation = () => {
+const SocialMediaMarketing = () => {
   return (
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={""}>
@@ -27,7 +27,7 @@ const DigitalStrategyConsultation = () => {
                   fontWeight={600}
                   sx={{ color: "black" }}
                 >
-                  {"services > digital strategy consultation"}
+                  {"Services > Social Media Marketing"}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={9}>
@@ -37,15 +37,13 @@ const DigitalStrategyConsultation = () => {
                   lineHeight={{ xs: "46px", sm: "62px" }}
                   sx={{ color: "#004ca2" }}
                 >
-                  Discover the power of digital strategy consultation, tailored
-                  to your needs
+                  Transform your business with expert staff augmentation
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
                 <Typography sx={{ color: "black" }}>
-                  Get personalized guidance, data-driven insights, and
-                  strategies to leverage digital technologies for your business
-                  growth, improved online presence, and customer engagement.
+                  Get access to highly skilled and scalable professionals,
+                  tailored to meet your dynamic needs & requirements.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
@@ -115,4 +113,4 @@ const DigitalStrategyConsultation = () => {
   );
 };
 
-export default DigitalStrategyConsultation;
+export default SocialMediaMarketing;

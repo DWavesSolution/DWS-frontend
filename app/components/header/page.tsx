@@ -62,7 +62,13 @@ const Header = () => {
                   {HeaderData.map((item, index) => (
                     <Box key={`${item?.id}-${index}`}>
                       {item.name === "Services" ? (
-                        <Box sx={{ display: "flex", color: "black" }}>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            color: "black",
+                            cursor: "pointer",
+                          }}
+                        >
                           <Typography>{item.name}</Typography>
                           <KeyboardArrowDownIcon
                             onMouseEnter={handleClick(index)}

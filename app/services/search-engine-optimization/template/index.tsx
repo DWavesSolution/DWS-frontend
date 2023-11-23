@@ -14,7 +14,7 @@ import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "@/app/components/DWSImage";
 
-const DataAnalyticsAndManagement = () => {
+const SearchEngineOptimization = () => {
   return (
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={""}>
@@ -27,7 +27,7 @@ const DataAnalyticsAndManagement = () => {
                   fontWeight={600}
                   sx={{ color: "black" }}
                 >
-                  {"services > data analytics and management"}
+                  {"Services > Search Engine Optimization"}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={9}>
@@ -115,4 +115,4 @@ const DataAnalyticsAndManagement = () => {
   );
 };
 
-export default DataAnalyticsAndManagement;
+export default SearchEngineOptimization;
