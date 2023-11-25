@@ -8,12 +8,15 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "./styles";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Meticulously_Question } from "@/app/static-data/data";
-
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 const MeticulouslyAccordion = () => {
+  const [expended, SetExpended] = useState(false);
+  const OnChangeExpended = () => {
+    SetExpended(true);
+  };
   return (
     <Grid container sx={styles.container}>
       <Container sx={{ display: "flex", justifyContent: "center" }}>
@@ -52,21 +55,30 @@ const MeticulouslyAccordion = () => {
             {Meticulously_Question.map((item: any, index) => (
               <Box sx={styles.ques} key={`${item?.id}-${index}`}>
                 <Accordion
-                  sx={{ backgroundColor: "transparent" }}
+                  sx={styles.MainAccordion}
                   elevation={0}
                   defaultExpanded={index === 0}
                 >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "#707070" }} />}
+                    expandIcon={<ArrowDownwardIcon sx={{ color: "Black" }} />}
+                    onClick={OnChangeExpended}
                   >
                     <Typography fontSize={"20px"} sx={{ color: "black" }}>
                       {item.question}
                     </Typography>
                   </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography fontSize={"14px"} sx={{ color: "#707070" }}>
-                      {item.answer}
-                    </Typography>
+                  <AccordionDetails
+                    sx={{
+                      background:
+                        "transparent linear-gradient(131deg,#004ca2,#002651) 0 0 no-repeat padding-box",
+                      color: "white",
+                      borderRadius: "16px",
+                      padding: "70px",
+                    }}
+                  >
+                    {/* <Typography fontSize={"18px"}>{item.id}</Typography> */}
+                    {/* <Typography fontSize={"20px"}>{item.question}</Typography> */}
+                    <Typography fontSize={"14px"}>{item.answer}</Typography>
                   </AccordionDetails>
                 </Accordion>
               </Box>

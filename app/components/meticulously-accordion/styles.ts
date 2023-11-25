@@ -4,6 +4,9 @@ export const styles = {
     flexDirection: "column",
     alignItems: "center",
     padding: "70px 0px",
+    background: "linear-gradient(0deg,#e6f1ff,#fafdff)",
+    borderBottomRightRadius: "150px",
+    marginBottom: "50px",
   },
   box: {
     display: "flex",
@@ -16,6 +19,12 @@ export const styles = {
   ques: {
     display: "flex",
     cursor: "pointer",
+  },
+  MainAccordion: {
+    backgroundColor: "transparent",
+    borderBottom: "3px solid #004ca2",
+    padding: "20px 0px",
+    borderRadius: "0px !important",
   },
   accordion: {
     // backgroundColor: "pink",

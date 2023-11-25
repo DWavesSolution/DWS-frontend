@@ -2,10 +2,11 @@ import React from "react";
 import SocialMediaMarketing from "./template";
 import { convertSeo } from "@/app/utils/seo";
 import { Box } from "@mui/material";
-import OurCoreValues from "@/app/components/core-value";
 import Testimonials from "@/app/components/testimonials";
-import ContactAccordion from "@/app/components/accordion";
 import OurPromise from "@/app/components/promise";
+import StreamLineBuisness from "@/app/components/streamline-buisness";
+import WHYDWS from "@/app/components/why-DWS";
+import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 
 export async function generateMetadata() {
   const PageTitle = "Social Media Marketing";
@@ -15,9 +16,10 @@ const page = () => {
   return (
     <Box>
       <SocialMediaMarketing />
+      <StreamLineBuisness />
       <Testimonials />
-      <OurCoreValues />
-      <ContactAccordion />
+      <WHYDWS />
+      <MeticulouslyAccordion />
       <OurPromise />
     </Box>
   );

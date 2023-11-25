@@ -1,11 +1,12 @@
 import React from "react";
 import SearchEngineOptimization from "./template";
 import { convertSeo } from "@/app/utils/seo";
-import OurCoreValues from "@/app/components/core-value";
 import Testimonials from "@/app/components/testimonials";
-import ContactAccordion from "@/app/components/accordion";
 import OurPromise from "@/app/components/promise";
 import { Box } from "@mui/material";
+import StreamLineBuisness from "@/app/components/streamline-buisness";
+import WHYDWS from "@/app/components/why-DWS";
+import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 
 export async function generateMetadata() {
   const PageTitle = "Search Engine Optimization";
@@ -15,9 +16,10 @@ const page = () => {
   return (
     <Box>
       <SearchEngineOptimization />
+      <StreamLineBuisness />
       <Testimonials />
-      <OurCoreValues />
-      <ContactAccordion />
+      <WHYDWS />
+      <MeticulouslyAccordion />
       <OurPromise />
     </Box>
   );

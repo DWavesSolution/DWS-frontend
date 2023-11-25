@@ -379,26 +379,26 @@ export const Why_DWS = [
 export const Meticulously_Question = [
   {
     id: "01",
-    question: "High-Quality Deliverables",
+    question: "Ideation and Requirements Gathering",
     answer:
-      "Drawing upon extensive expertise in product design and development, coupled with a profound understanding of cutting-edge technologies and methodologies, we bring forth functional, visually appealing, and user-friendly digital products. Our commitment is to deliver solutions precisely tailored to meet your specific requirements.",
+      "We begin by gathering information and defining the project's scope, constructing roadmaps to achieve success by translating requirements into achievable milestones. In this initial stage, we focus on identifying the problem the product will address, understanding the target audience, and refining the product idea to meet their needs.",
   },
   {
     id: "02",
-    question: "Dedicated Support",
+    question: "Design & Development",
     answer:
-      "We offer continuous support and assistance for your customised product engineering projects, ensuring their success and seamless operation. Our commitment is to provide prompt and effective solutions that evolve alongside the needs of your business.",
+      "Ensuring a seamless design and development process, we initiate by gaining a comprehensive understanding of business goals. This involves creating wireframes, prototypes, and visual designs, alongside coding and integrating systems and technologies. Through continuous testing and refinement, we ensure that the product aligns precisely with your specifications.",
   },
   {
     id: "03",
-    question: "State-of-the-art Security Measures",
+    question: "Testing and Deployment",
     answer:
-      "Security is our top priority. We employ the latest measures and techniques, such as encryption, firewalls, and multi-factor authentication, to build robust products that safeguard applications and data from potential threats.",
+      "We conduct thorough QA testing, debugging, and potentially User Acceptance Testing (UAT) to ensure the product functions as intended and meets the specified requirements. Our QA team meticulously tests every aspect to ensure it meets high standards, promptly addressing any identified issues. The product is then deployed and configured for a smooth launch, making this stage critical and exciting for our team.",
   },
   {
     id: "04",
-    question: "Building Scalable Applications",
+    question: "Maintenance & Support",
     answer:
-      "Our proficient team offers efficient and effective scalable solutions, ensuring reliable performance that accommodates increasing user numbers, expands functionality, and handles additional data seamlessly.",
+      "We offer a comprehensive suite of services to ensure the enduring quality and utility of the product. This encompasses ongoing maintenance, bug fixing, upgrades, updates, user support, analytics, and monitoring. Continual analysis of the product's performance allows us to identify areas for improvement, ensuring its sustained functionality and relevance.",
   },
 ];
