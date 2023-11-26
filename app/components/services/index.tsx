@@ -8,14 +8,14 @@ import { Services_Card, Services_Images } from "@/app/static-data/data";
 const ServicesSection = () => {
   return (
     <Box sx={styles.MainBox}>
-      <Container>
+      <Container data-aos="fade-right" data-aos-duration={3000}>
         <Box sx={styles.servicesBox}>
           <Grid container>
-            <Grid data-aos="fade-right" item xs={12} sx={styles.ServicesText}>
+            <Grid item xs={12} sx={styles.ServicesText}>
               <Typography fontSize={"12px"}>Services</Typography>
             </Grid>
             <Grid container sx={styles.ServicesContent}>
-              <Grid data-aos="fade-right" item xs={12} sm={7}>
+              <Grid item xs={12} sm={7}>
                 <Typography
                   fontSize={{ xs: "28px", lg: "44px" }}
                   letterSpacing={"-1.14px"}
@@ -29,13 +29,7 @@ const ServicesSection = () => {
                   efficient, sustainable, and successful outcomes.
                 </Typography>
               </Grid>
-              <Grid
-                data-aos="fade-right"
-                item
-                xs={12}
-                sm={3}
-                sx={{ display: "flex" }}
-              >
+              <Grid item xs={12} sm={3} sx={{ display: "flex" }}>
                 {Services_Images.map((item, index) => {
                   return (
                     <Grid

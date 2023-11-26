@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const WorkWithUs = () => {
   return (
-    <Container>
+    <Container data-aos="fade-right" data-aos-duration={3000}>
       <Grid container sx={styles.MainBox}>
         <Grid item xs={12} sm={9} md={9.5} lg={10}>
           <Typography

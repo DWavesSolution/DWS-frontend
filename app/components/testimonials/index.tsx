@@ -11,7 +11,7 @@ import DWSImage from "../DWSImage";
 const Testimonials = () => {
   return (
     <Box sx={styles.MainBox}>
-      <Container>
+      <Container data-aos="fade-right" data-aos-duration={3000}>
         <Grid container>
           <Grid item xs={12} sm={12} md={12} lg={3}>
             <Typography

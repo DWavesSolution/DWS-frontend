@@ -13,7 +13,7 @@ import { styles } from "./styles";
 const ContactUs = () => {
   return (
     <Box sx={styles.MainBox}>
-      <Container>
+      <Container data-aos="fade-right" data-aos-duration={3000}>
         <Grid
           container
           id="contact"

@@ -11,7 +11,7 @@ const Scores = () => {
         margin: "50px 0px 50px 0px",
       }}
     >
-      <Container>
+      <Container data-aos="fade-right" data-aos-duration={3000}>
         <Grid
           container
           sx={{ display: "flex", justifyContent: "space-between" }}

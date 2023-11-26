@@ -11,7 +11,7 @@ import Services from "../../../public/service.webp";
 const OurPromise = () => {
   return (
     <Box sx={styles.MainBox}>
-      <Container>
+      <Container data-aos="fade-right" data-aos-duration={3000}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} md={4.5}>
             <Typography fontSize={"11px"} sx={styles.Heading}>

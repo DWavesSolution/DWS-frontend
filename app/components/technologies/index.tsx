@@ -14,7 +14,7 @@ const Technologies = () => {
 
   return (
     <Box sx={styles.MainBox}>
-      <Container>
+      <Container data-aos="fade-right" data-aos-duration={3000}>
         <Grid container>
           <Grid container item xs={12} sx={styles.TabGrid}>
             <Tabs
