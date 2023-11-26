@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 const Partners = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 3000,
       once: false,
     });
   }, []);
@@ -18,8 +18,8 @@ const Partners = () => {
     <Box sx={styles.MainBox}>
       <Container>
         <Grid
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos="fade-right"
+          data-aos-duration="3000"
           container
           sx={styles.MainGrid}
         >
