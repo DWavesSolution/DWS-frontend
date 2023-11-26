@@ -11,11 +11,23 @@ const ServicesSection = () => {
       <Container>
         <Box sx={styles.servicesBox}>
           <Grid container>
-            <Grid item xs={12} sm={12} md={12} lg={12} sx={styles.ServicesText}>
+            <Grid
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              item
+              xs={12}
+              sx={styles.ServicesText}
+            >
               <Typography fontSize={"12px"}>Services</Typography>
             </Grid>
             <Grid container sx={styles.ServicesContent}>
-              <Grid item xs={12} sm={7} lg={7}>
+              <Grid
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                item
+                xs={12}
+                sm={7}
+              >
                 <Typography
                   fontSize={{ xs: "28px", lg: "44px" }}
                   letterSpacing={"-1.14px"}
@@ -29,7 +41,14 @@ const ServicesSection = () => {
                   efficient, sustainable, and successful outcomes.
                 </Typography>
               </Grid>
-              <Grid item xs={12} sm={3} lg={3} sx={{ display: "flex" }}>
+              <Grid
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                item
+                xs={12}
+                sm={3}
+                sx={{ display: "flex" }}
+              >
                 {Services_Images.map((item, index) => {
                   return (
                     <Grid

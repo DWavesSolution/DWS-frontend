@@ -7,7 +7,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { styles } from "./styles";
 import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
@@ -19,7 +19,12 @@ const LandingBanner = () => {
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={"/home_landing.webp"}>
         <Container>
-          <Grid container sx={styles.MainGrid}>
+          <Grid
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            container
+            sx={styles.MainGrid}
+          >
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
                 <Typography

@@ -1,24 +1,16 @@
 "use client";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { styles } from "./styles";
 import DWSImage from "../DWSImage";
 import { Brand_Logo } from "@/app/static-data/data";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Partners = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 3000,
-      once: false,
-    });
-  }, []);
   return (
     <Box sx={styles.MainBox}>
       <Container>
         <Grid
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="3000"
           container
           sx={styles.MainGrid}
