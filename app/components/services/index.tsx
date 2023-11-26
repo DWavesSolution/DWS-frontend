@@ -7,8 +7,8 @@ import { Services_Card, Services_Images } from "@/app/static-data/data";
 
 const ServicesSection = () => {
   return (
-    <Box sx={styles.MainBox}>
-      <Container data-aos="fade-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+      <Container>
         <Box sx={styles.servicesBox}>
           <Grid container>
             <Grid item xs={12} sx={styles.ServicesText}>

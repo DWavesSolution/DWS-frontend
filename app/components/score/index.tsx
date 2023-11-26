@@ -6,12 +6,8 @@ import { Scores_Card } from "@/app/static-data/data";
 
 const Scores = () => {
   return (
-    <Box
-      sx={{
-        margin: "50px 0px 50px 0px",
-      }}
-    >
-      <Container data-aos="fade-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+      <Container>
         <Grid
           container
           sx={{ display: "flex", justifyContent: "space-between" }}

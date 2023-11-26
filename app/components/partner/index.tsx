@@ -7,8 +7,8 @@ import { Brand_Logo } from "@/app/static-data/data";
 
 const Partners = () => {
   return (
-    <Box sx={styles.MainBox}>
-      <Container data-aos="fade-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+      <Container>
         <Grid container sx={styles.MainGrid}>
           <Grid container item xs={12} sm={5.5} lg={6.5}>
             {Brand_Logo.map((item, index) => {

@@ -10,8 +10,8 @@ import { Testimonials_Data } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
 const Testimonials = () => {
   return (
-    <Box sx={styles.MainBox}>
-      <Container data-aos="fade-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+      <Container>
         <Grid container>
           <Grid item xs={12} sm={12} md={12} lg={3}>
             <Typography
