@@ -14,7 +14,7 @@ export default function RootLayout({
   useEffect(() => {
     AOS.init({
       duration: 3000,
-      once: false,
+      // once: false,
     });
   }, []);
   return (

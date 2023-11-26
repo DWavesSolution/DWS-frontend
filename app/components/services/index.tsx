@@ -11,23 +11,11 @@ const ServicesSection = () => {
       <Container>
         <Box sx={styles.servicesBox}>
           <Grid container>
-            <Grid
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              item
-              xs={12}
-              sx={styles.ServicesText}
-            >
+            <Grid data-aos="fade-right" item xs={12} sx={styles.ServicesText}>
               <Typography fontSize={"12px"}>Services</Typography>
             </Grid>
             <Grid container sx={styles.ServicesContent}>
-              <Grid
-                data-aos="fade-right"
-                data-aos-duration="3000"
-                item
-                xs={12}
-                sm={7}
-              >
+              <Grid data-aos="fade-right" item xs={12} sm={7}>
                 <Typography
                   fontSize={{ xs: "28px", lg: "44px" }}
                   letterSpacing={"-1.14px"}
@@ -43,7 +31,6 @@ const ServicesSection = () => {
               </Grid>
               <Grid
                 data-aos="fade-right"
-                data-aos-duration="3000"
                 item
                 xs={12}
                 sm={3}

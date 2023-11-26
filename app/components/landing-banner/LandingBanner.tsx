@@ -20,8 +20,7 @@ const LandingBanner = () => {
       <CardMedia sx={styles.CardMedia} image={"/home_landing.webp"}>
         <Container>
           <Grid
-            data-aos="fade-right"
-            data-aos-duration="3000"
+            data-aos="fade-up"
             container
             sx={styles.MainGrid}
           >
