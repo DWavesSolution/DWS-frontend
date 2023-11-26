@@ -7,24 +7,19 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { styles } from "./styles";
 import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "../DWSImage";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const LandingBanner = () => {
-    useEffect(() => {
-      Aos.init({ duration: 2000 });
-    }, []);
   return (
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={"/home_landing.webp"}>
         <Container>
-          <Grid data-aos="fade-up" container sx={styles.MainGrid}>
+          <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
                 <Typography

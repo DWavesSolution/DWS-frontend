@@ -1,15 +1,28 @@
 "use client";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { styles } from "./styles";
 import DWSImage from "../DWSImage";
-import BrandImage from "../../../public/nokia-home.webp";
 import { Brand_Logo } from "@/app/static-data/data";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Partners = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <Box sx={styles.MainBox}>
       <Container>
-        <Grid container sx={styles.MainGrid}>
+        <Grid
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          container
+          sx={styles.MainGrid}
+        >
           <Grid container item xs={12} sm={5.5} lg={6.5}>
             {Brand_Logo.map((item, index) => {
               return (
