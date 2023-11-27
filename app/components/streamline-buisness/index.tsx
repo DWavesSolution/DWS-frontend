@@ -4,26 +4,27 @@ import { styles } from "./styles";
 import DWSImage from "../DWSImage";
 import { Streamline_Data } from "@/app/static-data/data";
 
-const StreamLineBuisness = () => {
+const StreamLineBuisness = ({
+  title,
+  heading,
+  description,
+  DataMapping,
+}: any) => {
   return (
-    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="flip-right" data-aos-duration={3000}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
             <Typography fontSize={"11.2px"} sx={styles.MainTitle}>
-              DIGITAL PRODUCT DEVELOPMENT SERVICES
+              {title}
             </Typography>
             <Typography fontSize={"44px"} sx={styles.MainHeading}>
-              Streamline Your Business with Digital Product Development Services
+              {heading}
             </Typography>
-            <Typography fontSize={"14.4px"}>
-              {
-                "Acquire scalable digital solutions from a team of seasoned professionals specialising in Digital Wave Solutions. Our experts comprehensively manage the entire development lifecycle, encompassing ideation, prototyping, launch, and ongoing maintenance. Rest assured, you'll be equipped with the requisite tools and resources to thrive in the dynamic digital marketplace."
-              }
-            </Typography>
+            <Typography fontSize={"14.4px"}>{description}</Typography>
           </Grid>
           <Grid item xs={12} lg={11}>
-            {Streamline_Data.map((item, index) => {
+            {DataMapping.map((item: any, index: any) => {
               return (
                 <Card
                   sx={styles.MainCard}
@@ -36,7 +37,7 @@ const StreamLineBuisness = () => {
                     sx={styles.DisplayCenter}
                     flexDirection={(index + 1) % 2 == 0 ? "row" : "row-reverse"}
                   >
-                    <Grid item xs={12} md={5.6} sx={styles.DisplayCenter}>
+                    <Grid item xs={12} sm={5.6} sx={styles.DisplayCenter}>
                       <Box sx={{ height: 250, width: "80%" }}>
                         <DWSImage src={item.logo} alt={item.title} />
                       </Box>
@@ -45,7 +46,7 @@ const StreamLineBuisness = () => {
                       container
                       item
                       xs={12}
-                      md={5.9}
+                      sm={5.9}
                       sx={styles.DisplayCenter}
                     >
                       <Grid item xs={12}>
@@ -69,6 +70,7 @@ const StreamLineBuisness = () => {
                       </Grid>
                       <Grid item xs={12}>
                         <Typography
+                          fontSize={"14.4px"}
                           sx={{
                             color: "#555",
                             paddingTop: "15px",

@@ -22,5 +22,6 @@ export const styles = {
   DisplayCenter: {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
   },
 };

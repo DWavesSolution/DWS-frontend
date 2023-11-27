@@ -37,13 +37,14 @@ const SocialMediaMarketing = () => {
                   lineHeight={{ xs: "46px", sm: "62px" }}
                   sx={{ color: "#004ca2" }}
                 >
-                  Transform your business with expert staff augmentation
+                  Are Digital and Social Media Marketing Essential to Business?
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
                 <Typography sx={{ color: "black" }}>
-                  Get access to highly skilled and scalable professionals,
-                  tailored to meet your dynamic needs & requirements.
+                  {
+                    "Yes. Digital and social media marketing are critical components of online success. Although digital and social media marketing strategies vary, these marketing tactics share the same goals: to boost brand awareness and drive more revenue."
+                  }
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>

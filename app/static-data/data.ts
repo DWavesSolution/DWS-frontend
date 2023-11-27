@@ -350,6 +350,36 @@ export const Streamline_Data = [
   },
 ];
 
+export const Social_Media_Data = [
+  {
+    id: "01",
+    logo: "/mobile_app_dev.webp",
+    title: "Social Media Management Services",
+    description:
+      "We offer full-service social media management services. We transform your social media presence with high-quality content, daily activity, engagement-monitoring and increased followers. In order for followers to convert into customers, they need to become more familiar with your brand, see your content often and gain value from it. We create content for our clients that meets those three criteria. This service will attract targeted social media users to follow you, engage with your content and convert into loyal customers, all while telling your brand’s story throughout.",
+  },
+  {
+    id: "02",
+    logo: "/pic2.webp",
+    title: "Social Media Advertising Services",
+    description:
+      "Our social media advertising services have been tested and proven to accelerate growth and pair well with our social media management service. Therefore, by using LYFE Marketing to create social ads, our clients usually see more results at lower costs. While many of our client utilise this service for Facebook ads, we can also perform Instagram ads, LinkedIn ads and other paid social ads. This service uses your advertising budget to extend your reach and send targeted users to your website or landing page while tracking conversions and metrics that matter.",
+  },
+  {
+    id: "03",
+    logo: "/new_ui_ux.webp",
+    title: "Email & Sms Marketing Services",
+    description:
+      "Email marketing is not dead. In fact, for every $1 spent on email marketing, the average ROI is $36. Your customers check their email every day. Our email marketing services will help you stay top of mind and speed up your sales cycle, all while providing value to your audience. Whether we create weekly newsletters to send to your subscribers, set up a drip sequence to send the right automated emails at the right time, or help you follow up with your subscribers via text message, you can expect quality content that moves prospects through your sales funnel to buy. ",
+  },
+  {
+    id: "04",
+    logo: "/new_blockchain.webp",
+    title: "Managemnet Services",
+    description:
+      "When someone types in the product or service you offer into the Google search bar, does your website appear? If not, you’re probably not implementing PPC! PPC stands for pay per click and it is synonymous with SEM or search engine marketing. You can get immediate traffic to your website from search engines like Google, Bing, and Amazon by paying those search engines directly to place your website at the top of the search results for relevant search queries. Our PPC management services handle those ads for you from top to bottom so you can just sit back and watch the sales roll in.",
+  },
+];
 export const Why_DWS = [
   {
     id: "01",
@@ -400,5 +430,73 @@ export const Meticulously_Question = [
     question: "Maintenance & Support",
     answer:
       "We offer a comprehensive suite of services to ensure the enduring quality and utility of the product. This encompasses ongoing maintenance, bug fixing, upgrades, updates, user support, analytics, and monitoring. Continual analysis of the product's performance allows us to identify areas for improvement, ensuring its sustained functionality and relevance.",
+  },
+];
+
+export const Subscription_Data = [
+  {
+    id: 1,
+    type: "Basic",
+    price: "$200",
+    content: [
+      { point: "Social Channels(Facebook, Instagram)" },
+      { point: "Social Media Audit" },
+      { point: "Set Up and Optimization Of Business Page/Profile" },
+      { point: "Page Management" },
+      { point: "Weekly 3 Posts" },
+      { point: "Content Calendar" },
+      { point: "Content Creation" },
+      { point: "Hashtag Optimization" },
+      { point: "Advertisment Campaigns ( Ads Payment Not Included ) Upto $50" },
+      { point: "Monthly Reporting & Goal Evaluation" },
+    ],
+  },
+  {
+    id: 2,
+    type: "Standard",
+    price: "$300",
+    content: [
+      { point: "Social Channels(Facebook, Instagram, Twitter)" },
+      { point: "Social Media Audit" },
+      { point: "Set Up and Optimization Of Business Page/Profile" },
+      { point: "Page Management" },
+      { point: "Weekly 4 Posts" },
+      { point: "Content Calendar" },
+      { point: "Content Creation" },
+      { point: "Hashtag Optimization" },
+      { point: "Image Alt Text" },
+      { point: "Community Management" },
+      { point: "Social Media Engagement Campaigns" },
+      {
+        point: "Advertisment Campaigns ( Ads Payment Not Included ) Upto $100",
+      },
+      { point: "Monthly Reporting & Goal Evaluation" },
+    ],
+  },
+  {
+    id: 3,
+    type: "Enterprise",
+    price: "$500",
+    content: [
+      {
+        point:
+          "Social Channels (Facebook, Instagram, Twitter,LinkedIn, Pinterest )",
+      },
+      { point: "Social Media Audit" },
+      { point: "Set Up and Optimization Of Business Page/Profile" },
+      { point: "Page Management" },
+      { point: "Weekly 5 Posts" },
+      { point: "Content Calendar" },
+      { point: "Content Creation" },
+      { point: "Hashtag Optimization" },
+      { point: "Image Alt Text" },
+      { point: "Community Management" },
+      { point: "Reputation Management" },
+      { point: "Social Media Engagement Campaigns" },
+      {
+        point: "Advertisment Campaigns ( Ads Payment Not Included ) Upto $200",
+      },
+      { point: "Monthly Reporting & Goal Evaluation" },
+    ],
   },
 ];
