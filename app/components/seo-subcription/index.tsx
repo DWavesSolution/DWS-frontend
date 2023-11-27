@@ -6,12 +6,18 @@ import { Subscription_Data } from "@/app/static-data/data";
 import CheckIcon from "@mui/icons-material/Check";
 const SeoSubcription = () => {
   return (
-    <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="flip-down" data-aos-duration={3000}>
       <Container>
         <Grid container gap={2} sx={styles.MainGrid}>
           {Subscription_Data.map((item, index) => {
             return (
-              <Grid item xs={12} sm={3.8} key={`${item?.id}-${index}`}>
+              <Grid
+                item
+                xs={12}
+                sm={3.8}
+                key={`${item?.id}-${index}`}
+                sx={styles.PricingGrid}
+              >
                 <Typography fontSize={"30px"}>{item.type}</Typography>
                 <Typography fontSize={"50px"}>
                   {item.price}

@@ -1,7 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box, Drawer, Grid, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Drawer,
+  Grid,
+  IconButton,
+  Typography,
+  useScrollTrigger,
+} from "@mui/material";
 import DWSImage from "../DWSImage";
 import CloseIcon from "@mui/icons-material/Close";
 import HeaderLogo from "../../../public/headerLogo.png";
@@ -22,9 +29,16 @@ const ResponsiveHeader = () => {
   const HomePageRoute = () => {
     route.push("/");
   };
+  const ChangeNavBarColor = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 10,
+  });
   return (
-    <div>
-      <MenuIcon sx={{ color: "black" }} onClick={onClickDrawer} />
+    <Box>
+      <MenuIcon
+        sx={{ color: ChangeNavBarColor ? "black" : "white" }}
+        onClick={onClickDrawer}
+      />
       <Drawer
         anchor="right"
         open={opendrawer}
@@ -115,7 +129,7 @@ const ResponsiveHeader = () => {
           </Grid>
         </Grid>
       </Drawer>
-    </div>
+    </Box>
   );
 };
 

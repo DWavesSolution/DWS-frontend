@@ -11,4 +11,9 @@ export const styles = {
     justifyContent: "space-between",
     padding: "80px 0px",
   },
+  PricingGrid: {
+    borderRadius: "24px",
+    padding: "20px",
+    boxShadow: "0px 0px 18px #26315b, 10px 0px 30px #127a88",
+  },
 };

@@ -1,6 +1,6 @@
 export const styles = {
   MainBox: {
-    margin: "50px 0px 50px 0px",
+    margin: "0px 0px 50px 0px",
   },
   SwiperBox: {
     backgroundColor: "#004ca2",

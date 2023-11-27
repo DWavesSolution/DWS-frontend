@@ -2,7 +2,6 @@ import { Box, Card, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import DWSImage from "../DWSImage";
-import { Streamline_Data } from "@/app/static-data/data";
 
 const StreamLineBuisness = ({
   title,
