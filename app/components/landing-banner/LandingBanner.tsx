@@ -7,7 +7,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import { styles } from "./styles";
 import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
@@ -18,7 +18,7 @@ const LandingBanner = () => {
   return (
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={"/home_landing.webp"}>
-        <Container data-aos="fade-right" data-aos-duration={3000}>
+        <Container data-aos="fade-left" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
@@ -52,25 +52,26 @@ const LandingBanner = () => {
                   </Button>
                 </ScrollLink>
               </Grid>
+              <Grid container sx={{ marginTop: "50px", display: "flex" }}>
+                {socialIcons.map((item, index) => {
+                  return (
+                    <Grid
+                      item
+                      xs={3}
+                      sm={1}
+                      sx={{ marginBottom: "20px" }}
+                      key={`${item?.id}-${index}`}
+                    >
+                      <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
+                        <Link href={item.link} target="blank">
+                          <DWSImage src={item.logo} alt="Social Icons" />
+                        </Link>
+                      </Box>
+                    </Grid>
+                  );
+                })}
+              </Grid>
             </Grid>
-          </Grid>
-          <Grid container sx={{ marginTop: "50px" }}>
-            {socialIcons.map((item, index) => {
-              return (
-                <Grid
-                  item
-                  xs={12}
-                  sx={{ marginBottom: "20px" }}
-                  key={`${item?.id}-${index}`}
-                >
-                  <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
-                    <Link href={item.link} target="blank">
-                      <DWSImage src={item.logo} alt="Social Icons" />
-                    </Link>
-                  </Box>
-                </Grid>
-              );
-            })}
           </Grid>
         </Container>
       </CardMedia>

@@ -10,6 +10,7 @@ import {
   Toolbar,
   Typography,
   useMediaQuery,
+  useScrollTrigger,
   useTheme,
 } from "@mui/material";
 import { HeaderData } from "@/app/static-data/data";
@@ -40,8 +41,19 @@ const Header = () => {
   const HomePageRoute = () => {
     route.push("/");
   };
+  const ChangeNavBarColor = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 10,
+  });
   return (
-    <AppBar elevation={0} sx={styles.Header}>
+    <AppBar
+      elevation={0}
+      sx={{
+        backdropFilter: ChangeNavBarColor ? "blur(30px)" : null,
+        background: ChangeNavBarColor ? "hsla(0,0%,99%,.365)" : "transparent",
+        borderBottom: ChangeNavBarColor ? ".3px solid #fff" : null,
+      }}
+    >
       <Toolbar>
         <Container>
           <Grid container sx={styles.MainGrid}>

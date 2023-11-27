@@ -12,7 +12,7 @@ import { styles } from "./styles";
 
 const ContactUs = () => {
   return (
-    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
       <Container>
         <Grid
           container

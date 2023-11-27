@@ -1,8 +1,7 @@
 export const styles = {
   Header: {
-    backdropFilter: "blur(30px)",
-    background: "hsla(0,0%,99%,.365)",
-    borderBottom: ".3px solid #fff",
+    // background: "hsla(0,0%,99%,.365)",
+    // borderBottom: ".3px solid #fff",
   },
   MainGrid: {
     display: "flex",

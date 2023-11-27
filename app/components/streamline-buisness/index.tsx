@@ -6,7 +6,7 @@ import { Streamline_Data } from "@/app/static-data/data";
 
 const StreamLineBuisness = () => {
   return (
-    <Box sx={styles.MainBox}>
+    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>

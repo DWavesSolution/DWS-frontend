@@ -32,14 +32,7 @@ const ServicesSection = () => {
               <Grid item xs={12} sm={3} sx={{ display: "flex" }}>
                 {Services_Images.map((item, index) => {
                   return (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={12}
-                      md={12}
-                      lg={3}
-                      key={`${item?.id}-${index}`}
-                    >
+                    <Grid item xs={12} lg={3} key={`${item?.id}-${index}`}>
                       <Box sx={{ weight: 55, height: 55 }}>
                         <DWSImage
                           src={item.logo}
