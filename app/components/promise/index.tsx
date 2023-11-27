@@ -64,7 +64,7 @@ const OurPromise = () => {
                 Reliable Delivery
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={6} style={styles.GridSec4}>
+            <Grid item xs={12} sm={6} sx={styles.GridSec4}>
               <Box sx={styles.ImagesSize}>
                 <DWSImage
                   src={Verified}
