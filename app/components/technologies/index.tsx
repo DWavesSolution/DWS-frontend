@@ -39,7 +39,7 @@ const Technologies = () => {
                     opacity:
                       selectedTab === 0 || selectedTab === tabIndex + 1
                         ? 1
-                        : 0.1,
+                        : 0.3,
                   }}
                   key={`${item?.id}-${logoIndex}`}
                 >
