@@ -18,7 +18,12 @@ const MeticulouslyAccordion = () => {
     SetExpended(true);
   };
   return (
-    <Grid container sx={styles.container}>
+    <Grid
+      container
+      sx={styles.container}
+      data-aos="fade-right"
+      data-aos-duration={3000}
+    >
       <Container sx={{ display: "flex", justifyContent: "center" }}>
         <Grid container item xs={12} md={9} sx={styles.box}>
           <Grid item xs={12} lg={10}>

@@ -6,7 +6,7 @@ import { Why_DWS } from "@/app/static-data/data";
 
 const WHYDWS = () => {
   return (
-    <Box sx={styles.MainBox}>
+    <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
       <Container sx={styles.Container}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} lg={8} sx={{ marginBottom: "20px" }}>
