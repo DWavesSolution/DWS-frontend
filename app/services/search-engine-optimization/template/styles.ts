@@ -6,7 +6,7 @@ export const styles = {
   },
   Card: {
     display: "flex",
-    height: "100vh",
+    // height: "100vh",
     border: "0px",
     marginBottom: "50px",
   },
