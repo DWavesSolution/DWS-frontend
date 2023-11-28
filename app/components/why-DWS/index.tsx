@@ -2,16 +2,15 @@
 import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
-import { Why_DWS } from "@/app/static-data/data";
 
-const WHYDWS = () => {
+const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
   return (
     <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
       <Container sx={styles.Container}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} lg={8} sx={{ marginBottom: "20px" }}>
             <Typography fontSize={"11.2px"} sx={{ color: "#6f6f6f" }}>
-              Why choose Digital Wave Solution
+              {title}
             </Typography>
             <Typography
               fontSize={{ xs: "38px", sm: "44px" }}
@@ -21,16 +20,14 @@ const WHYDWS = () => {
                 lineHeight: "54px",
               }}
             >
-              {"Experience the Distinction with Digital Wave Solutions"}
+              {heading}
             </Typography>
             <Typography fontSize={"16px"} sx={{ color: "#707070" }}>
-              {
-                "We uphold the belief that each business merits a solution crafted to align with its distinctive needs and goals. Employing our tailored approach and expertise, we deliver customised product development services accompanied by dedicated support."
-              }
+              {description}
             </Typography>
           </Grid>
           <Grid container item xs={12} gap={2} sx={styles.CardMainGrid}>
-            {Why_DWS.map((item, index) => {
+            {DataMapping.map((item: any, index: any) => {
               return (
                 <Grid
                   item

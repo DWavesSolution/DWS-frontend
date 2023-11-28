@@ -7,7 +7,7 @@ import OurPromise from "@/app/components/promise";
 import StreamLineBuisness from "@/app/components/streamline-buisness";
 import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
-import { Streamline_Data } from "@/app/static-data/data";
+import { Streamline_Data, Why_DWS } from "@/app/static-data/data";
 
 export async function generateMetadata() {
   const PageTitle = "Digital Product Development";
@@ -26,7 +26,12 @@ const page = () => {
         DataMapping={Streamline_Data}
       />
       <Testimonials />
-      <WHYDWS />
+      <WHYDWS
+        title="Why choose Digital Wave Solution"
+        heading="Experience the Distinction with Digital Wave Solutions"
+        description="We uphold the belief that each business merits a solution crafted to align with its distinctive needs and goals. Employing our tailored approach and expertise, we deliver customised product development services accompanied by dedicated support."
+        DataMapping={Why_DWS}
+      />
       <MeticulouslyAccordion />
       <OurPromise />
     </Box>

@@ -8,6 +8,7 @@ export const styles = {
     display: "flex",
     height: "100vh",
     border: "0px",
+    marginBottom: "50px",
   },
   CardMedia: {
     height: "100%",

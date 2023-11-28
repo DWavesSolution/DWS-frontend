@@ -32,20 +32,24 @@ const SearchEngineOptimization = () => {
               </Grid>
               <Grid item xs={12} lg={9}>
                 <Typography
-                  fontSize={{ xs: "36px", sm: "52px" }}
+                  fontSize={"36px"}
                   fontWeight={550}
-                  lineHeight={{ xs: "46px", sm: "62px" }}
+                  lineHeight={{ xs: "46px" }}
                   sx={{ color: "#004ca2" }}
                 >
-                  Achieve measurable & sustainable business outcomes with data
-                  analytics
+                  Welcome to Digital Waves Solutions SEO solutions.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
                 <Typography sx={{ color: "black" }}>
-                  Leverage data analytics solutions to get actionable insights
-                  and make informed decisions to drive your business forward
-                  with tangible results.
+                  In the digital landscape, where visibility is key, we
+                  specialize in optimizing your website to not only rank higher
+                  on search engines but also to outshine your competitors. Our
+                  team of seasoned SEO experts is dedicated to understanding
+                  your unique business goals and tailoring our services to meet
+                  your specific needs. With a data-driven approach and a focus
+                  on sustainable results, we ensure that your online presence
+                  not only improves but thrives.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>

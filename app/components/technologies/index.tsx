@@ -13,7 +13,7 @@ const Technologies = () => {
   };
 
   return (
-    <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade down" data-aos-duration={3000}>
       <Container>
         <Grid container>
           <Grid container item xs={12} sx={styles.TabGrid}>
@@ -32,23 +32,30 @@ const Technologies = () => {
           <Grid container item xs={12} sx={styles.TabsImages}>
             {Technologies_Tabs.flatMap((tab, tabIndex) =>
               tab.content.map((item: any, logoIndex) => (
-                <Box
-                  sx={{
-                    height: 100,
-                    width: 100,
-                    opacity:
-                      selectedTab === 0 || selectedTab === tabIndex + 1
-                        ? 1
-                        : 0.3,
-                  }}
+                <Grid
+                  item
+                  xs={6}
+                  sm={2}
+                  sx={{ display: "flex", justifyContent: "center" }}
                   key={`${item?.id}-${logoIndex}`}
                 >
-                  <DWSImage
-                    src={item.logo}
-                    alt={item.title}
-                    style={{ objectFit: "contain" }}
-                  />
-                </Box>
+                  <Box
+                    sx={{
+                      height: 100,
+                      width: 100,
+                      opacity:
+                        selectedTab === 0 || selectedTab === tabIndex + 1
+                          ? 1
+                          : 0.3,
+                    }}
+                  >
+                    <DWSImage
+                      src={item.logo}
+                      alt={item.title}
+                      style={{ objectFit: "contain" }}
+                    />
+                  </Box>
+                </Grid>
               ))
             )}
           </Grid>

@@ -200,35 +200,79 @@ export const Testimonials_Data = [
 export const Technologies_Tabs = [
   {
     TechName: "BackEnd",
-    content: [{ title: "Node js", logo: "/node-js.webp" }],
+    content: [
+      { title: "Node Js", logo: "/node-js.webp" },
+      { title: "Ruby on Rail", logo: "/ruby-on-rails.webp" },
+      { title: "Django", logo: "/django.webp" },
+      { title: "Laravel", logo: "/laravel.webp" },
+      { title: "SpringBoot", logo: "/java-spring-boot.webp" },
+    ],
   },
   {
     TechName: "FrontEnd",
-    content: [{ title: "Next js", logo: "/next-js.webp" }],
+    content: [
+      { title: "Next js", logo: "/next-js.webp" },
+      { title: "Angular", logo: "/angular.webp" },
+      { title: "Ember", logo: "/ember.webp" },
+      { title: "Vue", logo: "/vue.webp" },
+      { title: "Electron", logo: "/electron.webp" },
+      { title: "React Js", logo: "/react.webp" },
+    ],
   },
   {
     TechName: "Mobile",
-    content: [{ title: "React Native", logo: "/react.webp" }],
+    content: [
+      { title: "React Native", logo: "/react.webp" },
+      { title: "Andrid", logo: "/andriod.webp" },
+      { title: "Swift", logo: "/swift.webp" },
+      { title: "Flutter", logo: "/flutter.webp" },
+    ],
   },
   {
     TechName: "Database",
-    content: [{ title: "MongoDB", logo: "/mongodb.webp" }],
+    content: [
+      { title: "MongoDB", logo: "/mongodb.webp" },
+      {
+        title: "My SQL",
+        logo: "/png-transparent-mysql-php-database-javascript-ajax-carnifex-blue-text-logo.png",
+      },
+    ],
   },
   {
     TechName: "Integrations",
-    content: [{ title: "Stripe", logo: "/stripe.webp" }],
+    content: [
+      { title: "Stripe", logo: "/stripe.webp" },
+      { title: "Sendgrid", logo: "/sendgrid.webp" },
+      { title: "Twilio", logo: "/twilio.webp" },
+      { title: "DigiFied", logo: "/digified.webp" },
+      { title: "Pychain", logo: "/pychain.webp" },
+    ],
   },
   {
     TechName: "ML/AI",
-    content: [{ title: "Apache Mahout", logo: "/apache-mahout.webp" }],
+    content: [
+      { title: "Apache Mahout", logo: "/apache-mahout.webp" },
+      { title: "Keras", logo: "/keras.webp" },
+      { title: "Tensor Flow", logo: "/tensorflow.webp" },
+      { title: "Pytorch", logo: "/pytorch.webp" },
+    ],
   },
   {
     TechName: "Tools",
-    content: [{ title: "Figma", logo: "/figma.webp" }],
+    content: [
+      { title: "Figma", logo: "/figma.webp" },
+      { title: "Adobe XD", logo: "/xd.webp" },
+      { title: "Roll Bar", logo: "/rollbar.webp" },
+      { title: "FireBase", logo: "/firebase.webp" },
+      { title: "ELK Stack", logo: "/elk.webp" },
+    ],
   },
   {
     TechName: "Others",
-    content: [{ title: "Rasberry Pi", logo: "/raspberry-pi.webp" }],
+    content: [
+      { title: "Rasberry Pi", logo: "/raspberry-pi.webp" },
+      { title: "HyberLedger", logo: "/hyberledger-fabric.webp" },
+    ],
   },
 ];
 export const Our_Vision = [
@@ -380,6 +424,52 @@ export const Social_Media_Data = [
       "When someone types in the product or service you offer into the Google search bar, does your website appear? If not, you’re probably not implementing PPC! PPC stands for pay per click and it is synonymous with SEM or search engine marketing. You can get immediate traffic to your website from search engines like Google, Bing, and Amazon by paying those search engines directly to place your website at the top of the search results for relevant search queries. Our PPC management services handle those ads for you from top to bottom so you can just sit back and watch the sales roll in.",
   },
 ];
+export const SEO_Data = [
+  {
+    id: "01",
+    title: "Essential SEO Package",
+    content: [
+      { point: "Keyword Research and Analysis" },
+      { point: "On-Page Optimization" },
+      { point: "Monthly Performance Reports" },
+      { point: "Competitor Analysis" },
+      { point: "Google Analytics Integration" },
+    ],
+  },
+  {
+    id: "02",
+    title: "Advanced SEO Package",
+    content: [
+      { point: "Everything in the Essential Package, plus..." },
+      { point: "Off-Page Optimization (Link Building)" },
+      { point: "Content Creation and Optimization" },
+      { point: "Social Media Integration" },
+      { point: "Local SEO Optimization" },
+    ],
+  },
+  {
+    id: "03",
+    title: "Premium SEO Package",
+    content: [
+      { point: "Everything in the Advanced Package, plus..." },
+      { point: "Advanced Analytics and Conversion Tracking" },
+      { point: "Mobile Optimization" },
+      { point: "Monthly Strategy Consultation" },
+      { point: "Dedicated Account Manager" },
+    ],
+  },
+  {
+    id: "04",
+    title: "Custom SEO Solutions",
+    content: [
+      { point: "Keyword Research and Analysis" },
+      { point: "Tailored solutions for businesses with unique needs" },
+      { point: "Comprehensive website audit and strategy development" },
+      { point: "Scalable services to accommodate growth" },
+      { point: "Custom pricing based on specific requirements" },
+    ],
+  },
+];
 export const Why_DWS = [
   {
     id: "01",
@@ -404,6 +494,32 @@ export const Why_DWS = [
     title: "Building Scalable Applications",
     description:
       "Our proficient team offers efficient and effective scalable solutions, ensuring reliable performance that accommodates increasing user numbers, expands functionality, and handles additional data seamlessly.",
+  },
+];
+export const Why_SEO = [
+  {
+    id: "01",
+    title: "Proven Track Record",
+    description:
+      "Our results speak for themselves. We've helped businesses across industries achieve higher rankings, increased organic traffic, and improved conversion rates.",
+  },
+  {
+    id: "02",
+    title: "Customized Strategies",
+    description:
+      "One size does not fit all. We design personalized SEO strategies that align with your business objectives, ensuring maximum impact and long-term success.",
+  },
+  {
+    id: "03",
+    title: "Transparent Reporting",
+    description:
+      "Stay informed about the progress of your SEO campaign with regular, transparent reports. We believe in keeping our clients in the loop every step of the way.",
+  },
+  {
+    id: "04",
+    title: "Dedicated Support",
+    description:
+      "Your success is our priority. Our dedicated support team is always ready to address your queries and provide expert guidance.",
   },
 ];
 export const Meticulously_Question = [

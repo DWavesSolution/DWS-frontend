@@ -4,10 +4,10 @@ import { convertSeo } from "@/app/utils/seo";
 import Testimonials from "@/app/components/testimonials";
 import OurPromise from "@/app/components/promise";
 import { Box } from "@mui/material";
-import StreamLineBuisness from "@/app/components/streamline-buisness";
 import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
-import { Social_Media_Data } from "@/app/static-data/data";
+import SeoPackages from "@/app/components/seo-packages";
+import { Why_SEO } from "@/app/static-data/data";
 
 export async function generateMetadata() {
   const PageTitle = "Search Engine Optimization";
@@ -17,14 +17,14 @@ const page = () => {
   return (
     <Box>
       <SearchEngineOptimization />
-      <StreamLineBuisness
-        title="not available"
-        heading="not available"
-        description={"not available"}
-        DataMapping={Social_Media_Data}
-      />
+      <SeoPackages />
       <Testimonials />
-      <WHYDWS />
+      <WHYDWS
+        title="Why Choose Digital Wave Solution for SEO Services?"
+        heading=""
+        description=""
+        DataMapping={Why_SEO}
+      />
       <MeticulouslyAccordion />
       <OurPromise />
     </Box>

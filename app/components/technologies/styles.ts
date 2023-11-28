@@ -5,7 +5,6 @@ export const styles = {
   TabGrid: { display: "flex", justifyContent: "center" },
   TabsImages: {
     display: "flex",
-    justifyContent: "space-evenly",
     alignItems: "center",
   },
 };
