@@ -6,7 +6,7 @@ import { SEO_Data } from "@/app/static-data/data";
 import CheckIcon from "@mui/icons-material/Check";
 const SeoPackages = () => {
   return (
-    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
       <Container>
         <Grid item xs={12} sm={6} sx={{ paddingTop: "80px" }}>
           <Typography fontSize={"11.2px"} sx={styles.MainTitle}>

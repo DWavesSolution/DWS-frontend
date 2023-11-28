@@ -16,9 +16,9 @@ import DWSImage from "@/app/components/DWSImage";
 
 const DigitalProductDevelopment = () => {
   return (
-    <Box sx={styles.Card} data-aos="fade-left" data-aos-duration={3000}>
+    <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={""}>
-        <Container>
+        <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
               <Grid item xs={12}>
