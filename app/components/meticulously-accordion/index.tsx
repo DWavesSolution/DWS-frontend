@@ -21,7 +21,7 @@ const MeticulouslyAccordion = () => {
     <Grid
       container
       sx={styles.container}
-      data-aos="fade-right"
+      data-aos="flip-left"
       data-aos-duration={3000}
     >
       <Container sx={{ display: "flex", justifyContent: "center" }}>

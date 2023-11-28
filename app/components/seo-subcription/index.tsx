@@ -6,7 +6,7 @@ import { Subscription_Data } from "@/app/static-data/data";
 import CheckIcon from "@mui/icons-material/Check";
 const SeoSubcription = () => {
   return (
-    <Box sx={styles.MainBox} data-aos="flip-down" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
       <Container>
         <Grid container gap={2} sx={styles.MainGrid}>
           {Subscription_Data.map((item, index) => {
