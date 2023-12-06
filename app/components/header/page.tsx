@@ -27,17 +27,17 @@ const Header = () => {
   const route = useRouter();
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const [showModal, setShowModal] = useState(false);
-  const handleClick = (index: number) => () => {
-    if (index == 1) {
-      setShowModal(true);
-      return;
-    }
-    setShowModal(false);
-  };
-  const handlePopoverClose = () => {
-    setShowModal(false);
-  };
+  // const [showModal, setShowModal] = useState(false);
+  // const handleClick = (index: number) => () => {
+  //   if (index == 1) {
+  //     setShowModal(true);
+  //     return;
+  //   }
+  //   setShowModal(false);
+  // };
+  // const handlePopoverClose = () => {
+  //   setShowModal(false);
+  // };
   const HomePageRoute = () => {
     route.push("/");
   };
@@ -52,6 +52,7 @@ const Header = () => {
         backdropFilter: ChangeNavBarColor ? "blur(30px)" : null,
         background: ChangeNavBarColor ? "hsla(0,0%,99%,.365)" : "transparent",
         borderBottom: ChangeNavBarColor ? ".3px solid #fff" : null,
+        color: ChangeNavBarColor ? "black" : "white",
       }}
     >
       <Toolbar>
@@ -70,10 +71,10 @@ const Header = () => {
               <ResponsiveHeader />
             ) : (
               <>
-                <Grid item xs={12} sm={12} md={4} lg={3} sx={styles.headerdata}>
+                <Grid item xs={12} md={4} lg={3} sx={styles.headerdata}>
                   {HeaderData.map((item, index) => (
                     <Box key={`${item?.id}-${index}`}>
-                      {item.name === "Services" ? (
+                      {/* {item.name === "Services" ? (
                         <Box
                           sx={{
                             display: "flex",
@@ -86,18 +87,21 @@ const Header = () => {
                             onMouseEnter={handleClick(index)}
                           />
                         </Box>
-                      ) : (
-                        <Link
-                          href={item.link}
-                          style={{ textDecoration: "none", color: "black" }}
-                        >
-                          <Typography>{item.name}</Typography>
-                        </Link>
-                      )}
+                      ) : ( */}
+                      <Link
+                        href={item.link}
+                        style={{
+                          textDecoration: "none",
+                          color: ChangeNavBarColor ? "black" : "white",
+                        }}
+                      >
+                        <Typography>{item.name}</Typography>
+                      </Link>
+                      {/* )} */}
                     </Box>
                   ))}
                 </Grid>
-                <Grid item xs={12} sm={12} md={2.5} sx={styles.ButtonGrid}>
+                <Grid item xs={12} md={2.5} sx={styles.ButtonGrid}>
                   <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
                     <Button
                       sx={styles.headerButton}
@@ -112,14 +116,14 @@ const Header = () => {
           </Grid>
         </Container>
       </Toolbar>
-      {showModal && (
+      {/* {showModal && (
         <CustomMenu
           onMouseLeave={handlePopoverClose}
           hideModel={() => {
             setShowModal(false);
           }}
         />
-      )}
+      )} */}
     </AppBar>
   );
 };

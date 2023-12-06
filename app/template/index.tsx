@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <Box sx={styles.MainBox}>
       <LandingBanner />
-      <Partners />
+      {/* <Partners /> */}
       <ServicesSection />
       <Scores />
       <WorkWithUs />

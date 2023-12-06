@@ -1,7 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box, Drawer, Grid, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Drawer,
+  Grid,
+  IconButton,
+  Typography,
+  useScrollTrigger,
+} from "@mui/material";
 import DWSImage from "../DWSImage";
 import CloseIcon from "@mui/icons-material/Close";
 import HeaderLogo from "../../../public/headerLogo.png";
@@ -22,9 +29,16 @@ const ResponsiveHeader = () => {
   const HomePageRoute = () => {
     route.push("/");
   };
+  const ChangeNavBarColor = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 10,
+  });
   return (
     <Box>
-      <MenuIcon onClick={onClickDrawer} sx={{ color: "black" }} />
+      <MenuIcon
+        onClick={onClickDrawer}
+        sx={{ color: ChangeNavBarColor ? "black" : "white" }}
+      />
       <Drawer
         anchor="right"
         open={opendrawer}
@@ -100,7 +114,7 @@ const ResponsiveHeader = () => {
               </Grid>
             );
           })}
-          <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
+          {/* <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
               href={"/portfolio"}
               style={{
@@ -112,7 +126,7 @@ const ResponsiveHeader = () => {
                 Portfolio
               </Typography>
             </Link>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Drawer>
     </Box>
