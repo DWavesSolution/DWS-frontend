@@ -14,13 +14,19 @@ const StreamLineBuisness = ({
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>
-            <Typography fontSize={"11.2px"} sx={styles.MainTitle}>
-              {title}
-            </Typography>
-            <Typography fontSize={"44px"} sx={styles.MainHeading}>
-              {heading}
-            </Typography>
-            <Typography fontSize={"14.4px"}>{description}</Typography>
+            {title && (
+              <Typography fontSize={"11.2px"} sx={styles.MainTitle}>
+                {title}
+              </Typography>
+            )}
+            {heading && (
+              <Typography fontSize={"44px"} sx={styles.MainHeading}>
+                {heading}
+              </Typography>
+            )}
+            {description && (
+              <Typography fontSize={"14.4px"}>{description}</Typography>
+            )}
           </Grid>
           <Grid item xs={12} lg={11}>
             {DataMapping.map((item: any, index: any) => {

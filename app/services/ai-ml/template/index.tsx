@@ -37,15 +37,17 @@ const AIML = () => {
                   lineHeight={{ xs: "46px", sm: "62px" }}
                   sx={{ color: "#004ca2" }}
                 >
-                  Discover the power of digital strategy consultation, tailored
-                  to your needs
+                  Digital Waves Solution, where innovation meets intelligence!
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
                 <Typography sx={{ color: "black" }}>
-                  Get personalized guidance, data-driven insights, and
-                  strategies to leverage digital technologies for your business
-                  growth, improved online presence, and customer engagement.
+                  As a leading provider of artificial intelligence and machine
+                  learning services, we are dedicated to transforming your
+                  business through cutting-edge technology solutions. We harness
+                  the power of AI and ML to drive efficiency, enhance
+                  decision-making, and unlock new possibilities for your
+                  organisation.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>

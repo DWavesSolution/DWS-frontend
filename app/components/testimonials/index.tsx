@@ -13,19 +13,27 @@ const Testimonials = () => {
     <Box sx={styles.MainBox} data-aos="flip-left" data-aos-duration={3000}>
       <Container>
         <Grid container>
-          <Grid item xs={12} sm={12} md={12} lg={3}>
+          <Grid item xs={12} lg={5}>
             <Typography
               fontSize={"44px"}
-              fontWeight={500}
-              sx={{ paddingBottom: "16px", color: "#004ca2" }}
+              fontWeight={600}
+              sx={{ marginBottom: "10px", color: "#004ca2" }}
             >
-              Client Testimonials
+              About Technologies
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={12}>
-            <Typography sx={{ width: { xs: "100%", md: "45%" } }}>
-              Trust and success stories from our clients underscore our
-              commitment to delivering purpose-driven solutions with excellence.
+          <Grid item xs={12} md={8}>
+            <Typography fontSize={"14px"} sx={{ color: "#555" }}>
+              Utilizing an array of technologies, frameworks, libraries, and
+              tools, we strive to create websites that not only meet but exceed
+              the expectations of our clients. Our diverse toolkit enables us to
+              tailor solutions that are innovative, scalable, and precisely
+              aligned with the unique requirements of each project. By staying
+              at the forefront of industry advancements, we ensure the delivery
+              of top-notch websites that seamlessly integrate cutting-edge
+              features and functionalities. Our commitment to utilizing the best
+              tools available reflects our dedication to providing a superior
+              web experience for our clients.
             </Typography>
           </Grid>
           <Grid container item xs={12} lg={12} sx={styles.SliderMainGrid}>
@@ -69,11 +77,19 @@ const Testimonials = () => {
                             {item.content}
                           </Typography>
                           <Typography
-                            sx={{ margin: "20px 0px 20px 0px", color: "white" }}
+                            fontSize={"14px"}
+                            sx={{
+                              margin: "10px 0px 0px 0px",
+                              color: "white",
+                              fontWeight: 600,
+                            }}
                           >
-                            {item.company}
+                            {item.TechnologieName}
                           </Typography>
-                          <Typography sx={{ color: "white" }}>
+                          <Typography
+                            fontSize={"12px"}
+                            sx={{ color: "white", fontWeight: 500 }}
+                          >
                             {item.poisition}
                           </Typography>
                         </Grid>

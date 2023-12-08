@@ -19,10 +19,10 @@ const SeoSubcription = () => {
                 sx={styles.PricingGrid}
               >
                 <Typography fontSize={"30px"}>{item.type}</Typography>
-                <Typography fontSize={"50px"}>
+                {/* <Typography fontSize={"50px"}>
                   {item.price}
                   <span style={{ fontSize: "20px" }}>/Monthly</span>
-                </Typography>
+                </Typography> */}
                 {item.content.map((data) => {
                   return (
                     <Box

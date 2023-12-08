@@ -16,7 +16,7 @@ const ConatctUs = () => {
   return (
     <Box sx={styles.MainBox}>
       <Grid container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} lg={6}>
           <Card sx={{ borderRadius: "0px", height: "100vh" }}>
             <CardMedia sx={styles.CardMedia} image={"/contact-bg.webp"}>
               <Container
@@ -26,7 +26,7 @@ const ConatctUs = () => {
                   justifyContent: "space-around",
                 }}
               >
-                <Grid container item xs={12} md={6.5}>
+                <Grid container item xs={12} lg={6.5}>
                   <Grid item xs={12} sx={{ marginBottom: "48px" }}>
                     <Typography fontSize={"18.5px"}>
                       Lets built the next big thing!
@@ -81,7 +81,7 @@ const ConatctUs = () => {
             </CardMedia>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6} sx={styles.ContactMainGrid}>
+        <Grid item xs={12} lg={6} sx={styles.ContactMainGrid}>
           <Container>
             <Grid container sx={{ display: "flex", justifyContent: "center" }}>
               <Grid item xs={11} sm={10.5}>

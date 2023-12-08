@@ -19,7 +19,7 @@ const ContactUs = () => {
           id="contact"
           sx={{ display: "flex", justifyContent: "center" }}
         >
-          <Grid item xs={11} sm={7} md={7} lg={7}>
+          <Grid item xs={11} sm={7} lg={7}>
             <Typography
               fontSize={"44px"}
               lineHeight={"54px"}
@@ -56,7 +56,7 @@ const ContactUs = () => {
               +1 (647) 374 5600
             </Typography>
           </Grid>
-          <Grid item xs={11} sm={5} md={5} lg={5}>
+          <Grid item xs={11} sm={5} lg={5}>
             <TextField label="Name" fullWidth sx={{ marginBottom: "15px" }} />
             <Grid container gap={1}>
               <Grid item xs={12} sm={12} md={12} lg={5.9}>

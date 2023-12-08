@@ -78,19 +78,6 @@ const ResponsiveHeader = () => {
               </Typography>
             </Link>
           </Grid>
-          <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
-            <Link
-              href={""}
-              style={{
-                textDecoration: "none",
-                color: "white",
-              }}
-            >
-              <Typography fontSize={"20px"} sx={styles.LinkTypo}>
-                Services
-              </Typography>
-            </Link>
-          </Grid>
           {Services_Menu.map((item, index) => {
             return (
               <Grid

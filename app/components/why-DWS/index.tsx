@@ -9,22 +9,28 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
       <Container sx={styles.Container}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} lg={8} sx={{ marginBottom: "20px" }}>
-            <Typography fontSize={"11.2px"} sx={{ color: "#6f6f6f" }}>
-              {title}
-            </Typography>
-            <Typography
-              fontSize={{ xs: "38px", sm: "44px" }}
-              sx={{
-                color: "#004ca2",
-                letterSpacing: "-1.14px",
-                lineHeight: "54px",
-              }}
-            >
-              {heading}
-            </Typography>
-            <Typography fontSize={"16px"} sx={{ color: "#707070" }}>
-              {description}
-            </Typography>
+            {title && (
+              <Typography fontSize={"11.2px"} sx={{ color: "#6f6f6f" }}>
+                {title}
+              </Typography>
+            )}
+            {heading && (
+              <Typography
+                fontSize={{ xs: "38px", sm: "44px" }}
+                sx={{
+                  color: "#004ca2",
+                  letterSpacing: "-1.14px",
+                  lineHeight: "54px",
+                }}
+              >
+                {heading}
+              </Typography>
+            )}
+            {description && (
+              <Typography fontSize={"16px"} sx={{ color: "#707070" }}>
+                {description}
+              </Typography>
+            )}
           </Grid>
           <Grid container item xs={12} gap={2} sx={styles.CardMainGrid}>
             {DataMapping.map((item: any, index: any) => {

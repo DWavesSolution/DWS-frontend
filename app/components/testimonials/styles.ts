@@ -17,7 +17,7 @@ export const styles = {
   SliderMainGrid: {
     display: "flex",
     justifyContent: "center",
-    margin: "50px 0px 50px 0px",
+    margin: "30px 0px",
   },
   ImageGrid: {
     display: "flex",

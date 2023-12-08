@@ -58,7 +58,7 @@ const Header = () => {
       <Toolbar>
         <Container>
           <Grid container sx={styles.MainGrid}>
-            <Grid item xs={10} sm={9} md={5.5} lg={6.5}>
+            <Grid item xs={10} sm={9} md={2} lg={1.6}>
               <Box sx={{ width: 150, height: 70 }} onClick={HomePageRoute}>
                 <DWSImage
                   src={HeaderLogo}
@@ -71,7 +71,16 @@ const Header = () => {
               <ResponsiveHeader />
             ) : (
               <>
-                <Grid item xs={12} md={4} lg={3} sx={styles.headerdata}>
+                <Grid item xs={12} md={5} sx={styles.headerdata}>
+                  <Link
+                    href={"/about-us"}
+                    style={{
+                      textDecoration: "none",
+                      color: ChangeNavBarColor ? "black" : "white",
+                    }}
+                  >
+                    <Typography>{"About Us"}</Typography>
+                  </Link>
                   {HeaderData.map((item, index) => (
                     <Box key={`${item?.id}-${index}`}>
                       {/* {item.name === "Services" ? (
@@ -101,7 +110,7 @@ const Header = () => {
                     </Box>
                   ))}
                 </Grid>
-                <Grid item xs={12} md={2.5} sx={styles.ButtonGrid}>
+                <Grid item xs={12} md={2.5} lg={1.7} sx={styles.ButtonGrid}>
                   <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
                     <Button
                       sx={styles.headerButton}

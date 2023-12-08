@@ -7,7 +7,8 @@ import { Box } from "@mui/material";
 import StreamLineBuisness from "@/app/components/streamline-buisness";
 import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
-import { Social_Media_Data, Why_SEO } from "@/app/static-data/data";
+import { AI_ML_Data, Why_AI_ML } from "@/app/static-data/data";
+import ContactUs from "@/app/components/contact";
 
 export async function generateMetadata() {
   const PageTitle = "AI / ML";
@@ -18,19 +19,20 @@ const page = () => {
     <Box>
       <AIML />
       <StreamLineBuisness
-        title="not available"
-        heading="not available"
-        description={"not available"}
-        DataMapping={Social_Media_Data}
+        title={""}
+        heading="Our Expertise"
+        description={""}
+        DataMapping={AI_ML_Data}
       />
       <Testimonials />
       <WHYDWS
-        title="Why Choose Digital Wave Solution for SEO Services?"
+        title="Why Choose Digital Wave Solution for AI & ML Services?"
         heading=""
         description=""
-        DataMapping={Why_SEO}
+        DataMapping={Why_AI_ML}
       />
       <MeticulouslyAccordion />
+      <ContactUs/>
       <OurPromise />
     </Box>
   );

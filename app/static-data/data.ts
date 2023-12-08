@@ -1,9 +1,9 @@
 export const HeaderData = [
-  {
-    id: 1,
-    name: "About Us",
-    link: "about-us",
-  },
+  // {
+  //   id: 1,
+  //   name: "About Us",
+  //   link: "about-us",
+  // },
   {
     id: 2,
     name: "DPD",
@@ -72,7 +72,7 @@ export const Services_Card = [
     id: "01",
     title: "Digital Product Development",
     description:
-      "We employ an agile approach to develop and scale software products tailored to your business, ensuring they are both future-proof and market-ready.",
+      "Welcome to Digital Waves Solution, your agile software development partner. We create tailored, market-ready products using an iterative approach. Let's innovate and scale your business together.",
     types: [
       { id: 1, name: "Custom Product Development" },
       { id: 2, name: "Web & Mobile App Development" },
@@ -85,7 +85,7 @@ export const Services_Card = [
     id: "02",
     title: "Social Media Marketing",
     description:
-      "Supplementing highly skilled resources to scale up the workforce with limitless efforts. Hire-on-the-go and bridge the skill gaps with the right set of talents for optimal performance.",
+      "Elevate your brand with Digital Waves Solution's Social Media Marketing services. We craft impactful campaigns, engage your audience, and drive results. Boost your online presence with our expertise. Social success starts here.",
     types: [
       { id: 1, name: "Hire Software Developers" },
       { id: 2, name: "Hire React Native Developers" },
@@ -98,11 +98,10 @@ export const Services_Card = [
     id: "03",
     title: "Search Engine Optimization",
     description:
-      "Transforming complex data into valuable insights for informed decisions, offering a deeper understanding of operations, customers and market trends with advanced analytical techniques.",
+      "Maximise your online visibility with Digital Waves Solution's SEO services. We optimise, strategise, and elevate your website's ranking. Let us boost your digital presence and drive organic growth. Your SEO success begins with us.",
     types: [
       { id: 1, name: "Machine Leaning" },
       { id: 2, name: "Internet of Things" },
-      { id: 3, name: "Big Data" },
     ],
     logo: "/database.webp",
   },
@@ -110,7 +109,7 @@ export const Services_Card = [
     id: "04",
     title: "AI / ML",
     description:
-      "Implementing a comprehensive plan for leveraging digital technologies to achieve their business goals with the intent to provide expert guidance and practical solutions for digital transformation.",
+      "Empower your business with Digital Waves Solution's AI/ML services. Unlock innovation, streamline processes, and make data-driven decisions. Let us tailor intelligent solutions to propel your success in the digital age. Elevate your business with AI/ML excellence.",
     types: [
       { id: 1, name: "End to End Consultantion" },
       { id: 2, name: "24x7 Support Operations" },
@@ -174,43 +173,51 @@ export const socialIcons = [
 export const Testimonials_Data = [
   {
     id: 1,
-    logo: "/akamai.webp",
+    logo: "/node-js.webp",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    company: "Microsoft",
-    poisition: "CEO",
+      "Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside of a web browser. It allows developers to use JavaScript for server-side scripting, enabling them to build scalable and high-performance network applications. Node.js is built on the V8 JavaScript runtime engine, which is developed by Google for use in the Chrome web browser.",
+    TechnologieName: "Node Js",
+    poisition: "BackEnd Technology",
   },
   {
     id: 2,
-    logo: "/deloitte-home.webp",
+    logo: "/next-js.webp",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    company: "Apple",
-    poisition: "Director",
+      "Next.js is a popular open-source React framework that simplifies the process of building React applications, especially for server-side rendering (SSR) and static site generation (SSG). It is designed to make React applications more efficient, performant, and SEO-friendly by providing a set of conventions and tools.",
+    TechnologieName: "Next Js",
+    poisition: "FrontEnd Technology",
   },
   {
     id: 3,
-    logo: "/fidelity-home.webp",
+    logo: "/react.webp",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    company: "Samsung",
-    poisition: "Manager",
+      "React Native is an open-source framework developed by Facebook that allows developers to build mobile applications using JavaScript and React. It enables the creation of cross-platform mobile apps by leveraging React's component-based architecture.",
+    TechnologieName: "React Native",
+    poisition: "Mobile App Technology",
   },
   {
     id: 4,
-    logo: "/kaseya-logo.webp",
+    logo: "/mongodb.webp",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    company: "IBM",
-    poisition: "Owner",
+      "MongoDB is a popular open-source NoSQL database management system that provides a flexible, scalable, and high-performance solution for handling large volumes of unstructured or semi-structured data.",
+    TechnologieName: "MongoDB",
+    poisition: "Database",
   },
   {
     id: 5,
-    logo: "/l&t-home.webp",
+    logo: "/stripe.webp",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    company: "Blackberry",
-    poisition: "CEO",
+      "Stripe is a popular online payment processing platform that allows businesses and developers to accept payments over the internet. It provides a set of APIs and tools that make it easy for organizations to handle online transactions, subscriptions, and other e-commerce functionalities.",
+    TechnologieName: "Stripe",
+    poisition: "Integrations",
+  },
+  {
+    id: 6,
+    logo: "/firebase.webp",
+    content:
+      "Firebase is a comprehensive platform developed by Google for building web and mobile applications. It provides a suite of services that covers various aspects of app development, including backend services, database management, authentication, hosting, and more.",
+    TechnologieName: "FireBase",
+    poisition: "Tools",
   },
 ];
 export const Technologies_Tabs = [
@@ -382,28 +389,28 @@ export const Core_Values_Data = [
 export const Streamline_Data = [
   {
     id: "01",
-    logo: "/mobile_app_dev.webp",
+    logo: "/question.jpeg",
     title: "Mobile App Development",
     description:
       "Immerse yourself in seamless convenience and enhanced connectivity through a robust mobile presence. Elevate your business objectives with tailor-made mobile applications designed to streamline processes, expand outreach to new audiences, and deliver an enhanced user experience.",
   },
   {
     id: "02",
-    logo: "/pic2.webp",
+    logo: "/question.jpeg",
     title: "Web Application Development",
     description:
       "Uncover a fluid and captivating user experience through a rapid, user-friendly, and visually striking web application or Progressive Web App. Elevate your business growth by enhancing your bottom line through an enhanced digital presence.",
   },
   {
     id: "03",
-    logo: "/new_ui_ux.webp",
+    logo: "/question.jpeg",
     title: "User Experience & User Interface Design",
     description:
       "Our enthusiasm lies in technology, continuous learning, and the exchange of knowledge within the digital realm. As diligent individuals, we thrive on overcoming challenges, demonstrating proficiency in comprehending both technical intricacies and business obstacles.",
   },
   {
     id: "04",
-    logo: "/new_blockchain.webp",
+    logo: "/question.jpeg",
     title: "Integration Services",
     description:
       "Stay ahead of the curve and embrace new technologies with custom-built solutions that offer increased security, efficiency, and transparency in your business operations.",
@@ -413,31 +420,61 @@ export const Streamline_Data = [
 export const Social_Media_Data = [
   {
     id: "01",
-    logo: "/mobile_app_dev.webp",
+    logo: "/question.jpeg",
     title: "Social Media Management Services",
     description:
       "We offer full-service social media management services. We transform your social media presence with high-quality content, daily activity, engagement-monitoring and increased followers. In order for followers to convert into customers, they need to become more familiar with your brand, see your content often and gain value from it. We create content for our clients that meets those three criteria. This service will attract targeted social media users to follow you, engage with your content and convert into loyal customers, all while telling your brand’s story throughout.",
   },
   {
     id: "02",
-    logo: "/pic2.webp",
+    logo: "/question.jpeg",
     title: "Social Media Advertising Services",
     description:
       "Our social media advertising services have been tested and proven to accelerate growth and pair well with our social media management service. Therefore, by using LYFE Marketing to create social ads, our clients usually see more results at lower costs. While many of our client utilise this service for Facebook ads, we can also perform Instagram ads, LinkedIn ads and other paid social ads. This service uses your advertising budget to extend your reach and send targeted users to your website or landing page while tracking conversions and metrics that matter.",
   },
   {
     id: "03",
-    logo: "/new_ui_ux.webp",
+    logo: "/question.jpeg",
     title: "Email & Sms Marketing Services",
     description:
       "Email marketing is not dead. In fact, for every $1 spent on email marketing, the average ROI is $36. Your customers check their email every day. Our email marketing services will help you stay top of mind and speed up your sales cycle, all while providing value to your audience. Whether we create weekly newsletters to send to your subscribers, set up a drip sequence to send the right automated emails at the right time, or help you follow up with your subscribers via text message, you can expect quality content that moves prospects through your sales funnel to buy. ",
   },
   {
     id: "04",
-    logo: "/new_blockchain.webp",
+    logo: "/question.jpeg",
     title: "Managemnet Services",
     description:
       "When someone types in the product or service you offer into the Google search bar, does your website appear? If not, you’re probably not implementing PPC! PPC stands for pay per click and it is synonymous with SEM or search engine marketing. You can get immediate traffic to your website from search engines like Google, Bing, and Amazon by paying those search engines directly to place your website at the top of the search results for relevant search queries. Our PPC management services handle those ads for you from top to bottom so you can just sit back and watch the sales roll in.",
+  },
+];
+export const AI_ML_Data = [
+  {
+    id: "01",
+    logo: "/question.jpeg",
+    title: "AI Consultancy",
+    description:
+      "Leverage our expertise in artificial intelligence to gain strategic insights and develop a roadmap tailored to your business objectives. Our consultants work closely with you to identify opportunities for AI integration and guide you through the implementation process.",
+  },
+  {
+    id: "02",
+    logo: "/question.jpeg",
+    title: "Machine Learning Solutions",
+    description:
+      "Unlock the potential of your data with our machine learning solutions. From predictive analytics to pattern recognition, we design and deploy ML models that enable you to make informed decisions and stay ahead in a rapidly evolving business landscape.",
+  },
+  {
+    id: "03",
+    logo: "/question.jpeg",
+    title: "Customised AI Applications",
+    description:
+      "Tailored to your unique requirements, our custom AI applications are designed to optimize processes, automate tasks, and improve overall business performance. Whether you need a chatbot, image recognition system, or fraud detection tool, we've got you covered.",
+  },
+  {
+    id: "04",
+    logo: "/question.jpeg",
+    title: "Data Science Services",
+    description:
+      "Extract valuable insights from your data with our data science services. Our team of experts combines statistical analysis, machine learning, and domain expertise to uncover patterns, trends, and actionable intelligence that drives business growth.",
   },
 ];
 export const SEO_Data = [
@@ -536,6 +573,32 @@ export const Why_SEO = [
     title: "Dedicated Support",
     description:
       "Your success is our priority. Our dedicated support team is always ready to address your queries and provide expert guidance.",
+  },
+];
+export const Why_AI_ML = [
+  {
+    id: "01",
+    title: "Innovation at the Core",
+    description:
+      "Stay ahead of the curve with our commitment to innovation. We continuously explore emerging technologies to ensure your business benefits from the latest advancements in AI and ML.",
+  },
+  {
+    id: "02",
+    title: "Customised Solutions",
+    description:
+      "We understand that every business is unique. Our solutions are tailored to meet your specific needs, providing a competitive edge in your industry.",
+  },
+  {
+    id: "03",
+    title: "Seamless Integration",
+    description:
+      "Our experienced team ensures a smooth integration process, minimizing disruptions and maximizing the impact of AI and ML on your operations.",
+  },
+  {
+    id: "04",
+    title: "Reliable Support",
+    description:
+      "Partnering with Digital Waves Solution means ongoing support and maintenance. We are dedicated to ensuring that your AI and ML systems operate at peak performance.",
   },
 ];
 export const Meticulously_Question = [
