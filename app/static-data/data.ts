@@ -168,7 +168,9 @@ export const socialIcons = [
   { id: 1, logo: "/linkedin.svg", link: "https://linkedin.com" },
   { id: 2, logo: "/twitter.svg", link: "https://twitter.com" },
   { id: 3, logo: "/instagram.svg", link: "https://instagram.com" },
-  { id: 4, logo: "/behance.svg", link: "https://www.behance.net/" },
+  { id: 4, logo: "/youtube_icon.svg", link: "https://www.youtube.net/" },
+  { id: 4, logo: "/facebook.webp", link: "https://www.facebook.net/" },
+  { id: 4, logo: "/tiktok.svg", link: "https://tiktok.net/" },
 ];
 export const Testimonials_Data = [
   {
@@ -389,28 +391,28 @@ export const Core_Values_Data = [
 export const Streamline_Data = [
   {
     id: "01",
-    logo: "/question.jpeg",
+    logo: "/mobile_app_dev.webp",
     title: "Mobile App Development",
     description:
       "Immerse yourself in seamless convenience and enhanced connectivity through a robust mobile presence. Elevate your business objectives with tailor-made mobile applications designed to streamline processes, expand outreach to new audiences, and deliver an enhanced user experience.",
   },
   {
     id: "02",
-    logo: "/question.jpeg",
+    logo: "/web_app_dev.webp",
     title: "Web Application Development",
     description:
       "Uncover a fluid and captivating user experience through a rapid, user-friendly, and visually striking web application or Progressive Web App. Elevate your business growth by enhancing your bottom line through an enhanced digital presence.",
   },
   {
     id: "03",
-    logo: "/question.jpeg",
+    logo: "/ui_ux.webp",
     title: "User Experience & User Interface Design",
     description:
       "Our enthusiasm lies in technology, continuous learning, and the exchange of knowledge within the digital realm. As diligent individuals, we thrive on overcoming challenges, demonstrating proficiency in comprehending both technical intricacies and business obstacles.",
   },
   {
     id: "04",
-    logo: "/question.jpeg",
+    logo: "/integrated.webp",
     title: "Integration Services",
     description:
       "Stay ahead of the curve and embrace new technologies with custom-built solutions that offer increased security, efficiency, and transparency in your business operations.",
@@ -420,28 +422,28 @@ export const Streamline_Data = [
 export const Social_Media_Data = [
   {
     id: "01",
-    logo: "/question.jpeg",
+    logo: "/social-media-management.webp",
     title: "Social Media Management Services",
     description:
       "We offer full-service social media management services. We transform your social media presence with high-quality content, daily activity, engagement-monitoring and increased followers. In order for followers to convert into customers, they need to become more familiar with your brand, see your content often and gain value from it. We create content for our clients that meets those three criteria. This service will attract targeted social media users to follow you, engage with your content and convert into loyal customers, all while telling your brand’s story throughout.",
   },
   {
     id: "02",
-    logo: "/question.jpeg",
+    logo: "/Social_Advertising.svg",
     title: "Social Media Advertising Services",
     description:
       "Our social media advertising services have been tested and proven to accelerate growth and pair well with our social media management service. Therefore, by using LYFE Marketing to create social ads, our clients usually see more results at lower costs. While many of our client utilise this service for Facebook ads, we can also perform Instagram ads, LinkedIn ads and other paid social ads. This service uses your advertising budget to extend your reach and send targeted users to your website or landing page while tracking conversions and metrics that matter.",
   },
   {
     id: "03",
-    logo: "/question.jpeg",
+    logo: "/SMS-Marketing.webp",
     title: "Email & Sms Marketing Services",
     description:
       "Email marketing is not dead. In fact, for every $1 spent on email marketing, the average ROI is $36. Your customers check their email every day. Our email marketing services will help you stay top of mind and speed up your sales cycle, all while providing value to your audience. Whether we create weekly newsletters to send to your subscribers, set up a drip sequence to send the right automated emails at the right time, or help you follow up with your subscribers via text message, you can expect quality content that moves prospects through your sales funnel to buy. ",
   },
   {
     id: "04",
-    logo: "/question.jpeg",
+    logo: "/managementServices.webp",
     title: "Managemnet Services",
     description:
       "When someone types in the product or service you offer into the Google search bar, does your website appear? If not, you’re probably not implementing PPC! PPC stands for pay per click and it is synonymous with SEM or search engine marketing. You can get immediate traffic to your website from search engines like Google, Bing, and Amazon by paying those search engines directly to place your website at the top of the search results for relevant search queries. Our PPC management services handle those ads for you from top to bottom so you can just sit back and watch the sales roll in.",
@@ -450,28 +452,28 @@ export const Social_Media_Data = [
 export const AI_ML_Data = [
   {
     id: "01",
-    logo: "/question.jpeg",
+    logo: "/artificial-intelligence.webp",
     title: "AI Consultancy",
     description:
       "Leverage our expertise in artificial intelligence to gain strategic insights and develop a roadmap tailored to your business objectives. Our consultants work closely with you to identify opportunities for AI integration and guide you through the implementation process.",
   },
   {
     id: "02",
-    logo: "/question.jpeg",
+    logo: "/ML.webp",
     title: "Machine Learning Solutions",
     description:
       "Unlock the potential of your data with our machine learning solutions. From predictive analytics to pattern recognition, we design and deploy ML models that enable you to make informed decisions and stay ahead in a rapidly evolving business landscape.",
   },
   {
     id: "03",
-    logo: "/question.jpeg",
+    logo: "/customisation.webp",
     title: "Customised AI Applications",
     description:
       "Tailored to your unique requirements, our custom AI applications are designed to optimize processes, automate tasks, and improve overall business performance. Whether you need a chatbot, image recognition system, or fraud detection tool, we've got you covered.",
   },
   {
     id: "04",
-    logo: "/question.jpeg",
+    logo: "/computer-icons.webp",
     title: "Data Science Services",
     description:
       "Extract valuable insights from your data with our data science services. Our team of experts combines statistical analysis, machine learning, and domain expertise to uncover patterns, trends, and actionable intelligence that drives business growth.",
