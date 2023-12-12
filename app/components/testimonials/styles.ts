@@ -3,7 +3,7 @@ export const styles = {
     margin: "50px 0px",
   },
   SwiperBox: {
-    backgroundColor: "#004ca2",
+    backgroundColor: "#26315b",
     padding: { xs: "2rem 2rem", sm: "5rem 5rem" },
     borderRadius: "10px",
     borderBottomRightRadius: "180px",

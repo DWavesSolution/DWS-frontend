@@ -5,7 +5,7 @@ export const styles = {
   },
   MainGrid: {
     padding: { xs: "3rem", md: "5rem" },
-    backgroundColor: "#004ca2",
+    backgroundColor: "#26315b",
     color: "white",
     display: "flex",
     justifyContent: "space-between",

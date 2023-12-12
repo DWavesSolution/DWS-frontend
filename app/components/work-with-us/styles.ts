@@ -1,6 +1,6 @@
 export const styles = {
   MainBox: {
-    background: "linear-gradient(105deg,#004ca2,#002651)",
+    background: "linear-gradient(105deg,#26315b,#002651)",
     padding: { xs: "2rem 2rem", md: "3rem 4rem 3rem 4rem" },
     borderRadius: "8px",
     // clipPath:"polygon(100% 0,100% calc(100% - 50px),calc(100% - 90px) 100%,0 100%,0 0)"

@@ -3,7 +3,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import { SEO_Data } from "@/app/static-data/data";
-import CheckIcon from "@mui/icons-material/Check";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+
 const SeoPackages = () => {
   return (
     <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
@@ -28,21 +29,14 @@ const SeoPackages = () => {
                 key={`${item?.id}-${index}`}
                 sx={styles.PricingGrid}
               >
-                <Typography fontSize={"20px"} sx={{ color: "#2a3f79" }}>
+                <Typography fontSize={"20px"} sx={{ color: "White" }}>
                   {item.title}
                 </Typography>
                 {item.content.map((data) => {
                   return (
-                    <Box
-                      sx={{
-                        display: "flex",
-                        color: "#707070",
-                        margin: "5px 0px",
-                      }}
-                      key={`${item?.id}-${index}`}
-                    >
-                      <CheckIcon sx={{ height: 20, width: 20 }} />
-                      <Typography fontSize={"14.4px"}>{data.point}</Typography>
+                    <Box sx={styles.IconsBox} key={`${item?.id}-${index}`}>
+                      <KeyboardDoubleArrowRightIcon sx={styles.Icons} />
+                      <Typography fontSize={"12px"}>{data.point}</Typography>
                     </Box>
                   );
                 })}

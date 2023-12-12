@@ -26,7 +26,10 @@ export const styles = {
     padding: "20px 0px",
     borderRadius: "0px !important",
   },
-  accordion: {
-    // backgroundColor: "pink",
+  accordionDetails: {
+    background: "linear-gradient(140deg,#26315b 25%,#127a88 85%,#004CA2)",
+    color: "white",
+    borderRadius: "16px",
+    padding: "70px",
   },
 };

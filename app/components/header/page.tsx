@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { styles } from "./styles";
 import {
   AppBar,
@@ -15,12 +15,10 @@ import {
 } from "@mui/material";
 import { HeaderData } from "@/app/static-data/data";
 import Link from "next/link";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import DWSImage from "../DWSImage";
 import HeaderLogo from "../../../public/headerLogo.png";
 import ResponsiveHeader from "./responsiveHeader";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import CustomMenu from "./HeaderPopUp";
 import { useRouter } from "next/navigation";
 
 const Header = () => {

@@ -19,7 +19,7 @@ export const styles = {
     marginBottom: "50px",
   },
   Card: {
-    backgroundColor: "#004ca2",
+    backgroundColor: "#26315b",
     color: "white",
     padding: "50px",
     marginBottom: "10px",

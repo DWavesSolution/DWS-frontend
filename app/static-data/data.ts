@@ -11,7 +11,7 @@ export const HeaderData = [
   },
   {
     id: 3,
-    name: "SMS",
+    name: "SMM",
     link: "/services/social-media-marketing",
   },
   {

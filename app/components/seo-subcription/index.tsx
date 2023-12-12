@@ -3,7 +3,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import { Subscription_Data } from "@/app/static-data/data";
-import CheckIcon from "@mui/icons-material/Check";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+
 const SeoSubcription = () => {
   return (
     <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
@@ -19,18 +20,11 @@ const SeoSubcription = () => {
                 sx={styles.PricingGrid}
               >
                 <Typography fontSize={"30px"}>{item.type}</Typography>
-                {/* <Typography fontSize={"50px"}>
-                  {item.price}
-                  <span style={{ fontSize: "20px" }}>/Monthly</span>
-                </Typography> */}
                 {item.content.map((data) => {
                   return (
-                    <Box
-                      sx={{ display: "flex", color: "#707070" }}
-                      key={`${item?.id}-${index}`}
-                    >
-                      <CheckIcon sx={{ height: 20, width: 20 }} />
-                      <Typography fontSize={"14.4px"}>{data.point}</Typography>
+                    <Box sx={styles.CardBox} key={`${item?.id}-${index}`}>
+                      <KeyboardDoubleArrowRightIcon sx={styles.Icons} />
+                      <Typography fontSize={"12px"}>{data.point}</Typography>
                     </Box>
                   );
                 })}

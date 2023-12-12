@@ -72,17 +72,7 @@ const MeticulouslyAccordion = () => {
                       {item.question}
                     </Typography>
                   </AccordionSummary>
-                  <AccordionDetails
-                    sx={{
-                      background:
-                        "transparent linear-gradient(131deg,#004ca2,#002651) 0 0 no-repeat padding-box",
-                      color: "white",
-                      borderRadius: "16px",
-                      padding: "70px",
-                    }}
-                  >
-                    {/* <Typography fontSize={"18px"}>{item.id}</Typography> */}
-                    {/* <Typography fontSize={"20px"}>{item.question}</Typography> */}
+                  <AccordionDetails sx={styles.accordionDetails}>
                     <Typography fontSize={"14px"}>{item.answer}</Typography>
                   </AccordionDetails>
                 </Accordion>

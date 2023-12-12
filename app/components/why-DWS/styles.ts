@@ -12,7 +12,7 @@ export const styles = {
     justifyContent: "center",
   },
   CardGrid: {
-    background: "rgba(0,22,61,.85)",
+    background: "#26315b",
     padding: { xs: "1.5rem", md: "4rem" },
     borderRadius: "10px",
   },
