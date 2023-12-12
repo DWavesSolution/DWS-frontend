@@ -81,7 +81,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                     color: "#707070",
                   }}
                 >
-                  <Typography>{item.title}</Typography>
+                  <Typography fontFamily={"var(--nunito)"}>{item.title}</Typography>
                 </Link>
               </Grid>
             ))}

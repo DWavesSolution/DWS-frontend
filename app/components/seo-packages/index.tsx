@@ -10,10 +10,18 @@ const SeoPackages = () => {
     <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
       <Container>
         <Grid item xs={12} sm={6} sx={{ paddingTop: "80px" }}>
-          <Typography fontSize={"11.2px"} sx={styles.MainTitle}>
+          <Typography
+            fontFamily={"var(--nunito)"}
+            fontSize={"11.2px"}
+            sx={styles.MainTitle}
+          >
             SEO Packages
           </Typography>
-          <Typography fontSize={"16px"} sx={{ color: "#707070" }}>
+          <Typography
+            fontFamily={"var(--nunito)"}
+            fontSize={"16px"}
+            sx={{ color: "#707070" }}
+          >
             Choose the package that suits your business needs and goals. Our
             packages are designed to deliver comprehensive SEO solutions,
             ensuring a holistic approach to improving your online presence.
@@ -29,14 +37,23 @@ const SeoPackages = () => {
                 key={`${item?.id}-${index}`}
                 sx={styles.PricingGrid}
               >
-                <Typography fontSize={"20px"} sx={{ color: "White" }}>
+                <Typography
+                  fontFamily={"var(--nunito)"}
+                  fontSize={"20px"}
+                  sx={{ color: "White" }}
+                >
                   {item.title}
                 </Typography>
                 {item.content.map((data) => {
                   return (
                     <Box sx={styles.IconsBox} key={`${item?.id}-${index}`}>
                       <KeyboardDoubleArrowRightIcon sx={styles.Icons} />
-                      <Typography fontSize={"12px"}>{data.point}</Typography>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"12px"}
+                      >
+                        {data.point}
+                      </Typography>
                     </Box>
                   );
                 })}

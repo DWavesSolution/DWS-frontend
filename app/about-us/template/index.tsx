@@ -22,21 +22,30 @@ const AboutPage = () => {
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
-                <Typography sx={{ color: "white" }}>Learn about us</Typography>
+                <Typography
+                  sx={{ color: "white" }}
+                  fontFamily={"var(--nunito)"}
+                >
+                  Learn about us
+                </Typography>
               </Grid>
               <Grid item xs={12} lg={9} sx={{ marginTop: "20px" }}>
                 <Typography
                   fontSize={{ xs: "36px", sm: "60px" }}
                   fontWeight={500}
-                  lineHeight={{ xs: "46px", sm: "70px" }}
+                  lineHeight={{ xs: "46px", sm: "60px" }}
                   sx={{ color: "white" }}
+                  fontFamily={"var(--work-Sans)"}
                 >
                   Your tech innovator building transformative technology
                   solutions
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
-                <Typography sx={{ color: "white" }}>
+                <Typography
+                  sx={{ color: "white" }}
+                  fontFamily={"var(--nunito)"}
+                >
                   We are a team of tech enthusiasts who foster a culture of
                   creativity, inclusivity, and continuous learning for all to
                   thrive in the tech industry.

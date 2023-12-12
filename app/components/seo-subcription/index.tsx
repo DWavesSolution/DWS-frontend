@@ -19,12 +19,19 @@ const SeoSubcription = () => {
                 key={`${item?.id}-${index}`}
                 sx={styles.PricingGrid}
               >
-                <Typography fontSize={"30px"}>{item.type}</Typography>
+                <Typography fontSize={"30px"} fontFamily={"var(--work-Sans)"}>
+                  {item.type}
+                </Typography>
                 {item.content.map((data) => {
                   return (
                     <Box sx={styles.CardBox} key={`${item?.id}-${index}`}>
                       <KeyboardDoubleArrowRightIcon sx={styles.Icons} />
-                      <Typography fontSize={"12px"}>{data.point}</Typography>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"12px"}
+                      >
+                        {data.point}
+                      </Typography>
                     </Box>
                   );
                 })}

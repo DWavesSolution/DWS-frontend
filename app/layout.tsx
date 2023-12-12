@@ -5,6 +5,18 @@ import Footer from "./components/footer/footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Work_Sans, Nunito } from "next/font/google";
+
+const fontWorkSans = Work_Sans({
+  weight: ["700", "600", "500", "400"],
+  subsets: ["vietnamese"],
+  variable: "--work-Sans",
+});
+const fontNunito = Nunito({
+  weight: ["700", "600", "500", "400"],
+  subsets: ["latin"],
+  variable: "--nunito",
+});
 
 export default function RootLayout({
   children,
@@ -14,11 +26,13 @@ export default function RootLayout({
   useEffect(() => {
     AOS.init({
       duration: 3000,
-      // once: false,
     });
   }, []);
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${fontWorkSans.variable} ${fontNunito.variable}`}
+    >
       <Header />
       {children}
       <Footer />

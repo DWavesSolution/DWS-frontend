@@ -28,6 +28,7 @@ const MeticulouslyAccordion = () => {
         <Grid container item xs={12} md={9} sx={styles.box}>
           <Grid item xs={12} lg={10}>
             <Typography
+              fontFamily={"var(--nunito)"}
               fontSize={"11.4px"}
               fontWeight={400}
               sx={{ color: "#6f6f6f", marginBottom: "20px" }}
@@ -37,6 +38,7 @@ const MeticulouslyAccordion = () => {
             <Typography
               fontSize={"32px"}
               fontWeight={600}
+              fontFamily={"var(--work-Sans)"}
               sx={{
                 color: "#004ca2",
                 lineHeight: "42px",
@@ -47,6 +49,7 @@ const MeticulouslyAccordion = () => {
               seamlessly fits into place.
             </Typography>
             <Typography
+              fontFamily={"var(--nunito)"}
               fontSize={"14.4px"}
               fontWeight={400}
               sx={{ color: "#707070" }}
@@ -68,12 +71,18 @@ const MeticulouslyAccordion = () => {
                     expandIcon={<ArrowDownwardIcon sx={{ color: "Black" }} />}
                     onClick={OnChangeExpended}
                   >
-                    <Typography fontSize={"20px"} sx={{ color: "black" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"20px"}
+                      sx={{ color: "black" }}
+                    >
                       {item.question}
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails sx={styles.accordionDetails}>
-                    <Typography fontSize={"14px"}>{item.answer}</Typography>
+                    <Typography fontFamily={"var(--nunito)"} fontSize={"14px"}>
+                      {item.answer}
+                    </Typography>
                   </AccordionDetails>
                 </Accordion>
               </Box>

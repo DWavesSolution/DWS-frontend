@@ -15,17 +15,27 @@ const StreamLineBuisness = ({
         <Grid container>
           <Grid item xs={12} md={6}>
             {title && (
-              <Typography fontSize={"11.2px"} sx={styles.MainTitle}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"11.2px"}
+                sx={styles.MainTitle}
+              >
                 {title}
               </Typography>
             )}
             {heading && (
-              <Typography fontSize={"44px"} sx={styles.MainHeading}>
+              <Typography
+                fontSize={"44px"}
+                sx={styles.MainHeading}
+                fontFamily={"var(--work-Sans)"}
+              >
                 {heading}
               </Typography>
             )}
             {description && (
-              <Typography fontSize={"14.4px"}>{description}</Typography>
+              <Typography fontFamily={"var(--nunito)"} fontSize={"14.4px"}>
+                {description}
+              </Typography>
             )}
           </Grid>
           <Grid item xs={12} lg={11}>
@@ -56,6 +66,7 @@ const StreamLineBuisness = ({
                     >
                       <Grid item xs={12}>
                         <Typography
+                          fontFamily={"var(--nunito)"}
                           fontSize={"11.2px"}
                           sx={{ color: "#004ca2", marginBottom: "24px" }}
                         >
@@ -75,6 +86,7 @@ const StreamLineBuisness = ({
                       </Grid>
                       <Grid item xs={12}>
                         <Typography
+                          fontFamily={"var(--nunito)"}
                           fontSize={"14.4px"}
                           sx={{
                             color: "#555",

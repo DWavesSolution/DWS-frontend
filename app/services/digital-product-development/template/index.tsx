@@ -24,6 +24,7 @@ const DigitalProductDevelopment = () => {
               <Grid item xs={12}>
                 <Typography
                   fontSize={"14.4px"}
+                  fontFamily={"var(--nunito)"}
                   fontWeight={600}
                   sx={{ color: "black" }}
                 >
@@ -32,6 +33,7 @@ const DigitalProductDevelopment = () => {
               </Grid>
               <Grid item xs={12} lg={9}>
                 <Typography
+                  fontFamily={"var(--work-Sans)"}
                   fontSize={{ xs: "36px", sm: "52px" }}
                   fontWeight={550}
                   lineHeight={{ xs: "46px", sm: "62px" }}
@@ -42,7 +44,10 @@ const DigitalProductDevelopment = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
-                <Typography sx={{ color: "black" }}>
+                <Typography
+                  fontFamily={"var(--nunito)"}
+                  sx={{ color: "black" }}
+                >
                   Experience innovative, user-friendly digital products tailored
                   to your target market and stand ahead of the competition at
                   every step.
@@ -57,7 +62,10 @@ const DigitalProductDevelopment = () => {
                   duration={1000}
                 >
                   <Button variant="outlined" sx={styles.Button}>
-                    <Typography sx={{ color: "#004ca2" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      sx={{ color: "#004ca2" }}
+                    >
                       {"Contact now"}
                     </Typography>
                   </Button>
@@ -96,13 +104,19 @@ const DigitalProductDevelopment = () => {
                   >
                     <Box sx={styles.ScoresBox}>
                       <Typography
+                        fontFamily={"var(--work-Sans)"}
                         fontSize={"48px"}
                         fontWeight={700}
                         sx={{ color: "#004ca2" }}
                       >
                         {item.number}
                       </Typography>
-                      <Typography fontSize={"14px"}>{item.name}</Typography>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"14px"}
+                      >
+                        {item.name}
+                      </Typography>
                     </Box>
                   </Grid>
                 );

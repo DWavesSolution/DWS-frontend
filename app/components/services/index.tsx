@@ -12,7 +12,9 @@ const ServicesSection = () => {
         <Box sx={styles.servicesBox}>
           <Grid container>
             <Grid item xs={12} sx={styles.ServicesText}>
-              <Typography fontSize={"12px"}>Services</Typography>
+              <Typography fontFamily={"var(--nunito)"} fontSize={"12px"}>
+                Services
+              </Typography>
             </Grid>
             <Grid container sx={styles.ServicesContent}>
               <Grid item xs={12} sm={7}>
@@ -20,10 +22,11 @@ const ServicesSection = () => {
                   fontSize={{ xs: "28px", lg: "44px" }}
                   letterSpacing={"-1.14px"}
                   sx={{ marginBottom: "24px", color: "#004ca2" }}
+                  fontFamily={"var(--work-Sans)"}
                 >
                   Building end-to-end product solutions
                 </Typography>
-                <Typography fontSize={"14px"}>
+                <Typography fontFamily={"var(--nunito)"} fontSize={"14px"}>
                   We navigate your product development journey with a
                   forward-thinking mindset and strategic roadmaps, ensuring
                   efficient, sustainable, and successful outcomes.
@@ -67,13 +70,25 @@ const ServicesSection = () => {
                         }}
                       >
                         <Grid item xs={12} sm={8} md={8} lg={9}>
-                          <Typography fontSize={"16px"} sx={styles.TypoMargin}>
+                          <Typography
+                            fontFamily={"var(--nunito)"}
+                            fontSize={"16px"}
+                            sx={styles.TypoMargin}
+                          >
                             {item.id}
                           </Typography>
-                          <Typography fontSize={"20px"} sx={styles.TypoMargin}>
+                          <Typography
+                            fontFamily={"var(--nunito)"}
+                            fontSize={"20px"}
+                            sx={styles.TypoMargin}
+                          >
                             {item.title}
                           </Typography>
-                          <Typography fontSize={"11px"} sx={styles.TypoMargin}>
+                          <Typography
+                            fontFamily={"var(--nunito)"}
+                            fontSize={"11px"}
+                            sx={styles.TypoMargin}
+                          >
                             {item.description}
                           </Typography>
                         </Grid>
@@ -106,6 +121,7 @@ const ServicesSection = () => {
                               }}
                             >
                               <Typography
+                                fontFamily={"var(--nunito)"}
                                 fontSize={"12px"}
                                 sx={{ margin: "0px 5px 0px 0px" }}
                               >
@@ -116,7 +132,11 @@ const ServicesSection = () => {
                         })}
                       </Grid>
                       <Button sx={styles.ServicesButton}>
-                        <Typography fontSize={"14px"} sx={{ color: "white" }}>
+                        <Typography
+                          fontFamily={"var(--nunito)"}
+                          fontSize={"14px"}
+                          sx={{ color: "white" }}
+                        >
                           Know more
                         </Typography>
                       </Button>

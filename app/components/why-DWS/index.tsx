@@ -10,13 +10,18 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} lg={8} sx={{ marginBottom: "20px" }}>
             {title && (
-              <Typography fontSize={"11.2px"} sx={{ color: "#6f6f6f" }}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"11.2px"}
+                sx={{ color: "#6f6f6f" }}
+              >
                 {title}
               </Typography>
             )}
             {heading && (
               <Typography
                 fontSize={{ xs: "38px", sm: "44px" }}
+                fontFamily={"var(--work-Sans)"}
                 sx={{
                   color: "#004ca2",
                   letterSpacing: "-1.14px",
@@ -27,7 +32,11 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
               </Typography>
             )}
             {description && (
-              <Typography fontSize={"16px"} sx={{ color: "#707070" }}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"16px"}
+                sx={{ color: "#707070" }}
+              >
                 {description}
               </Typography>
             )}
@@ -42,14 +51,26 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
                   sx={styles.CardGrid}
                   key={`${item?.id}-${index}`}
                 >
-                  <Typography fontSize={"14px"} sx={styles.TextMargin}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"14px"}
+                    sx={styles.TextMargin}
+                  >
                     {item.id}
                   </Typography>
-                  <Typography fontSize={"28px"} sx={styles.TextMargin}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"28px"}
+                    sx={styles.TextMargin}
+                  >
                     {item.title}
                   </Typography>
                   <Divider sx={{ border: "1px solid white" }} />
-                  <Typography fontSize={"16px"} sx={{ marginTop: "32px" }}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"16px"}
+                    sx={{ marginTop: "32px" }}
+                  >
                     {item.description}
                   </Typography>
                 </Grid>

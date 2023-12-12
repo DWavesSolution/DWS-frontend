@@ -11,7 +11,11 @@ const OurVision = () => {
       <Container>
         <Grid container>
           <Grid item xs={12} sx={{ marginBottom: "20px" }}>
-            <Typography fontSize={"44px"} sx={{ color: "#004ca2" }}>
+            <Typography
+              fontSize={"44px"}
+              sx={{ color: "#004ca2" }}
+              fontFamily={"var(--work-Sans)"}
+            >
               Our Vision
             </Typography>
           </Grid>
@@ -29,10 +33,15 @@ const OurVision = () => {
                   <Box sx={{ height: 240, width: 240, marginBottom: "16px" }}>
                     <DWSImage src={item.logo} alt={item.title} />
                   </Box>
-                  <Typography fontSize={"24px"} sx={{ marginBottom: "16px" }}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"24px"}
+                    sx={{ marginBottom: "16px" }}
+                  >
                     {item.title}
                   </Typography>
                   <Typography
+                    fontFamily={"var(--nunito)"}
                     fontSize={"14px"}
                     sx={{
                       color: "#707070",
@@ -52,7 +61,10 @@ const OurVision = () => {
               </Box>
               <Grid item xs={12} sx={styles.Description}>
                 <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
-                  <Typography sx={{ paddingTop: "80px" }}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    sx={{ paddingTop: "80px" }}
+                  >
                     We envision a future where we are the go-to partner for
                     digital strategy, consultation, and implementation in
                     industry 4.0 by delivering highly scalable technology

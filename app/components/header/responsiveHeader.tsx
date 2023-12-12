@@ -73,7 +73,11 @@ const ResponsiveHeader = () => {
                 color: "White",
               }}
             >
-              <Typography fontSize={"20px"} sx={styles.LinkTypo}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"20px"}
+                sx={styles.LinkTypo}
+              >
                 About Us
               </Typography>
             </Link>
@@ -94,26 +98,17 @@ const ResponsiveHeader = () => {
                     padding: "8px 0px",
                   }}
                 >
-                  <Typography fontSize={"14px"} sx={styles.LinkTypo}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"14px"}
+                    sx={styles.LinkTypo}
+                  >
                     {item.title}
                   </Typography>
                 </Link>
               </Grid>
             );
           })}
-          {/* <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
-            <Link
-              href={"/portfolio"}
-              style={{
-                textDecoration: "none",
-                color: "white",
-              }}
-            >
-              <Typography fontSize={"20px"} sx={styles.LinkTypo}>
-                Portfolio
-              </Typography>
-            </Link>
-          </Grid> */}
         </Grid>
       </Drawer>
     </Box>

@@ -28,43 +28,70 @@ const ConatctUs = () => {
               >
                 <Grid container item xs={12} lg={6.5}>
                   <Grid item xs={12} sx={{ marginBottom: "48px" }}>
-                    <Typography fontSize={"18.5px"}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"18.5px"}
+                    >
                       Lets built the next big thing!
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontSize={"48px"} lineHeight={"58px"}>
+                    <Typography
+                      fontSize={"48px"}
+                      lineHeight={"58px"}
+                      fontFamily={"var(--work-Sans)"}
+                    >
                       {"Have a project? Let’s connect"}
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontSize={"13px"} sx={{ color: "#a5bcd5" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"13px"}
+                      sx={{ color: "#a5bcd5" }}
+                    >
                       {"Send your details and we’ll get in touch"}
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontSize={"14px"} sx={{ color: "#a5bcd5" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"14px"}
+                      sx={{ color: "#a5bcd5" }}
+                    >
                       Expect a response within 24 hours.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontSize={"14px"} sx={{ color: "#a5bcd5" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"14px"}
+                      sx={{ color: "#a5bcd5" }}
+                    >
                       We’re open to signing an NDA, if needed.
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontSize={"14px"} sx={{ color: "#a5bcd5" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"14px"}
+                      sx={{ color: "#a5bcd5" }}
+                    >
                       Engage directly with our product experts, not account
                       managers
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={{ marginTop: "110px" }}>
-                    <Typography fontSize={"12px"} sx={{ color: "#a5bcd5" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"12px"}
+                      sx={{ color: "#a5bcd5" }}
+                    >
                       Reach out to us at
                     </Typography>
                   </Grid>
                   <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontSize={"20px"}>
+                    <Typography fontFamily={"var(--nunito)"} fontSize={"20px"}>
                       <Link
                         href={"mailto:hello@rootquotient.com"}
                         sx={{ color: "white", textDecoration: "none" }}
@@ -74,7 +101,9 @@ const ConatctUs = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography>+1 (647) 374 5600</Typography>
+                    <Typography fontFamily={"var(--nunito)"}>
+                      +1 (647) 374 5600
+                    </Typography>
                   </Grid>
                 </Grid>
               </Container>
@@ -86,6 +115,7 @@ const ConatctUs = () => {
             <Grid container sx={{ display: "flex", justifyContent: "center" }}>
               <Grid item xs={11} sm={10.5}>
                 <Typography
+                  fontFamily={"var(--nunito)"}
                   fontSize={"28px"}
                   fontWeight={700}
                   sx={{
@@ -133,7 +163,9 @@ const ConatctUs = () => {
                   sx={{ marginBottom: "20px" }}
                 />
                 <Button sx={styles.Button}>
-                  <Typography fontSize={"12px"}>Submit</Typography>
+                  <Typography fontFamily={"var(--nunito)"} fontSize={"12px"}>
+                    Submit
+                  </Typography>
                 </Button>
               </Grid>
             </Grid>

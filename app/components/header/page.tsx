@@ -77,7 +77,9 @@ const Header = () => {
                       color: ChangeNavBarColor ? "black" : "white",
                     }}
                   >
-                    <Typography>{"About Us"}</Typography>
+                    <Typography fontFamily={"var(--nunito)"}>
+                      {"About Us"}
+                    </Typography>
                   </Link>
                   {HeaderData.map((item, index) => (
                     <Box key={`${item?.id}-${index}`}>
@@ -102,7 +104,9 @@ const Header = () => {
                           color: ChangeNavBarColor ? "black" : "white",
                         }}
                       >
-                        <Typography>{item.name}</Typography>
+                        <Typography fontFamily={"var(--nunito)"}>
+                          {item.name}
+                        </Typography>
                       </Link>
                       {/* )} */}
                     </Box>

@@ -22,6 +22,7 @@ const ContactAccordion = () => {
             fontSize={{ xs: "32px", sm: "48px" }}
             fontWeight={"600"}
             sx={{ color: "black" }}
+            fontFamily={"var(--work-Sans)"}
           >
             Frequently Ask Questions
           </Typography>
@@ -37,12 +38,20 @@ const ContactAccordion = () => {
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon sx={{ color: "#707070" }} />}
                     >
-                      <Typography fontSize={"20px"} sx={{ color: "black" }}>
+                      <Typography
+                        fontSize={"20px"}
+                        sx={{ color: "black" }}
+                        fontFamily={"var(--work-Sans)"}
+                      >
                         {item.question}
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                      <Typography fontSize={"14px"} sx={{ color: "#707070" }}>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"14px"}
+                        sx={{ color: "#707070" }}
+                      >
                         {item.answer}
                       </Typography>
                     </AccordionDetails>

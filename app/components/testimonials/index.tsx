@@ -18,12 +18,17 @@ const Testimonials = () => {
               fontSize={"44px"}
               fontWeight={600}
               sx={{ marginBottom: "10px", color: "#004ca2" }}
+              fontFamily={"var(--work-Sans)"}
             >
               About Technologies
             </Typography>
           </Grid>
           <Grid item xs={12} md={8}>
-            <Typography fontSize={"14px"} sx={{ color: "#555" }}>
+            <Typography
+              fontFamily={"var(--nunito)"}
+              fontSize={"14px"}
+              sx={{ color: "#555" }}
+            >
               Utilizing an array of technologies, frameworks, libraries, and
               tools, we strive to create websites that not only meet but exceed
               the expectations of our clients. Our diverse toolkit enables us to
@@ -73,10 +78,14 @@ const Testimonials = () => {
                           </Box>
                         </Grid>
                         <Grid item xs={12} sm={6} md={7} lg={8}>
-                          <Typography sx={{ color: "white" }}>
+                          <Typography
+                            fontFamily={"var(--nunito)"}
+                            sx={{ color: "white" }}
+                          >
                             {item.content}
                           </Typography>
                           <Typography
+                            fontFamily={"var(--nunito)"}
                             fontSize={"14px"}
                             sx={{
                               margin: "10px 0px 0px 0px",
@@ -87,6 +96,7 @@ const Testimonials = () => {
                             {item.TechnologieName}
                           </Typography>
                           <Typography
+                            fontFamily={"var(--nunito)"}
                             fontSize={"12px"}
                             sx={{ color: "white", fontWeight: 500 }}
                           >

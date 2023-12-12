@@ -38,12 +38,20 @@ const Partners = () => {
           </Grid>
           <Grid container item xs={12} sm={5.5} lg={5}>
             <Grid item xs={12} sm={12} md={12} lg={12} sx={styles.textMargin}>
-              <Typography fontSize={"36px"} fontWeight={500}>
+              <Typography
+                fontSize={"36px"}
+                fontWeight={500}
+                fontFamily={"var(--work-Sans)"}
+              >
                 Our Valued Clients
               </Typography>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={10.5} sx={styles.textMargin}>
-              <Typography fontSize={"16px"} fontWeight={400}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"16px"}
+                fontWeight={400}
+              >
                 We have built strong relationships with our diverse clientele,
                 partnering with them to deliver custom product solutions.
               </Typography>

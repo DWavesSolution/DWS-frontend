@@ -32,10 +32,13 @@ const Scores = () => {
                     fontSize={"48px"}
                     fontWeight={700}
                     sx={{ color: "#004ca2" }}
+                    fontFamily={"var(--work-Sans)"}
                   >
                     {item.number}
                   </Typography>
-                  <Typography fontSize={"14px"}>{item.name}</Typography>
+                  <Typography fontFamily={"var(--nunito)"} fontSize={"14px"}>
+                    {item.name}
+                  </Typography>
                 </Box>
               </Grid>
             );

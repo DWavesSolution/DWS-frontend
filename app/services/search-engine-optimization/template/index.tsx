@@ -26,12 +26,14 @@ const SearchEngineOptimization = () => {
                   fontSize={"14.4px"}
                   fontWeight={600}
                   sx={{ color: "black" }}
+                  fontFamily={"var(--nunito)"}
                 >
                   {"Services > Search Engine Optimization"}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={9}>
                 <Typography
+                  fontFamily={"var(--work-Sans)"}
                   fontSize={"36px"}
                   fontWeight={550}
                   lineHeight={{ xs: "46px" }}
@@ -41,7 +43,10 @@ const SearchEngineOptimization = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
-                <Typography sx={{ color: "black" }}>
+                <Typography
+                  fontFamily={"var(--nunito)"}
+                  sx={{ color: "black" }}
+                >
                   In the digital landscape, where visibility is key, we
                   specialize in optimizing your website to not only rank higher
                   on search engines but also to outshine your competitors. Our
@@ -61,7 +66,10 @@ const SearchEngineOptimization = () => {
                   duration={1000}
                 >
                   <Button variant="outlined" sx={styles.Button}>
-                    <Typography sx={{ color: "#004ca2" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      sx={{ color: "#004ca2" }}
+                    >
                       {"Contact now"}
                     </Typography>
                   </Button>
@@ -103,10 +111,16 @@ const SearchEngineOptimization = () => {
                         fontSize={"48px"}
                         fontWeight={700}
                         sx={{ color: "#004ca2" }}
+                        fontFamily={"var(--work-Sans)"}
                       >
                         {item.number}
                       </Typography>
-                      <Typography fontSize={"14px"}>{item.name}</Typography>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"14px"}
+                      >
+                        {item.name}
+                      </Typography>
                     </Box>
                   </Grid>
                 );

@@ -14,13 +14,25 @@ const OurPromise = () => {
       <Container>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} md={4.5}>
-            <Typography fontSize={"11px"} sx={styles.Heading}>
+            <Typography
+              fontFamily={"var(--nunito)"}
+              fontSize={"11px"}
+              sx={styles.Heading}
+            >
               OUR PROMISE
             </Typography>
-            <Typography fontSize={"28px"} sx={styles.Title}>
+            <Typography
+              fontSize={"28px"}
+              sx={styles.Title}
+              fontFamily={"var(--work-Sans)"}
+            >
               Commitment to Building Trustworthy Partnership
             </Typography>
-            <Typography fontSize={"12px"} sx={styles.Description}>
+            <Typography
+              fontFamily={"var(--nunito)"}
+              fontSize={"12px"}
+              sx={styles.Description}
+            >
               We value your trust and intend to maintain transparency and open
               communication at every step of the way. Thus, we take all measures
               to patronize our efforts from the moment of engagement until the
@@ -36,7 +48,11 @@ const OurPromise = () => {
                   style={{ objectFit: "contain" }}
                 />
               </Box>
-              <Typography fontSize={"14px"} fontWeight={700}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"14px"}
+                fontWeight={700}
+              >
                 Intuitive UI/UX
               </Typography>
             </Grid>
@@ -48,7 +64,11 @@ const OurPromise = () => {
                   style={{ objectFit: "contain" }}
                 />
               </Box>
-              <Typography fontSize={"14px"} fontWeight={700}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"14px"}
+                fontWeight={700}
+              >
                 Excellence in Engineering
               </Typography>
             </Grid>
@@ -60,7 +80,11 @@ const OurPromise = () => {
                   style={{ objectFit: "contain" }}
                 />
               </Box>
-              <Typography fontSize={"14px"} fontWeight={700}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"14px"}
+                fontWeight={700}
+              >
                 Reliable Delivery
               </Typography>
             </Grid>
@@ -72,7 +96,11 @@ const OurPromise = () => {
                   style={{ objectFit: "contain" }}
                 />
               </Box>
-              <Typography fontSize={"14px"} fontWeight={700}>
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"14px"}
+                fontWeight={700}
+              >
                 Protection of Confidentiality
               </Typography>
             </Grid>

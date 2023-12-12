@@ -25,14 +25,18 @@ const LandingBanner = () => {
                 <Typography
                   fontSize={{ xs: "36px", sm: "60px" }}
                   fontWeight={600}
-                  lineHeight={{ xs: "46px", sm: "70px" }}
+                  lineHeight={{ xs: "46px", sm: "60px" }}
                   sx={{ color: "white" }}
+                  fontFamily={"var(--work-Sans)"}
                 >
                   Transforming businesses with custom product innovation
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
-                <Typography sx={{ color: "white" }}>
+                <Typography
+                  sx={{ color: "white" }}
+                  fontFamily={"var(--nunito)"}
+                >
                   We have mastered the end-to-end product development lifecycle
                   to help you go-to-market faster.
                 </Typography>
@@ -46,7 +50,10 @@ const LandingBanner = () => {
                   duration={1000}
                 >
                   <Button variant="outlined" sx={styles.Button}>
-                    <Typography sx={{ color: "white" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      sx={{ color: "white" }}
+                    >
                       {"Let's Talk"}
                     </Typography>
                   </Button>

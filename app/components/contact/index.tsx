@@ -22,7 +22,8 @@ const ContactUs = () => {
           <Grid item xs={11} sm={7} lg={7}>
             <Typography
               fontSize={"44px"}
-              lineHeight={"54px"}
+              lineHeight={"50px"}
+              fontFamily={"var(--work-Sans)"}
               sx={{
                 color: "#004ca2",
                 marginBottom: "32px",
@@ -33,6 +34,7 @@ const ContactUs = () => {
             </Typography>
             <Typography
               fontSize={"14px"}
+              fontFamily={"var(--nunito)"}
               sx={{
                 marginBottom: "48px",
                 width: { xs: "100%", sm: "65%", lg: "40%" },
@@ -41,10 +43,18 @@ const ContactUs = () => {
               Once you submit this form, expect to hear back from us within 24
               hours.
             </Typography>
-            <Typography fontSize={"14px"} sx={{ marginBottom: "16px" }}>
+            <Typography
+              fontFamily={"var(--nunito)"}
+              fontSize={"14px"}
+              sx={{ marginBottom: "16px" }}
+            >
               Reach Us At
             </Typography>
-            <Typography fontSize={"22px"} fontWeight={700}>
+            <Typography
+              fontFamily={"var(--nunito)"}
+              fontSize={"22px"}
+              fontWeight={700}
+            >
               <Link
                 href={"mailto:hello@rootquotient.com"}
                 sx={{ color: "black", textDecoration: "none" }}
@@ -52,7 +62,11 @@ const ContactUs = () => {
                 hello@rootquotient.com
               </Link>
             </Typography>
-            <Typography fontSize={"22px"} fontWeight={700}>
+            <Typography
+              fontFamily={"var(--nunito)"}
+              fontSize={"22px"}
+              fontWeight={700}
+            >
               +1 (647) 374 5600
             </Typography>
           </Grid>
@@ -86,7 +100,9 @@ const ContactUs = () => {
               sx={{ marginBottom: "15px" }}
             />
             <Button sx={styles.Button}>
-              <Typography fontSize={"12px"}>Submit</Typography>
+              <Typography fontFamily={"var(--nunito)"} fontSize={"12px"}>
+                Submit
+              </Typography>
             </Button>
           </Grid>
         </Grid>

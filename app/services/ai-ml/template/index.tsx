@@ -23,6 +23,7 @@ const AIML = () => {
             <Grid item xs={12} lg={10}>
               <Grid item xs={12}>
                 <Typography
+                  fontFamily={"var(--nunito)"}
                   fontSize={"14.4px"}
                   fontWeight={600}
                   sx={{ color: "black" }}
@@ -32,6 +33,7 @@ const AIML = () => {
               </Grid>
               <Grid item xs={12} lg={9}>
                 <Typography
+                  fontFamily={"var(--work-Sans)"}
                   fontSize={{ xs: "36px", sm: "52px" }}
                   fontWeight={550}
                   lineHeight={{ xs: "46px", sm: "62px" }}
@@ -41,7 +43,10 @@ const AIML = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
-                <Typography sx={{ color: "black" }}>
+                <Typography
+                  fontFamily={"var(--nunito)"}
+                  sx={{ color: "black" }}
+                >
                   As a leading provider of artificial intelligence and machine
                   learning services, we are dedicated to transforming your
                   business through cutting-edge technology solutions. We harness
@@ -59,7 +64,10 @@ const AIML = () => {
                   duration={1000}
                 >
                   <Button variant="outlined" sx={styles.Button}>
-                    <Typography sx={{ color: "#004ca2" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      sx={{ color: "#004ca2" }}
+                    >
                       {"Contact now"}
                     </Typography>
                   </Button>
@@ -98,13 +106,19 @@ const AIML = () => {
                   >
                     <Box sx={styles.ScoresBox}>
                       <Typography
+                        fontFamily={"var(--work-Sans)"}
                         fontSize={"48px"}
                         fontWeight={700}
                         sx={{ color: "#004ca2" }}
                       >
                         {item.number}
                       </Typography>
-                      <Typography fontSize={"14px"}>{item.name}</Typography>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"14px"}
+                      >
+                        {item.name}
+                      </Typography>
                     </Box>
                   </Grid>
                 );

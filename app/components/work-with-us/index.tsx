@@ -13,6 +13,7 @@ const WorkWithUs = () => {
             fontSize={{ xs: "20px", md: "28px" }}
             fontWeight={500}
             sx={{ color: "white" }}
+            fontFamily={"var(--work-Sans)"}
           >
             Ready to empower your product vision with us?
           </Typography>

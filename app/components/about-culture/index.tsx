@@ -11,7 +11,11 @@ const AboutCulture = () => {
       <Container>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} sx={styles.title}>
-            <Typography fontSize={"11px"} sx={{ color: "white" }}>
+            <Typography
+              fontSize={"11px"}
+              sx={{ color: "white" }}
+              fontFamily={"var(--nunito)"}
+            >
               OUR DEFINITION OF CULTURE
             </Typography>
           </Grid>
@@ -20,6 +24,7 @@ const AboutCulture = () => {
               fontSize={"28px"}
               fontWeight={400}
               sx={{ color: "white" }}
+              fontFamily={"var(--nunito)"}
             >
               Our culture is our foundation, centered around continuous learning
               and driven by our commitment to transparency, inclusivity, and
@@ -44,10 +49,15 @@ const AboutCulture = () => {
                       fontSize={"48px"}
                       fontWeight={700}
                       sx={{ color: "white" }}
+                      fontFamily={"var(--work-Sans)"}
                     >
                       {item.number}
                     </Typography>
-                    <Typography fontSize={"14px"} sx={{ color: "white" }}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      fontSize={"14px"}
+                      sx={{ color: "white" }}
+                    >
                       {item.name}
                     </Typography>
                   </Box>
