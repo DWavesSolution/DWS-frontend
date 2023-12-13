@@ -50,7 +50,6 @@ const Header = () => {
         backdropFilter: ChangeNavBarColor ? "blur(30px)" : null,
         background: ChangeNavBarColor ? "hsla(0,0%,99%,.365)" : "transparent",
         borderBottom: ChangeNavBarColor ? ".3px solid #fff" : null,
-        color: "black",
       }}
     >
       <Toolbar>
@@ -74,7 +73,7 @@ const Header = () => {
                     href={"/about-us"}
                     style={{
                       textDecoration: "none",
-                      color: ChangeNavBarColor ? "black" : "white",
+                      color: "black",
                     }}
                   >
                     <Typography fontFamily={"var(--nunito)"}>
@@ -101,7 +100,7 @@ const Header = () => {
                         href={item.link}
                         style={{
                           textDecoration: "none",
-                          color: ChangeNavBarColor ? "black" : "white",
+                          color: "black",
                         }}
                       >
                         <Typography fontFamily={"var(--nunito)"}>
