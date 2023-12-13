@@ -3,12 +3,18 @@ export const styles = {
     display: "flex",
     justifyContent: "center",
   },
+  ImageCard: { borderRadius: "0px", height: "100vh" },
   CardMedia: {
     height: "100%",
     width: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+  },
+  ImageContainer: {
+    color: "white",
+    display: "flex",
+    justifyContent: "space-around",
   },
   Button: {
     display: "flex",
@@ -23,5 +29,5 @@ export const styles = {
     justifyContent: "center",
     alignItems: "center",
   },
-  TextMargin: { marginBottom: "12px" },
+  TextMargin: { marginBottom: "10px" },
 };

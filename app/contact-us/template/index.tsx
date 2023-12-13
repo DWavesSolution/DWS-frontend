@@ -17,96 +17,85 @@ const ConatctUs = () => {
     <Box sx={styles.MainBox}>
       <Grid container>
         <Grid item xs={12} lg={6}>
-          <Card sx={{ borderRadius: "0px", height: "100vh" }}>
+          <Card sx={styles.ImageCard}>
             <CardMedia sx={styles.CardMedia} image={"/contact-bg.webp"}>
-              <Container
-                sx={{
-                  color: "white",
-                  display: "flex",
-                  justifyContent: "space-around",
-                }}
-              >
-                <Grid container item xs={12} lg={6.5}>
-                  <Grid item xs={12} sx={{ marginBottom: "48px" }}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"18.5px"}
-                    >
-                      Lets built the next big thing!
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography
-                      fontSize={"48px"}
-                      lineHeight={"58px"}
-                      fontFamily={"var(--work-Sans)"}
-                    >
-                      {"Have a project? Let’s connect"}
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"13px"}
-                      sx={{ color: "#a5bcd5" }}
-                    >
-                      {"Send your details and we’ll get in touch"}
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"14px"}
-                      sx={{ color: "#a5bcd5" }}
-                    >
-                      Expect a response within 24 hours.
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"14px"}
-                      sx={{ color: "#a5bcd5" }}
-                    >
-                      We’re open to signing an NDA, if needed.
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"14px"}
-                      sx={{ color: "#a5bcd5" }}
-                    >
-                      Engage directly with our product experts, not account
-                      managers
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={{ marginTop: "110px" }}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"12px"}
-                      sx={{ color: "#a5bcd5" }}
-                    >
-                      Reach out to us at
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sx={styles.TextMargin}>
-                    <Typography fontFamily={"var(--nunito)"} fontSize={"20px"}>
-                      <Link
-                        href={"mailto:hello@rootquotient.com"}
-                        sx={{ color: "white", textDecoration: "none" }}
-                      >
-                        hello@rootquotient.com
-                      </Link>
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography fontFamily={"var(--nunito)"}>
-                      +1 (647) 374 5600
-                    </Typography>
-                  </Grid>
+              <Grid container item xs={12} lg={6.5} sx={styles.ImageContainer}>
+                <Grid item xs={12} sx={{ marginBottom: "42px" }}>
+                  <Typography fontFamily={"var(--nunito)"} fontSize={"18.5px"}>
+                    Lets built the next big thing!
+                  </Typography>
                 </Grid>
-              </Container>
+                <Grid item xs={12} sx={styles.TextMargin}>
+                  <Typography
+                    fontSize={"48px"}
+                    lineHeight={"50px"}
+                    fontFamily={"var(--work-Sans)"}
+                  >
+                    {"Have a project? Let’s connect"}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sx={styles.TextMargin}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"14px"}
+                    sx={{ color: "#a5bcd5" }}
+                  >
+                    {"Send your details and we’ll get in touch"}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sx={styles.TextMargin}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"14px"}
+                    sx={{ color: "#a5bcd5" }}
+                  >
+                    Expect a response within 24 hours.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sx={styles.TextMargin}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"14px"}
+                    sx={{ color: "#a5bcd5" }}
+                  >
+                    We’re open to signing an NDA, if needed.
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sx={styles.TextMargin}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"14px"}
+                    sx={{ color: "#a5bcd5" }}
+                  >
+                    Engage directly with our product experts, not account
+                    managers
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sx={{ marginTop: "40px" }}>
+                  <Typography
+                    fontFamily={"var(--nunito)"}
+                    fontSize={"12px"}
+                    sx={{ color: "#a5bcd5" }}
+                  >
+                    Reach out to us at
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} sx={styles.TextMargin}>
+                  <Typography fontFamily={"var(--nunito)"} fontSize={"20px"}>
+                    <Link
+                      href={"mailto:hello@rootquotient.com"}
+                      sx={{ color: "white", textDecoration: "none" }}
+                    >
+                      hello@rootquotient.com
+                    </Link>
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography fontFamily={"var(--nunito)"}>
+                    +1 (647) 374 5600
+                  </Typography>
+                </Grid>
+              </Grid>
             </CardMedia>
           </Card>
         </Grid>

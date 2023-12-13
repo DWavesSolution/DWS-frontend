@@ -56,7 +56,7 @@ const ContactUs = () => {
               fontWeight={700}
             >
               <Link
-                href={"mailto:hello@rootquotient.com"}
+                href={"mailto:Info@digitalwavesolutions.ca"}
                 sx={{ color: "black", textDecoration: "none" }}
               >
                 hello@rootquotient.com
