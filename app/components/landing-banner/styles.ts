@@ -19,4 +19,9 @@ export const styles = {
     textTransform: "none",
     padding: "8px 32px",
   },
+  socialIcons: {
+    marginBottom: "20px",
+    display: "flex",
+    justifyContent: "space-evenly",
+  },
 };

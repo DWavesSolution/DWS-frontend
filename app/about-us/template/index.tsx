@@ -74,9 +74,9 @@ const AboutPage = () => {
                   return (
                     <Grid
                       item
-                      xs={3}
+                      xs={2}
                       sm={1}
-                      sx={{ marginBottom: "20px" }}
+                      sx={styles.socialIcons}
                       key={`${item?.id}-${index}`}
                     >
                       <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>

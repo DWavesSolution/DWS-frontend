@@ -76,7 +76,13 @@ const AIML = () => {
               <Grid container sx={{ marginTop: "30px" }}>
                 {socialIcons.map((item, index) => {
                   return (
-                    <Grid item xs={3} sm={1} key={`${item?.id}-${index}`}>
+                    <Grid
+                      item
+                      xs={2}
+                      sm={1}
+                      sx={styles.socialIcons}
+                      key={`${item?.id}-${index}`}
+                    >
                       <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
                         <Link href={item.link} target="blank">
                           <DWSImage src={item.logo} alt="Social Icons" />

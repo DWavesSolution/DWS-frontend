@@ -30,4 +30,9 @@ export const styles = {
     textAlign: "center",
   },
   ScoresBox: { padding: "30px", width: "100%" },
+  socialIcons: {
+    marginBottom: "20px",
+    display: "flex",
+    justifyContent: "space-evenly",
+  },
 };
