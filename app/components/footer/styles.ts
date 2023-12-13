@@ -10,5 +10,9 @@ export const styles = {
     },
   },
   Divider: { border: "1px solid #676767", margin: "15px 0px" },
-  Icons: { display: "flex", justifyContent: "space-between" },
+  Icons: {
+    display: "flex",
+    justifyContent: "space-between",
+    background: "pink",
+  },
 };

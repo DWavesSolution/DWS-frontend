@@ -17,7 +17,7 @@ const Footer = () => {
     <Box sx={styles.MainBox}>
       <Container>
         <Grid container>
-          <Grid item xs={12} sm={12} md={12} lg={12}>
+          <Grid item xs={12}>
             <Box sx={{ height: 150, width: 200 }}>
               <DWSImage
                 src={FooterLogo}
@@ -43,14 +43,7 @@ const Footer = () => {
               >
                 {Capability_Data.slice(0, 5).map((item, index) => {
                   return (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={12}
-                      md={12}
-                      lg={4}
-                      key={`${item?.id}-${index}`}
-                    >
+                    <Grid item xs={12} lg={4} key={`${item?.id}-${index}`}>
                       <Typography
                         fontFamily={"var(--nunito)"}
                         fontSize={"12px"}
@@ -63,14 +56,7 @@ const Footer = () => {
                 })}
                 {Capability_Data.slice(5, 10).map((item, index) => {
                   return (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={12}
-                      md={12}
-                      lg={4}
-                      key={`${item?.id}-${index}`}
-                    >
+                    <Grid item xs={12} lg={4} key={`${item?.id}-${index}`}>
                       <Typography
                         fontFamily={"var(--nunito)"}
                         fontSize={"12px"}
@@ -83,14 +69,7 @@ const Footer = () => {
                 })}
                 {Capability_Data.slice(10, 15).map((item, index) => {
                   return (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={12}
-                      md={12}
-                      lg={4}
-                      key={`${item?.id}-${index}`}
-                    >
+                    <Grid item xs={12} lg={4} key={`${item?.id}-${index}`}>
                       <Typography
                         fontFamily={"var(--nunito)"}
                         fontSize={"12px"}
@@ -113,14 +92,7 @@ const Footer = () => {
               <Divider sx={styles.Divider} />
               {Services_Data.map((item, index) => {
                 return (
-                  <Grid
-                    item
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    lg={12}
-                    key={`${item?.id}-${index}`}
-                  >
+                  <Grid item xs={12} key={`${item?.id}-${index}`}>
                     <Typography
                       fontFamily={"var(--nunito)"}
                       fontSize={"12px"}
@@ -142,14 +114,7 @@ const Footer = () => {
               <Divider sx={styles.Divider} />
               {Project_Data.map((item, index) => {
                 return (
-                  <Grid
-                    item
-                    xs={12}
-                    sm={12}
-                    md={12}
-                    lg={12}
-                    key={`${item?.id}-${index}`}
-                  >
+                  <Grid item xs={12} key={`${item?.id}-${index}`}>
                     <Typography
                       fontFamily={"var(--nunito)"}
                       fontSize={"12px"}
@@ -163,90 +128,41 @@ const Footer = () => {
             </Grid>
           </Grid>
           <Grid container sx={{ margin: "50px 0px", alignItems: "center" }}>
-            <Grid item xs={12} sm={3} md={2.5}>
+            <Grid item xs={12} sm={4}>
               <Typography
                 fontFamily={"var(--nunito)"}
                 fontSize={"11px"}
                 sx={{ color: "white" }}
               >
-                Copyright owned by DWS 2023
+                © Copyright owned by DWS 2023
               </Typography>
             </Grid>
-            <Grid container item xs={12} sm={5} md={3.5}>
-              <Grid item xs={4} sm={4}>
-                <Link
-                  href={"#"}
-                  target="new_blank"
-                  style={{ textDecoration: "none" }}
+            <Grid item xs={12} sm={4}>
+              <Link
+                href={"mailto:Info@digitalwavesolutions.ca"}
+                target="new_blank"
+                style={{ textDecoration: "none" }}
+              >
+                <Typography
+                  fontFamily={"var(--nunito)"}
+                  fontSize={"16px"}
+                  sx={{ color: "white" }}
                 >
-                  <Typography
-                    fontFamily={"var(--nunito)"}
-                    fontSize={"11px"}
-                    sx={{ color: "#676767" }}
-                  >
-                    Terms & Condition
-                  </Typography>
-                </Link>
-              </Grid>
-              <Grid item xs={4} sm={4}>
-                <Link
-                  href={"#"}
-                  target="new_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Typography
-                    fontFamily={"var(--nunito)"}
-                    fontSize={"11px"}
-                    sx={{ color: "#676767" }}
-                  >
-                    Cookie Policy
-                  </Typography>
-                </Link>
-              </Grid>
-              <Grid item xs={4} sm={4}>
-                <Link
-                  href={"#"}
-                  target="new_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Typography
-                    fontFamily={"var(--nunito)"}
-                    fontSize={"11px"}
-                    sx={{ color: "#676767" }}
-                  >
-                    Disclaimer
-                  </Typography>
-                </Link>
-              </Grid>
+                  Info@digitalwavesolutions.ca
+                </Typography>
+              </Link>
             </Grid>
-            <Grid container item xs={12} sm={12} md={6}>
-              <Grid item xs={12} sm={3} md={5} lg={5}>
-                <Link
-                  href={"mailto:Info@digitalwavesolutions.ca"}
-                  target="new_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Typography
-                    fontFamily={"var(--nunito)"}
-                    fontSize={"16px"}
-                    sx={{ color: "white" }}
+            <Grid item xs={12} sm={4} sx={styles.Icons}>
+              {socialIcons.map((item, index) => {
+                return (
+                  <Box
+                    sx={{ height: 25, width: 25 }}
+                    key={`${item?.id}-${index}`}
                   >
-                    Info@digitalwavesolutions.ca
-                  </Typography>
-                </Link>
-              </Grid>
-              <Grid container item xs={12} sm={4} lg={4} sx={styles.Icons}>
-                {socialIcons.map((item, index) => {
-                  return (
-                    <Box
-                      sx={{ height: 25, width: 25 }}
-                      key={`${item?.id}-${index}`}
-                    >
-                      <DWSImage src={item.logo} alt="Logos" />
-                    </Box>
-                  );
-                })}
-              </Grid>
+                    <DWSImage src={item.logo} alt="Logos" />
+                  </Box>
+                );
+              })}
             </Grid>
           </Grid>
         </Grid>

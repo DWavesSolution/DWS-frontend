@@ -17,7 +17,7 @@ import DWSImage from "../DWSImage";
 const LandingBanner = () => {
   return (
     <Box sx={styles.Card}>
-      <CardMedia sx={styles.CardMedia} image={"/home_landing.jpg"}>
+      <CardMedia sx={styles.CardMedia} image={"/overlay.jpg"}>
         <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
