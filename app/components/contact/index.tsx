@@ -52,7 +52,7 @@ const ContactUs = () => {
             </Typography>
             <Typography
               fontFamily={"var(--nunito)"}
-              fontSize={"22px"}
+              fontSize={"20px"}
               fontWeight={700}
             >
               <Link
