@@ -17,7 +17,7 @@ const ServicesSection = () => {
               </Typography>
             </Grid>
             <Grid container sx={styles.ServicesContent}>
-              <Grid item xs={12} sm={7}>
+              <Grid item xs={12} sm={6}>
                 <Typography
                   fontSize={{ xs: "28px", lg: "44px" }}
                   letterSpacing={"-1.14px"}
@@ -32,11 +32,11 @@ const ServicesSection = () => {
                   efficient, sustainable, and successful outcomes.
                 </Typography>
               </Grid>
-              <Grid item xs={12} sm={3} sx={{ display: "flex" }}>
+              <Grid item xs={12} sm={4} sx={{ display: "flex" }}>
                 {Services_Images.map((item, index) => {
                   return (
                     <Grid item xs={12} lg={3} key={`${item?.id}-${index}`}>
-                      <Box sx={{ weight: 55, height: 55 }}>
+                      <Box sx={{ weight: 45, height: 45 }}>
                         <DWSImage
                           src={item.logo}
                           alt="Services Images"

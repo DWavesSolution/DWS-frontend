@@ -19,7 +19,11 @@ const OurCoreValues = () => {
             </Typography>
           </Grid>
           <Grid item xs={12} sx={{ marginBottom: "40px" }}>
-            <Typography fontSize={"16px"} fontFamily={"var(--nunito)"}>
+            <Typography
+              fontSize={"16px"}
+              fontFamily={"var(--nunito)"}
+              sx={{ color: "black" }}
+            >
               {
                 "We develop and nurture every product as our own, prioritizing close collaboration with each client. From day one, we’re putting our heads together to turn your idea into a meaningful digital product. Our expert team is highly responsive and dedicated to ensuring your success, by providing an all-in approach from developing concepts to launching and supporting the product."
               }

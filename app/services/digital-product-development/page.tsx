@@ -8,6 +8,7 @@ import StreamLineBuisness from "@/app/components/streamline-buisness";
 import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 import { Streamline_Data, Why_DWS } from "@/app/static-data/data";
+import ContactUs from "@/app/components/contact";
 
 export async function generateMetadata() {
   const PageTitle = "Digital Product Development";
@@ -33,6 +34,7 @@ const page = () => {
         DataMapping={Why_DWS}
       />
       <MeticulouslyAccordion />
+      <ContactUs />
       <OurPromise />
     </Box>
   );

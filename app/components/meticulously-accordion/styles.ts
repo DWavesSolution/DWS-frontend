@@ -4,9 +4,9 @@ export const styles = {
     flexDirection: "column",
     alignItems: "center",
     padding: "70px 0px",
-    background: "linear-gradient(0deg,#e6f1ff,#fafdff)",
-    borderBottomRightRadius: "150px",
-    marginBottom: "50px",
+    background: "linear-gradient(180deg,#e6f1ff,#fafdff)",
+    // borderBottomRightRadius: "150px",
+    // marginBottom: "50px",
   },
   box: {
     display: "flex",
@@ -30,6 +30,6 @@ export const styles = {
     background: "linear-gradient(140deg,#26315b 25%,#127a88 85%,#004CA2)",
     color: "white",
     borderRadius: "16px",
-    padding: "70px",
+    padding: { xs: "35px", md: "70px" },
   },
 };

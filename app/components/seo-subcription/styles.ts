@@ -1,8 +1,8 @@
 export const styles = {
   MainBox: {
-    margin: "50px 0px",
+    // margin: "50px 0px",
     background: "linear-gradient(180deg,#e6f1ff,#fafdff)",
-    borderTopLeftRadius: "150px",
+    // borderTopLeftRadius: "150px",
     color: "white",
     padding: { xs: "20px 0px", md: "50px 0px" },
   },

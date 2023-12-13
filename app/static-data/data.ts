@@ -79,7 +79,7 @@ export const Services_Card = [
       { id: 3, name: "Product & App Modernization" },
       { id: 4, name: "DevOps And Continous Integration" },
     ],
-    logo: "/gear.webp",
+    logo: "/product-color-icon.png",
   },
   {
     id: "02",
@@ -92,7 +92,7 @@ export const Services_Card = [
       { id: 3, name: "Flutter Development" },
       { id: 4, name: "React Js Development" },
     ],
-    logo: "/peoples.webp",
+    logo: "/Social-media-color.png",
   },
   {
     id: "03",
@@ -103,7 +103,7 @@ export const Services_Card = [
       { id: 1, name: "Machine Leaning" },
       { id: 2, name: "Internet of Things" },
     ],
-    logo: "/database.webp",
+    logo: "/SEO-Color.png",
   },
   {
     id: "04",
@@ -114,7 +114,7 @@ export const Services_Card = [
       { id: 1, name: "End to End Consultantion" },
       { id: 2, name: "24x7 Support Operations" },
     ],
-    logo: "/bulb.webp",
+    logo: "/AI-ML-COLOR.png",
   },
 ];
 export const Scores_Card = [

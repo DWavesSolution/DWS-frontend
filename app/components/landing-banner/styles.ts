@@ -15,7 +15,7 @@ export const styles = {
     display: "flex",
   },
   Button: {
-    borderColor: "white",
+    borderColor: "#26315b",
     textTransform: "none",
     padding: "8px 32px",
   },

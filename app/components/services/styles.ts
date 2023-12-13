@@ -1,13 +1,11 @@
 export const styles = {
   MainBox: {
     background: "linear-gradient(180deg,#e6f1ff,#fafdff)",
-    clipPath:
-      "polygon(calc(100% - 187px) 0,100% 100px,100% 100%,0 100%,0 50px)",
   },
   servicesBox: {
     padding: {
       xs: "5rem 0rem 0rem 0rem",
-      sm: "10rem 5rem 2rem 5rem",
+      sm: "5rem 0rem 2rem 0rem",
     },
   },
   ServicesText: {

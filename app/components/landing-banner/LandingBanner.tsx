@@ -17,7 +17,7 @@ import DWSImage from "../DWSImage";
 const LandingBanner = () => {
   return (
     <Box sx={styles.Card}>
-      <CardMedia sx={styles.CardMedia} image={"/home_landing.webp"}>
+      <CardMedia sx={styles.CardMedia} image={"/home_landing.jpg"}>
         <Container data-aos="fade-down" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
@@ -26,7 +26,7 @@ const LandingBanner = () => {
                   fontSize={{ xs: "36px", sm: "60px" }}
                   fontWeight={600}
                   lineHeight={{ xs: "46px", sm: "60px" }}
-                  sx={{ color: "white" }}
+                  sx={{ color: "black" }}
                   fontFamily={"var(--work-Sans)"}
                 >
                   Transforming businesses with custom product innovation
@@ -34,7 +34,7 @@ const LandingBanner = () => {
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
                 <Typography
-                  sx={{ color: "white" }}
+                  sx={{ color: "black" }}
                   fontFamily={"var(--nunito)"}
                 >
                   We have mastered the end-to-end product development lifecycle
@@ -52,7 +52,7 @@ const LandingBanner = () => {
                   <Button variant="outlined" sx={styles.Button}>
                     <Typography
                       fontFamily={"var(--nunito)"}
-                      sx={{ color: "white" }}
+                      sx={{ color: "black" }}
                     >
                       {"Let's Talk"}
                     </Typography>

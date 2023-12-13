@@ -11,14 +11,14 @@ import React from "react";
 import { styles } from "./styles";
 import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "@/app/components/DWSImage";
+import { Link as ScrollLink } from "react-scroll";
 
 const AboutPage = () => {
   return (
     <Box sx={styles.Card}>
       <CardMedia sx={styles.CardMedia} image={"/culture_landing.webp"}>
-        <Container>
+        <Container data-aos="fade-down" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
               <Grid item xs={12} lg={9}>
@@ -51,25 +51,44 @@ const AboutPage = () => {
                   thrive in the tech industry.
                 </Typography>
               </Grid>
-            </Grid>
-          </Grid>
-          <Grid container sx={{ marginTop: "50px" }}>
-            {socialIcons.map((item, index) => {
-              return (
-                <Grid
-                  item
-                  xs={12}
-                  sx={{ marginBottom: "20px" }}
-                  key={`${item?.id}-${index}`}
+              <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
+                <ScrollLink
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={1000}
                 >
-                  <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
-                    <Link href={item.link} target="blank">
-                      <DWSImage src={item.logo} alt="Social Icons" />
-                    </Link>
-                  </Box>
-                </Grid>
-              );
-            })}
+                  <Button variant="outlined" sx={styles.Button}>
+                    <Typography
+                      fontFamily={"var(--nunito)"}
+                      sx={{ color: "white" }}
+                    >
+                      {"Let's Talk"}
+                    </Typography>
+                  </Button>
+                </ScrollLink>
+              </Grid>
+              <Grid container sx={{ marginTop: "50px", display: "flex" }}>
+                {socialIcons.map((item, index) => {
+                  return (
+                    <Grid
+                      item
+                      xs={3}
+                      sm={1}
+                      sx={{ marginBottom: "20px" }}
+                      key={`${item?.id}-${index}`}
+                    >
+                      <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
+                        <Link href={item.link} target="blank">
+                          <DWSImage src={item.logo} alt="Social Icons" />
+                        </Link>
+                      </Box>
+                    </Grid>
+                  );
+                })}
+              </Grid>
+            </Grid>
           </Grid>
         </Container>
       </CardMedia>

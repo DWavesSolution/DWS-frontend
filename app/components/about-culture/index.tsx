@@ -3,12 +3,11 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import { Scores_Card } from "@/app/static-data/data";
-import DWSImage from "../DWSImage";
 
 const AboutCulture = () => {
   return (
     <Box sx={styles.MainBox}>
-      <Container>
+      <Container data-aos="flip-down" data-aos-duration={3000}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} sx={styles.title}>
             <Typography

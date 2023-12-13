@@ -19,11 +19,6 @@ export const styles = {
     textTransform: "none",
     padding: "8px 32px",
   },
-  IconsGrid: {
-    marginTop: "20px",
-    alignItems: "center",
-    display: { xs: "none", md: "flex" },
-  },
   ScoresMainGrid: {
     display: "flex",
     justifyContent: "space-between",

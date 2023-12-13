@@ -8,6 +8,7 @@ import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 import SeoPackages from "@/app/components/seo-packages";
 import { Why_SEO } from "@/app/static-data/data";
+import ContactUs from "@/app/components/contact";
 
 export async function generateMetadata() {
   const PageTitle = "Search Engine Optimization";
@@ -26,6 +27,7 @@ const page = () => {
         DataMapping={Why_SEO}
       />
       <MeticulouslyAccordion />
+      <ContactUs />
       <OurPromise />
     </Box>
   );

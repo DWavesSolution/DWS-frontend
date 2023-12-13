@@ -8,6 +8,7 @@ import StreamLineBuisness from "@/app/components/streamline-buisness";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 import { Social_Media_Data } from "@/app/static-data/data";
 import SeoSubcription from "@/app/components/seo-subcription";
+import ContactUs from "@/app/components/contact";
 
 export async function generateMetadata() {
   const PageTitle = "Social Media Marketing";
@@ -28,6 +29,7 @@ const page = () => {
       <Testimonials />
       <SeoSubcription />
       <MeticulouslyAccordion />
+      <ContactUs />
       <OurPromise />
     </Box>
   );

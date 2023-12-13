@@ -31,7 +31,7 @@ const DigitalProductDevelopment = () => {
                   {"Services > Digital Product Development"}
                 </Typography>
               </Grid>
-              <Grid item xs={12} lg={9}>
+              <Grid item xs={12} md={9}>
                 <Typography
                   fontFamily={"var(--work-Sans)"}
                   fontSize={{ xs: "36px", sm: "52px" }}
@@ -71,56 +71,49 @@ const DigitalProductDevelopment = () => {
                   </Button>
                 </ScrollLink>
               </Grid>
-            </Grid>
-          </Grid>
-          <Grid container sx={styles.IconsGrid}>
-            <Grid item sm={0.5}>
-              {socialIcons.map((item, index) => {
-                return (
-                  <Grid
-                    item
-                    xs={12}
-                    sx={{ marginBottom: "20px" }}
-                    key={`${item?.id}-${index}`}
-                  >
-                    <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
-                      <Link href={item.link} target="blank">
-                        <DWSImage src={item.logo} alt="Social Icons" />
-                      </Link>
-                    </Box>
-                  </Grid>
-                );
-              })}
-            </Grid>
-            <Grid container item sm={9} sx={styles.ScoresMainGrid}>
-              {Scores_Card.map((item, index) => {
-                return (
-                  <Grid
-                    key={`${item?.id}-${index}`}
-                    item
-                    xs={5.8}
-                    sm={2.8}
-                    sx={styles.ScoresGrid}
-                  >
-                    <Box sx={styles.ScoresBox}>
-                      <Typography
-                        fontFamily={"var(--work-Sans)"}
-                        fontSize={"48px"}
-                        fontWeight={700}
-                        sx={{ color: "#004ca2" }}
-                      >
-                        {item.number}
-                      </Typography>
-                      <Typography
-                        fontFamily={"var(--nunito)"}
-                        fontSize={"14px"}
-                      >
-                        {item.name}
-                      </Typography>
-                    </Box>
-                  </Grid>
-                );
-              })}
+              <Grid container sx={{ marginTop: "30px" }}>
+                {socialIcons.map((item, index) => {
+                  return (
+                    <Grid item xs={3} sm={1} key={`${item?.id}-${index}`}>
+                      <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
+                        <Link href={item.link} target="blank">
+                          <DWSImage src={item.logo} alt="Social Icons" />
+                        </Link>
+                      </Box>
+                    </Grid>
+                  );
+                })}
+              </Grid>
+              <Grid container sx={styles.ScoresMainGrid}>
+                {Scores_Card.map((item, index) => {
+                  return (
+                    <Grid
+                      key={`${item?.id}-${index}`}
+                      item
+                      xs={5.8}
+                      sm={2.8}
+                      sx={styles.ScoresGrid}
+                    >
+                      <Box sx={styles.ScoresBox}>
+                        <Typography
+                          fontFamily={"var(--work-Sans)"}
+                          fontSize={"48px"}
+                          fontWeight={700}
+                          sx={{ color: "#004ca2" }}
+                        >
+                          {item.number}
+                        </Typography>
+                        <Typography
+                          fontFamily={"var(--nunito)"}
+                          fontSize={"14px"}
+                        >
+                          {item.name}
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  );
+                })}
+              </Grid>
             </Grid>
           </Grid>
         </Container>

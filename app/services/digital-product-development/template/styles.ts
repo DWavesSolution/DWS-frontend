@@ -6,7 +6,6 @@ export const styles = {
   },
   Card: {
     display: "flex",
-    // height: "100vh",
     border: "0px",
   },
   CardMedia: {
@@ -19,19 +18,13 @@ export const styles = {
     textTransform: "none",
     padding: "8px 32px",
   },
-  IconsGrid: {
-    marginTop: "20px",
-    alignItems: "center",
-    display: { xs: "none", md: "flex" },
-  },
   ScoresMainGrid: {
     display: "flex",
     justifyContent: "space-between",
   },
   ScoresGrid: {
     display: "flex",
-    justifyContent: "center",
     textAlign: "center",
   },
-  ScoresBox: { padding: "30px", width: "100%" },
+  ScoresBox: { padding: "30px 0px", width: "100%" },
 };
