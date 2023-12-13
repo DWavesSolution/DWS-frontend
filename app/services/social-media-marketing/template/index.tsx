@@ -17,7 +17,7 @@ import DWSImage from "@/app/components/DWSImage";
 const SocialMediaMarketing = () => {
   return (
     <Box sx={styles.Card}>
-      <CardMedia sx={styles.CardMedia} image={"/SMM.jpg"}>
+      <CardMedia sx={styles.CardMedia} image={""}>
         <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
