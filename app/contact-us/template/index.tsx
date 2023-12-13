@@ -83,10 +83,10 @@ const ConatctUs = () => {
                 <Grid item xs={12} sx={styles.TextMargin}>
                   <Typography fontFamily={"var(--nunito)"} fontSize={"20px"}>
                     <Link
-                      href={"mailto:hello@rootquotient.com"}
+                      href={"mailto:Info@digitalwavesolutions.ca"}
                       sx={{ color: "white", textDecoration: "none" }}
                     >
-                      hello@rootquotient.com
+                      Info@digitalwavesolutions.ca
                     </Link>
                   </Typography>
                 </Grid>

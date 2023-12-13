@@ -222,7 +222,7 @@ const Footer = () => {
             <Grid container item xs={12} sm={12} md={6}>
               <Grid item xs={12} sm={3} md={5} lg={5}>
                 <Link
-                  href={"mailto:hello@rootquotient.com"}
+                  href={"mailto:Info@digitalwavesolutions.ca"}
                   target="new_blank"
                   style={{ textDecoration: "none" }}
                 >
@@ -231,7 +231,7 @@ const Footer = () => {
                     fontSize={"16px"}
                     sx={{ color: "white" }}
                   >
-                    hello@rootquotient.com
+                    Info@digitalwavesolutions.ca
                   </Typography>
                 </Link>
               </Grid>

@@ -59,7 +59,7 @@ const ContactUs = () => {
                 href={"mailto:Info@digitalwavesolutions.ca"}
                 sx={{ color: "black", textDecoration: "none" }}
               >
-                hello@rootquotient.com
+                Info@digitalwavesolutions.ca
               </Link>
             </Typography>
             <Typography
