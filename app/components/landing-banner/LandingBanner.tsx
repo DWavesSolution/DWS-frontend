@@ -77,8 +77,13 @@ const LandingBanner = () => {
                       key={`${item?.id}-${index}`}
                     >
                       <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
-                        <Link href={item.link} target="blank">
-                          <DWSImage src={item.logo} alt="Social Icons" />
+                        <Link
+                          href={item.link}
+                          target="blank"
+                          rel="noopener"
+                          aria-label={item.name}
+                        >
+                          <DWSImage src={item.logo} alt={item.name} />
                         </Link>
                       </Box>
                     </Grid>

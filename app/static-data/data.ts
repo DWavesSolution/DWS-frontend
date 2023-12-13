@@ -156,12 +156,42 @@ export const Project_Data = [
   { id: 4, name: "Carbonhound" },
 ];
 export const socialIcons = [
-  { id: 1, logo: "/linkedin.svg", link: "https://linkedin.com" },
-  { id: 2, logo: "/twitter.svg", link: "https://twitter.com" },
-  { id: 3, logo: "/instagram.svg", link: "https://instagram.com" },
-  { id: 4, logo: "/youtube_icon.svg", link: "https://www.youtube.net/" },
-  { id: 4, logo: "/facebook.webp", link: "https://www.facebook.net/" },
-  { id: 4, logo: "/tiktok.svg", link: "https://tiktok.net/" },
+  {
+    id: 1,
+    name: "See More about us on Linkedin",
+    logo: "/linkedin.svg",
+    link: "https://linkedin.com",
+  },
+  {
+    id: 2,
+    name: "See More about us on Twitter",
+    logo: "/twitter.svg",
+    link: "https://twitter.com",
+  },
+  {
+    id: 3,
+    name: "See More about us on Instagram",
+    logo: "/instagram.svg",
+    link: "https://instagram.com",
+  },
+  {
+    id: 4,
+    name: "See More about us on Youtube",
+    logo: "/youtube_icon.svg",
+    link: "https://www.youtube.net/",
+  },
+  {
+    id: 5,
+    name: "See More about us on Facebook",
+    logo: "/facebook.webp",
+    link: "https://www.facebook.net/",
+  },
+  {
+    id: 6,
+    name: "See More about us on Tiktok",
+    logo: "/tiktok.svg",
+    link: "https://tiktok.net/",
+  },
 ];
 export const Testimonials_Data = [
   {

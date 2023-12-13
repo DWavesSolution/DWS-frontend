@@ -123,7 +123,14 @@ const Footer = () => {
                     sx={{ height: 25, width: 25 }}
                     key={`${item?.id}-${index}`}
                   >
-                    <DWSImage src={item.logo} alt="Logos" />
+                    <Link
+                      href={item.link}
+                      target="blank"
+                      rel="noopener"
+                      aria-label={item.name}
+                    >
+                      <DWSImage src={item.logo} alt={item.name} />
+                    </Link>
                   </Box>
                 );
               })}
