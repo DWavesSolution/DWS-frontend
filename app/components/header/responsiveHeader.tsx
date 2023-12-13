@@ -95,6 +95,23 @@ const ResponsiveHeader = () => {
               </Grid>
             );
           })}
+          <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
+            <Link
+              href={"/contact-us"}
+              style={{
+                textDecoration: "none",
+                color: "White",
+              }}
+            >
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"20px"}
+                sx={styles.LinkTypo}
+              >
+                Contact Us
+              </Typography>
+            </Link>
+          </Grid>
         </Grid>
       </Drawer>
     </Box>

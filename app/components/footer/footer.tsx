@@ -6,7 +6,6 @@ import DWSImage from "../DWSImage";
 import FooterLogo from "../../../public/headerLogo.png";
 import {
   Capability_Data,
-  Project_Data,
   Services_Data,
   socialIcons,
 } from "@/app/static-data/data";
@@ -18,7 +17,7 @@ const Footer = () => {
       <Container>
         <Grid container>
           <Grid item xs={12}>
-            <Box sx={{ height: 150, width: 200 }}>
+            <Box sx={{ height: 120, width: 120 }}>
               <DWSImage
                 src={FooterLogo}
                 alt="Footer Logo"
@@ -67,19 +66,6 @@ const Footer = () => {
                     </Grid>
                   );
                 })}
-                {Capability_Data.slice(10, 15).map((item, index) => {
-                  return (
-                    <Grid item xs={12} lg={4} key={`${item?.id}-${index}`}>
-                      <Typography
-                        fontFamily={"var(--nunito)"}
-                        fontSize={"12px"}
-                        sx={styles.FooterSubText}
-                      >
-                        {item.name}
-                      </Typography>
-                    </Grid>
-                  );
-                })}
               </Grid>
             </Grid>
             <Grid item xs={12} sm={3.9} lg={2}>
@@ -91,28 +77,6 @@ const Footer = () => {
               </Typography>
               <Divider sx={styles.Divider} />
               {Services_Data.map((item, index) => {
-                return (
-                  <Grid item xs={12} key={`${item?.id}-${index}`}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"12px"}
-                      sx={styles.FooterSubText}
-                    >
-                      {item.name}
-                    </Typography>
-                  </Grid>
-                );
-              })}
-            </Grid>
-            <Grid item xs={12} sm={3.9} lg={1}>
-              <Typography
-                fontFamily={"var(--nunito)"}
-                sx={{ color: "#676767" }}
-              >
-                Projects
-              </Typography>
-              <Divider sx={styles.Divider} />
-              {Project_Data.map((item, index) => {
                 return (
                   <Grid item xs={12} key={`${item?.id}-${index}`}>
                     <Typography

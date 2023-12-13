@@ -16,7 +16,7 @@ const ConatctUs = () => {
   return (
     <Box sx={styles.MainBox}>
       <Grid container>
-        <Grid item xs={12} lg={6}>
+        <Grid item xs={12} lg={5.7}>
           <Card sx={styles.ImageCard}>
             <CardMedia sx={styles.CardMedia} image={"/contact-bg.webp"}>
               <Grid container item xs={12} lg={6.5} sx={styles.ImageContainer}>
@@ -99,7 +99,7 @@ const ConatctUs = () => {
             </CardMedia>
           </Card>
         </Grid>
-        <Grid item xs={12} lg={6} sx={styles.ContactMainGrid}>
+        <Grid item xs={12} lg={6.3} sx={styles.ContactMainGrid}>
           <Container>
             <Grid container sx={{ display: "flex", justifyContent: "center" }}>
               <Grid item xs={11} sm={10.5}>

@@ -1,33 +1,24 @@
 export const HeaderData = [
-  // {
-  //   id: 1,
-  //   name: "About Us",
-  //   link: "about-us",
-  // },
   {
-    id: 2,
+    id: 1,
     name: "DPD",
     link: "/services/digital-product-development",
   },
   {
-    id: 3,
+    id: 2,
     name: "SMM",
     link: "/services/social-media-marketing",
   },
   {
-    id: 4,
+    id: 3,
     name: "SEO",
     link: "/services/search-engine-optimization",
   },
   {
-    id: 5,
+    id: 4,
     name: "AI / ML",
     link: "/services/ai-ml",
   },
-  // {
-  //   name: "Portfolio",
-  //   link: "portfolio",
-  // },
 ];
 export const Services_Menu = [
   {
@@ -120,7 +111,7 @@ export const Services_Card = [
 export const Scores_Card = [
   {
     id: 1,
-    number: "75+",
+    number: "35+",
     name: "Projects successfully completed",
   },
   {
@@ -154,9 +145,9 @@ export const Capability_Data = [
 ];
 export const Services_Data = [
   { id: 1, name: "Digital Product Development" },
-  { id: 2, name: "Staff Augmentation" },
-  { id: 3, name: "Data Analytics and Management" },
-  { id: 4, name: "Digital Strategy Consultation" },
+  { id: 2, name: "Social Media Marketing" },
+  { id: 3, name: "Search Engine Optimization" },
+  { id: 4, name: "AI / ML" },
 ];
 export const Project_Data = [
   { id: 1, name: "Aligner 4D" },

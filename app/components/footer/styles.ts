@@ -13,6 +13,5 @@ export const styles = {
   Icons: {
     display: "flex",
     justifyContent: "space-between",
-    background: "pink",
   },
 };
