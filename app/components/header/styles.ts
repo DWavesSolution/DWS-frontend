@@ -58,7 +58,7 @@ export const styles = {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    paddingBottom: "15px",
+    padding: "15px 0px",
   },
   DrawarPapar: {
     width: { xs: "100%", sm: "50%", md: "30%" },

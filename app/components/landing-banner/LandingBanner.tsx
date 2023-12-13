@@ -6,6 +6,8 @@ import {
   Container,
   Grid,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
@@ -15,13 +17,18 @@ import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "../DWSImage";
 
 const LandingBanner = () => {
+  const theme = useTheme();
+  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   return (
     <Box sx={styles.Card}>
-      <CardMedia sx={styles.CardMedia} image={"/overlay.jpg"}>
+      <CardMedia
+        sx={styles.CardMedia}
+        image={isMatch ? "/overlay.jpg" : "home_landing.jpg"}
+      >
         <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
-              <Grid item xs={12} lg={9}>
+              <Grid item xs={12} md={9}>
                 <Typography
                   fontSize={{ xs: "36px", sm: "60px" }}
                   fontWeight={600}
@@ -32,7 +39,7 @@ const LandingBanner = () => {
                   Transforming businesses with custom product innovation
                 </Typography>
               </Grid>
-              <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
+              <Grid item xs={12} sm={9} lg={6} sx={{ marginTop: "30px" }}>
                 <Typography
                   sx={{ color: "black" }}
                   fontFamily={"var(--nunito)"}

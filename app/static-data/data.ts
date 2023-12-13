@@ -112,7 +112,7 @@ export const Scores_Card = [
   {
     id: 1,
     number: "35+",
-    name: "Projects successfully completed",
+    name: "Technology stack",
   },
   {
     id: 2,

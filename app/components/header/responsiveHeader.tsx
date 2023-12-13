@@ -54,6 +54,7 @@ const ResponsiveHeader = () => {
           <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
               href={"/about-us"}
+              onClick={onCloseDrawer}
               style={{
                 textDecoration: "none",
                 color: "White",
@@ -78,6 +79,7 @@ const ResponsiveHeader = () => {
               >
                 <Link
                   href={`/services/${item.id}`}
+                  onClick={onCloseDrawer}
                   style={{
                     textDecoration: "none",
                     color: "hsla(0,0%,100%,.5)",
@@ -98,6 +100,7 @@ const ResponsiveHeader = () => {
           <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
               href={"/contact-us"}
+              onClick={onCloseDrawer}
               style={{
                 textDecoration: "none",
                 color: "White",

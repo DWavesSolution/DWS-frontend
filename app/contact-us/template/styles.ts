@@ -15,6 +15,7 @@ export const styles = {
     color: "white",
     display: "flex",
     justifyContent: "space-around",
+    margin: "auto",
   },
   Button: {
     display: "flex",
