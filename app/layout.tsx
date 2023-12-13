@@ -8,12 +8,12 @@ import "aos/dist/aos.css";
 import { Work_Sans, Nunito } from "next/font/google";
 
 const fontWorkSans = Work_Sans({
-  weight: ["700", "600", "500", "400"],
+  weight: ["900", "700", "600", "500", "400"],
   subsets: ["vietnamese"],
   variable: "--work-Sans",
 });
 const fontNunito = Nunito({
-  weight: ["700", "600", "500", "400"],
+  weight: ["900", "700", "600", "500", "400"],
   subsets: ["latin"],
   variable: "--nunito",
 });

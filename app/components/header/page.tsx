@@ -76,7 +76,7 @@ const Header = () => {
                       color: "black",
                     }}
                   >
-                    <Typography fontFamily={"var(--nunito)"}>
+                    <Typography fontFamily={"var(--nunito)"} fontWeight={700}>
                       {"About Us"}
                     </Typography>
                   </Link>
@@ -103,7 +103,10 @@ const Header = () => {
                           color: "black",
                         }}
                       >
-                        <Typography fontFamily={"var(--nunito)"}>
+                        <Typography
+                          fontFamily={"var(--nunito)"}
+                          fontWeight={700}
+                        >
                           {item.name}
                         </Typography>
                       </Link>
