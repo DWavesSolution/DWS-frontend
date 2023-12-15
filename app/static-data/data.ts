@@ -78,10 +78,10 @@ export const Services_Card = [
     description:
       "Elevate your brand with Digital Waves Solution's Social Media Marketing services. We craft impactful campaigns, engage your audience, and drive results. Boost your online presence with our expertise. Social success starts here.",
     types: [
-      { id: 1, name: "Hire Software Developers" },
-      { id: 2, name: "Hire React Native Developers" },
-      { id: 3, name: "Flutter Development" },
-      { id: 4, name: "React Js Development" },
+      { id: 1, name: "Content Creation" },
+      { id: 2, name: "Social Media Management" },
+      { id: 3, name: "Social Media Campaign" },
+      { id: 4, name: "Customer Response" },
     ],
     logo: "/Social-media-color.png",
   },
@@ -91,8 +91,8 @@ export const Services_Card = [
     description:
       "Maximise your online visibility with Digital Waves Solution's SEO services. We optimise, strategise, and elevate your website's ranking. Let us boost your digital presence and drive organic growth. Your SEO success begins with us.",
     types: [
-      { id: 1, name: "Machine Leaning" },
-      { id: 2, name: "Internet of Things" },
+      { id: 1, name: "Keyword Research" },
+      { id: 2, name: "Off Page Seo" },
     ],
     logo: "/SEO-Color.png",
   },
