@@ -82,7 +82,7 @@ const ResponsiveHeader = () => {
                   onClick={onCloseDrawer}
                   style={{
                     textDecoration: "none",
-                    color: "hsla(0,0%,100%,.5)",
+                    color: "white",
                     padding: "8px 0px",
                   }}
                 >

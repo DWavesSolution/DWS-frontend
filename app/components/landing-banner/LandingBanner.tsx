@@ -23,7 +23,7 @@ const LandingBanner = () => {
     <Box sx={styles.Card}>
       <CardMedia
         sx={styles.CardMedia}
-        image={isMatch ? "/overlay.jpg" : "BANNER.jpg"}
+        image={isMatch ? "/mobile-banner.jpeg" : "BANNER.jpg"}
       >
         <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
