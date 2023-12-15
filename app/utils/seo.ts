@@ -9,11 +9,11 @@ export const convertSeo = (PageTitle: any) => {
     // viewport: "width=device-width, initial-scale=1.0",
     authors: [
       {
-        url: "",
+        url: "https://digitalwavesolutions.ca/",
       },
     ],
     alternates: {
-      canonical: "",
+      canonical: "https://digitalwavesolutions.ca/",
     },
     openGraph: {
       type: "website",
@@ -28,7 +28,7 @@ export const convertSeo = (PageTitle: any) => {
       description:
         "Digital Waves Solutions help businesses grow by providing services in web and app development, UI/UX, cloud services, Artificial intelligence, and more.",
       title: "Digital Waves Solution",
-      domain: "",
+      domain: "https://digitalwavesolutions.ca/",
       images: [
         {
           url: "",
