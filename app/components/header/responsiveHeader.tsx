@@ -88,7 +88,7 @@ const ResponsiveHeader = () => {
                 >
                   <Typography
                     fontFamily={"var(--nunito)"}
-                    fontSize={"14px"}
+                    fontSize={"20px"}
                     sx={styles.LinkTypo}
                   >
                     {item.title}

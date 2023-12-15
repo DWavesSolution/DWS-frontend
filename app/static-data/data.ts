@@ -718,3 +718,22 @@ export const Subscription_Data = [
     ],
   },
 ];
+
+export const DropDownServices = [
+  {
+    name: "Digital Product Development",
+    value: 1,
+  },
+  {
+    name: "Search Engine Optimaization",
+    value: 2,
+  },
+  {
+    name: "Social Media Marketing",
+    value: 3,
+  },
+  {
+    name: "AI/ML",
+    value: 4,
+  },
+];

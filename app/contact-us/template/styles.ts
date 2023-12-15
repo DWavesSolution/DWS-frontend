@@ -31,4 +31,5 @@ export const styles = {
     alignItems: "center",
   },
   TextMargin: { marginBottom: "10px" },
+  TextField: { marginBottom: "15px" },
 };

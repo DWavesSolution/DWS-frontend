@@ -11,4 +11,5 @@ export const styles = {
     padding: "0.7rem 1.2rem",
   },
   MainGrid: { display: "flex", justifyContent: "center" },
+  TextField: { marginBottom: "15px" },
 };

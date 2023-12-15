@@ -1,18 +1,28 @@
+"use client";
 import {
   Box,
   Button,
   Card,
   CardMedia,
   Container,
+  FormControl,
   Grid,
+  InputLabel,
   Link,
+  MenuItem,
+  Select,
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "./styles";
+import { DropDownServices } from "@/app/static-data/data";
 
 const ConatctUs = () => {
+  const [services, setServices] = useState("");
+  const handleChange = (event: any) => {
+    setServices(event.target.value as string);
+  };
   return (
     <Box sx={styles.MainBox}>
       <Grid container>
@@ -115,42 +125,29 @@ const ConatctUs = () => {
                 </Typography>
               </Grid>
               <Grid item xs={11} sm={10.5}>
-                <TextField
-                  label="Name"
-                  fullWidth
-                  sx={{ marginBottom: "20px" }}
-                />
-                <Grid container gap={2}>
-                  <Grid item xs={12} sm={12} md={12} lg={5.8}>
-                    <TextField
-                      label="Phone"
-                      fullWidth
-                      sx={{ marginBottom: "20px" }}
-                    />
-                  </Grid>
-                  <Grid item xs={12} sm={12} md={12} lg={5.8}>
-                    <TextField
-                      label="Company"
-                      fullWidth
-                      sx={{ marginBottom: "20px" }}
-                    />
-                  </Grid>
-                </Grid>
-                <TextField
-                  label="Email"
-                  fullWidth
-                  sx={{ marginBottom: "20px" }}
-                />
-                <TextField
-                  label="How did you hear about us?"
-                  fullWidth
-                  sx={{ marginBottom: "20px" }}
-                />
-                <TextField
-                  label="How can we help you?"
-                  fullWidth
-                  sx={{ marginBottom: "20px" }}
-                />
+                <TextField label="Name" fullWidth sx={styles.TextField} />
+                <TextField label="Phone" fullWidth sx={styles.TextField} />
+                <TextField label="Email" fullWidth sx={styles.TextField} />
+                <FormControl fullWidth sx={styles.TextField}>
+                  <InputLabel>Services</InputLabel>
+                  <Select
+                    value={services}
+                    label="Services"
+                    onChange={handleChange}
+                  >
+                    {DropDownServices.map((item: any, index: any) => {
+                      return (
+                        <MenuItem
+                          value={item.value}
+                          key={`${item.value}-${index}`}
+                        >
+                          {item.name}
+                        </MenuItem>
+                      );
+                    })}
+                  </Select>
+                </FormControl>
+                <TextField label="Massage" fullWidth sx={styles.TextField} />
                 <Button sx={styles.Button}>
                   <Typography fontFamily={"var(--nunito)"} fontSize={"12px"}>
                     Submit
