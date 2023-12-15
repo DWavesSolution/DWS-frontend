@@ -280,7 +280,7 @@ export const Technologies_Tabs = [
       { title: "MongoDB", logo: "/mongodb.webp" },
       {
         title: "My SQL",
-        logo: "/png-transparent-mysql-php-database-javascript-ajax-carnifex-blue-text-logo.png",
+        logo: "/my-sql.png",
       },
     ],
   },
@@ -344,7 +344,6 @@ export const Our_Vision = [
       "Accelerating AI, Blockchain, & HCI through global research collaborations with top universities and labs",
   },
 ];
-
 export const Accordion_Data = [
   {
     question: "What is your typical project timeline from start to finish?",
@@ -370,7 +369,6 @@ export const Accordion_Data = [
       "We ensure that the final product meets the requirements and specifications through our rigorous approach to quality assurance. Our product development process includes multiple stages of review and testing, as well as close collaboration with our clients for feedback and input. We also use various tools and techniques to meet all standards, regulations, and industry-specific requirements.",
   },
 ];
-
 export const Core_Values_Data = [
   {
     id: "01",
@@ -439,7 +437,6 @@ export const Streamline_Data = [
       "Stay ahead of the curve and embrace new technologies with custom-built solutions that offer increased security, efficiency, and transparency in your business operations.",
   },
 ];
-
 export const Social_Media_Data = [
   {
     id: "01",
@@ -650,7 +647,6 @@ export const Meticulously_Question = [
       "We offer a comprehensive suite of services to ensure the enduring quality and utility of the product. This encompasses ongoing maintenance, bug fixing, upgrades, updates, user support, analytics, and monitoring. Continual analysis of the product's performance allows us to identify areas for improvement, ensuring its sustained functionality and relevance.",
   },
 ];
-
 export const Subscription_Data = [
   {
     id: 1,
@@ -718,22 +714,21 @@ export const Subscription_Data = [
     ],
   },
 ];
-
 export const DropDownServices = [
   {
     name: "Digital Product Development",
-    value: 1,
+    value: "Digital Product Development",
   },
   {
     name: "Search Engine Optimaization",
-    value: 2,
+    value: "Search Engine Optimaization",
   },
   {
     name: "Social Media Marketing",
-    value: 3,
+    value: "Social Media Marketing",
   },
   {
     name: "AI/ML",
-    value: 4,
+    value: "AI/ML",
   },
 ];

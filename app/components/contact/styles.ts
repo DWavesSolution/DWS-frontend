@@ -2,6 +2,7 @@ export const styles = {
   MainBox: {
     margin: "50px 0px 50px 0px",
   },
+  ContainerGrid: { display: "flex", justifyContent: "center" },
   Button: {
     display: "flex",
     alignItems: "center",

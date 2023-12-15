@@ -18,42 +18,32 @@ import { DropDownServices } from "@/app/static-data/data";
 import emailjs from "@emailjs/browser";
 import { Field, Form, Formik } from "formik";
 import { FormValidation } from "@/app/validations/validation";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactUs = () => {
   const [services, setServices] = useState("");
   const handleChange = (event: any) => {
     setServices(event.target.value as string);
   };
-  const [submitform, setSubmitForm] = useState(true);
-  const ref = useRef();
+  const form: any = useRef();
   const submitHandler = () => {};
-  const formsubmission = (e: any) => {
-    setSubmitForm(false);
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_2y5c7s5",
-        "template_k8u5oum",
-        // ref.current,
-        "eE9W4Thiy_5GA_B4N"
-      )
-      .then(
-        (result) => {
-          console.log("success", result.text);
-        },
-        (error) => {
-          console.log("Faild...", error.text);
-        }
+  const formsubmission = async (values: any) => {
+    try {
+      await emailjs.sendForm(
+        "service_wee4me4",
+        "template_sn0x5q2",
+        form.current,
+        "ZZlCJusFiMDe4w61_"
       );
+      toast.success("Your Massage has been Send");
+    } catch (error) {
+      toast.error("There is some Issue while send your Massage");
+    }
   };
   return (
     <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
       <Container>
-        <Grid
-          container
-          id="contact"
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
+        <Grid container id="contact" sx={styles.ContainerGrid}>
           <Grid item xs={11} sm={7} lg={7}>
             <Typography
               fontSize={"44px"}
@@ -111,7 +101,8 @@ const ContactUs = () => {
                 name: "",
                 phone: "",
                 email: "",
-                massage: "",
+                services: "",
+                message: "",
               }}
               validationSchema={FormValidation}
               onSubmit={submitHandler}
@@ -119,7 +110,7 @@ const ContactUs = () => {
               isValid={true}
             >
               {({ values, errors, touched, handleSubmit }) => (
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit} ref={form}>
                   <Field
                     as={TextField}
                     type="text"
@@ -162,9 +153,12 @@ const ContactUs = () => {
                   <FormControl fullWidth sx={styles.TextField}>
                     <InputLabel>Services</InputLabel>
                     <Select
+                      name="services"
                       value={services}
                       label="Services"
+                      required
                       onChange={handleChange}
+                      error={touched?.services && Boolean(errors?.services)}
                     >
                       {DropDownServices.map((item: any, index: any) => {
                         return (
@@ -181,13 +175,13 @@ const ContactUs = () => {
                   <Field
                     as={TextField}
                     type="text"
-                    name="massage"
-                    label="Massage"
-                    placeholder="Massage"
+                    name="message"
+                    label="Message"
+                    placeholder="Message"
                     required
-                    value={values?.massage}
-                    error={touched?.massage && Boolean(errors?.massage)}
-                    helperText={touched?.massage && errors?.massage}
+                    value={values?.message}
+                    error={touched?.message && Boolean(errors?.message)}
+                    helperText={touched?.message && errors?.message}
                     fullWidth
                     sx={styles.TextField}
                   />
@@ -200,6 +194,7 @@ const ContactUs = () => {
                       Submit
                     </Typography>
                   </Button>
+                  <ToastContainer />
                 </Form>
               )}
             </Formik>

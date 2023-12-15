@@ -14,14 +14,33 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { styles } from "./styles";
 import { DropDownServices } from "@/app/static-data/data";
+import { ToastContainer, toast } from "react-toastify";
+import { Field, Form, Formik } from "formik";
+import { FormValidation } from "@/app/validations/validation";
+import emailjs from "@emailjs/browser";
 
 const ConatctUs = () => {
   const [services, setServices] = useState("");
   const handleChange = (event: any) => {
     setServices(event.target.value as string);
+  };
+  const form: any = useRef();
+  const submitHandler = () => {};
+  const formsubmission = async (values: any) => {
+    try {
+      await emailjs.sendForm(
+        "service_wee4me4",
+        "template_sn0x5q2",
+        form.current,
+        "ZZlCJusFiMDe4w61_"
+      );
+      toast.success("Your Massage has been Send");
+    } catch (error) {
+      toast.error("There is some Issue while send your Massage");
+    }
   };
   return (
     <Box sx={styles.MainBox}>
@@ -125,34 +144,111 @@ const ConatctUs = () => {
                 </Typography>
               </Grid>
               <Grid item xs={11} sm={10.5}>
-                <TextField label="Name" fullWidth sx={styles.TextField} />
-                <TextField label="Phone" fullWidth sx={styles.TextField} />
-                <TextField label="Email" fullWidth sx={styles.TextField} />
-                <FormControl fullWidth sx={styles.TextField}>
-                  <InputLabel>Services</InputLabel>
-                  <Select
-                    value={services}
-                    label="Services"
-                    onChange={handleChange}
-                  >
-                    {DropDownServices.map((item: any, index: any) => {
-                      return (
-                        <MenuItem
-                          value={item.value}
-                          key={`${item.value}-${index}`}
+                <Formik
+                  initialValues={{
+                    name: "",
+                    phone: "",
+                    email: "",
+                    services: "",
+                    message: "",
+                  }}
+                  validationSchema={FormValidation}
+                  onSubmit={submitHandler}
+                  dirty={true}
+                  isValid={true}
+                >
+                  {({ values, errors, touched, handleSubmit }) => (
+                    <Form onSubmit={handleSubmit} ref={form}>
+                      <Field
+                        as={TextField}
+                        type="text"
+                        name="name"
+                        label="Name"
+                        placeholder="Name"
+                        required
+                        value={values?.name}
+                        error={touched?.name && Boolean(errors?.name)}
+                        helperText={touched?.name && errors?.name}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                      <Field
+                        as={TextField}
+                        type="text"
+                        name="phone"
+                        label="Phone"
+                        placeholder="Phone"
+                        required
+                        value={values?.phone}
+                        error={touched?.phone && Boolean(errors?.phone)}
+                        helperText={touched?.phone && errors?.phone}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                      <Field
+                        as={TextField}
+                        type="email"
+                        name="email"
+                        label="Email"
+                        placeholder="Email"
+                        required
+                        value={values?.email}
+                        error={touched?.email && Boolean(errors?.email)}
+                        helperText={touched?.email && errors?.email}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                      <FormControl fullWidth sx={styles.TextField}>
+                        <InputLabel>Services</InputLabel>
+                        <Select
+                          name="services"
+                          value={services}
+                          label="Services"
+                          onChange={handleChange}
+                          required
+                          error={touched?.services && Boolean(errors?.services)}
                         >
-                          {item.name}
-                        </MenuItem>
-                      );
-                    })}
-                  </Select>
-                </FormControl>
-                <TextField label="Massage" fullWidth sx={styles.TextField} />
-                <Button sx={styles.Button}>
-                  <Typography fontFamily={"var(--nunito)"} fontSize={"12px"}>
-                    Submit
-                  </Typography>
-                </Button>
+                          {DropDownServices.map((item: any, index: any) => {
+                            return (
+                              <MenuItem
+                                value={item.value}
+                                key={`${item.value}-${index}`}
+                              >
+                                {item.name}
+                              </MenuItem>
+                            );
+                          })}
+                        </Select>
+                      </FormControl>
+                      <Field
+                        as={TextField}
+                        type="text"
+                        name="message"
+                        label="Message"
+                        placeholder="Message"
+                        required
+                        value={values?.message}
+                        error={touched?.message && Boolean(errors?.message)}
+                        helperText={touched?.message && errors?.message}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                      <Button
+                        sx={styles.Button}
+                        onClick={formsubmission}
+                        value="Send"
+                      >
+                        <Typography
+                          fontFamily={"var(--nunito)"}
+                          fontSize={"12px"}
+                        >
+                          Submit
+                        </Typography>
+                      </Button>
+                      <ToastContainer />
+                    </Form>
+                  )}
+                </Formik>
               </Grid>
             </Grid>
           </Container>

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Work_Sans, Nunito } from "next/font/google";
+import "react-toastify/dist/ReactToastify.css";
 
 const fontWorkSans = Work_Sans({
   weight: ["900", "700", "600", "500", "400"],

@@ -9,7 +9,7 @@ export const FormValidation = Yup.object({
   phone: Yup.string()
     .required(required)
     .matches(/^[0-9]+$/gi, "Only number is allowed"),
-  massage: Yup.string()
+  message: Yup.string()
     .required(required)
     .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field "),
 });
