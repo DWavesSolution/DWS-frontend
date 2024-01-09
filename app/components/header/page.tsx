@@ -19,6 +19,7 @@ import DWSImage from "../DWSImage";
 import HeaderLogo from "../../../public/headerLogo.png";
 import ResponsiveHeader from "./responsiveHeader";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import CallIcon from "@mui/icons-material/Call";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
@@ -114,15 +115,40 @@ const Header = () => {
                     </Box>
                   ))}
                 </Grid>
-                <Grid item xs={12} md={2.5} lg={1.7} sx={styles.ButtonGrid}>
-                  <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
-                    <Button
-                      sx={styles.headerButton}
-                      endIcon={<ArrowForwardIcon />}
+                <Grid
+                  container
+                  item
+                  xs={12}
+                  md={4}
+                  lg={3}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Link
+                      href={"tel:+1 (647) 374 5600"}
+                      style={{ textDecoration: "none" }}
                     >
-                      Contact Us
-                    </Button>
-                  </Link>
+                      <Button sx={styles.CallUsButton} endIcon={<CallIcon />}>
+                        Call Now
+                      </Button>
+                    </Link>
+                  </Grid>
+                  <Grid item xs={12} md={6} lg={6}>
+                    <Link
+                      href={"/contact-us"}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button
+                        sx={styles.ContactUsButton}
+                        endIcon={<ArrowForwardIcon />}
+                      >
+                        Contact Us
+                      </Button>
+                    </Link>
+                  </Grid>
                 </Grid>
               </>
             )}

@@ -165,7 +165,7 @@ export const socialIcons = [
   {
     id: 2,
     name: "See More about us on Twitter",
-    logo: "/twitter.svg",
+    logo: "/twitter.webp",
     link: "https://twitter.com",
   },
   {

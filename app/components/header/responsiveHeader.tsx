@@ -99,6 +99,24 @@ const ResponsiveHeader = () => {
           })}
           <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
+              href={"tel:+1 (647) 374 5600"}
+              onClick={onCloseDrawer}
+              style={{
+                textDecoration: "none",
+                color: "White",
+              }}
+            >
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"20px"}
+                sx={styles.LinkTypo}
+              >
+                Call Us
+              </Typography>
+            </Link>
+          </Grid>
+          <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
+            <Link
               href={"/contact-us"}
               onClick={onCloseDrawer}
               style={{
