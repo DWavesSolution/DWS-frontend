@@ -128,7 +128,7 @@ const Header = () => {
                 >
                   <Grid item xs={12} md={6} lg={6}>
                     <Link
-                      href={"tel:+1 (647) 374 5600"}
+                      href={"tel:+16473745600"}
                       style={{ textDecoration: "none" }}
                     >
                       <Button sx={styles.CallUsButton} endIcon={<CallIcon />}>

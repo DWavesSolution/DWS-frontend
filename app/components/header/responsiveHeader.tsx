@@ -99,7 +99,7 @@ const ResponsiveHeader = () => {
           })}
           <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
-              href={"tel:+1 (647) 374 5600"}
+              href={"tel:+16473745600"}
               onClick={onCloseDrawer}
               style={{
                 textDecoration: "none",
