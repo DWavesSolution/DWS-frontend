@@ -121,7 +121,7 @@ const ConatctUs = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography fontFamily={"var(--nunito)"}>
-                    +1 (647) 374 5600
+                    +1 (647) 236 2627
                   </Typography>
                 </Grid>
               </Grid>

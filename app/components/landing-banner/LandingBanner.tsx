@@ -49,13 +49,16 @@ const LandingBanner = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
-                <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
+                <Link
+                  href={"tel:+16472362627"}
+                  style={{ textDecoration: "none" }}
+                >
                   <Button
                     variant="outlined"
                     sx={styles.Button}
                     endIcon={<CallIcon />}
                   >
-                    Contact Us
+                    Call Us
                   </Button>
                 </Link>
               </Grid>

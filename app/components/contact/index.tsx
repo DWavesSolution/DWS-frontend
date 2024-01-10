@@ -92,7 +92,7 @@ const ContactUs = () => {
               fontSize={"22px"}
               fontWeight={700}
             >
-              +1 (647) 374 5600
+              +1 (647) 236 2627
             </Typography>
           </Grid>
           <Grid item xs={11} sm={5} lg={5}>
