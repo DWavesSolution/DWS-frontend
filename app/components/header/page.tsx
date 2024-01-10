@@ -115,40 +115,15 @@ const Header = () => {
                     </Box>
                   ))}
                 </Grid>
-                <Grid
-                  container
-                  item
-                  xs={12}
-                  md={4}
-                  lg={3}
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                  }}
-                >
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Link
-                      href={"tel:+16473745600"}
-                      style={{ textDecoration: "none" }}
+                <Grid item xs={12} md={2} lg={1.7}>
+                  <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
+                    <Button
+                      sx={styles.ContactUsButton}
+                      endIcon={<ArrowForwardIcon />}
                     >
-                      <Button sx={styles.CallUsButton} endIcon={<CallIcon />}>
-                        Call Now
-                      </Button>
-                    </Link>
-                  </Grid>
-                  <Grid item xs={12} md={6} lg={6}>
-                    <Link
-                      href={"/contact-us"}
-                      style={{ textDecoration: "none" }}
-                    >
-                      <Button
-                        sx={styles.ContactUsButton}
-                        endIcon={<ArrowForwardIcon />}
-                      >
-                        Contact Us
-                      </Button>
-                    </Link>
-                  </Grid>
+                      Contact Us
+                    </Button>
+                  </Link>
                 </Grid>
               </>
             )}

@@ -15,6 +15,7 @@ import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "../DWSImage";
+import CallIcon from "@mui/icons-material/Call";
 
 const LandingBanner = () => {
   const theme = useTheme();
@@ -49,22 +50,15 @@ const LandingBanner = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
-                <ScrollLink
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-150}
-                  duration={1000}
-                >
-                  <Button variant="outlined" sx={styles.Button}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      sx={{ color: "black" }}
-                    >
-                      {"Let's Talk"}
-                    </Typography>
+                <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
+                  <Button
+                    variant="outlined"
+                    sx={styles.Button}
+                    endIcon={<CallIcon />}
+                  >
+                    Contact Us
                   </Button>
-                </ScrollLink>
+                </Link>
               </Grid>
               <Grid container sx={{ marginTop: "50px", display: "flex" }}>
                 {socialIcons.map((item, index) => {

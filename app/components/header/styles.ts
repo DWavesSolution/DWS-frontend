@@ -11,15 +11,6 @@ export const styles = {
   headerlinks: {
     textDecoration: "none",
   },
-  CallUsButton: {
-    display: "flex",
-    alignItems: "center",
-    background: "linear-gradient(108deg,#26315b 25%,#127a88 50%,#004ca2)",
-    backgroundSize: "200% 100%",
-    color: "#fff",
-    padding: "0.7rem 1.2rem",
-    textTransform: "none",
-  },
   ContactUsButton: {
     display: "flex",
     alignItems: "center",
