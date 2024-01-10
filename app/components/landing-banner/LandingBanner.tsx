@@ -13,7 +13,6 @@ import React from "react";
 import { styles } from "./styles";
 import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "../DWSImage";
 import CallIcon from "@mui/icons-material/Call";
 

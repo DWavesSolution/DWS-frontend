@@ -19,7 +19,6 @@ import DWSImage from "../DWSImage";
 import HeaderLogo from "../../../public/headerLogo.png";
 import ResponsiveHeader from "./responsiveHeader";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import CallIcon from "@mui/icons-material/Call";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
