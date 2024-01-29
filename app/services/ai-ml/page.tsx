@@ -12,7 +12,10 @@ import ContactUs from "@/app/components/contact";
 
 export async function generateMetadata() {
   const PageTitle = "AI / ML";
-  return convertSeo(PageTitle);
+  const PageDescription =
+    "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.";
+  const PageKeyword = "Digital Marketing Company";
+  return convertSeo(PageTitle, PageDescription, PageKeyword);
 }
 const page = () => {
   return (
@@ -32,7 +35,7 @@ const page = () => {
         DataMapping={Why_AI_ML}
       />
       <MeticulouslyAccordion />
-      <ContactUs/>
+      <ContactUs />
       <OurPromise />
     </Box>
   );

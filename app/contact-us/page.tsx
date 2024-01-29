@@ -7,7 +7,10 @@ import ContactAccordion from "../components/accordion";
 
 export async function generateMetadata() {
   const PageTitle = "Contact Us";
-  return convertSeo(PageTitle);
+  const PageDescription =
+    "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.";
+  const PageKeyword = "Digital Marketing Company";
+  return convertSeo(PageTitle, PageDescription, PageKeyword);
 }
 const page = () => {
   return (

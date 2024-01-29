@@ -1,10 +1,16 @@
-export const convertSeo = (PageTitle: any) => {
+export const convertSeo = (
+  PageTitle?: any,
+  PageDescription?: any,
+  PageKeyword?: any
+) => {
   return {
-    title: `${PageTitle} - Digital Waves Solution` || "Digital Waves Solution",
+    title:
+      `${PageTitle} - Digital Marketing Company` || "Digital Marketing Company",
     description:
-      "Digital Waves Solutions help businesses grow by providing services in web and app development, UI/UX, cloud services, Artificial intelligence, and more.",
-    publisher: "Digital Waves Solution",
-    keywords: "Digital Waves Solution",
+      `${PageDescription}` ||
+      "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",
+    publisher: "Digital Marketing Company",
+    keywords: `${PageKeyword}` || "Digital Marketing Company",
     robots: "index, follow, max-image-preview:large",
     // viewport: "width=device-width, initial-scale=1.0",
     authors: [
@@ -17,17 +23,17 @@ export const convertSeo = (PageTitle: any) => {
     },
     openGraph: {
       type: "website",
-      title: "Digital Waves Solution",
+      title: "Digital Marketing Company",
       description:
-        "Digital Waves Solutions help businesses grow by providing services in web and app development, UI/UX, cloud services, Artificial intelligence, and more.",
+        "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",
     },
     twitter: {
       handle: "@handle",
       site: "@site",
       cardType: "summary_large_image",
       description:
-        "Digital Waves Solutions help businesses grow by providing services in web and app development, UI/UX, cloud services, Artificial intelligence, and more.",
-      title: "Digital Waves Solution",
+        "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",
+      title: "Digital Marketing Company",
       domain: "https://digitalwavesolutions.ca/",
       images: [
         {

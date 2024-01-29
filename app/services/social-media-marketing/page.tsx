@@ -11,8 +11,11 @@ import SeoSubcription from "@/app/components/seo-subcription";
 import ContactUs from "@/app/components/contact";
 
 export async function generateMetadata() {
-  const PageTitle = "Social Media Marketing";
-  return convertSeo(PageTitle);
+  const PageTitle = "Expert Social Media Marketing Packages";
+  const PageDescription =
+    "Elevate your brand with our tailored social media marketing packages. Boost engagement, reach, and results with cost-effective solutions for every business";
+  const PageKeyword = "Social Media Marketing";
+  return convertSeo(PageTitle, PageDescription, PageKeyword);
 }
 const page = () => {
   return (

@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Work_Sans, Nunito } from "next/font/google";
 import "react-toastify/dist/ReactToastify.css";
+import Head from "next/head";
 
 const fontWorkSans = Work_Sans({
   weight: ["900", "700", "600", "500", "400"],
@@ -30,13 +31,21 @@ export default function RootLayout({
     });
   }, []);
   return (
-    <html
-      lang="en"
-      className={`${fontWorkSans.variable} ${fontNunito.variable}`}
-    >
-      <Header />
-      {children}
-      <Footer />
-    </html>
+    <>
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="TIaNJRqYwksSUyiiCPHo71cwx3MODspK5v9DOInYfbM"
+        />
+      </Head>
+      <html
+        lang="en"
+        className={`${fontWorkSans.variable} ${fontNunito.variable}`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </html>
+    </>
   );
 }
