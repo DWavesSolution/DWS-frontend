@@ -31,21 +31,19 @@ export default function RootLayout({
     });
   }, []);
   return (
-    <>
-      <Head>
+    <html
+      lang="en"
+      className={`${fontWorkSans.variable} ${fontNunito.variable}`}
+    >
+      <head>
         <meta
           name="google-site-verification"
-          content="TIaNJRqYwksSUyiiCPHo71cwx3MODspK5v9DOInYfbM"
+          content="ODD-nx64TVgJadACZHA4R4e2Q6tijm5QCanWSgddcSE"
         />
-      </Head>
-      <html
-        lang="en"
-        className={`${fontWorkSans.variable} ${fontNunito.variable}`}
-      >
-        <Header />
-        {children}
-        <Footer />
-      </html>
-    </>
+      </head>
+      <Header />
+      {children}
+      <Footer />
+    </html>
   );
 }
