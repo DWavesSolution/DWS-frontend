@@ -71,6 +71,7 @@ export const Services_Card = [
       { id: 4, name: "DevOps And Continous Integration" },
     ],
     logo: "/product-color-icon.png",
+    link: "/services/digital-product-development",
   },
   {
     id: "02",
@@ -84,6 +85,7 @@ export const Services_Card = [
       { id: 4, name: "Customer Response" },
     ],
     logo: "/Social-media-color.png",
+    link: "/services/social-media-marketing",
   },
   {
     id: "03",
@@ -95,6 +97,7 @@ export const Services_Card = [
       { id: 2, name: "Off Page Seo" },
     ],
     logo: "/SEO-Color.png",
+    link: "/services/search-engine-optimization",
   },
   {
     id: "04",
@@ -106,6 +109,7 @@ export const Services_Card = [
       { id: 2, name: "24x7 Support Operations" },
     ],
     logo: "/AI-ML-COLOR.png",
+    link: "/services/ai-ml",
   },
 ];
 export const Scores_Card = [
@@ -144,10 +148,22 @@ export const Capability_Data = [
   { id: 15, name: "UI/UX Services" },
 ];
 export const Services_Data = [
-  { id: 1, name: "Digital Product Development" },
-  { id: 2, name: "Social Media Marketing" },
-  { id: 3, name: "Search Engine Optimization" },
-  { id: 4, name: "AI / ML" },
+  {
+    id: 1,
+    name: "Digital Product Development",
+    link: "/services/digital-product-development",
+  },
+  {
+    id: 2,
+    name: "Social Media Marketing",
+    link: "/services/social-media-marketing",
+  },
+  {
+    id: 3,
+    name: "Search Engine Optimization",
+    link: "/services/search-engine-optimization",
+  },
+  { id: 4, name: "AI / ML", link: "/services/ai-ml" },
 ];
 export const Project_Data = [
   { id: 1, name: "Aligner 4D" },
@@ -166,7 +182,7 @@ export const socialIcons = [
     id: 2,
     name: "See More about us on Twitter",
     logo: "/twitter.webp",
-    link: "https://twitter.com",
+    link: "https://twitter.com/digital_WaveSol",
   },
   {
     id: 3,
@@ -184,13 +200,13 @@ export const socialIcons = [
     id: 5,
     name: "See More about us on Facebook",
     logo: "/facebook.webp",
-    link: "https://www.facebook.net/",
+    link: "https://www.facebook.com/profile.php?id=61555428527968",
   },
   {
     id: 6,
     name: "See More about us on Tiktok",
     logo: "/tiktok.svg",
-    link: "https://tiktok.net/",
+    link: "https://www.tiktok.com/@digitalwave_sol",
   },
 ];
 export const Testimonials_Data = [

@@ -79,13 +79,19 @@ const Footer = () => {
               {Services_Data.map((item, index) => {
                 return (
                   <Grid item xs={12} key={`${item?.id}-${index}`}>
-                    <Typography
-                      fontFamily={"var(--nunito)"}
-                      fontSize={"12px"}
-                      sx={styles.FooterSubText}
+                    <Link
+                      href={item.link}
+                      target="blank"
+                      style={{ textDecoration: "none" }}
                     >
-                      {item.name}
-                    </Typography>
+                      <Typography
+                        fontFamily={"var(--nunito)"}
+                        fontSize={"12px"}
+                        sx={styles.FooterSubText}
+                      >
+                        {item.name}
+                      </Typography>
+                    </Link>
                   </Grid>
                 );
               })}

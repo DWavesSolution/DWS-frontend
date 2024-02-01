@@ -44,8 +44,9 @@ const LandingBanner = () => {
                   sx={{ color: "black" }}
                   fontFamily={"var(--nunito)"}
                 >
-                  We have mastered the end-to-end product development lifecycle
-                  to help you go-to-market faster.
+                  {
+                    "In the fast-paced world of digital marketing, finding a cost-effective solution that doesn't compromise on quality is crucial for businesses in USA and Canada. We will provide you a cheap and affordable digital marketing company that can help businesses thrive in the competitive online landscape."
+                  }
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>

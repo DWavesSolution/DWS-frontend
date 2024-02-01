@@ -4,6 +4,7 @@ import React from "react";
 import { styles } from "./styles";
 import DWSImage from "../DWSImage";
 import { Services_Card, Services_Images } from "@/app/static-data/data";
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -132,13 +133,19 @@ const ServicesSection = () => {
                         })}
                       </Grid>
                       <Button sx={styles.ServicesButton}>
-                        <Typography
-                          fontFamily={"var(--nunito)"}
-                          fontSize={"14px"}
-                          sx={{ color: "white" }}
+                        <Link
+                          href={item.link}
+                          target="blank"
+                          style={{ textDecoration: "none" }}
                         >
-                          Know more
-                        </Typography>
+                          <Typography
+                            fontFamily={"var(--nunito)"}
+                            fontSize={"14px"}
+                            sx={{ color: "white", textTransform: "none" }}
+                          >
+                            Know More
+                          </Typography>
+                        </Link>
                       </Button>
                     </Card>
                   </Grid>
