@@ -39,7 +39,7 @@ const SearchEngineOptimization = () => {
                   lineHeight={{ xs: "46px" }}
                   sx={{ color: "#004ca2" }}
                 >
-                  Welcome to Digital Waves Solutions SEO solutions.
+                  Welcome to Digital Waves Solutions SEO Services.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
@@ -54,7 +54,10 @@ const SearchEngineOptimization = () => {
                   your unique business goals and tailoring our services to meet
                   your specific needs. With a data-driven approach and a focus
                   on sustainable results, we ensure that your online presence
-                  not only improves but thrives.
+                  not only improves but thrives. As businesses strive to stay
+                  ahead, the demand for advanced SEO services has surged. we
+                  provide you a cheap and affordable SEO services in USA and
+                  Canada.
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
