@@ -3,7 +3,6 @@ import React from "react";
 import { styles } from "./styles";
 import { Box } from "@mui/material";
 import LandingBanner from "../components/landing-banner/LandingBanner";
-import Partners from "../components/partner";
 import ServicesSection from "../components/services";
 import Scores from "../components/score";
 import WorkWithUs from "../components/work-with-us";
@@ -16,14 +15,13 @@ const HomePage = () => {
   return (
     <Box sx={styles.MainBox}>
       <LandingBanner />
-      {/* <Partners /> */}
+      <OurPromise />
       <ServicesSection />
       <Scores />
       <WorkWithUs />
       <Testimonials />
       <Technologies />
       <ContactUs />
-      <OurPromise />
     </Box>
   );
 };

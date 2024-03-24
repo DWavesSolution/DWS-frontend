@@ -1,107 +1,60 @@
 "use client";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
-import DWSImage from "../DWSImage";
-import HandPhone from "../../../public/hand-phone.webp";
-import Iteration from "../../../public/iteration.webp";
-import Verified from "../../../public/verified.webp";
-import Services from "../../../public/service.webp";
 
 const OurPromise = () => {
   return (
-    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+    <Box>
       <Container>
         <Grid container sx={styles.MainGrid}>
-          <Grid item xs={12} md={4.5}>
-            <Typography
-              fontFamily={"var(--nunito)"}
-              fontSize={"11px"}
-              sx={styles.Heading}
-            >
-              OUR PROMISE
+          <Grid item xs={12} md={5}>
+            <Button sx={styles.AnalyticsButton}>
+              <Typography sx={styles.Heading}>Analytics</Typography>
+            </Button>
+            <Typography sx={styles.Title}>
+              The Power of Digital Wave Solutions
             </Typography>
-            <Typography
-              fontSize={"28px"}
-              sx={styles.Title}
-              fontFamily={"var(--work-Sans)"}
-            >
-              Commitment to Building Trustworthy Partnership
+            <Typography sx={styles.Description}>
+              {
+                "At Digital Wave Solutions, our vision is to be your dedicated partner in online success! We're committed to crafting tailored strategies and leveraging our expertise to ride the wave and elevate your business to new heights."
+              }
             </Typography>
-            <Typography
-              fontFamily={"var(--nunito)"}
-              fontSize={"12px"}
-              sx={styles.Description}
-            >
-              We value your trust and intend to maintain transparency and open
-              communication at every step of the way. Thus, we take all measures
-              to patronize our efforts from the moment of engagement until the
-              final sign-off.
-            </Typography>
+            <Button sx={styles.ChatButton}>
+              <Typography sx={styles.ChatButtonTypo}>{"Let's Chat"}</Typography>
+            </Button>
           </Grid>
           <Grid container item xs={12} md={6.5}>
             <Grid item xs={12} sm={6} sx={styles.GridSec1}>
-              <Box sx={styles.ImagesSize}>
-                <DWSImage
-                  src={HandPhone}
-                  alt="Hand Phone"
-                  style={{ objectFit: "contain" }}
-                />
-              </Box>
-              <Typography
-                fontFamily={"var(--nunito)"}
-                fontSize={"14px"}
-                fontWeight={700}
-              >
-                Intuitive UI/UX
+              <Typography fontSize={"40px"} color={"#FF6741"}>
+                35+
+              </Typography>
+              <Typography fontSize={"14px"} color={"black"}>
+                Tech Stack
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} sx={styles.GridSec2}>
-              <Box sx={styles.ImagesSize}>
-                <DWSImage
-                  src={Services}
-                  alt="Services"
-                  style={{ objectFit: "contain" }}
-                />
-              </Box>
-              <Typography
-                fontFamily={"var(--nunito)"}
-                fontSize={"14px"}
-                fontWeight={700}
-              >
-                Excellence in Engineering
+              <Typography fontSize={"40px"} color={"#FF6741"}>
+                150+
+              </Typography>
+              <Typography fontSize={"14px"} color={"black"}>
+                Industry Professionals
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} sx={styles.GridSec3}>
-              <Box sx={styles.ImagesSize}>
-                <DWSImage
-                  src={Iteration}
-                  alt="Iteration"
-                  style={{ objectFit: "contain" }}
-                />
-              </Box>
-              <Typography
-                fontFamily={"var(--nunito)"}
-                fontSize={"14px"}
-                fontWeight={700}
-              >
-                Reliable Delivery
+              <Typography fontSize={"40px"} color={"#FF6741"}>
+                13
+              </Typography>
+              <Typography fontSize={"14px"} color={"black"}>
+                Project Completions
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6} sx={styles.GridSec4}>
-              <Box sx={styles.ImagesSize}>
-                <DWSImage
-                  src={Verified}
-                  alt="Verified"
-                  style={{ objectFit: "contain" }}
-                />
-              </Box>
-              <Typography
-                fontFamily={"var(--nunito)"}
-                fontSize={"14px"}
-                fontWeight={700}
-              >
-                Protection of Confidentiality
+              <Typography fontSize={"40px"} color={"#FF6741"}>
+                97%
+              </Typography>
+              <Typography fontSize={"14px"} color={"black"}>
+                Customer Satisfaction Rate
               </Typography>
             </Grid>
           </Grid>

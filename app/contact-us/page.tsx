@@ -1,6 +1,5 @@
 import React from "react";
 import ConatctUs from "./template";
-import OurPromise from "../components/promise";
 import { Box } from "@mui/material";
 import { convertSeo } from "../utils/seo";
 import ContactAccordion from "../components/accordion";
@@ -17,7 +16,6 @@ const page = () => {
     <Box>
       <ConatctUs />
       <ContactAccordion />
-      <OurPromise />
     </Box>
   );
 };

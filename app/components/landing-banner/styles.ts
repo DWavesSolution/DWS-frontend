@@ -1,36 +1,43 @@
 export const styles = {
-  MainGrid: {
-    marginTop: "170px",
+  Box: {
     display: "flex",
+    backgroundColor: "#fad4ca",
+    height: "100vh",
+    alignItems: "center",
+  },
+  MainGrid: {
+    display: "flex",
+    margin: "50px 0px",
+    justifyContent: "space-between",
+  },
+  BannerHeading: {
+    fontSize: { xs: "40px", sm: "48px" },
+    lineHeight: { xs: "50px", sm: "58px" },
+    fontWeight: 500,
+    marginTop: "20px",
+  },
+  BannerPara: { fontSize: "16px", marginTop: "20px", color: "#323232" },
+  ButtonGrid: {
+    marginTop: "20px",
+    marginBottom: { xs: "20px", md: "100px" },
+    display: "flex",
+    justifyContent: { xs: "space-evenly", sm: "space-between" },
+  },
+  BannerButtons: {
+    borderRadius: "30px",
+  },
+  BannerButtonsTypo: {
+    textTransform: "none",
+    fontSize: "13px",
+    padding: "5px 15px",
+  },
+  BannerSecondPara: { fontSize: "12px", color: "#444444", marginTop: "10px" },
+  MainGridSec2: {
+    display: { xs: "none", md: "flex" },
     justifyContent: "center",
   },
-  Card: {
-    display: "flex",
-    height: "100vh",
-    border: "0px",
-  },
-  CardMedia: {
-    height: "100%",
-    width: "100%",
-    display: "flex",
-  },
-  Button: {
-    borderColor: "#1976d2",
-    textTransform: "none",
-    padding: "8px 32px",
-  },
-  socialIcons: {
-    marginBottom: "20px",
-    display: "flex",
-    justifyContent: "space-evenly",
-  },
-  CallUsButton: {
-    display: "flex",
-    alignItems: "center",
-    background: "linear-gradient(108deg,#26315b 25%,#127a88 50%,#004ca2)",
-    backgroundSize: "200% 100%",
-    color: "#fff",
-    padding: "0.7rem 1.2rem",
-    textTransform: "none",
+  Image: {
+    height: { md: "100%" },
+    width: { md: "100%", lg: "75%" },
   },
 };

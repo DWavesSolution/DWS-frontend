@@ -14,21 +14,22 @@ export const styles = {
   ContactUsButton: {
     display: "flex",
     alignItems: "center",
-    background: "linear-gradient(108deg,#26315b 25%,#127a88 50%,#004ca2)",
-    backgroundSize: "200% 100%",
+    background: "#fe7958",
     color: "#fff",
     padding: "0.7rem 1.2rem",
     textTransform: "none",
+    borderRadius: "25px",
+    "&:hover": { background: "#fe7958" },
   },
   container: {
     display: "flex",
     position: "absolute",
-    marginTop: "71px",
+    marginTop: "64px",
     minHeight: "400px",
     width: "100%",
     background: "#ebf2ff",
-    clipPath:
-      "polygon(100% 0,100% calc(100% - 105px),calc(100% - 202px) 100%,0 calc(100% - 50px),0 0)",
+    // clipPath:
+    //   "polygon(100% 0,100% calc(100% - 105px),calc(100% - 202px) 100%,0 calc(100% - 50px),0 0)",
     borderRadius: "0px",
     justifyContent: "center",
   },

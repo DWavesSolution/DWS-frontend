@@ -3,7 +3,6 @@ import DigitalProductDevelopment from "./template";
 import { Box } from "@mui/material";
 import { convertSeo } from "@/app/utils/seo";
 import Testimonials from "@/app/components/testimonials";
-import OurPromise from "@/app/components/promise";
 import StreamLineBuisness from "@/app/components/streamline-buisness";
 import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
@@ -38,7 +37,6 @@ const page = () => {
       />
       <MeticulouslyAccordion />
       <ContactUs />
-      <OurPromise />
     </Box>
   );
 };

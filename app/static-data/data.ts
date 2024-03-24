@@ -1,23 +1,23 @@
 export const HeaderData = [
   {
     id: 1,
-    name: "DPD",
-    link: "/services/digital-product-development",
+    name: "Home",
+    link: "#",
   },
   {
     id: 2,
-    name: "SMM",
-    link: "/services/social-media-marketing",
+    name: "About Us",
+    link: "/about-us",
   },
   {
     id: 3,
-    name: "SEO",
-    link: "/services/search-engine-optimization",
+    name: "Services",
+    link: "",
   },
   {
     id: 4,
-    name: "AI / ML",
-    link: "/services/ai-ml",
+    name: "Blogs",
+    link: "#",
   },
 ];
 export const Services_Menu = [

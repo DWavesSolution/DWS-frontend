@@ -3,7 +3,6 @@ import SocialMediaMarketing from "./template";
 import { convertSeo } from "@/app/utils/seo";
 import { Box } from "@mui/material";
 import Testimonials from "@/app/components/testimonials";
-import OurPromise from "@/app/components/promise";
 import StreamLineBuisness from "@/app/components/streamline-buisness";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 import { Social_Media_Data } from "@/app/static-data/data";
@@ -33,7 +32,6 @@ const page = () => {
       <SeoSubcription />
       <MeticulouslyAccordion />
       <ContactUs />
-      <OurPromise />
     </Box>
   );
 };

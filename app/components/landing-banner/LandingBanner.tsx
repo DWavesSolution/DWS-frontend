@@ -1,96 +1,113 @@
 "use client";
 import {
+  Avatar,
   Box,
   Button,
-  CardMedia,
   Container,
   Grid,
+  Rating,
   Typography,
-  useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
-import { socialIcons } from "@/app/static-data/data";
-import Link from "next/link";
 import DWSImage from "../DWSImage";
-import CallIcon from "@mui/icons-material/Call";
+import BannerImmage from "../../../public/BannerImage.png";
 
 const LandingBanner = () => {
-  const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Box sx={styles.Card}>
-      <CardMedia
-        sx={styles.CardMedia}
-        image={isMatch ? "/Mobile_Banner.webp" : "Main_Banner.webp"}
-      >
-        <Container data-aos="fade-up" data-aos-duration={3000}>
-          <Grid container sx={styles.MainGrid}>
-            <Grid item xs={12} lg={10}>
-              <Grid item xs={12} md={9}>
+    <Box sx={styles.Box}>
+      <Container>
+        <Grid container sx={styles.MainGrid}>
+          <Grid container item xs={12} md={5.9}>
+            <Grid item xs={12}>
+              <Typography fontSize={"14px"} sx={{ color: "#666666" }}>
+                Welcome to{" "}
+                <span style={{ color: "#fe7958" }}>Digital Wave Solutions</span>
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography sx={styles.BannerHeading}>
+                Transforming businesses with product innovation
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography sx={styles.BannerPara}>
+                In the fast-paced world of tech, finding a cost-effective
+                solution that does not compromise on quality is crucial for
+                businesses in USA and Canada. We will provide you affordable
+                services that can help businesses thrive in the competitive
+                online landscape.
+              </Typography>
+            </Grid>
+            <Grid item xs={12} sm={4} md={6} lg={5} sx={styles.ButtonGrid}>
+              <Button
+                sx={{
+                  ...styles.BannerButtons,
+                  backgroundColor: "#fe7958",
+                  "&:hover": {
+                    backgroundColor: "#fe7958",
+                  },
+                }}
+              >
                 <Typography
-                  fontSize={{ xs: "36px", sm: "60px" }}
-                  fontWeight={600}
-                  lineHeight={{ xs: "46px", sm: "60px" }}
-                  sx={{ color: "black" }}
-                  fontFamily={"var(--work-Sans)"}
+                  sx={{
+                    ...styles.BannerButtonsTypo,
+                    color: "white",
+                  }}
                 >
-                  Transforming businesses with custom product innovation
+                  Contact Us
                 </Typography>
-              </Grid>
-              <Grid item xs={12} sm={9} lg={6} sx={{ marginTop: "30px" }}>
+              </Button>
+              <Button
+                sx={{
+                  ...styles.BannerButtons,
+                  backgroundColor: "white",
+                  "&:hover": {
+                    backgroundColor: "white",
+                  },
+                }}
+              >
                 <Typography
-                  sx={{ color: "black" }}
-                  fontFamily={"var(--nunito)"}
+                  sx={{ ...styles.BannerButtonsTypo, color: "#fe7958" }}
                 >
-                  {
-                    "In the fast-paced world of digital marketing, finding a cost-effective solution that doesn't compromise on quality is crucial for businesses in USA and Canada. We will provide you a cheap and affordable digital marketing company that can help businesses thrive in the competitive online landscape."
-                  }
+                  Learn More
                 </Typography>
+              </Button>
+            </Grid>
+            <Grid container item xs={12}>
+              <Grid item xs={12} sm={2.5} md={3.5}>
+                <Typography fontSize={"64px"} lineHeight={"64px"}>
+                  4.9
+                </Typography>
+                <Rating value={5} readOnly sx={{ color: "#fe7958" }} />
               </Grid>
-              <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
-                <Link
-                  href={"tel:+16472362627"}
-                  style={{ textDecoration: "none" }}
-                >
-                  <Button
-                    variant="outlined"
-                    sx={styles.Button}
-                    endIcon={<CallIcon />}
-                  >
-                    Call Us
-                  </Button>
-                </Link>
-              </Grid>
-              <Grid container sx={{ marginTop: "50px", display: "flex" }}>
-                {socialIcons.map((item, index) => {
-                  return (
-                    <Grid
-                      item
-                      xs={2}
-                      sm={1}
-                      sx={styles.socialIcons}
-                      key={`${item?.id}-${index}`}
-                    >
-                      <Box sx={{ height: 20, width: 20, cursor: "pinter" }}>
-                        <Link
-                          href={item.link}
-                          target="blank"
-                          rel="noopener"
-                          aria-label={item.name}
-                        >
-                          <DWSImage src={item.logo} alt={item.name} />
-                        </Link>
-                      </Box>
-                    </Grid>
-                  );
-                })}
+              <Grid container item xs={12} sm={9} md={8.5}>
+                <Grid item xs={2.5} sm={1.5} md={2}>
+                  <Avatar alt="Remy Sharp" src="/user.png" />
+                </Grid>
+                <Grid item xs={6}>
+                  <Typography fontSize={"14px"}>Ali Gohar</Typography>
+                  <Typography fontSize={"12px"} sx={{ color: "#666666" }}>
+                    Lead Product Designer
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography sx={styles.BannerSecondPara}>
+                    Effortlessly create stunning SAAS landing pages.
+                    User-friendly, customizable, and conversion-driven. A
+                    game-changer for your online presence!
+                  </Typography>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
-        </Container>
-      </CardMedia>
+          <Grid item xs={12} md={5.9} sx={styles.MainGridSec2}>
+            <Box sx={styles.Image}>
+              <DWSImage src={BannerImmage} alt="Banner Image" />
+            </Box>
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   );
 };

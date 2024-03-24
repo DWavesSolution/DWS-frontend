@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const ServicesSection = () => {
   return (
-    <Box sx={styles.MainBox} data-aos="fade-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos-duration={3000}>
       <Container>
         <Box sx={styles.servicesBox}>
           <Grid container>
