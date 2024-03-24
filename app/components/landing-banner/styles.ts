@@ -2,6 +2,7 @@ export const styles = {
   Box: {
     display: "flex",
     backgroundColor: "#fad4ca",
+    padding: "64px 0px",
     height: "100vh",
     alignItems: "center",
   },

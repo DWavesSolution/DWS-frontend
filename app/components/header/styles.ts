@@ -6,7 +6,7 @@ export const styles = {
   },
   headerdata: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "flex-end",
   },
   headerlinks: {
     textDecoration: "none",
@@ -27,9 +27,7 @@ export const styles = {
     marginTop: "64px",
     minHeight: "400px",
     width: "100%",
-    background: "#ebf2ff",
-    // clipPath:
-    //   "polygon(100% 0,100% calc(100% - 105px),calc(100% - 202px) 100%,0 calc(100% - 50px),0 0)",
+    background: "#fff3f2",
     borderRadius: "0px",
     justifyContent: "center",
   },

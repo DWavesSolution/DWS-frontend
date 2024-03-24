@@ -1,17 +1,12 @@
 export const styles = {
   MainBox: {
-    backgroundColor: "#1d1d25",
+    backgroundColor: "#FF6741",
   },
-  FooterSubText: {
-    color: "#676767",
-    marginBottom: "5px",
-    "&:hover": {
-      color: "white",
-    },
-  },
-  Divider: { border: "1px solid #676767", margin: "15px 0px" },
-  Icons: {
-    display: "flex",
-    justifyContent: "space-between",
+  Container: { padding: "50px 0px 30px 0px" },
+  FooterHeading: {
+    fontSize: "18px",
+    fontWeight: 500,
+    color: "white",
+    marginBottom: "10px",
   },
 };

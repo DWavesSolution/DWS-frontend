@@ -11,13 +11,13 @@ export const HeaderData = [
   },
   {
     id: 3,
-    name: "Services",
-    link: "",
+    name: "Blogs",
+    link: "#",
   },
   {
     id: 4,
-    name: "Blogs",
-    link: "#",
+    name: "Services",
+    link: "",
   },
 ];
 export const Services_Menu = [
@@ -108,41 +108,6 @@ export const Scores_Card = [
     name: "Skill-gaps filled through staff augmentation",
   },
 ];
-export const Capability_Data = [
-  { id: 1, name: "Web App Development" },
-  { id: 2, name: "Mobile App Development" },
-  { id: 3, name: "Flutter Development" },
-  { id: 4, name: "Ruby on Rails Development" },
-  { id: 5, name: "React JS Development" },
-  { id: 6, name: "AWS Cloud Services" },
-  { id: 7, name: "Google Cloud Services" },
-  { id: 8, name: "Microsoft Azure Development" },
-  { id: 9, name: "React Native Development" },
-  { id: 10, name: "Machine Learning" },
-  { id: 11, name: "Cross-Platform Development" },
-  { id: 12, name: "Enterprise App Development" },
-  { id: 13, name: "Custom Software Development" },
-  { id: 14, name: "Blockchain Development" },
-  { id: 15, name: "UI/UX Services" },
-];
-export const Services_Data = [
-  {
-    id: 1,
-    name: "Digital Product Development",
-    link: "/services/digital-product-development",
-  },
-  {
-    id: 2,
-    name: "Social Media Marketing",
-    link: "/services/social-media-marketing",
-  },
-  {
-    id: 3,
-    name: "Search Engine Optimization",
-    link: "/services/search-engine-optimization",
-  },
-  { id: 4, name: "AI / ML", link: "/services/ai-ml" },
-];
 export const Project_Data = [
   { id: 1, name: "Aligner 4D" },
   { id: 2, name: "BDD" },
@@ -164,27 +129,9 @@ export const socialIcons = [
   },
   {
     id: 3,
-    name: "See More about us on Instagram",
-    logo: "/instagram.svg",
-    link: "https://instagram.com",
-  },
-  {
-    id: 4,
-    name: "See More about us on Youtube",
-    logo: "/youtube_icon.svg",
-    link: "https://www.youtube.net/",
-  },
-  {
-    id: 5,
     name: "See More about us on Facebook",
     logo: "/facebook.webp",
     link: "https://www.facebook.com/profile.php?id=61555428527968",
-  },
-  {
-    id: 6,
-    name: "See More about us on Tiktok",
-    logo: "/tiktok.svg",
-    link: "https://www.tiktok.com/@digitalwave_sol",
   },
 ];
 export const Testimonials_Data = [
@@ -760,5 +707,35 @@ export const DropDownServices = [
   {
     name: "AI/ML",
     value: "AI/ML",
+  },
+];
+export const footer_Data = [
+  {
+    heading: "Site Map",
+    content: [
+      { name: "About", links: "" },
+      { name: "Pricing", links: "" },
+      { name: "Career", links: "" },
+      { name: "Blogs", links: "" },
+      { name: "FAQ's", links: "" },
+    ],
+  },
+  {
+    heading: "Services",
+    content: [
+      { name: "Digital Marketing", links: "" },
+      { name: "SEO", links: "" },
+      { name: "Design", links: "" },
+      { name: "Mobile Development", links: "" },
+      { name: "Web Development", links: "" },
+    ],
+  },
+  {
+    heading: "Contact",
+    content: [
+      { name: "+1 (647) 236 2627", links: "" },
+      { name: "Info@digitalwavesolutions.ca", links: "" },
+      { name: "Address", links: "" },
+    ],
   },
 ];

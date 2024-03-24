@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   FormControl,
   Grid,
   InputLabel,
@@ -44,7 +45,7 @@ const ContactUs = () => {
     <Box sx={styles.MainBox}>
       <Container>
         <Grid container id="contact" sx={styles.ContainerGrid}>
-          <Grid item xs={11} sm={7} lg={7}>
+          <Grid item xs={11} sm={6}>
             <Typography
               fontSize={"44px"}
               lineHeight={"50px"}
@@ -61,40 +62,53 @@ const ContactUs = () => {
               fontFamily={"var(--nunito)"}
               sx={{
                 marginBottom: "48px",
-                width: { xs: "100%", sm: "65%", lg: "40%" },
+                width: { xs: "100%", sm: "65%", lg: "50%" },
               }}
             >
               Once you submit this form, expect to hear back from us within 24
               hours.
             </Typography>
+            <Divider
+              sx={{
+                backgroundColor: "#FA8162",
+                margin: "30px 0px",
+                width: "60%",
+              }}
+            />
             <Typography
               fontFamily={"var(--nunito)"}
-              fontSize={"14px"}
+              fontSize={"28px"}
+              fontWeight={600}
               sx={{ marginBottom: "16px" }}
             >
-              Reach Us At
+              Or Reach us directly at
             </Typography>
             <Typography
               fontFamily={"var(--nunito)"}
-              fontSize={"20px"}
-              fontWeight={700}
+              fontSize={"18px"}
+              fontWeight={600}
             >
               <Link
                 href={"mailto:Info@digitalwavesolutions.ca"}
-                sx={{ color: "black", textDecoration: "none" }}
+                sx={{
+                  color: "#FF6741",
+                  textDecoration: "none",
+                  textDecorationLine: "underline",
+                }}
               >
                 Info@digitalwavesolutions.ca
               </Link>
             </Typography>
             <Typography
               fontFamily={"var(--nunito)"}
-              fontSize={"22px"}
-              fontWeight={700}
+              fontSize={"18px"}
+              fontWeight={600}
+              sx={{ color: "#FF6741" }}
             >
               +1 (647) 236 2627
             </Typography>
           </Grid>
-          <Grid item xs={11} sm={5} lg={5}>
+          <Grid item xs={11} sm={6}>
             <Formik
               initialValues={{
                 name: "",
@@ -107,70 +121,83 @@ const ContactUs = () => {
               onSubmit={submitHandler}
               dirty={true}
               isValid={true}
+              sx={{ width: "100%" }}
             >
               {({ values, errors, touched, handleSubmit }) => (
                 <Form onSubmit={handleSubmit} ref={form}>
-                  <Field
-                    as={TextField}
-                    type="text"
-                    name="name"
-                    label="Name"
-                    placeholder="Name"
-                    required
-                    value={values?.name}
-                    error={touched?.name && Boolean(errors?.name)}
-                    helperText={touched?.name && errors?.name}
-                    fullWidth
-                    sx={styles.TextField}
-                  />
-                  <Field
-                    as={TextField}
-                    type="text"
-                    name="phone"
-                    label="Phone"
-                    placeholder="Phone"
-                    required
-                    value={values?.phone}
-                    error={touched?.phone && Boolean(errors?.phone)}
-                    helperText={touched?.phone && errors?.phone}
-                    fullWidth
-                    sx={styles.TextField}
-                  />
-                  <Field
-                    as={TextField}
-                    type="email"
-                    name="email"
-                    label="Email"
-                    placeholder="Email"
-                    required
-                    value={values?.email}
-                    error={touched?.email && Boolean(errors?.email)}
-                    helperText={touched?.email && errors?.email}
-                    fullWidth
-                    sx={styles.TextField}
-                  />
-                  <FormControl fullWidth sx={styles.TextField}>
-                    <InputLabel>Services</InputLabel>
-                    <Select
-                      name="services"
-                      value={services}
-                      label="Services"
-                      required
-                      onChange={handleChange}
-                      error={touched?.services && Boolean(errors?.services)}
-                    >
-                      {DropDownServices.map((item: any, index: any) => {
-                        return (
-                          <MenuItem
-                            value={item.value}
-                            key={`${item.value}-${index}`}
-                          >
-                            {item.name}
-                          </MenuItem>
-                        );
-                      })}
-                    </Select>
-                  </FormControl>
+                  <Grid container sx={styles.InputGrid}>
+                    <Grid item xs={5.8}>
+                      <Field
+                        as={TextField}
+                        type="text"
+                        name="name"
+                        label="Name"
+                        placeholder="Name"
+                        required
+                        value={values?.name}
+                        error={touched?.name && Boolean(errors?.name)}
+                        helperText={touched?.name && errors?.name}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                    </Grid>
+                    <Grid item xs={5.8}>
+                      <Field
+                        as={TextField}
+                        type="text"
+                        name="phone"
+                        label="Phone"
+                        placeholder="Phone"
+                        required
+                        value={values?.phone}
+                        error={touched?.phone && Boolean(errors?.phone)}
+                        helperText={touched?.phone && errors?.phone}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid container sx={styles.InputGrid}>
+                    <Grid item xs={5.8}>
+                      <Field
+                        as={TextField}
+                        type="email"
+                        name="email"
+                        label="Email"
+                        placeholder="Email"
+                        required
+                        value={values?.email}
+                        error={touched?.email && Boolean(errors?.email)}
+                        helperText={touched?.email && errors?.email}
+                        fullWidth
+                        sx={styles.TextField}
+                      />
+                    </Grid>
+                    <Grid item xs={5.8}>
+                      <FormControl fullWidth sx={styles.TextField}>
+                        <InputLabel>Services</InputLabel>
+                        <Select
+                          name="services"
+                          value={services}
+                          label="Services"
+                          required
+                          onChange={handleChange}
+                          error={touched?.services && Boolean(errors?.services)}
+                        >
+                          {DropDownServices.map((item: any, index: any) => {
+                            return (
+                              <MenuItem
+                                value={item.value}
+                                key={`${item.value}-${index}`}
+                              >
+                                {item.name}
+                              </MenuItem>
+                            );
+                          })}
+                        </Select>
+                      </FormControl>
+                    </Grid>
+                  </Grid>
                   <Field
                     as={TextField}
                     type="text"
@@ -183,11 +210,32 @@ const ContactUs = () => {
                     helperText={touched?.message && errors?.message}
                     fullWidth
                     sx={styles.TextField}
+                    multiline
+                    rows={5}
                   />
                   <Button
-                    sx={styles.Button}
+                    sx={{
+                      ...styles.Button,
+                      background: "#fe7958",
+                      "&:hover": {
+                        background: "#fe7958",
+                      },
+                      "&:disabled": {
+                        opacity: 0.4,
+                        color: "white",
+                      },
+                    }}
                     onClick={formsubmission}
                     value="Send"
+                    disabled={
+                      Object.keys(errors).length > 0 ||
+                      !(
+                        values.name &&
+                        values.email &&
+                        values.phone &&
+                        values.message
+                      )
+                    }
                   >
                     <Typography fontFamily={"var(--nunito)"} fontSize={"12px"}>
                       Submit

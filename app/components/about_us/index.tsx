@@ -17,7 +17,7 @@ const AboutUsSection = () => {
           <Grid container item xs={12} sm={5.8} lg={6} sx={styles.TypoGrid}>
             <Grid item xs={12}>
               <Button sx={styles.AboutUsButton}>
-                <Typography sx={styles.Heading}>Analytics</Typography>
+                <Typography sx={styles.Heading}>About Us</Typography>
               </Button>
             </Grid>
             <Grid item xs={12}>
@@ -32,7 +32,7 @@ const AboutUsSection = () => {
                 }
               </Typography>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} sx={{ marginTop: { xs: "10px", sm: "0px" } }}>
               <Button sx={styles.BannerButtons}>
                 <Typography
                   sx={{ ...styles.BannerButtonsTypo, color: "#fe7958" }}

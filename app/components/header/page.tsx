@@ -28,7 +28,7 @@ const Header = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   const [showModal, setShowModal] = useState(false);
   const handleClick = (index: number) => () => {
-    if (index == 2) {
+    if (index == 3) {
       setShowModal(true);
       return;
     }
@@ -69,7 +69,7 @@ const Header = () => {
               <ResponsiveHeader />
             ) : (
               <>
-                <Grid item xs={12} md={5} sx={styles.headerdata}>
+                <Grid item xs={12} md={8} sx={styles.headerdata}>
                   {HeaderData.map((item, index) => (
                     <Box key={`${item?.id}-${index}`}>
                       {item.name === "Services" ? (
@@ -93,7 +93,11 @@ const Header = () => {
                             color: "black",
                           }}
                         >
-                          <Typography fontFamily={"var(--nunito)"}>
+                          <Typography
+                            fontFamily={"var(--nunito)"}
+                            fontWeight={500}
+                            sx={{ marginRight: "40px" }}
+                          >
                             {item.name}
                           </Typography>
                         </Link>
@@ -101,7 +105,16 @@ const Header = () => {
                     </Box>
                   ))}
                 </Grid>
-                <Grid item xs={12} md={2} lg={1.7}>
+                <Grid
+                  item
+                  xs={12}
+                  md={2}
+                  lg={1.7}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
                   <Link href={"/contact-us"} style={{ textDecoration: "none" }}>
                     <Button sx={styles.ContactUsButton}>Contact Us</Button>
                   </Link>
