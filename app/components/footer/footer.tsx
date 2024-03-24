@@ -82,7 +82,7 @@ const Footer = () => {
                   key={`${item?.id}-${index}`}
                   sx={{
                     display: "flex",
-                    justifyContent: "end",
+                    justifyContent: { xs: "center", sm: "end" },
                   }}
                 >
                   <Box sx={{ height: 20, width: 20 }}>

@@ -10,8 +10,6 @@ export const styles = {
     marginBottom: "10px",
   },
   SocialIconsStyle: {
-    display: "flex",
-    justifyContent: { xs: "center", sm: "end" },
     marginTop: { xs: "10px", sm: "0px" },
   },
   Copyrights: {
