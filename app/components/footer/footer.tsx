@@ -50,7 +50,7 @@ const Footer = () => {
           }}
         />
         <Grid container sx={{ display: "flex", alignItems: "center" }}>
-          <Grid item xs={12} sm={4} md={4}>
+          <Grid item xs={12} sm={2} md={1} sx={styles.FooterLogo}>
             <Box sx={{ height: 50, width: 50 }}>
               <DWSImage
                 src={FooterLogo}
@@ -59,16 +59,7 @@ const Footer = () => {
               />
             </Box>
           </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={5.5}
-            md={4}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+          <Grid item xs={12} sm={8} md={10} sx={styles.Copyrights}>
             <Typography fontSize={"14px"} sx={{ color: "#DDDDDD" }}>
               © Copyright owned by DWS 2024
             </Typography>
@@ -78,12 +69,22 @@ const Footer = () => {
             item
             xs={12}
             sm={2}
-            md={4}
-            sx={{ display: "flex", justifyContent: "end" }}
+            md={1}
+            sx={styles.SocialIconsStyle}
           >
             {socialIcons.map((item, index) => {
               return (
-                <Grid item xs={1} sm={3} md={2} key={`${item?.id}-${index}`}>
+                <Grid
+                  item
+                  xs={4}
+                  sm={3}
+                  md={4}
+                  key={`${item?.id}-${index}`}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "end",
+                  }}
+                >
                   <Box sx={{ height: 20, width: 20 }}>
                     <DWSImage src={item.logo} alt="" />
                   </Box>

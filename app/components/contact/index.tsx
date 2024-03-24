@@ -45,7 +45,7 @@ const ContactUs = () => {
     <Box sx={styles.MainBox}>
       <Container>
         <Grid container id="contact" sx={styles.ContainerGrid}>
-          <Grid item xs={11} sm={6}>
+          <Grid item xs={12} sm={5.9}>
             <Typography
               fontSize={"44px"}
               lineHeight={"50px"}
@@ -72,7 +72,7 @@ const ContactUs = () => {
               sx={{
                 backgroundColor: "#FA8162",
                 margin: "30px 0px",
-                width: "60%",
+                width: { xs: "100%", sm: "95%", md: "65%" },
               }}
             />
             <Typography
@@ -108,7 +108,7 @@ const ContactUs = () => {
               +1 (647) 236 2627
             </Typography>
           </Grid>
-          <Grid item xs={11} sm={6}>
+          <Grid item xs={12} sm={5.9} sx={{ marginTop: { xs: "20px" } }}>
             <Formik
               initialValues={{
                 name: "",

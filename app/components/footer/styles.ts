@@ -9,4 +9,18 @@ export const styles = {
     color: "white",
     marginBottom: "10px",
   },
+  SocialIconsStyle: {
+    display: "flex",
+    justifyContent: { xs: "center", sm: "end" },
+    marginTop: { xs: "10px", sm: "0px" },
+  },
+  Copyrights: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: { xs: "10px", sm: "0px" },
+  },
+  FooterLogo: {
+    display: "flex",
+    justifyContent: { xs: "center", sm: "start" },
+  },
 };

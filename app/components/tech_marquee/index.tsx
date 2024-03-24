@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "./styles";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import Marquee from "react-fast-marquee";
 import { Technology_Logo } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
@@ -8,25 +8,27 @@ import DWSImage from "../DWSImage";
 const TechMarquee = () => {
   return (
     <Box sx={styles.MainBox}>
-      <Grid container sx={styles.MainGrid}>
-        <Grid item xs={12} sx={styles.GridStyle}>
-          <Button sx={styles.TechStacksButton}>
-            <Typography sx={styles.Heading}>Tech Stacks</Typography>
-          </Button>
+      <Container>
+        <Grid container sx={styles.MainGrid}>
+          <Grid item xs={12} sx={styles.GridStyle}>
+            <Button sx={styles.TechStacksButton}>
+              <Typography sx={styles.Heading}>Tech Stacks</Typography>
+            </Button>
+          </Grid>
+          <Grid item xs={12} sx={styles.GridStyle}>
+            <Typography fontSize={"36px"} fontWeight={600}>
+              Technologies we used to make innovation
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={7} sx={styles.GridStyle}>
+            <Typography>
+              We navigate your product development journey with a
+              forward-thinking mindset and strategic roadmaps, ensuring
+              efficient, sustainable, and successful outcomes.
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sx={styles.GridStyle}>
-          <Typography fontSize={"40px"} fontWeight={600}>
-            Technologies we used to make innovation
-          </Typography>
-        </Grid>
-        <Grid item xs={12} md={7} sx={styles.GridStyle}>
-          <Typography>
-            We navigate your product development journey with a forward-thinking
-            mindset and strategic roadmaps, ensuring efficient, sustainable, and
-            successful outcomes.
-          </Typography>
-        </Grid>
-      </Grid>
+      </Container>
       <Marquee
         pauseOnHover={true}
         gradient={false}
