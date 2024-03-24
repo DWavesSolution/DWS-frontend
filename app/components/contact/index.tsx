@@ -41,7 +41,7 @@ const ContactUs = () => {
     }
   };
   return (
-    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
+    <Box sx={styles.MainBox}>
       <Container>
         <Grid container id="contact" sx={styles.ContainerGrid}>
           <Grid item xs={11} sm={7} lg={7}>
@@ -50,9 +50,8 @@ const ContactUs = () => {
               lineHeight={"50px"}
               fontFamily={"var(--work-Sans)"}
               sx={{
-                color: "#004ca2",
                 marginBottom: "32px",
-                width: { xs: "100%", md: "70%", lg: "50%" },
+                width: { xs: "100%", md: "70%", lg: "60%" },
               }}
             >
               {"Have a project? Let's discuss"}

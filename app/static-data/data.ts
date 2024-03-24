@@ -42,6 +42,43 @@ export const Services_Menu = [
     id: "/ai-ml",
   },
 ];
+export const Services_Card = [
+  {
+    logo: "/Digital_Marketing.png",
+    title: "Digital Marketing",
+    description:
+      "Social Media Marketing, Pay-Per-Click (PPC) Management, Content Marketing, Email Marketing, Conversion Marketing, Brand Development & Strategy.",
+    colour: "#f2fbf5",
+  },
+  {
+    logo: "/SEO.png",
+    title: "SEO",
+    description:
+      "Keyword Research, On-page SEO, Off-page SEO, SEO Copywriting, Technical SEO, E-Commerce SEO.",
+    colour: "#e9f5fe",
+  },
+  {
+    logo: "/Design.png",
+    title: "Design",
+    description:
+      "Web Design, Mobile App Design, UI & UX Design, Banner Design, Ad Creatives, Logo Design, 2D/ 3D Animation, Video Editing.",
+    colour: "#fff3f2",
+  },
+  {
+    logo: "/Web_dev.png",
+    title: "Web Development",
+    description:
+      "Website Development, E-Commerce Solutions, Web Application Development, Analytics & Reporting, Maintenance & Support.",
+    colour: "#fdf9f2",
+  },
+  {
+    logo: "/mobile_dev.png",
+    title: "Mobile App Development",
+    description:
+      "Native App Development, Cross-Platform Development, Custom App Solutions, App Maintenance & Support.",
+    colour: "#faf1f7",
+  },
+];
 export const Brand_Logo = [
   { id: 1, logo: "/akamai.webp" },
   { id: 2, logo: "/deloitte-home.webp" },
@@ -52,65 +89,6 @@ export const Brand_Logo = [
   { id: 7, logo: "/punchh-home.webp" },
   { id: 8, logo: "/lyca-mobile-home.webp" },
   { id: 9, logo: "/td-bank-home.webp" },
-];
-export const Services_Images = [
-  { id: 1, logo: "/mobile.webp" },
-  { id: 2, logo: "/watch.webp" },
-  { id: 3, logo: "/desktop.webp" },
-];
-export const Services_Card = [
-  {
-    id: "01",
-    title: "Digital Product Development",
-    description:
-      "Welcome to Digital Waves Solution, your agile software development partner. We create tailored, market-ready products using an iterative approach. Let's innovate and scale your business together.",
-    types: [
-      { id: 1, name: "Custom Product Development" },
-      { id: 2, name: "Web & Mobile App Development" },
-      { id: 3, name: "Product & App Modernization" },
-      { id: 4, name: "DevOps And Continous Integration" },
-    ],
-    logo: "/product-color-icon.png",
-    link: "/services/digital-product-development",
-  },
-  {
-    id: "02",
-    title: "Social Media Marketing",
-    description:
-      "Elevate your brand with Digital Waves Solution's Social Media Marketing services. We craft impactful campaigns, engage your audience, and drive results. Boost your online presence with our expertise. Social success starts here.",
-    types: [
-      { id: 1, name: "Content Creation" },
-      { id: 2, name: "Social Media Management" },
-      { id: 3, name: "Social Media Campaign" },
-      { id: 4, name: "Customer Response" },
-    ],
-    logo: "/Social-media-color.png",
-    link: "/services/social-media-marketing",
-  },
-  {
-    id: "03",
-    title: "Search Engine Optimization",
-    description:
-      "Maximise your online visibility with Digital Waves Solution's SEO services. We optimise, strategise, and elevate your website's ranking. Let us boost your digital presence and drive organic growth. Your SEO success begins with us.",
-    types: [
-      { id: 1, name: "Keyword Research" },
-      { id: 2, name: "Off Page Seo" },
-    ],
-    logo: "/SEO-Color.png",
-    link: "/services/search-engine-optimization",
-  },
-  {
-    id: "04",
-    title: "AI / ML",
-    description:
-      "Empower your business with Digital Waves Solution's AI/ML services. Unlock innovation, streamline processes, and make data-driven decisions. Let us tailor intelligent solutions to propel your success in the digital age. Elevate your business with AI/ML excellence.",
-    types: [
-      { id: 1, name: "End to End Consultantion" },
-      { id: 2, name: "24x7 Support Operations" },
-    ],
-    logo: "/AI-ML-COLOR.png",
-    link: "/services/ai-ml",
-  },
 ];
 export const Scores_Card = [
   {
@@ -337,6 +315,40 @@ export const Technologies_Tabs = [
     ],
   },
 ];
+export const Technology_Logo = [
+  { logo: "/node-js.webp" },
+  { logo: "/ruby-on-rails.webp" },
+  { logo: "/django.webp" },
+  { logo: "/laravel.webp" },
+  { logo: "/java-spring-boot.webp" },
+  { logo: "/next-js.webp" },
+  { logo: "/angular.webp" },
+  { logo: "/ember.webp" },
+  { logo: "/vue.webp" },
+  { logo: "/electron.webp" },
+  { logo: "/react.webp" },
+  { logo: "/andriod.webp" },
+  { logo: "/swift.webp" },
+  { logo: "/flutter.webp" },
+  { logo: "/mongodb.webp" },
+  { logo: "/my-sql.png" },
+  { logo: "/stripe.webp" },
+  { logo: "/sendgrid.webp" },
+  { logo: "/twilio.webp" },
+  { logo: "/digified.webp" },
+  { logo: "/pychain.webp" },
+  { logo: "/apache-mahout.webp" },
+  { logo: "/keras.webp" },
+  { logo: "/tensorflow.webp" },
+  { logo: "/pytorch.webp" },
+  { logo: "/figma.webp" },
+  { logo: "/xd.webp" },
+  { logo: "/rollbar.webp" },
+  { logo: "/firebase.webp" },
+  { logo: "/elk.webp" },
+  { logo: "/raspberry-pi.webp" },
+  { logo: "/hyberledger-fabric.webp" },
+];
 export const Our_Vision = [
   {
     id: 1,
@@ -362,27 +374,29 @@ export const Our_Vision = [
 ];
 export const Accordion_Data = [
   {
-    question: "What is your typical project timeline from start to finish?",
+    question: "Is there a free trial available?",
     answer:
-      "The project timeline for any project can vary depending on the complexity of the product and the requirements of the project. However, we typically follow a structured approach that includes ideation, design, prototyping, testing, and production. The duration for each phase can vary, but we always look forward to working closely with our clients in order to ensure, we meet deadlines by delivering high-quality products.",
+      "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
   },
   {
-    question:
-      "How do you handle intellectual property and confidentiality for your projects?",
-    answer:
-      "We work with our clients to ensure all proprietary information is kept secure and protected throughout the product development process. We typically use non-disclosure agreements (NDAs) to safeguard your intellectual property and confidential information. Additionally, we have strict security protocols in place to ensure our team members only have access to the information they need to complete their work on the project.",
+    question: "Can I change my plan later?",
+    answer: "",
   },
   {
-    question:
-      "Can you provide references or examples of past projects you've completed?",
-    answer:
-      "We make our work speaks for itself and we are proud of the successful projects we've done for our clients. You can access our portfolio page to refer to case studies of similar projects we have completed in your industry. Apart from this, you can connect with us to discuss your specific needs and learn more about our past projects.",
+    question: "What is your cancellation policy?",
+    answer: "",
   },
   {
-    question:
-      "How do you ensure that the final product meets the requirements and specifications?",
-    answer:
-      "We ensure that the final product meets the requirements and specifications through our rigorous approach to quality assurance. Our product development process includes multiple stages of review and testing, as well as close collaboration with our clients for feedback and input. We also use various tools and techniques to meet all standards, regulations, and industry-specific requirements.",
+    question: "Can other info be added to an invoice?",
+    answer: "",
+  },
+  {
+    question: "How does billing work?",
+    answer: "",
+  },
+  {
+    question: "How do I change my account email?",
+    answer: "",
   },
 ];
 export const Core_Values_Data = [

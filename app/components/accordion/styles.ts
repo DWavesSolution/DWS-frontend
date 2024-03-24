@@ -3,11 +3,11 @@ export const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "70px 0px",
+    padding: "30px 0px",
   },
   box: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
   },
   block: {
@@ -19,5 +19,6 @@ export const styles = {
   },
   accordion: {
     backgroundColor: "transparent",
+    marginBottom: "32px",
   },
 };

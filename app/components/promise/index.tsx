@@ -5,7 +5,7 @@ import { styles } from "./styles";
 
 const OurPromise = () => {
   return (
-    <Box>
+    <Box sx={styles.MainBox}>
       <Container>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} md={5}>

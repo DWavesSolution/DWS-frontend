@@ -1,37 +1,31 @@
 export const styles = {
   MainBox: {
-    background: "linear-gradient(180deg,#e6f1ff,#fafdff)",
-  },
-  servicesBox: {
-    padding: {
-      xs: "5rem 0rem 0rem 0rem",
-      sm: "5rem 0rem 2rem 0rem",
-    },
-  },
-  ServicesText: {
-    marginBottom: "40px",
-  },
-  ServicesContent: {
-    display: "flex",
-    justifyContent: "space-between",
-    marginBottom: "50px",
-  },
-  Card: {
-    backgroundColor: "#26315b",
-    color: "white",
-    padding: "50px",
-    marginBottom: "10px",
-    borderRadius: "16px",
-    borderBottomRightRadius: "100px",
-    borderTopLeftRadius: "100px",
-  },
-  TypoMargin: {
-    marginBottom: "16px",
+    padding: "30px 0px",
   },
   ServicesButton: {
-    marginTop: "32px",
-    padding: "8px 32px",
-    border: "1px solid white",
-    borderRadius: "none",
+    border: ".5px solid black",
+    borderRadius: "5px",
+    color: "black",
+  },
+  GridStyle: {
+    display: "flex",
+    justifyContent: "center",
+    margin: "10px 0px",
+    textAlign: "center",
+  },
+  CardGrid: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "50px",
+  },
+  Card: {
+    padding: "40px 25px",
+    height: "220px",
+  },
+  CardImage: { height: 50, width: 50 },
+  CardTitle: {
+    fontSize: "24px",
+    fontWeight: 500,
+    margin: "20px 0px",
   },
 };

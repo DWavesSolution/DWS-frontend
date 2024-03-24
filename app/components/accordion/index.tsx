@@ -8,23 +8,32 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "./styles";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Accordion_Data } from "@/app/static-data/data";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
 const ContactAccordion = () => {
+  const [expanded, setExpanded] = useState(0);
+  const handleAccordionChange =
+    (panel: any) => (event: any, isExpanded: any) => {
+      setExpanded(isExpanded ? panel : null);
+    };
   return (
     <Grid container sx={styles.container}>
       <Container sx={{ display: "flex", justifyContent: "center" }}>
-        <Grid container item xs={12} md={9} sx={styles.box}>
+        <Grid container item xs={12} md={9} lg={10} sx={styles.box}>
           <Typography
-            fontSize={{ xs: "32px", sm: "48px" }}
+            fontSize={{ xs: "32px", sm: "40px" }}
             fontWeight={"600"}
             sx={{ color: "black" }}
             fontFamily={"var(--work-Sans)"}
           >
             Frequently Ask Questions
+          </Typography>
+          <Typography fontSize={"18px"} sx={{ marginTop: "20px" }}>
+            Everything you need to know about the product and billing.
           </Typography>
           <Grid item xs={12} sx={styles.block}>
             {Accordion_Data.map((item: any, index: any) => {
@@ -33,10 +42,18 @@ const ContactAccordion = () => {
                   <Accordion
                     sx={styles.accordion}
                     elevation={0}
+                    expanded={expanded === index}
+                    onChange={handleAccordionChange(index)}
                     defaultExpanded={index === 0}
                   >
                     <AccordionSummary
-                      expandIcon={<ExpandMoreIcon sx={{ color: "#707070" }} />}
+                      expandIcon={
+                        expanded === index ? (
+                          <RemoveCircleOutlineIcon sx={{ color: "#FF6741" }} />
+                        ) : (
+                          <AddCircleOutlineIcon sx={{ color: "#FF6741" }} />
+                        )
+                      }
                     >
                       <Typography
                         fontSize={"20px"}

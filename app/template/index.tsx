@@ -4,12 +4,12 @@ import { styles } from "./styles";
 import { Box } from "@mui/material";
 import LandingBanner from "../components/landing-banner/LandingBanner";
 import ServicesSection from "../components/services";
-import Scores from "../components/score";
-import WorkWithUs from "../components/work-with-us";
 import ContactUs from "../components/contact";
-import Testimonials from "../components/testimonials";
-import Technologies from "../components/technologies";
 import OurPromise from "../components/promise";
+import ContactAccordion from "../components/accordion";
+import AboutUsSection from "../components/about_us";
+import MoreQuries from "../components/more_quries";
+import TechMarquee from "../components/tech_marquee";
 
 const HomePage = () => {
   return (
@@ -17,10 +17,10 @@ const HomePage = () => {
       <LandingBanner />
       <OurPromise />
       <ServicesSection />
-      <Scores />
-      <WorkWithUs />
-      <Testimonials />
-      <Technologies />
+      <AboutUsSection />
+      <TechMarquee />
+      <ContactAccordion />
+      <MoreQuries />
       <ContactUs />
     </Box>
   );
