@@ -465,6 +465,7 @@ export const AI_ML_Data = [
     title: "AI Consultancy",
     description:
       "Leverage our expertise in artificial intelligence to gain strategic insights and develop a roadmap tailored to your business objectives. Our consultants work closely with you to identify opportunities for AI integration and guide you through the implementation process.",
+    color: "#fdf9f2",
   },
   {
     id: "02",
@@ -472,6 +473,7 @@ export const AI_ML_Data = [
     title: "Machine Learning Solutions",
     description:
       "Unlock the potential of your data with our machine learning solutions. From predictive analytics to pattern recognition, we design and deploy ML models that enable you to make informed decisions and stay ahead in a rapidly evolving business landscape.",
+    color: "#fff3f2",
   },
   {
     id: "03",
@@ -479,6 +481,7 @@ export const AI_ML_Data = [
     title: "Customised AI Applications",
     description:
       "Tailored to your unique requirements, our custom AI applications are designed to optimize processes, automate tasks, and improve overall business performance. Whether you need a chatbot, image recognition system, or fraud detection tool, we've got you covered.",
+    color: "#cfd8dc",
   },
   {
     id: "04",
@@ -486,6 +489,7 @@ export const AI_ML_Data = [
     title: "Data Science Services",
     description:
       "Extract valuable insights from your data with our data science services. Our team of experts combines statistical analysis, machine learning, and domain expertise to uncover patterns, trends, and actionable intelligence that drives business growth.",
+    color: "#e9f5fe",
   },
 ];
 export const SEO_Data = [

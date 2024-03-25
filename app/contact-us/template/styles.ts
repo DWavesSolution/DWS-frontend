@@ -29,6 +29,7 @@ export const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginTop: { xs: "20px", lg: "0px" },
   },
   TextMargin: { marginBottom: "10px" },
   TextField: { marginBottom: "15px" },

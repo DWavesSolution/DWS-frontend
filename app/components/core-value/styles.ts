@@ -1,6 +1,6 @@
 export const styles = {
   MainBox: {
-    margin: "50px 0px",
+    margin: "20px 0px",
     // backgroundColor: "#fad4ca",
     color: "black",
   },
@@ -13,8 +13,8 @@ export const styles = {
   CardGrid: {
     padding: { xs: "1.5rem", md: "5rem" },
     borderRadius: "10px",
-    borderBottomRightRadius: "100px",
-    borderTopLeftRadius: "100px",
+    borderBottomRightRadius: { xs: "50px", sm: "100px" },
+    borderTopLeftRadius: { xs: "50px", sm: "100px" },
   },
   TextMargin: { marginBottom: "32px" },
 };

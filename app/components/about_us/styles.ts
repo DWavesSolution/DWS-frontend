@@ -8,7 +8,7 @@ export const styles = {
   TypoGrid: {
     display: "flex",
     alignItems: "center",
-    // margin: "auto",
+    marginTop: { xs: "20px", sm: "0px" },
   },
   AboutUsButton: {
     border: ".5px solid black",
