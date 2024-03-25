@@ -77,8 +77,9 @@ const StreamLineBuisness = ({
                         <Typography
                           fontSize={"28px"}
                           sx={{
-                            color: "black",
+                            color: "#fe7958",
                             letterSpacing: "-.78px",
+                            marginBottom: "10px",
                           }}
                         >
                           {item.title}
@@ -90,7 +91,7 @@ const StreamLineBuisness = ({
                           fontSize={"14.4px"}
                           sx={{
                             color: "#555",
-                            paddingTop: "15px",
+                            marginTop: "10px",
                             borderTop: "1px solid #fe7958",
                           }}
                         >
