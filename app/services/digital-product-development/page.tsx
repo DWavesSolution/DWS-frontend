@@ -28,7 +28,7 @@ const page = () => {
         }
         DataMapping={Streamline_Data}
       />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <WHYDWS
         title="Why choose Digital Wave Solution"
         heading="Experience the Distinction with Digital Wave Solutions"

@@ -12,7 +12,7 @@ const AboutCulture = () => {
           <Grid item xs={12} sx={styles.title}>
             <Typography
               fontSize={"11px"}
-              sx={{ color: "white" }}
+              sx={{ color: "#fe7958" }}
               fontFamily={"var(--nunito)"}
             >
               OUR DEFINITION OF CULTURE
@@ -22,7 +22,7 @@ const AboutCulture = () => {
             <Typography
               fontSize={"28px"}
               fontWeight={400}
-              sx={{ color: "white" }}
+              sx={{ color: "black" }}
               fontFamily={"var(--nunito)"}
             >
               Our culture is our foundation, centered around continuous learning
@@ -47,7 +47,7 @@ const AboutCulture = () => {
                     <Typography
                       fontSize={"48px"}
                       fontWeight={700}
-                      sx={{ color: "white" }}
+                      sx={{ color: "#fe7958" }}
                       fontFamily={"var(--work-Sans)"}
                     >
                       {item.number}
@@ -55,7 +55,7 @@ const AboutCulture = () => {
                     <Typography
                       fontFamily={"var(--nunito)"}
                       fontSize={"14px"}
-                      sx={{ color: "white" }}
+                      sx={{ color: "black" }}
                     >
                       {item.name}
                     </Typography>

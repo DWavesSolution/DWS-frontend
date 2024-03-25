@@ -21,10 +21,10 @@ const page = () => {
     <Box>
       <SearchEngineOptimization />
       <SeoPackages />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <WHYDWS
-        title="Why Choose Digital Wave Solution for SEO Services?"
-        heading=""
+        title=""
+        heading="Why Choose Digital Wave Solution for SEO Services?"
         description=""
         DataMapping={Why_SEO}
       />

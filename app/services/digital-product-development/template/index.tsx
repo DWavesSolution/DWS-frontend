@@ -105,7 +105,7 @@ const DigitalProductDevelopment = () => {
                           fontFamily={"var(--work-Sans)"}
                           fontSize={"48px"}
                           fontWeight={700}
-                          sx={{ color: "#004ca2" }}
+                          sx={{ color: "#fe7958" }}
                         >
                           {item.number}
                         </Typography>

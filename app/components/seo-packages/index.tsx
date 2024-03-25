@@ -12,7 +12,7 @@ const SeoPackages = () => {
         <Grid item xs={12} sm={6} sx={{ paddingTop: "80px" }}>
           <Typography
             fontFamily={"var(--nunito)"}
-            fontSize={"11.2px"}
+            fontSize={"18px"}
             sx={styles.MainTitle}
           >
             SEO Packages
@@ -35,12 +35,12 @@ const SeoPackages = () => {
                 xs={12}
                 sm={2.8}
                 key={`${item?.id}-${index}`}
-                sx={styles.PricingGrid}
+                sx={{...styles.PricingGrid,backgroundColor:item.color}}
               >
                 <Typography
                   fontFamily={"var(--nunito)"}
                   fontSize={"20px"}
-                  sx={{ color: "White" }}
+                  sx={{ color: "#fe7958" }}
                 >
                   {item.title}
                 </Typography>

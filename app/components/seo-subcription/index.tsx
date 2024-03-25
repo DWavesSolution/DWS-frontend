@@ -17,9 +17,13 @@ const SeoSubcription = () => {
                 xs={12}
                 sm={3.8}
                 key={`${item?.id}-${index}`}
-                sx={styles.PricingGrid}
+                sx={{ ...styles.PricingGrid, backgroundColor: item.color }}
               >
-                <Typography fontSize={"30px"} fontFamily={"var(--work-Sans)"}>
+                <Typography
+                  fontSize={"30px"}
+                  fontFamily={"var(--work-Sans)"}
+                  sx={{ color: "#fe7958" }}
+                >
                   {item.type}
                 </Typography>
                 {item.content.map((data) => {

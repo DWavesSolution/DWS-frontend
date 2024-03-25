@@ -42,7 +42,7 @@ const StreamLineBuisness = ({
             {DataMapping.map((item: any, index: any) => {
               return (
                 <Card
-                  sx={styles.MainCard}
+                  sx={{ ...styles.MainCard, backgroundColor: item.color }}
                   elevation={0}
                   key={`${item?.id}-${index}`}
                 >
@@ -67,8 +67,8 @@ const StreamLineBuisness = ({
                       <Grid item xs={12}>
                         <Typography
                           fontFamily={"var(--nunito)"}
-                          fontSize={"11.2px"}
-                          sx={{ color: "#004ca2", marginBottom: "24px" }}
+                          fontSize={"12px"}
+                          sx={{ color: "black", marginBottom: "24px" }}
                         >
                           {item.id}
                         </Typography>
@@ -77,7 +77,7 @@ const StreamLineBuisness = ({
                         <Typography
                           fontSize={"28px"}
                           sx={{
-                            color: "#004ca2",
+                            color: "black",
                             letterSpacing: "-.78px",
                           }}
                         >
@@ -91,7 +91,7 @@ const StreamLineBuisness = ({
                           sx={{
                             color: "#555",
                             paddingTop: "15px",
-                            borderTop: "1px solid #004ca2",
+                            borderTop: "1px solid #fe7958",
                           }}
                         >
                           {item.description}

@@ -3,6 +3,7 @@ import React from "react";
 import DWSImage from "../DWSImage";
 import AvatarImages from "../../../public/Avatar_group.png";
 import { styles } from "./styles";
+import Link from "next/link";
 const MoreQuries = () => {
   return (
     <Container sx={{ padding: "30px 0px" }}>
@@ -29,16 +30,21 @@ const MoreQuries = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sx={styles.Grid}>
-          <Button sx={styles.BannerButtons}>
-            <Typography
-              sx={{
-                ...styles.BannerButtonsTypo,
-                color: "white",
-              }}
-            >
-              Contact Us
-            </Typography>
-          </Button>
+          <Link
+            href={"/contact-us"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <Button sx={styles.BannerButtons}>
+              <Typography
+                sx={{
+                  ...styles.BannerButtonsTypo,
+                  color: "white",
+                }}
+              >
+                Contact Us
+              </Typography>
+            </Button>
+          </Link>
         </Grid>
       </Grid>
     </Container>

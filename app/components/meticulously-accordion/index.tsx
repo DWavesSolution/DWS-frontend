@@ -11,12 +11,15 @@ import {
 import React, { useState } from "react";
 import { styles } from "./styles";
 import { Meticulously_Question } from "@/app/static-data/data";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
+
 const MeticulouslyAccordion = () => {
-  const [expended, SetExpended] = useState(false);
-  const OnChangeExpended = () => {
-    SetExpended(true);
-  };
+  const [expanded, setExpanded] = useState(0);
+  const handleAccordionChange =
+    (panel: any) => (event: any, isExpanded: any) => {
+      setExpanded(isExpanded ? panel : null);
+    };
   return (
     <Grid
       container
@@ -40,7 +43,7 @@ const MeticulouslyAccordion = () => {
               fontWeight={600}
               fontFamily={"var(--work-Sans)"}
               sx={{
-                color: "#004ca2",
+                color: "#fe7958",
                 lineHeight: "42px",
                 marginBottom: "20px",
               }}
@@ -65,11 +68,18 @@ const MeticulouslyAccordion = () => {
                 <Accordion
                   sx={styles.MainAccordion}
                   elevation={0}
+                  expanded={expanded === index}
+                  onChange={handleAccordionChange(index)}
                   defaultExpanded={index === 0}
                 >
                   <AccordionSummary
-                    expandIcon={<ArrowDownwardIcon sx={{ color: "Black" }} />}
-                    onClick={OnChangeExpended}
+                    expandIcon={
+                      expanded === index ? (
+                        <RemoveCircleOutlineIcon sx={{ color: "#FF6741" }} />
+                      ) : (
+                        <AddCircleOutlineIcon sx={{ color: "#FF6741" }} />
+                      )
+                    }
                   >
                     <Typography
                       fontFamily={"var(--nunito)"}

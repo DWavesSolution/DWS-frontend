@@ -2,6 +2,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
+import { Link as ScrollLink } from "react-scroll";
 
 const OurPromise = () => {
   return (
@@ -20,9 +21,19 @@ const OurPromise = () => {
                 "At Digital Wave Solutions, our vision is to be your dedicated partner in online success! We're committed to crafting tailored strategies and leveraging our expertise to ride the wave and elevate your business to new heights."
               }
             </Typography>
-            <Button sx={styles.ChatButton}>
-              <Typography sx={styles.ChatButtonTypo}>{"Let's Chat"}</Typography>
-            </Button>
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={1000}
+            >
+              <Button sx={styles.ChatButton}>
+                <Typography sx={styles.ChatButtonTypo}>
+                  {"Let's Chat"}
+                </Typography>
+              </Button>
+            </ScrollLink>
           </Grid>
           <Grid container item xs={12} md={6.5}>
             <Grid item xs={12} sm={6} sx={styles.GridSec1}>

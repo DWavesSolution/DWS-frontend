@@ -12,7 +12,7 @@ const OurCoreValues = () => {
           <Grid item xs={12} sx={{ marginBottom: "40px" }}>
             <Typography
               fontSize={"44px"}
-              sx={{ color: "rgb(101, 173, 255)" }}
+              sx={{ color: "#fe7958" }}
               fontFamily={"var(--work-Sans)"}
             >
               Our Core Values
@@ -36,7 +36,7 @@ const OurCoreValues = () => {
                   item
                   xs={12}
                   sm={5.8}
-                  sx={styles.CardGrid}
+                  sx={{ ...styles.CardGrid, backgroundColor: item.color }}
                   key={`${item?.id}-${index}`}
                 >
                   <Typography
@@ -53,7 +53,7 @@ const OurCoreValues = () => {
                   >
                     {item.title}
                   </Typography>
-                  <Divider sx={{ border: "1px solid white" }} />
+                  <Divider sx={{ border: "1px solid #fe7958" }} />
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"16px"}

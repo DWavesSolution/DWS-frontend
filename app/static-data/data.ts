@@ -352,36 +352,42 @@ export const Core_Values_Data = [
     title: "People first",
     description:
       "We please everyone, those who work with us and those we work for as we focus on establishing relationships that would make a positive difference in everyone's lives",
+    color: "#f2fbf5",
   },
   {
     id: "02",
     title: "Passion-Driven",
     description:
       "Fueling success by harnessing our love for what we do for purpose-driven results in every aspect of professional and personal life.",
+    color: "#e9f5fe",
   },
   {
     id: "03",
     title: "Embracing challenges",
     description:
       "To go that extra mile we challenge ourselves to take risks responsibly and ensure our works are the mark of our focused excellence.",
+    color: "#fff3f2",
   },
   {
     id: "04",
     title: "Dream Big, Act Fast",
     description:
       "We prioritize the little steps that pave the way to the bigger picture, allowing us to move swiftly and efficiently toward our goals.",
+    color: "#faf1f7",
   },
   {
     id: "05",
     title: "Deliver Exceptional Results",
     description:
       "We strongly believe that as we focus on the end user, everything else will follow. Through an iterative approach, we strive to exceed expectations with out focus on the end user.",
+    color: "#fdf9f2",
   },
   {
     id: "06",
     title: "Collaborative Learning & Winning",
     description:
       "We give more than we take, sharing everything we learn and leveraging our collective energy and intelligence to achieve success.",
+    color: "#cfd8dc",
   },
 ];
 export const Streamline_Data = [
@@ -391,6 +397,7 @@ export const Streamline_Data = [
     title: "Mobile App Development",
     description:
       "Immerse yourself in seamless convenience and enhanced connectivity through a robust mobile presence. Elevate your business objectives with tailor-made mobile applications designed to streamline processes, expand outreach to new audiences, and deliver an enhanced user experience.",
+    color: "#fdf9f2",
   },
   {
     id: "02",
@@ -398,6 +405,7 @@ export const Streamline_Data = [
     title: "Web Application Development",
     description:
       "Uncover a fluid and captivating user experience through a rapid, user-friendly, and visually striking web application or Progressive Web App. Elevate your business growth by enhancing your bottom line through an enhanced digital presence.",
+    color: "#fff3f2",
   },
   {
     id: "03",
@@ -405,6 +413,7 @@ export const Streamline_Data = [
     title: "User Experience & User Interface Design",
     description:
       "Our enthusiasm lies in technology, continuous learning, and the exchange of knowledge within the digital realm. As diligent individuals, we thrive on overcoming challenges, demonstrating proficiency in comprehending both technical intricacies and business obstacles.",
+    color: "#cfd8dc",
   },
   {
     id: "04",
@@ -412,6 +421,7 @@ export const Streamline_Data = [
     title: "Integration Services",
     description:
       "Stay ahead of the curve and embrace new technologies with custom-built solutions that offer increased security, efficiency, and transparency in your business operations.",
+    color: "#e9f5fe",
   },
 ];
 export const Social_Media_Data = [
@@ -421,6 +431,7 @@ export const Social_Media_Data = [
     title: "Social Media Management Services",
     description:
       "We offer full-service social media management services. We transform your social media presence with high-quality content, daily activity, engagement-monitoring and increased followers. In order for followers to convert into customers, they need to become more familiar with your brand, see your content often and gain value from it. We create content for our clients that meets those three criteria. This service will attract targeted social media users to follow you, engage with your content and convert into loyal customers, all while telling your brand’s story throughout.",
+    color: "#e9f5fe",
   },
   {
     id: "02",
@@ -428,6 +439,7 @@ export const Social_Media_Data = [
     title: "Social Media Advertising Services",
     description:
       "Our social media advertising services have been tested and proven to accelerate growth and pair well with our social media management service. Therefore, by using LYFE Marketing to create social ads, our clients usually see more results at lower costs. While many of our client utilise this service for Facebook ads, we can also perform Instagram ads, LinkedIn ads and other paid social ads. This service uses your advertising budget to extend your reach and send targeted users to your website or landing page while tracking conversions and metrics that matter.",
+    color: "#cfd8dc",
   },
   {
     id: "03",
@@ -435,6 +447,7 @@ export const Social_Media_Data = [
     title: "Email & Sms Marketing Services",
     description:
       "Email marketing is not dead. In fact, for every $1 spent on email marketing, the average ROI is $36. Your customers check their email every day. Our email marketing services will help you stay top of mind and speed up your sales cycle, all while providing value to your audience. Whether we create weekly newsletters to send to your subscribers, set up a drip sequence to send the right automated emails at the right time, or help you follow up with your subscribers via text message, you can expect quality content that moves prospects through your sales funnel to buy. ",
+    color: "#fff3f2",
   },
   {
     id: "04",
@@ -442,6 +455,7 @@ export const Social_Media_Data = [
     title: "Managemnet Services",
     description:
       "When someone types in the product or service you offer into the Google search bar, does your website appear? If not, you’re probably not implementing PPC! PPC stands for pay per click and it is synonymous with SEM or search engine marketing. You can get immediate traffic to your website from search engines like Google, Bing, and Amazon by paying those search engines directly to place your website at the top of the search results for relevant search queries. Our PPC management services handle those ads for you from top to bottom so you can just sit back and watch the sales roll in.",
+    color: "#fdf9f2",
   },
 ];
 export const AI_ML_Data = [
@@ -478,6 +492,7 @@ export const SEO_Data = [
   {
     id: "01",
     title: "Essential SEO Package",
+    color: "#fdf9f2",
     content: [
       { point: "Keyword Research and Analysis" },
       { point: "On-Page Optimization" },
@@ -489,6 +504,7 @@ export const SEO_Data = [
   {
     id: "02",
     title: "Advanced SEO Package",
+    color: "#fff3f2",
     content: [
       { point: "Everything in the Essential Package, plus..." },
       { point: "Off-Page Optimization (Link Building)" },
@@ -500,6 +516,7 @@ export const SEO_Data = [
   {
     id: "03",
     title: "Premium SEO Package",
+    color: "#cfd8dc",
     content: [
       { point: "Everything in the Advanced Package, plus..." },
       { point: "Advanced Analytics and Conversion Tracking" },
@@ -511,6 +528,7 @@ export const SEO_Data = [
   {
     id: "04",
     title: "Custom SEO Solutions",
+    color: "#e9f5fe",
     content: [
       { point: "Keyword Research and Analysis" },
       { point: "Tailored solutions for businesses with unique needs" },
@@ -526,24 +544,28 @@ export const Why_DWS = [
     title: "High-Quality Deliverables",
     description:
       "Drawing upon extensive expertise in product design and development, coupled with a profound understanding of cutting-edge technologies and methodologies, we bring forth functional, visually appealing, and user-friendly digital products. Our commitment is to deliver solutions precisely tailored to meet your specific requirements.",
+    color: "#fdf9f2",
   },
   {
     id: "02",
     title: "Dedicated Support",
     description:
       "We offer continuous support and assistance for your customised product engineering projects, ensuring their success and seamless operation. Our commitment is to provide prompt and effective solutions that evolve alongside the needs of your business.",
+    color: "#fff3f2",
   },
   {
     id: "03",
     title: "State-of-the-art Security Measures",
     description:
       "Security is our top priority. We employ the latest measures and techniques, such as encryption, firewalls, and multi-factor authentication, to build robust products that safeguard applications and data from potential threats.",
+    color: "#e9f5fe",
   },
   {
     id: "04",
     title: "Building Scalable Applications",
     description:
       "Our proficient team offers efficient and effective scalable solutions, ensuring reliable performance that accommodates increasing user numbers, expands functionality, and handles additional data seamlessly.",
+    color: "#faf1f7",
   },
 ];
 export const Why_SEO = [
@@ -552,24 +574,28 @@ export const Why_SEO = [
     title: "Proven Track Record",
     description:
       "Our results speak for themselves. We've helped businesses across industries achieve higher rankings, increased organic traffic, and improved conversion rates.",
+    color: "#faf1f7",
   },
   {
     id: "02",
     title: "Customized Strategies",
     description:
       "One size does not fit all. We design personalized SEO strategies that align with your business objectives, ensuring maximum impact and long-term success.",
+    color: "#e9f5fe",
   },
   {
     id: "03",
     title: "Transparent Reporting",
     description:
       "Stay informed about the progress of your SEO campaign with regular, transparent reports. We believe in keeping our clients in the loop every step of the way.",
+    color: "#fff3f2",
   },
   {
     id: "04",
     title: "Dedicated Support",
     description:
       "Your success is our priority. Our dedicated support team is always ready to address your queries and provide expert guidance.",
+    color: "#fdf9f2",
   },
 ];
 export const Why_AI_ML = [
@@ -578,24 +604,28 @@ export const Why_AI_ML = [
     title: "Innovation at the Core",
     description:
       "Stay ahead of the curve with our commitment to innovation. We continuously explore emerging technologies to ensure your business benefits from the latest advancements in AI and ML.",
+    color: "#fdf9f2",
   },
   {
     id: "02",
     title: "Customised Solutions",
     description:
       "We understand that every business is unique. Our solutions are tailored to meet your specific needs, providing a competitive edge in your industry.",
+    color: "#fff3f2",
   },
   {
     id: "03",
     title: "Seamless Integration",
     description:
       "Our experienced team ensures a smooth integration process, minimizing disruptions and maximizing the impact of AI and ML on your operations.",
+    color: "#e9f5fe",
   },
   {
     id: "04",
     title: "Reliable Support",
     description:
       "Partnering with Digital Waves Solution means ongoing support and maintenance. We are dedicated to ensuring that your AI and ML systems operate at peak performance.",
+    color: "#faf1f7",
   },
 ];
 export const Meticulously_Question = [
@@ -629,6 +659,7 @@ export const Subscription_Data = [
     id: 1,
     type: "Basic",
     price: "$200",
+    color: "#faf1f7",
     content: [
       { point: "Social Channels(Facebook, Instagram)" },
       { point: "Social Media Audit" },
@@ -646,6 +677,7 @@ export const Subscription_Data = [
     id: 2,
     type: "Standard",
     price: "$300",
+    color: "#e9f5fe",
     content: [
       { point: "Social Channels(Facebook, Instagram, Twitter)" },
       { point: "Social Media Audit" },
@@ -668,6 +700,7 @@ export const Subscription_Data = [
     id: 3,
     type: "Enterprise",
     price: "$500",
+    color: "#fff3f2",
     content: [
       {
         point:

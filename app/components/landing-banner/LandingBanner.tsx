@@ -12,6 +12,7 @@ import React from "react";
 import { styles } from "./styles";
 import DWSImage from "../DWSImage";
 import BannerImmage from "../../../public/BannerImage.png";
+import Link from "next/link";
 
 const LandingBanner = () => {
   return (
@@ -40,39 +41,49 @@ const LandingBanner = () => {
               </Typography>
             </Grid>
             <Grid item xs={12} sm={4} md={6} lg={5} sx={styles.ButtonGrid}>
-              <Button
-                sx={{
-                  ...styles.BannerButtons,
-                  backgroundColor: "#fe7958",
-                  "&:hover": {
-                    backgroundColor: "#fe7958",
-                  },
-                }}
+              <Link
+                href={"/contact-us"}
+                style={{ textDecoration: "none", color: "white" }}
               >
-                <Typography
+                <Button
                   sx={{
-                    ...styles.BannerButtonsTypo,
-                    color: "white",
+                    ...styles.BannerButtons,
+                    backgroundColor: "#fe7958",
+                    "&:hover": {
+                      backgroundColor: "#fe7958",
+                    },
                   }}
                 >
-                  Contact Us
-                </Typography>
-              </Button>
-              <Button
-                sx={{
-                  ...styles.BannerButtons,
-                  backgroundColor: "white",
-                  "&:hover": {
-                    backgroundColor: "white",
-                  },
-                }}
+                  <Typography
+                    sx={{
+                      ...styles.BannerButtonsTypo,
+                      color: "white",
+                    }}
+                  >
+                    Contact Us
+                  </Typography>
+                </Button>
+              </Link>
+              <Link
+                href={"/about-us"}
+                style={{ textDecoration: "none", color: "#fe7958" }}
               >
-                <Typography
-                  sx={{ ...styles.BannerButtonsTypo, color: "#fe7958" }}
+                <Button
+                  sx={{
+                    ...styles.BannerButtons,
+                    backgroundColor: "white",
+                    "&:hover": {
+                      backgroundColor: "white",
+                    },
+                  }}
                 >
-                  Learn More
-                </Typography>
-              </Button>
+                  <Typography
+                    sx={{ ...styles.BannerButtonsTypo, color: "#fe7958" }}
+                  >
+                    Learn More
+                  </Typography>
+                </Button>
+              </Link>
             </Grid>
             <Grid container item xs={12}>
               <Grid item xs={12} sm={2.5} md={3.5}>

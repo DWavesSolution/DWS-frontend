@@ -17,7 +17,7 @@ const Testimonials = () => {
             <Typography
               fontSize={"44px"}
               fontWeight={600}
-              sx={{ marginBottom: "10px", color: "#004ca2" }}
+              sx={{ marginBottom: "10px", color: "#fe7958" }}
               fontFamily={"var(--work-Sans)"}
             >
               About Technologies

@@ -28,7 +28,7 @@ const page = () => {
         }
         DataMapping={Social_Media_Data}
       />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <SeoSubcription />
       <MeticulouslyAccordion />
       <ContactUs />

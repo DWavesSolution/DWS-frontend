@@ -23,7 +23,7 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
                 fontSize={{ xs: "38px", sm: "44px" }}
                 fontFamily={"var(--work-Sans)"}
                 sx={{
-                  color: "#004ca2",
+                  color: "#fe7958",
                   letterSpacing: "-1.14px",
                   lineHeight: "54px",
                 }}
@@ -48,7 +48,7 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
                   item
                   xs={12}
                   sm={5.8}
-                  sx={styles.CardGrid}
+                  sx={{ ...styles.CardGrid, backgroundColor: item.color }}
                   key={`${item?.id}-${index}`}
                 >
                   <Typography
@@ -65,7 +65,7 @@ const WHYDWS = ({ title, heading, description, DataMapping }: any) => {
                   >
                     {item.title}
                   </Typography>
-                  <Divider sx={{ border: "1px solid white" }} />
+                  <Divider sx={{ border: "1px solid #fe7958" }} />
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"16px"}
