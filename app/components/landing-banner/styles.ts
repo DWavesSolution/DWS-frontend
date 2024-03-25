@@ -1,7 +1,7 @@
 export const styles = {
   Box: {
     display: "flex",
-    backgroundColor: "#fad4ca",
+
     padding: "64px 0px",
     alignItems: "center",
   },

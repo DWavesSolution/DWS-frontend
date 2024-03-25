@@ -27,7 +27,7 @@ export const styles = {
     marginTop: "64px",
     minHeight: "400px",
     width: "100%",
-    background: "#fff3f2",
+    background: "#fad4ca",
     borderRadius: "0px",
     justifyContent: "center",
   },
@@ -52,8 +52,9 @@ export const styles = {
   DrawarPapar: {
     width: { xs: "100%", sm: "50%", md: "30%" },
     boxShadow: "none",
-    background:
-      "transparent radial-gradient(farthest-corner at 300% 260%,#004ca2 0,#000 100%) 0 0 no-repeat padding-box",
+    // background:
+    //   "transparent radial-gradient(farthest-corner at 300% 260%,#004ca2 0,#000 100%) 0 0 no-repeat padding-box",
+    background: "#fad4ca",
   },
   LinkTypo: { margin: "15px 0px" },
 };
