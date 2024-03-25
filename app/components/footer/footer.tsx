@@ -5,6 +5,7 @@ import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import { footer_Data, socialIcons } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
 import FooterLogo from "../../../public/headerLogo.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -85,9 +86,15 @@ const Footer = () => {
                     justifyContent: { xs: "center", sm: "end" },
                   }}
                 >
-                  <Box sx={{ height: 20, width: 20 }}>
-                    <DWSImage src={item.logo} alt="" />
-                  </Box>
+                  <Link href={item.link} target="_blank" title={item.name}>
+                    <Box sx={{ height: 20, width: 20, cursor: "pointer" }}>
+                      <DWSImage
+                        src={item.logo}
+                        alt={item.name}
+                        aria-label={item.name}
+                      />
+                    </Box>
+                  </Link>
                 </Grid>
               );
             })}
