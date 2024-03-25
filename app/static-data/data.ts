@@ -2,7 +2,7 @@ export const HeaderData = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ export const HeaderData = [
   {
     id: 3,
     name: "Blogs",
-    link: "#",
+    link: "/",
   },
   {
     id: 4,
@@ -23,22 +23,22 @@ export const HeaderData = [
 export const Services_Menu = [
   {
     title: "Digital Product Development",
-    logo: "/gear.webp",
+    logo: "/mobile_dev.png",
     id: "/digital-product-development",
   },
   {
     title: "Social Media Marketing",
-    logo: "/peoples.webp",
+    logo: "/Digital_Marketing.png",
     id: "/social-media-marketing",
   },
   {
     title: "Search Engine Optimization",
-    logo: "/database.webp",
+    logo: "/SEO.png",
     id: "/search-engine-optimization",
   },
   {
     title: "AI / ML",
-    logo: "/bulb.webp",
+    logo: "/Web_dev.png",
     id: "/ai-ml",
   },
 ];

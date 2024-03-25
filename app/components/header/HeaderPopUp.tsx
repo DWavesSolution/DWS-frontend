@@ -22,7 +22,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
             alignItems: "center",
           }}
         >
-          <Grid item xs={12} sm={12} md={4} sx={{ borderRight: "1px solid" }}>
+          <Grid item xs={12} md={4} sx={{ borderRight: "1px solid" }}>
             <Swiper
               spaceBetween={50}
               centeredSlides={true}
@@ -44,7 +44,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                     justifyContent: "center",
                   }}
                 >
-                  <Box sx={{ height: 230, width: 230 }}>
+                  <Box sx={{ height: 200, width: 200 }}>
                     <DWSImage
                       src={item.logo}
                       alt={item.title}
@@ -55,7 +55,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
               ))}
             </Swiper>
           </Grid>
-          <Grid container item xs={12} sm={12} md={7}>
+          <Grid container item xs={12} md={7}>
             {Services_Menu.map((item, index) => (
               <Grid
                 item
@@ -67,7 +67,13 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                   margin: "30px 0px",
                 }}
               >
-                <Box sx={{ height: 80, width: 80 }}>
+                <Box
+                  sx={{
+                    height: 40,
+                    width: 40,
+                    marginRight: "5px",
+                  }}
+                >
                   <DWSImage
                     src={item.logo}
                     alt={item.title}
@@ -81,7 +87,9 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
                     color: "#707070",
                   }}
                 >
-                  <Typography fontFamily={"var(--nunito)"}>{item.title}</Typography>
+                  <Typography fontFamily={"var(--nunito)"}>
+                    {item.title}
+                  </Typography>
                 </Link>
               </Grid>
             ))}
