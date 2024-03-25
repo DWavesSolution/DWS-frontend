@@ -91,7 +91,7 @@ const StreamLineBuisness = ({
                           fontSize={"14.4px"}
                           sx={{
                             color: "#555",
-                            padding: "1px 0px",
+                            padding: "10px 0px",
                             borderTop: "1px solid #fe7958",
                           }}
                         >
