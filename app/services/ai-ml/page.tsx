@@ -29,8 +29,8 @@ const page = () => {
       />
       {/* <Testimonials /> */}
       <WHYDWS
-        title="Why Choose Digital Wave Solution for AI & ML Services?"
-        heading=""
+        title=""
+        heading="Why Choose Digital Wave Solution for AI & ML Services?"
         description=""
         DataMapping={Why_AI_ML}
       />
