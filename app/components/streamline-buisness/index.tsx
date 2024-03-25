@@ -79,7 +79,6 @@ const StreamLineBuisness = ({
                           sx={{
                             color: "#fe7958",
                             letterSpacing: "-.78px",
-                            marginBottom: "10px",
                           }}
                         >
                           {item.title}
@@ -91,7 +90,7 @@ const StreamLineBuisness = ({
                           fontSize={"14.4px"}
                           sx={{
                             color: "#555",
-                            marginTop: "10px",
+                            padding: "15px 0px",
                             borderTop: "1px solid #fe7958",
                           }}
                         >
