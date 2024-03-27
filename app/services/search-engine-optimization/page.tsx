@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import WHYDWS from "@/app/components/why-DWS";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
 import SeoPackages from "@/app/components/seo-packages";
-import { Scores_Card, Why_SEO } from "@/app/static-data/data";
+import { Scores_Card, Seo_Faq, Why_SEO } from "@/app/static-data/data";
 import ContactUs from "@/app/components/contact";
 import ServicesBanner from "../../components/services_banner";
 
@@ -34,7 +34,10 @@ const page = () => {
         description=""
         DataMapping={Why_SEO}
       />
-      <MeticulouslyAccordion />
+      <MeticulouslyAccordion
+        title={"Frequently Ask Questions"}
+        dataMapping={Seo_Faq}
+      />
       <ContactUs />
     </Box>
   );

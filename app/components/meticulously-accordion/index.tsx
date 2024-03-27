@@ -10,11 +10,10 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { styles } from "./styles";
-import { Meticulously_Question } from "@/app/static-data/data";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
-const MeticulouslyAccordion = () => {
+const MeticulouslyAccordion = ({ title, dataMapping }: any) => {
   const [expanded, setExpanded] = useState(0);
   const handleAccordionChange =
     (panel: any) => (event: any, isExpanded: any) => {
@@ -29,15 +28,7 @@ const MeticulouslyAccordion = () => {
     >
       <Container sx={{ display: "flex", justifyContent: "center" }}>
         <Grid container item xs={12} md={9} sx={styles.box}>
-          <Grid item xs={12} lg={10}>
-            <Typography
-              fontFamily={"var(--nunito)"}
-              fontSize={"11.4px"}
-              fontWeight={400}
-              sx={{ color: "#6f6f6f", marginBottom: "20px" }}
-            >
-              Our Process
-            </Typography>
+          <Grid item xs={12}>
             <Typography
               fontSize={"32px"}
               fontWeight={600}
@@ -48,8 +39,7 @@ const MeticulouslyAccordion = () => {
                 marginBottom: "20px",
               }}
             >
-              A meticulously crafted process that is both expandable and
-              seamlessly fits into place.
+              {title}
             </Typography>
             <Typography
               fontFamily={"var(--nunito)"}
@@ -57,13 +47,11 @@ const MeticulouslyAccordion = () => {
               fontWeight={400}
               sx={{ color: "#707070" }}
             >
-              Our processes have helped us achieve unparalleled results for our
-              clients in all sectors across our services. Here below is the
-              overview of how we will address your project
+              Everything you need to know about our Services.
             </Typography>
           </Grid>
           <Grid item xs={12} sx={styles.block}>
-            {Meticulously_Question.map((item: any, index) => (
+            {dataMapping.map((item: any, index: any) => (
               <Box sx={styles.ques} key={`${item?.id}-${index}`}>
                 <Accordion
                   sx={styles.MainAccordion}

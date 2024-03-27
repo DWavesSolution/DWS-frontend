@@ -53,8 +53,12 @@ const StreamLineBuisness = ({
                     flexDirection={(index + 1) % 2 == 0 ? "row" : "row-reverse"}
                   >
                     <Grid item xs={12} sm={5.6} sx={styles.DisplayCenter}>
-                      <Box sx={{ height: 250, width: "80%" }}>
-                        <DWSImage src={item.logo} alt={item.title} />
+                      <Box sx={{ height: 200, width: "100%" }}>
+                        <DWSImage
+                          src={item.logo}
+                          alt={item.title}
+                          style={{ objectFit: "contain" }}
+                        />
                       </Box>
                     </Grid>
                     <Grid
@@ -79,7 +83,7 @@ const StreamLineBuisness = ({
                           sx={{
                             color: "#fe7958",
                             letterSpacing: "-.78px",
-                            paddingBottom:"10px"
+                            paddingBottom: "10px",
                           }}
                         >
                           {item.title}

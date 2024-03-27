@@ -10,6 +10,11 @@ export const styles = {
     justifyContent: "space-between",
     alignItems: "center",
   },
+  FaqHeading: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
   block: {
     marginTop: "7px",
   },

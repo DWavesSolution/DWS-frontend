@@ -14,7 +14,7 @@ const DWSImage = (props: props) => {
       <Image
         fill
         {...props}
-        src={error ? "/images/noImage.jpeg" : props.src}
+        src={error ? "/noImage.jpeg" : props.src}
         alt=""
         style={{
           ...props.style,

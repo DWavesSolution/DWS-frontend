@@ -3,7 +3,11 @@ import { convertSeo } from "@/app/utils/seo";
 import { Box } from "@mui/material";
 import StreamLineBuisness from "@/app/components/streamline-buisness";
 import MeticulouslyAccordion from "@/app/components/meticulously-accordion";
-import { Scores_Card, Web_Development_Data } from "@/app/static-data/data";
+import {
+  Scores_Card,
+  Web_Development_Data,
+  Web_Development_Faq,
+} from "@/app/static-data/data";
 import ContactUs from "@/app/components/contact";
 import ServicesBanner from "@/app/components/services_banner";
 
@@ -32,7 +36,10 @@ const page = () => {
         description={""}
         DataMapping={Web_Development_Data}
       />
-      <MeticulouslyAccordion />
+      <MeticulouslyAccordion
+        title={"Frequently Ask Questions"}
+        dataMapping={Web_Development_Faq}
+      />
       <ContactUs />
     </Box>
   );
