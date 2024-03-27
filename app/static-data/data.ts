@@ -699,14 +699,14 @@ export const Why_SEO = [
     title: "Technical SEO",
     description:
       "Optimizing a website's technical elements can enhance its search engine ranking. This is known as technical SEO. Our SEO specialists at Digital Wave Solutions provide expert SEO services in Canada and carefully examine the structure, page speed, and other aspects of your website. Through the application of effective techniques, we as an affordable SEO agency, increase the visibility and organic ranks of your website.",
-    color: "",
+    color: "#fcf4fa",
   },
   {
     id: "06",
     title: "E-Commerce SEO",
     description:
       "Optimizing online businesses to draw in visitors, and boost visibility is the main goal of e-commerce SEO. Digital Wave Solutions is an affordable SEO agency that provides specialized e-commerce SEO services. Our expert SEO services in Canada for e-commerce include extensive keyword research, refined Meta tags, and enhanced site navigation. We assist your online store in ranking better in search results by putting into practice efficient e-commerce SEO techniques.",
-    color: "",
+    color: "#FEECE2",
   },
 ];
 export const Seo_Faq = [
