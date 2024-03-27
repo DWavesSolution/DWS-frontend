@@ -23,64 +23,64 @@ export const HeaderData = [
 export const Services_Menu = [
   {
     title: "Digital Marketing",
-    id: "/digital-product-development",
+    id: "/digital-marketing",
     color: "#f2fbf5",
     content: [
-      { name: "Social Media Marketing", link: "" },
-      { name: "Pay-Per-Click (PPC) Management", link: "" },
-      { name: "Content Marketing", link: "" },
-      { name: "Conversion Marketing", link: "" },
-      { name: "Email Marketing", link: "" },
-      { name: "Brand Development & Strategy", link: "" },
+      { name: "Social Media Marketing", link: "/digital-marketing" },
+      { name: "Pay-Per-Click (PPC) Management", link: "/digital-marketing" },
+      { name: "Content Marketing", link: "/digital-marketing" },
+      { name: "Conversion Marketing", link: "/digital-marketing" },
+      { name: "Email Marketing", link: "/digital-marketing" },
+      { name: "Brand Development & Strategy", link: "/digital-marketing" },
     ],
   },
   {
     title: "SEO",
-    id: "/social-media-marketing",
+    id: "/search-engine-optimization",
     color: "#e9f5fe",
     content: [
-      { name: "Keyword Research", link: "" },
-      { name: "On-page SEO", link: "" },
-      { name: "Off-page SEO", link: "" },
-      { name: "SEO Copywriting", link: "" },
-      { name: "Technical SEO", link: "" },
-      { name: "E-Commerce SEO", link: "" },
+      { name: "Keyword Research", link: "/search-engine-optimization" },
+      { name: "On-page SEO", link: "/search-engine-optimization" },
+      { name: "Off-page SEO", link: "/search-engine-optimization" },
+      { name: "SEO Copywriting", link: "/search-engine-optimization" },
+      { name: "Technical SEO", link: "/search-engine-optimization" },
+      { name: "E-Commerce SEO", link: "/search-engine-optimization" },
     ],
   },
   {
     title: "Design",
-    id: "/",
-    color: "#e9f5fe",
+    id: "/design",
+    color: "#fff3f2",
     content: [
-      { name: "Web / Mobile App Design", link: "" },
-      { name: "UI & UX Design", link: "" },
-      { name: "Banner /Logo Design", link: "" },
-      { name: "Ad Creatives", link: "" },
-      { name: "2D/ 3D Animation", link: "" },
-      { name: "Video Editing", link: "" },
+      { name: "Web / Mobile App Design", link: "/design" },
+      { name: "UI & UX Design", link: "/design" },
+      { name: "Banner /Logo Design", link: "/design" },
+      { name: "Ad Creatives", link: "/design" },
+      { name: "2D/ 3D Animation", link: "/design" },
+      { name: "Video Editing", link: "/design" },
     ],
   },
   {
     title: "Web Development",
-    id: "",
+    id: "/web-development",
     color: "#fdf9f2",
     content: [
-      { name: "Website Development", link: "" },
-      { name: "E-Commerce Solutions", link: "" },
-      { name: "Web Application Development", link: "" },
-      { name: "Analytics & Reporting", link: "" },
-      { name: "Maintenance & Support", link: "" },
+      { name: "Website Development", link: "/web-development" },
+      { name: "E-Commerce Solutions", link: "/web-development" },
+      { name: "Web Application Development", link: "/web-development" },
+      { name: "Analytics & Reporting", link: "/web-development" },
+      { name: "Maintenance & Support", link: "/web-development" },
     ],
   },
   {
     title: "Mobile App Development",
-    id: "",
+    id: "/mobile-app-development",
     color: "#faf1f7",
     content: [
-      { name: "Native App Development", link: "" },
-      { name: "Cross-Platform Development", link: "" },
-      { name: "Custom App Solutions", link: "" },
-      { name: "App Maintenance & Support", link: "" },
+      { name: "Native App Development", link: "/mobile-app-development" },
+      { name: "Cross-Platform Development", link: "/mobile-app-development" },
+      { name: "Custom App Solutions", link: "/mobile-app-development" },
+      { name: "App Maintenance & Support", link: "/mobile-app-development" },
     ],
   },
 ];
@@ -121,17 +121,6 @@ export const Services_Card = [
     colour: "#faf1f7",
   },
 ];
-export const Brand_Logo = [
-  { id: 1, logo: "/akamai.webp" },
-  { id: 2, logo: "/deloitte-home.webp" },
-  { id: 3, logo: "/fidelity-home.webp" },
-  { id: 4, logo: "/kaseya-logo.webp" },
-  { id: 5, logo: "/l&t-home.webp" },
-  { id: 6, logo: "/nokia-home.webp" },
-  { id: 7, logo: "/punchh-home.webp" },
-  { id: 8, logo: "/lyca-mobile-home.webp" },
-  { id: 9, logo: "/td-bank-home.webp" },
-];
 export const Scores_Card = [
   {
     id: 1,
@@ -149,12 +138,6 @@ export const Scores_Card = [
     number: "20+",
     name: "Skill-gaps filled through staff augmentation",
   },
-];
-export const Project_Data = [
-  { id: 1, name: "Aligner 4D" },
-  { id: 2, name: "BDD" },
-  { id: 3, name: "Messy FM" },
-  { id: 4, name: "Carbonhound" },
 ];
 export const socialIcons = [
   {
@@ -432,106 +415,204 @@ export const Core_Values_Data = [
     color: "#cfd8dc",
   },
 ];
-export const Streamline_Data = [
-  {
-    id: "01",
-    logo: "/mobile_app_dev.webp",
-    title: "Mobile App Development",
-    description:
-      "Immerse yourself in seamless convenience and enhanced connectivity through a robust mobile presence. Elevate your business objectives with tailor-made mobile applications designed to streamline processes, expand outreach to new audiences, and deliver an enhanced user experience.",
-    color: "#fdf9f2",
-  },
-  {
-    id: "02",
-    logo: "/web_app_dev.webp",
-    title: "Web Application Development",
-    description:
-      "Uncover a fluid and captivating user experience through a rapid, user-friendly, and visually striking web application or Progressive Web App. Elevate your business growth by enhancing your bottom line through an enhanced digital presence.",
-    color: "#fff3f2",
-  },
-  {
-    id: "03",
-    logo: "/ui_ux.webp",
-    title: "User Experience & User Interface Design",
-    description:
-      "Our enthusiasm lies in technology, continuous learning, and the exchange of knowledge within the digital realm. As diligent individuals, we thrive on overcoming challenges, demonstrating proficiency in comprehending both technical intricacies and business obstacles.",
-    color: "#cfd8dc",
-  },
-  {
-    id: "04",
-    logo: "/integrated.webp",
-    title: "Integration Services",
-    description:
-      "Stay ahead of the curve and embrace new technologies with custom-built solutions that offer increased security, efficiency, and transparency in your business operations.",
-    color: "#e9f5fe",
-  },
-];
 export const Social_Media_Data = [
   {
     id: "01",
     logo: "/social-media-management.webp",
-    title: "Social Media Management Services",
+    title: "Social Media Marketing",
     description:
-      "We offer full-service social media management services. We transform your social media presence with high-quality content, daily activity, engagement-monitoring and increased followers. In order for followers to convert into customers, they need to become more familiar with your brand, see your content often and gain value from it. We create content for our clients that meets those three criteria. This service will attract targeted social media users to follow you, engage with your content and convert into loyal customers, all while telling your brand’s story throughout.",
+      "Are you looking for leading digital marketing services in Canada? Look no further than Digital Wave Solutions! As an affordable digital marketing company in Canada, we take pride in designing personalized strategies to enhance your online presence and drive outcomes. Whether you're looking for tailored requirements or comprehensive campaigns, we're yours go-to for innovative and affordable digital marketing solutions. Elevate your brand's digital footprint with our expert team today!",
     color: "#e9f5fe",
   },
   {
     id: "02",
     logo: "/Social_Advertising.svg",
-    title: "Social Media Advertising Services",
+    title: "Pay-Per-Click (PPC) Management",
     description:
-      "Our social media advertising services have been tested and proven to accelerate growth and pair well with our social media management service. Therefore, by using LYFE Marketing to create social ads, our clients usually see more results at lower costs. While many of our client utilise this service for Facebook ads, we can also perform Instagram ads, LinkedIn ads and other paid social ads. This service uses your advertising budget to extend your reach and send targeted users to your website or landing page while tracking conversions and metrics that matter.",
+      "Discover Digital Wave Solutions, your go-to for comprehensive digital marketing services. We offer tailored solutions to enhance your online presence as an affordable digital marketing company in Canada. Maximize your online presence with Digital Wave Solutions' expert Pay-Per-Click (PPC) management. Our tailored strategies ensure optimal ad placement and maximum ROI for your business. Let us drive targeted traffic to your website, boost conversions, and amplify your brand visibility.",
     color: "#cfd8dc",
   },
   {
     id: "03",
     logo: "/SMS-Marketing.webp",
-    title: "Email & Sms Marketing Services",
+    title: "Content Marketing",
     description:
-      "Email marketing is not dead. In fact, for every $1 spent on email marketing, the average ROI is $36. Your customers check their email every day. Our email marketing services will help you stay top of mind and speed up your sales cycle, all while providing value to your audience. Whether we create weekly newsletters to send to your subscribers, set up a drip sequence to send the right automated emails at the right time, or help you follow up with your subscribers via text message, you can expect quality content that moves prospects through your sales funnel to buy. ",
+      "Digital Wave Solutions, an affordable digital marketing company in Canada, revolutionizes content marketing with cutting-edge strategies. From engaging social media campaigns to SEO-optimized blogs, we harness the power of digital platforms with inventive digital marketing services to amplify your brand's message. Our professional approach ensures content resonates with your audience, driving traffic and conversions. Upscale your online presence with our innovative content solutions.",
     color: "#fff3f2",
   },
   {
     id: "04",
     logo: "/managementServices.webp",
-    title: "Managemnet Services",
+    title: "Conversion Marketing",
     description:
-      "When someone types in the product or service you offer into the Google search bar, does your website appear? If not, you’re probably not implementing PPC! PPC stands for pay per click and it is synonymous with SEM or search engine marketing. You can get immediate traffic to your website from search engines like Google, Bing, and Amazon by paying those search engines directly to place your website at the top of the search results for relevant search queries. Our PPC management services handle those ads for you from top to bottom so you can just sit back and watch the sales roll in.",
+      "It’s time to unleash the potential of your business with our conversion marketing solutions at Digital Wave Solutions. As an affordable digital marketing company in Canada, we specialize in driving conversions through tailored digital marketing services. Upgrade your brand identity, engage your audience, and maximize your ROI with our strategic approach. Experience the power of effective digital marketing today.",
     color: "#fdf9f2",
   },
+  {
+    id: "05",
+    logo: "/managementServices.webp",
+    title: "Email Marketing",
+    description:
+      "Stay ahead of the curve with innovative strategies that drive actual results in the ever-evolving digital landscape. From Digital Wave Solutions, harness the transformative power of digital marketing services, your trusted, affordable digital marketing company in Canada. Elevate your email marketing game with personalized automation, dynamic content, and A/B testing. Let our expert team optimize your campaigns for maximum engagement and conversion rates.",
+    color: "",
+  },
+  {
+    id: "06",
+    logo: "/managementServices.webp",
+    title: "Brand Development and Strategy",
+    description:
+      "Unlock your brand's potential with Digital Wave Solutions. Our affordable digital marketing services in Canada are tailored to elevate your brand's development and strategy. From targeted campaigns to engaging content, we specialize in maximizing your online presence. Let us navigate the digital landscape for you, ensuring your brand stands out amidst the competition—trust Digital Wave Solutions for effective brand growth.",
+    color: "",
+  },
 ];
-export const AI_ML_Data = [
+export const Design_Data = [
   {
     id: "01",
-    logo: "/artificial-intelligence.webp",
-    title: "AI Consultancy",
+    logo: "/social-media-management.webp",
+    title: "Web Design",
     description:
-      "Leverage our expertise in artificial intelligence to gain strategic insights and develop a roadmap tailored to your business objectives. Our consultants work closely with you to identify opportunities for AI integration and guide you through the implementation process.",
-    color: "#fdf9f2",
+      "Digital Wave Solutions web design services include building memorable websites that are both aesthetically pleasing and easy to use. To create websites that complement your brand identity, our creative web design agency team combines creativity and technology expertise. We make sure your website is designed for a seamless user experience across many devices, starting with responsive layouts and simple navigation.",
+    color: "#e9f5fe",
   },
   {
     id: "02",
-    logo: "/ML.webp",
-    title: "Machine Learning Solutions",
+    logo: "/Social_Advertising.svg",
+    title: "Mobile App Design",
     description:
-      "Unlock the potential of your data with our machine learning solutions. From predictive analytics to pattern recognition, we design and deploy ML models that enable you to make informed decisions and stay ahead in a rapidly evolving business landscape.",
-    color: "#fff3f2",
-  },
-  {
-    id: "03",
-    logo: "/customisation.webp",
-    title: "Customised AI Applications",
-    description:
-      "Tailored to your unique requirements, our custom AI applications are designed to optimize processes, automate tasks, and improve overall business performance. Whether you need a chatbot, image recognition system, or fraud detection tool, we've got you covered.",
+      "Businesses must have a well-designed mobile application in this day and age. We at Digital Wave Solutions are experts at designing user-friendly, visually appealing mobile app design that captures users. Our app design agency team uses industry best practices to produce compelling experiences. We prioritize usability and design to create mobile apps that captivate users and represent the vision of your brand.",
     color: "#cfd8dc",
   },
   {
-    id: "04",
-    logo: "/computer-icons.webp",
-    title: "Data Science Services",
+    id: "03",
+    logo: "/SMS-Marketing.webp",
+    title: "UI & UX Design",
     description:
-      "Extract valuable insights from your data with our data science services. Our team of experts combines statistical analysis, machine learning, and domain expertise to uncover patterns, trends, and actionable intelligence that drives business growth.",
+      "For digital interactions to be easy to use, user interface and user experience design are essential. Our UI/UX designers at Digital Wave Solutions are skilled at creating user interfaces in mobile app development that are functional, and aesthetically pleasing. We carry out in-depth user research and develop designs in response to feedback from users. We provide affordable mobile app design and development services in Canada.",
+    color: "#fff3f2",
+  },
+  {
+    id: "04",
+    logo: "/managementServices.webp",
+    title: "Banner Design",
+    description:
+      "When it comes to delivering your business message, banner design is crucial. We are an affordable social media marketing agency that specializes in creating visually appealing and unique banners for a range of digital platforms. We provide affordable social media marketing packages and use creative design strategies to produce banners that increase engagement and conversions for display advertising, social media campaigns, and websites.",
+    color: "#fdf9f2",
+  },
+  {
+    id: "05",
+    logo: "/managementServices.webp",
+    title: "Ad Creatives",
+    description:
+      "In digital ad campaigns, strong ad creatives may make all the difference. At Digital Wave Solutions our digital marketing services include producing compelling and conversion-boosting ad creatives. To produce ad creatives that connect with the audience you are targeting, our affordable digital marketing company in Canada mixes engaging language, appealing imagery, and strategic thinking. Our designs are optimized for platforms, resulting in optimum effect and return on investment.",
+    color: "",
+  },
+  {
+    id: "06",
+    logo: "/managementServices.webp",
+    title: "Logo Design",
+    description:
+      "A strong logo serves as the foundation for your brand identity. We provide a range of web design services and our skilled logo design team at Digital Wave Solutions specializes in producing distinctive and unforgettable logos that capture the values of your company. Our web design and development agency comprehends your brand's principles and transforms them into aesthetically magnificent logo designs.",
+    color: "",
+  },
+  {
+    id: "07",
+    logo: "/managementServices.webp",
+    title: "2D/ 3D Animation",
+    description:
+      "Animation is a great storytelling and audience engagement tool. Our talented animators at Digital Wave Solutions create fascinating 2D and 3D animations for your websites, e-commerce stores and social media platforms. We provide a range of services, including producing visually spectacular and immersive animations that fascinate and inspire, whether they are intended for explainer videos, product demos, or interactive experiences.",
+    color: "",
+  },
+  {
+    id: "08",
+    logo: "/managementServices.webp",
+    title: "Video Editing",
+    description:
+      "Creating captivating stories is the art of video editing. Our team at Digital Wave Solutions specializes in turning rough footage into visually stunning videos. We use cutting-edge editing methods and eye-catching effects to produce videos that effectively engage viewers and communicate your message and business. Whether the videos are for e-commerce store or social media, we make sure they are directed toward maximizing viewer interaction.",
+    color: "",
+  },
+];
+export const Web_Development_Data = [
+  {
+    id: "01",
+    logo: "/social-media-management.webp",
+    title: "Website Development",
+    description:
+      "Our team of website designers and developers at Digital Wave Solutions is building user-friendly and custom websites for businesses in Canada and all over the world. Our skilled web development team creates aesthetically pleasing websites, and search engines optimized by merging technological expertise with creative design. We use the efficient and latest technology with industry best practices to guarantee your website stands out in the digital arena.",
     color: "#e9f5fe",
+  },
+  {
+    id: "02",
+    logo: "/Social_Advertising.svg",
+    title: "E-Commerce Solutions",
+    description:
+      "The e-commerce store business is expanding in Canada and worldwide, and at Digital Wave Solutions, we provide complete e-commerce solutions and services that are customized to meet your business requirements. Our team uses cutting-edge technologies to create secure e-commerce platforms since we are aware of the particular difficulties involved in operating an online store. To increase conversions, we integrate payment gateways, and shopping carts, and personalize the user experience.",
+    color: "#cfd8dc",
+  },
+  {
+    id: "03",
+    logo: "/SMS-Marketing.webp",
+    title: "Web Application Development",
+    description:
+      "Many businesses now rely heavily on web applications to fulfill and leverage their business processes and needs. Our affordable and reasonable web development company services can meet the needs of a wide range of sectors and industries. Our skilled development team at Digital Wave Solutions specializes in creating unique web apps that increase efficiency, and enhance user experience. We use cutting-edge web development services and technologies to build dependable and scalable online apps.",
+    color: "#fff3f2",
+  },
+  {
+    id: "04",
+    logo: "/managementServices.webp",
+    title: "Product Development",
+    description:
+      "Digital Wave Solutions specializes in innovative product development, harnessing cutting-edge technologies to create solutions that meet the evolving needs of our clients. Our agile approach ensures rapid iteration and delivery, while our focus on user-centric design guarantees customer satisfaction. Let's ride the wave of digital innovation together.",
+    color: "#fdf9f2",
+  },
+  {
+    id: "05",
+    logo: "/managementServices.webp",
+    title: "Analytics & Reporting",
+    description:
+      "Making decisions based on data is crucial to maximizing your online presence. To assist you in understanding user behavior, web performance and business growth, Digital Wave Solutions provides complete analytics and reporting services for your business. To measure important indicators, and make wise decisions, our professionals set up analytics dashboards and smart tracking systems. We provide a range of analytics services to assist you in understanding the success of your online initiatives.",
+    color: "",
+  },
+  {
+    id: "06",
+    logo: "/managementServices.webp",
+    title: "Maintenance & Support",
+    description:
+      "Any website, web application and software needs to be updated frequently for security, business needs and technological advancements. For your digital assets to stay safe and functional, Digital Wave Solutions provides maintenance and support services. Our committed web development team is on hand to handle any technological problems and apply the required upgrades. By giving us the responsibility of maintenance of your digital assets, you can concentrate on your main business operations.",
+    color: "",
+  },
+];
+export const Mobile_Development_Data = [
+  {
+    id: "01",
+    logo: "/social-media-management.webp",
+    title: "Native App Development",
+    description:
+      "With a focus on native mobile app development, Digital Wave Solutions makes the most of platforms like iOS and Android. Our skilled mobile app development team produces feature-rich, high-performance native apps that offer a flawless user experience. We guarantee optimal performance by employing platform-specific languages and frameworks. We create native applications that match your business objectives and offer an exceptional user experience.",
+    color: "#e9f5fe",
+  },
+  {
+    id: "02",
+    logo: "/Social_Advertising.svg",
+    title: "Cross-Platform Development",
+    description:
+      "Using shared codebases, cross-platform mobile app development functions on several platforms, hence expanding your user base. Digital Wave Solutions, a mobile app development company uses frameworks like React Native and Flutter to provide cross-platform development services. With the help of these frameworks, our talented developers can produce feature-rich, functional apps that run smoothly on both iOS and Android smartphones.",
+    color: "#cfd8dc",
+  },
+  {
+    id: "03",
+    logo: "/SMS-Marketing.webp",
+    title: "Custom App Solutions",
+    description:
+      "Every company and business has different business process and needs, and our custom mobile app development team is made to meet those needs. We at Digital Wave Solutions are aware that store-bought applications cannot fulfill all of your needs. The knowledgeable staff at our app development company collaborates directly with you to comprehend your business goals and create unique mobile applications that support your vision.",
+    color: "#fff3f2",
+  },
+  {
+    id: "04",
+    logo: "/managementServices.webp",
+    title: "App Maintenance & Support",
+    description:
+      "For your mobile app to function smoothly and operate at its best when it is launched, you will need to provide regular maintenance and support. To keep your app safe, and secure, Digital Wave Solutions provides complete app maintenance and support services. Our committed mobile app development team is always on hand to handle any technological problems and offer prompt assistance.",
+    color: "#fdf9f2",
   },
 ];
 export const SEO_Data = [
@@ -584,94 +665,48 @@ export const SEO_Data = [
     ],
   },
 ];
-export const Why_DWS = [
-  {
-    id: "01",
-    title: "High-Quality Deliverables",
-    description:
-      "Drawing upon extensive expertise in product design and development, coupled with a profound understanding of cutting-edge technologies and methodologies, we bring forth functional, visually appealing, and user-friendly digital products. Our commitment is to deliver solutions precisely tailored to meet your specific requirements.",
-    color: "#fdf9f2",
-  },
-  {
-    id: "02",
-    title: "Dedicated Support",
-    description:
-      "We offer continuous support and assistance for your customised product engineering projects, ensuring their success and seamless operation. Our commitment is to provide prompt and effective solutions that evolve alongside the needs of your business.",
-    color: "#fff3f2",
-  },
-  {
-    id: "03",
-    title: "State-of-the-art Security Measures",
-    description:
-      "Security is our top priority. We employ the latest measures and techniques, such as encryption, firewalls, and multi-factor authentication, to build robust products that safeguard applications and data from potential threats.",
-    color: "#e9f5fe",
-  },
-  {
-    id: "04",
-    title: "Building Scalable Applications",
-    description:
-      "Our proficient team offers efficient and effective scalable solutions, ensuring reliable performance that accommodates increasing user numbers, expands functionality, and handles additional data seamlessly.",
-    color: "#faf1f7",
-  },
-];
 export const Why_SEO = [
   {
     id: "01",
-    title: "Proven Track Record",
+    title: "Keyword Research",
     description:
-      "Our results speak for themselves. We've helped businesses across industries achieve higher rankings, increased organic traffic, and improved conversion rates.",
+      "A significant component of SEO is keyword research, which involves finding the most effective keywords for online businesses. At Digital Wave Solutions, we provide expert SEO services in Canada. The knowledgeable staff at affordable SEO agency conducts keyword research using different methods. We find keywords that will bring relevant traffic to your website. We make sure your website ranks higher in search engine results.",
     color: "#faf1f7",
   },
   {
     id: "02",
-    title: "Customized Strategies",
+    title: "On-page SEO",
     description:
-      "One size does not fit all. We design personalized SEO strategies that align with your business objectives, ensuring maximum impact and long-term success.",
+      "Optimizing your website's content to increase its visibility to search engines is known as on-page SEO. At Digital Wave Solutions, our expert SEO services in Canada also include on-page SEO. Various on-page components are all optimized by our staff. We are an affordable SEO agency that increases your website's chances of ranking higher in search engine results pages, generating organic traffic.",
     color: "#e9f5fe",
   },
   {
     id: "03",
-    title: "Transparent Reporting",
+    title: "Off-page SEO",
     description:
-      "Stay informed about the progress of your SEO campaign with regular, transparent reports. We believe in keeping our clients in the loop every step of the way.",
+      "Enhancing a website's reputation through other sources is the goal of off-page SEO. Off-page SEO is one of our expert SEO services in Canada. Digital Wave Solutions, an affordable SEO agency is aware of how crucial off-page SEO is to creating a powerful online presence. Our group uses a range of tactics, including social media marketing, and online reputation management.",
     color: "#fff3f2",
   },
   {
     id: "04",
-    title: "Dedicated Support",
+    title: "SEO Copywriting",
     description:
-      "Your success is our priority. Our dedicated support team is always ready to address your queries and provide expert guidance.",
-    color: "#fdf9f2",
-  },
-];
-export const Why_AI_ML = [
-  {
-    id: "01",
-    title: "Innovation at the Core",
-    description:
-      "Stay ahead of the curve with our commitment to innovation. We continuously explore emerging technologies to ensure your business benefits from the latest advancements in AI and ML.",
+      "The skill of crafting optimized text that appeals to search engines is known as SEO copywriting. Digital Wave Solutions is an affordable SEO agency that consists of expert copywriters who create content that is optimized for search engines. We carry out keyword research, which we then expertly insert into the content of your website. We provide expert SEO services in Canada and make sure your website ranks higher in search results.",
     color: "#fdf9f2",
   },
   {
-    id: "02",
-    title: "Customised Solutions",
+    id: "05",
+    title: "Technical SEO",
     description:
-      "We understand that every business is unique. Our solutions are tailored to meet your specific needs, providing a competitive edge in your industry.",
-    color: "#fff3f2",
+      "Optimizing a website's technical elements can enhance its search engine ranking. This is known as technical SEO. Our SEO specialists at Digital Wave Solutions provide expert SEO services in Canada and carefully examine the structure, page speed, and other aspects of your website. Through the application of effective techniques, we as an affordable SEO agency, increase the visibility and organic ranks of your website.",
+    color: "",
   },
   {
-    id: "03",
-    title: "Seamless Integration",
+    id: "06",
+    title: "E-Commerce SEO",
     description:
-      "Our experienced team ensures a smooth integration process, minimizing disruptions and maximizing the impact of AI and ML on your operations.",
-    color: "#e9f5fe",
-  },
-  {
-    id: "04",
-    title: "Reliable Support",
-    description:
-      "Partnering with Digital Waves Solution means ongoing support and maintenance. We are dedicated to ensuring that your AI and ML systems operate at peak performance.",
-    color: "#faf1f7",
+      "Optimizing online businesses to draw in visitors, and boost visibility is the main goal of e-commerce SEO. Digital Wave Solutions is an affordable SEO agency that provides specialized e-commerce SEO services. Our expert SEO services in Canada for e-commerce include extensive keyword research, refined Meta tags, and enhanced site navigation. We assist your online store in ranking better in search results by putting into practice efficient e-commerce SEO techniques.",
+    color: "",
   },
 ];
 export const Meticulously_Question = [
@@ -800,20 +835,20 @@ export const footer_Data = [
   {
     heading: "Services",
     content: [
-      { name: "Digital Marketing", links: "" },
-      { name: "SEO", links: "" },
-      { name: "Design", links: "" },
-      { name: "Mobile Development", links: "" },
-      { name: "Web Development", links: "" },
+      { name: "Digital Marketing", links: "/digital-marketing" },
+      { name: "SEO", links: "/search-engine-optimization" },
+      { name: "Design", links: "/design" },
+      { name: "Mobile Development", links: "/mobile-app-development" },
+      { name: "Web Development", links: "/web-development" },
     ],
   },
   {
     heading: "Site Map",
     content: [
-      { name: "About", links: "" },
+      { name: "About", links: "/about-us" },
       { name: "Pricing", links: "" },
       { name: "Career", links: "" },
-      { name: "Blogs", links: "" },
+      { name: "Blogs", links: "/blog" },
       { name: "FAQ's", links: "" },
     ],
   },

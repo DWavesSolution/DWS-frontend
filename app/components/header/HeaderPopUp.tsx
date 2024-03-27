@@ -19,12 +19,17 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
               key={`${item?.id}-${index}`}
               sx={{ ...styles.ServicesMainGrid, background: item.color }}
             >
-              <Typography
-                fontFamily={"var(--nunito)"}
-                sx={{ color: "#fe7958", textDecorationLine: "underline" }}
+              <Link
+                href={`/services/${item.id}`}
+                style={{ textDecoration: "none" }}
               >
-                {item.title}
-              </Typography>
+                <Typography
+                  fontFamily={"var(--nunito)"}
+                  sx={{ color: "#fe7958", textDecorationLine: "underline" }}
+                >
+                  {item.title}
+                </Typography>
+              </Link>
               {item.content.map((data: any, index: any) => {
                 return (
                   <Link

@@ -14,32 +14,38 @@ import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "@/app/components/DWSImage";
 
-const AIML = () => {
+const ServicesBanner = ({
+  Pagetitle,
+  MainHeading,
+  description,
+  dataMapping,
+  bgColor,
+}: any) => {
   return (
-    <Box sx={styles.Card}>
+    <Box sx={{ ...styles.Card, backgroundColor: bgColor }}>
       <CardMedia sx={styles.CardMedia} image={""}>
         <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
               <Grid item xs={12}>
                 <Typography
-                  fontFamily={"var(--nunito)"}
                   fontSize={"14.4px"}
                   fontWeight={600}
                   sx={{ color: "black" }}
+                  fontFamily={"var(--nunito)"}
                 >
-                  {"Services > AI / ML"}
+                  {Pagetitle}
                 </Typography>
               </Grid>
               <Grid item xs={12} md={9}>
                 <Typography
                   fontFamily={"var(--work-Sans)"}
-                  fontSize={{ xs: "36px", sm: "52px" }}
+                  fontSize={"36px"}
                   fontWeight={550}
-                  lineHeight={{ xs: "46px", sm: "62px" }}
-                  sx={{ color: "#004ca2" }}
+                  lineHeight={{ xs: "46px" }}
+                  sx={{ color: "#fe7a58" }}
                 >
-                  Digital Waves Solution, where innovation meets intelligence!
+                  {MainHeading}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={5.5} sx={{ marginTop: "30px" }}>
@@ -47,12 +53,7 @@ const AIML = () => {
                   fontFamily={"var(--nunito)"}
                   sx={{ color: "black" }}
                 >
-                  As a leading provider of artificial intelligence and machine
-                  learning services, we are dedicated to transforming your
-                  business through cutting-edge technology solutions. We harness
-                  the power of AI and ML to drive efficiency, enhance
-                  decision-making, and unlock new possibilities for your
-                  organisation.
+                  {description}
                 </Typography>
               </Grid>
               <Grid item xs={12} lg={7} sx={{ marginTop: "30px" }}>
@@ -93,7 +94,7 @@ const AIML = () => {
                 })}
               </Grid>
               <Grid container sx={styles.ScoresMainGrid}>
-                {Scores_Card.map((item, index) => {
+                {dataMapping.map((item: any, index: any) => {
                   return (
                     <Grid
                       key={`${item?.id}-${index}`}
@@ -130,4 +131,4 @@ const AIML = () => {
   );
 };
 
-export default AIML;
+export default ServicesBanner;
