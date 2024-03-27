@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Work_Sans, Nunito } from "next/font/google";
 import "react-toastify/dist/ReactToastify.css";
-import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontWorkSans = Work_Sans({
   weight: ["900", "700", "600", "500", "400"],
@@ -43,6 +43,7 @@ export default function RootLayout({
       </head>
       <Header />
       {children}
+      <SpeedInsights />
       <Footer />
     </html>
   );
