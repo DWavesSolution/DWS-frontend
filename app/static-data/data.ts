@@ -351,24 +351,26 @@ export const Accordion_Data = [
       "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
   },
   {
-    question: "Can I change my plan later?",
-    answer: "",
+    question:
+      "How do you determine which digital marketing strategies are right for my business?",
+    answer:
+      "We conduct a thorough analysis of your business goals, target audience, industry, and competitive landscape to tailor digital marketing strategies that best align with your objectives. We continuously monitor and optimize strategies based on performance data to ensure maximum effectiveness.",
   },
   {
-    question: "What is your cancellation policy?",
-    answer: "",
+    question:
+      "How long does it take to see results from digital marketing efforts?",
+    answer:
+      "The timeline for seeing results from digital marketing can vary depending on factors such as the competitiveness of your industry, the effectiveness of the strategies implemented, and your specific goals. Some strategies may yield faster results (e.g., PPC advertising), while others require more time to build momentum (e.g., SEO).",
   },
   {
-    question: "Can other info be added to an invoice?",
-    answer: "",
+    question: "What is your pricing model?",
+    answer:
+      "Our pricing model is based on the specific requirements of each project. We offer competitive rates and provide detailed cost estimates upfront. We believe in transparency and strive to deliver value within our clients' budgets.",
   },
   {
-    question: "How does billing work?",
-    answer: "",
-  },
-  {
-    question: "How do I change my account email?",
-    answer: "",
+    question: "Do you provide website maintenance and support?",
+    answer:
+      "Yes, we offer website maintenance and support services to ensure that your website remains secure, up-to-date, and running smoothly. Our team is available to address any issues or updates that may arise post-launch.",
   },
 ];
 export const Core_Values_Data = [
@@ -422,7 +424,7 @@ export const Digital_Marketing_Data = [
     title: "Social Media Marketing",
     description:
       "Are you looking for leading digital marketing services in Canada? Look no further than Digital Wave Solutions! As an affordable digital marketing company in Canada, we take pride in designing personalized strategies to enhance your online presence and drive outcomes. Whether you're looking for tailored requirements or comprehensive campaigns, we're yours go-to for innovative and affordable digital marketing solutions. Elevate your brand's digital footprint with our expert team today!",
-    color: "#e9f5fe",
+    color: "#f2fbf5",
   },
   {
     id: "02",
@@ -430,7 +432,7 @@ export const Digital_Marketing_Data = [
     title: "Pay-Per-Click (PPC) Management",
     description:
       "Discover Digital Wave Solutions, your go-to for comprehensive digital marketing services. We offer tailored solutions to enhance your online presence as an affordable digital marketing company in Canada. Maximize your online presence with Digital Wave Solutions' expert Pay-Per-Click (PPC) management. Our tailored strategies ensure optimal ad placement and maximum ROI for your business. Let us drive targeted traffic to your website, boost conversions, and amplify your brand visibility.",
-    color: "#cfd8dc",
+    color: "#e9f5fe",
   },
   {
     id: "03",
@@ -454,7 +456,7 @@ export const Digital_Marketing_Data = [
     title: "Email Marketing",
     description:
       "Stay ahead of the curve with innovative strategies that drive actual results in the ever-evolving digital landscape. From Digital Wave Solutions, harness the transformative power of digital marketing services, your trusted, affordable digital marketing company in Canada. Elevate your email marketing game with personalized automation, dynamic content, and A/B testing. Let our expert team optimize your campaigns for maximum engagement and conversion rates.",
-    color: "#d4cbff",
+    color: "#faf1f7",
   },
   {
     id: "06",
@@ -462,7 +464,7 @@ export const Digital_Marketing_Data = [
     title: "Brand Development and Strategy",
     description:
       "Unlock your brand's potential with Digital Wave Solutions. Our affordable digital marketing services in Canada are tailored to elevate your brand's development and strategy. From targeted campaigns to engaging content, we specialize in maximizing your online presence. Let us navigate the digital landscape for you, ensuring your brand stands out amidst the competition—trust Digital Wave Solutions for effective brand growth.",
-    color: "#a3c2f7",
+    color: "#f2fbf5",
   },
 ];
 export const Design_Data = [
@@ -472,7 +474,7 @@ export const Design_Data = [
     title: "Web Design",
     description:
       "Digital Wave Solutions web design services include building memorable websites that are both aesthetically pleasing and easy to use. To create websites that complement your brand identity, our creative web design agency team combines creativity and technology expertise. We make sure your website is designed for a seamless user experience across many devices, starting with responsive layouts and simple navigation.",
-    color: "#e9f5fe",
+    color: "#f2fbf5",
   },
   {
     id: "02",
@@ -480,7 +482,7 @@ export const Design_Data = [
     title: "Mobile App Design",
     description:
       "Businesses must have a well-designed mobile application in this day and age. We at Digital Wave Solutions are experts at designing user-friendly, visually appealing mobile app design that captures users. Our app design agency team uses industry best practices to produce compelling experiences. We prioritize usability and design to create mobile apps that captivate users and represent the vision of your brand.",
-    color: "#cfd8dc",
+    color: "#e9f5fe",
   },
   {
     id: "03",
@@ -504,7 +506,7 @@ export const Design_Data = [
     title: "Ad Creatives",
     description:
       "In digital ad campaigns, strong ad creatives may make all the difference. At Digital Wave Solutions our digital marketing services include producing compelling and conversion-boosting ad creatives. To produce ad creatives that connect with the audience you are targeting, our affordable digital marketing company in Canada mixes engaging language, appealing imagery, and strategic thinking. Our designs are optimized for platforms, resulting in optimum effect and return on investment.",
-    color: "",
+    color: "#faf1f7",
   },
   {
     id: "06",
@@ -512,7 +514,7 @@ export const Design_Data = [
     title: "Logo Design",
     description:
       "A strong logo serves as the foundation for your brand identity. We provide a range of web design services and our skilled logo design team at Digital Wave Solutions specializes in producing distinctive and unforgettable logos that capture the values of your company. Our web design and development agency comprehends your brand's principles and transforms them into aesthetically magnificent logo designs.",
-    color: "",
+    color: "#f2fbf5",
   },
   {
     id: "07",
@@ -520,7 +522,7 @@ export const Design_Data = [
     title: "2D/ 3D Animation",
     description:
       "Animation is a great storytelling and audience engagement tool. Our talented animators at Digital Wave Solutions create fascinating 2D and 3D animations for your websites, e-commerce stores and social media platforms. We provide a range of services, including producing visually spectacular and immersive animations that fascinate and inspire, whether they are intended for explainer videos, product demos, or interactive experiences.",
-    color: "",
+    color: "#e9f5fe",
   },
   {
     id: "08",
@@ -528,7 +530,7 @@ export const Design_Data = [
     title: "Video Editing",
     description:
       "Creating captivating stories is the art of video editing. Our team at Digital Wave Solutions specializes in turning rough footage into visually stunning videos. We use cutting-edge editing methods and eye-catching effects to produce videos that effectively engage viewers and communicate your message and business. Whether the videos are for e-commerce store or social media, we make sure they are directed toward maximizing viewer interaction.",
-    color: "",
+    color: "#fff3f2",
   },
 ];
 export const Web_Development_Data = [
@@ -538,7 +540,7 @@ export const Web_Development_Data = [
     title: "Website Development",
     description:
       "Our team of website designers and developers at Digital Wave Solutions is building user-friendly and custom websites for businesses in Canada and all over the world. Our skilled web development team creates aesthetically pleasing websites, and search engines optimized by merging technological expertise with creative design. We use the efficient and latest technology with industry best practices to guarantee your website stands out in the digital arena.",
-    color: "#e9f5fe",
+    color: "#f2fbf5",
   },
   {
     id: "02",
@@ -546,7 +548,7 @@ export const Web_Development_Data = [
     title: "E-Commerce Solutions",
     description:
       "The e-commerce store business is expanding in Canada and worldwide, and at Digital Wave Solutions, we provide complete e-commerce solutions and services that are customized to meet your business requirements. Our team uses cutting-edge technologies to create secure e-commerce platforms since we are aware of the particular difficulties involved in operating an online store. To increase conversions, we integrate payment gateways, and shopping carts, and personalize the user experience.",
-    color: "#cfd8dc",
+    color: "#e9f5fe",
   },
   {
     id: "03",
@@ -570,7 +572,7 @@ export const Web_Development_Data = [
     title: "Analytics & Reporting",
     description:
       "Making decisions based on data is crucial to maximizing your online presence. To assist you in understanding user behavior, web performance and business growth, Digital Wave Solutions provides complete analytics and reporting services for your business. To measure important indicators, and make wise decisions, our professionals set up analytics dashboards and smart tracking systems. We provide a range of analytics services to assist you in understanding the success of your online initiatives.",
-    color: "#f5fcec",
+    color: "#faf1f7",
   },
   {
     id: "06",
@@ -578,7 +580,7 @@ export const Web_Development_Data = [
     title: "Maintenance & Support",
     description:
       "Any website, web application and software needs to be updated frequently for security, business needs and technological advancements. For your digital assets to stay safe and functional, Digital Wave Solutions provides maintenance and support services. Our committed web development team is on hand to handle any technological problems and apply the required upgrades. By giving us the responsibility of maintenance of your digital assets, you can concentrate on your main business operations.",
-    color: "#ffffdf",
+    color: "#f2fbf5",
   },
 ];
 export const Mobile_Development_Data = [
@@ -588,7 +590,7 @@ export const Mobile_Development_Data = [
     title: "Native App Development",
     description:
       "With a focus on native mobile app development, Digital Wave Solutions makes the most of platforms like iOS and Android. Our skilled mobile app development team produces feature-rich, high-performance native apps that offer a flawless user experience. We guarantee optimal performance by employing platform-specific languages and frameworks. We create native applications that match your business objectives and offer an exceptional user experience.",
-    color: "#e9f5fe",
+    color: "#f2fbf5",
   },
   {
     id: "02",
@@ -596,7 +598,7 @@ export const Mobile_Development_Data = [
     title: "Cross-Platform Development",
     description:
       "Using shared codebases, cross-platform mobile app development functions on several platforms, hence expanding your user base. Digital Wave Solutions, a mobile app development company uses frameworks like React Native and Flutter to provide cross-platform development services. With the help of these frameworks, our talented developers can produce feature-rich, functional apps that run smoothly on both iOS and Android smartphones.",
-    color: "#cfd8dc",
+    color: "#e9f5fe",
   },
   {
     id: "03",
@@ -671,7 +673,7 @@ export const Why_SEO = [
     title: "Keyword Research",
     description:
       "A significant component of SEO is keyword research, which involves finding the most effective keywords for online businesses. At Digital Wave Solutions, we provide expert SEO services in Canada. The knowledgeable staff at affordable SEO agency conducts keyword research using different methods. We find keywords that will bring relevant traffic to your website. We make sure your website ranks higher in search engine results.",
-    color: "#faf1f7",
+    color: "#f2fbf5",
   },
   {
     id: "02",
@@ -699,14 +701,14 @@ export const Why_SEO = [
     title: "Technical SEO",
     description:
       "Optimizing a website's technical elements can enhance its search engine ranking. This is known as technical SEO. Our SEO specialists at Digital Wave Solutions provide expert SEO services in Canada and carefully examine the structure, page speed, and other aspects of your website. Through the application of effective techniques, we as an affordable SEO agency, increase the visibility and organic ranks of your website.",
-    color: "#fcf4fa",
+    color: "#faf1f7",
   },
   {
     id: "06",
     title: "E-Commerce SEO",
     description:
       "Optimizing online businesses to draw in visitors, and boost visibility is the main goal of e-commerce SEO. Digital Wave Solutions is an affordable SEO agency that provides specialized e-commerce SEO services. Our expert SEO services in Canada for e-commerce include extensive keyword research, refined Meta tags, and enhanced site navigation. We assist your online store in ranking better in search results by putting into practice efficient e-commerce SEO techniques.",
-    color: "#FEECE2",
+    color: "#f2fbf5",
   },
 ];
 export const Seo_Faq = [
@@ -794,67 +796,59 @@ export const Digital_Marketing_Faq = [
 export const Design_Faq = [
   {
     id: "01",
-    question: "",
-    answer: "",
+    question: "Client Consultation and Briefing",
+    answer:
+      "Meet with the client to understand their design requirements, brand identity, and objectives. Discuss target audience, preferences, and any specific design elements they envision.",
   },
   {
     id: "02",
-    question: "",
-    answer: "",
+    question: "Concept Development and Design Creation",
+    answer:
+      "Conduct research and brainstorming to generate initial design concepts. Create digital mockups or prototypes based on the chosen concepts, focusing on key design elements.",
   },
   {
     id: "03",
-    question: "",
-    answer: "",
+    question: "Client Presentation and Revision",
+    answer:
+      "Present the design concepts to the client for feedback and review. Gather client input and incorporate revisions to refine the designs until they meet expectations.",
   },
   {
     id: "04",
-    question: "",
-    answer: "",
+    question: "Finalization and Delivery",
+    answer:
+      "Finalize the approved design concept, ensuring all elements are polished and consistent. Prepare and deliver the final design files in the required formats, along with any additional documentation or resources. Obtain final approval from the client before concluding the project.",
   },
 ];
-export const Web_Development_Faq = [
+export const Development_Faq = [
   {
     id: "01",
-    question: "",
-    answer: "",
+    question: "Requirement Gathering and Planning",
+    answer:
+      "Gather client requirements and objectives for the website. Create a project plan outlining tasks, milestones, and timelines. Determine the technologies, frameworks, and platforms to be used.",
   },
   {
     id: "02",
-    question: "",
-    answer: "",
+    question: "Design and Prototyping",
+    answer:
+      "Design the user interface (UI) and user experience (UX) elements. Create wireframes or mockups to visualize the website layout and structure. Develop a prototype to demonstrate website functionality and flow.",
   },
   {
     id: "03",
-    question: "",
-    answer: "",
+    question: "Frontend Development",
+    answer:
+      "Develop the frontend of the website using HTML, CSS, and JavaScript. Ensure responsiveness and compatibility across different devices and browsers. Implement user interface elements and design components according to the approved design.",
   },
   {
     id: "04",
-    question: "",
-    answer: "",
-  },
-];
-export const Mobile_Development_Faq = [
-  {
-    id: "01",
-    question: "",
-    answer: "",
+    question: "Backend Development and Functionality",
+    answer:
+      "Develop the backend functionality using appropriate programming languages and frameworks (e.g., Node.js, Django, Ruby on Rails). Implement features such as user authentication, database integration, and dynamic content generation. Integrate third-party services or APIs as needed for additional functionality.",
   },
   {
-    id: "02",
-    question: "",
-    answer: "",
-  },
-  {
-    id: "03",
-    question: "",
-    answer: "",
-  },
-  {
-    id: "04",
-    question: "",
-    answer: "",
+    id: "05",
+    question: "Testing, Deployment, and Maintenance",
+    answer:
+      "Conduct thorough testing of the website to identify and fix bugs. Deploy the website to a production environment and configure hosting settings. Monitor website performance, security, and uptime post-launch. Provide ongoing maintenance and support, including updates, backups, and troubleshooting.",
   },
 ];
 export const Subscription_Data = [

@@ -35,7 +35,7 @@ const page = () => {
         DataMapping={Why_SEO}
       />
       <MeticulouslyAccordion
-        title={"Frequently Ask Questions"}
+        title={"Our Process"}
         dataMapping={Seo_Faq}
       />
       <ContactUs />
