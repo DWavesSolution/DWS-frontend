@@ -22,24 +22,66 @@ export const HeaderData = [
 ];
 export const Services_Menu = [
   {
-    title: "Digital Product Development",
-    logo: "/mobile_dev.png",
+    title: "Digital Marketing",
     id: "/digital-product-development",
+    color: "#f2fbf5",
+    content: [
+      { name: "Social Media Marketing", link: "" },
+      { name: "Pay-Per-Click (PPC) Management", link: "" },
+      { name: "Content Marketing", link: "" },
+      { name: "Conversion Marketing", link: "" },
+      { name: "Email Marketing", link: "" },
+      { name: "Brand Development & Strategy", link: "" },
+    ],
   },
   {
-    title: "Social Media Marketing",
-    logo: "/Digital_Marketing.png",
+    title: "SEO",
     id: "/social-media-marketing",
+    color: "#e9f5fe",
+    content: [
+      { name: "Keyword Research", link: "" },
+      { name: "On-page SEO", link: "" },
+      { name: "Off-page SEO", link: "" },
+      { name: "SEO Copywriting", link: "" },
+      { name: "Technical SEO", link: "" },
+      { name: "E-Commerce SEO", link: "" },
+    ],
   },
   {
-    title: "Search Engine Optimization",
-    logo: "/SEO.png",
-    id: "/search-engine-optimization",
+    title: "Design",
+    id: "/",
+    color: "#e9f5fe",
+    content: [
+      { name: "Web / Mobile App Design", link: "" },
+      { name: "UI & UX Design", link: "" },
+      { name: "Banner /Logo Design", link: "" },
+      { name: "Ad Creatives", link: "" },
+      { name: "2D/ 3D Animation", link: "" },
+      { name: "Video Editing", link: "" },
+    ],
   },
   {
-    title: "AI / ML",
-    logo: "/Web_dev.png",
-    id: "/ai-ml",
+    title: "Web Development",
+    id: "",
+    color: "#fdf9f2",
+    content: [
+      { name: "Website Development", link: "" },
+      { name: "E-Commerce Solutions", link: "" },
+      { name: "Web Application Development", link: "" },
+      { name: "Analytics & Reporting", link: "" },
+      { name: "Maintenance & Support", link: "" },
+    ],
+  },
+  {
+    title: "Mobile App Development",
+    id: "",
+    color: "#faf1f7",
+    content: [
+      { name: "Native App Development", link: "" },
+      { name: "Cross-Platform Development", link: "" },
+      { name: "Custom App Solutions", link: "" },
+      { name: "App Maintenance & Support", link: "" },
+    ],
   },
 ];
 export const Services_Card = [
@@ -748,13 +790,11 @@ export const DropDownServices = [
 ];
 export const footer_Data = [
   {
-    heading: "Site Map",
+    heading: "Contact",
     content: [
-      { name: "About", links: "" },
-      { name: "Pricing", links: "" },
-      { name: "Career", links: "" },
-      { name: "Blogs", links: "" },
-      { name: "FAQ's", links: "" },
+      { name: "+1 (647) 236 2627", links: "" },
+      { name: "Info@digitalwavesolutions.ca", links: "" },
+      { name: "Address", links: "" },
     ],
   },
   {
@@ -768,11 +808,24 @@ export const footer_Data = [
     ],
   },
   {
-    heading: "Contact",
+    heading: "Site Map",
     content: [
-      { name: "+1 (647) 236 2627", links: "" },
-      { name: "Info@digitalwavesolutions.ca", links: "" },
-      { name: "Address", links: "" },
+      { name: "About", links: "" },
+      { name: "Pricing", links: "" },
+      { name: "Career", links: "" },
+      { name: "Blogs", links: "" },
+      { name: "FAQ's", links: "" },
+    ],
+  },
+  {
+    heading: "Follow Us",
+    content: [
+      {
+        name: "Facebook",
+        links: "https://www.facebook.com/profile.php?id=61555428527968",
+      },
+      { name: "Instagram", links: "" },
+      { name: "LinkedIn", links: "https://linkedin.com" },
     ],
   },
 ];

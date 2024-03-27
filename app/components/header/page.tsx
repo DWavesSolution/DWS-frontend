@@ -56,8 +56,8 @@ const Header = () => {
       <Toolbar>
         <Container>
           <Grid container sx={styles.MainGrid}>
-            <Grid item xs={10} sm={9} md={2} lg={1.6}>
-              <Box sx={{ width: 150, height: 60 }} onClick={HomePageRoute}>
+            <Grid item xs={10} sm={9} md={1} lg={1.6}>
+              <Box sx={{ width: 90, height: 50 }} onClick={HomePageRoute}>
                 <DWSImage
                   src={HeaderLogo}
                   alt="Header Logo"
@@ -69,7 +69,7 @@ const Header = () => {
               <ResponsiveHeader />
             ) : (
               <>
-                <Grid item xs={12} md={8} sx={styles.headerdata}>
+                <Grid item xs={12} md={9} sx={styles.headerdata}>
                   {HeaderData.map((item, index) => (
                     <Box key={`${item?.id}-${index}`}>
                       {item.name === "Services" ? (
@@ -108,8 +108,8 @@ const Header = () => {
                 <Grid
                   item
                   xs={12}
-                  md={2}
-                  lg={1.7}
+                  md={1.5}
+                  lg={1.2}
                   sx={{
                     display: "flex",
                     justifyContent: "center",

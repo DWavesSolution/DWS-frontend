@@ -14,35 +14,34 @@ const Footer = () => {
         <Grid container xs={11} sm={12} sx={{ margin: "auto" }}>
           {footer_Data.map((item: any, index: any) => {
             return (
-              <Grid item xs={12} sm={4} md={3} key={`${item?.id}-${index}`}>
+              <Grid item xs={12} sm={6} md={3} key={`${item?.id}-${index}`}>
                 <Typography sx={styles.FooterHeading}>
                   {item.heading}
                 </Typography>
                 {item.content.map((data: any, index: any) => {
                   return (
-                    <ul
+                    <Link
+                      href={data.links}
+                      target="_blank"
+                      style={{ textDecoration: "none" }}
                       key={`${data?.id}-${index}`}
-                      style={{
-                        listStyleType: "none",
-                        color: "#DDDDDD",
-                        fontSize: "14px",
-                        marginBottom: "15px",
-                      }}
                     >
-                      <li>{data.name}</li>
-                    </ul>
+                      <ul
+                        style={{
+                          listStyleType: "none",
+                          color: "#DDDDDD",
+                          fontSize: "14px",
+                          marginBottom: "15px",
+                        }}
+                      >
+                        <li>{data.name}</li>
+                      </ul>
+                    </Link>
                   );
                 })}
               </Grid>
             );
           })}
-          {/* <Box sx={{ padding: "30px 40px", backgroundColor: "#ff8568" }}>
-            <Typography
-              sx={{ fontSize: "16px", fontWeight: 500, color: "white" }}
-            >
-              Subscribe
-            </Typography>
-          </Box> */}
         </Grid>
         <Divider
           sx={{

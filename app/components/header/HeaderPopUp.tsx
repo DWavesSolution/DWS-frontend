@@ -1,99 +1,53 @@
 import React from "react";
 import { styles } from "./styles";
 import { Grid, Typography } from "@mui/material";
-import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import { Services_Menu } from "@/app/static-data/data";
-import DWSImage from "../DWSImage";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
 import Link from "next/link";
 
 const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
   return (
     <Grid sx={styles.mainGrid} onClick={hideModel} onMouseLeave={onMouseLeave}>
       <Card sx={styles.container}>
-        <Grid
-          container
-          sx={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-          }}
-        >
-          <Grid item xs={12} md={4} sx={{ borderRight: "1px solid" }}>
-            <Swiper
-              spaceBetween={50}
-              centeredSlides={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Autoplay]}
-              className="mySwiper"
+        <Grid container sx={styles.PopUpMainGrid}>
+          {Services_Menu.map((item, index) => (
+            <Grid
+              item
+              xs={12}
+              md={2}
+              key={`${item?.id}-${index}`}
+              sx={{ ...styles.ServicesMainGrid, background: item.color }}
             >
-              {Services_Menu.map((item, index) => (
-                <SwiperSlide
-                  key={`${item?.id}-${index}`}
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Box sx={{ height: 200, width: 200 }}>
-                    <DWSImage
-                      src={item.logo}
-                      alt={item.title}
-                      style={{ objectFit: "contain" }}
-                    />
-                  </Box>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </Grid>
-          <Grid container item xs={12} md={7}>
-            {Services_Menu.map((item, index) => (
-              <Grid
-                item
-                xs={6}
-                key={`${item?.id}-${index}`}
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  margin: "30px 0px",
-                }}
+              <Typography
+                fontFamily={"var(--nunito)"}
+                sx={{ color: "#fe7958", textDecorationLine: "underline" }}
               >
-                <Box
-                  sx={{
-                    height: 40,
-                    width: 40,
-                    marginRight: "5px",
-                  }}
-                >
-                  <DWSImage
-                    src={item.logo}
-                    alt={item.title}
-                    style={{ objectFit: "contain" }}
-                  />
-                </Box>
-                <Link
-                  href={`/services/${item.id}`}
-                  style={{
-                    textDecoration: "none",
-                    color: "#707070",
-                  }}
-                >
-                  <Typography fontFamily={"var(--nunito)"}>
-                    {item.title}
-                  </Typography>
-                </Link>
-              </Grid>
-            ))}
-          </Grid>
+                {item.title}
+              </Typography>
+              {item.content.map((data: any, index: any) => {
+                return (
+                  <Link
+                    href={`/services/${data.link}`}
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                    key={`${data?.id}-${index}`}
+                  >
+                    <ul
+                      style={{
+                        listStyleType: "none",
+                        color: "black",
+                        fontSize: "14px",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      <li>{data.name}</li>
+                    </ul>
+                  </Link>
+                );
+              })}
+            </Grid>
+          ))}
         </Grid>
       </Card>
     </Grid>
