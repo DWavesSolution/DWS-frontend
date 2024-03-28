@@ -28,7 +28,7 @@ const Header = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   const [showModal, setShowModal] = useState(false);
   const handleClick = (index: number) => () => {
-    if (index == 3) {
+    if (index == 1) {
       setShowModal(true);
       return;
     }
@@ -78,6 +78,7 @@ const Header = () => {
                             display: "flex",
                             color: "black",
                             cursor: "pointer",
+                            marginRight: "15px",
                           }}
                         >
                           <Typography>{item.name}</Typography>
@@ -96,7 +97,7 @@ const Header = () => {
                           <Typography
                             fontFamily={"var(--nunito)"}
                             fontWeight={500}
-                            sx={{ marginRight: "40px" }}
+                            sx={{ marginRight: "20px" }}
                           >
                             {item.name}
                           </Typography>

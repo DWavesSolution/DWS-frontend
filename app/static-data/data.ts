@@ -6,18 +6,24 @@ export const HeaderData = [
   },
   {
     id: 2,
+    name: "Services",
+    link: "",
+  },
+  {
+    id: 3,
     name: "About Us",
     link: "/about-us",
   },
   {
-    id: 3,
+    id: 4,
     name: "Blogs",
     link: "/",
   },
+
   {
-    id: 4,
-    name: "Services",
-    link: "",
+    id: 5,
+    name: "Construction Cost Estimation",
+    link: "/construction-cost-estimation",
   },
 ];
 export const Services_Menu = [
