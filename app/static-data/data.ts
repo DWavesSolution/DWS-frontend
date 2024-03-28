@@ -470,7 +470,7 @@ export const Digital_Marketing_Data = [
 export const Design_Data = [
   {
     id: "01",
-    logo: "",
+    logo: "/web-design.png",
     title: "Web Design",
     description:
       "Digital Wave Solutions web design services include building memorable websites that are both aesthetically pleasing and easy to use. To create websites that complement your brand identity, our creative web design agency team combines creativity and technology expertise. We make sure your website is designed for a seamless user experience across many devices, starting with responsive layouts and simple navigation.",
@@ -478,7 +478,7 @@ export const Design_Data = [
   },
   {
     id: "02",
-    logo: "",
+    logo: "/user-interface.png",
     title: "Mobile App Design",
     description:
       "Businesses must have a well-designed mobile application in this day and age. We at Digital Wave Solutions are experts at designing user-friendly, visually appealing mobile app design that captures users. Our app design agency team uses industry best practices to produce compelling experiences. We prioritize usability and design to create mobile apps that captivate users and represent the vision of your brand.",
@@ -486,7 +486,7 @@ export const Design_Data = [
   },
   {
     id: "03",
-    logo: "",
+    logo: "/ux.png",
     title: "UI & UX Design",
     description:
       "For digital interactions to be easy to use, user interface and user experience design are essential. Our UI/UX designers at Digital Wave Solutions are skilled at creating user interfaces in mobile app development that are functional, and aesthetically pleasing. We carry out in-depth user research and develop designs in response to feedback from users. We provide affordable mobile app design and development services in Canada.",
@@ -494,7 +494,7 @@ export const Design_Data = [
   },
   {
     id: "04",
-    logo: "",
+    logo: "/banner.png",
     title: "Banner Design",
     description:
       "When it comes to delivering your business message, banner design is crucial. We are an affordable social media marketing agency that specializes in creating visually appealing and unique banners for a range of digital platforms. We provide affordable social media marketing packages and use creative design strategies to produce banners that increase engagement and conversions for display advertising, social media campaigns, and websites.",
@@ -502,7 +502,7 @@ export const Design_Data = [
   },
   {
     id: "05",
-    logo: "",
+    logo: "/ad-creative.png",
     title: "Ad Creatives",
     description:
       "In digital ad campaigns, strong ad creatives may make all the difference. At Digital Wave Solutions our digital marketing services include producing compelling and conversion-boosting ad creatives. To produce ad creatives that connect with the audience you are targeting, our affordable digital marketing company in Canada mixes engaging language, appealing imagery, and strategic thinking. Our designs are optimized for platforms, resulting in optimum effect and return on investment.",
@@ -510,7 +510,7 @@ export const Design_Data = [
   },
   {
     id: "06",
-    logo: "",
+    logo: "/logo-design.png",
     title: "Logo Design",
     description:
       "A strong logo serves as the foundation for your brand identity. We provide a range of web design services and our skilled logo design team at Digital Wave Solutions specializes in producing distinctive and unforgettable logos that capture the values of your company. Our web design and development agency comprehends your brand's principles and transforms them into aesthetically magnificent logo designs.",
@@ -518,7 +518,7 @@ export const Design_Data = [
   },
   {
     id: "07",
-    logo: "",
+    logo: "/clipart2411598.webp",
     title: "2D/ 3D Animation",
     description:
       "Animation is a great storytelling and audience engagement tool. Our talented animators at Digital Wave Solutions create fascinating 2D and 3D animations for your websites, e-commerce stores and social media platforms. We provide a range of services, including producing visually spectacular and immersive animations that fascinate and inspire, whether they are intended for explainer videos, product demos, or interactive experiences.",
@@ -526,7 +526,7 @@ export const Design_Data = [
   },
   {
     id: "08",
-    logo: "",
+    logo: "/montage.png",
     title: "Video Editing",
     description:
       "Creating captivating stories is the art of video editing. Our team at Digital Wave Solutions specializes in turning rough footage into visually stunning videos. We use cutting-edge editing methods and eye-catching effects to produce videos that effectively engage viewers and communicate your message and business. Whether the videos are for e-commerce store or social media, we make sure they are directed toward maximizing viewer interaction.",
