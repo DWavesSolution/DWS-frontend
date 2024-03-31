@@ -44,7 +44,11 @@ const ServicesSection = () => {
                     <Box sx={styles.CardImage}>
                       <DWSImage src={item.logo} alt={item.title} />
                     </Box>
-                    <Typography sx={styles.CardTitle}>{item.title}</Typography>
+                    <Typography sx={styles.CardTitle}>
+                      <Link href={item.link} style={{ color: "black" }}>
+                        {item.title}
+                      </Link>
+                    </Typography>
                     <Typography sx={{ fontSize: "14px" }}>
                       {item.description}
                     </Typography>

@@ -94,6 +94,7 @@ export const Services_Card = [
   {
     logo: "/Digital_Marketing.png",
     title: "Digital Marketing",
+    link: "/services/digital-marketing",
     description:
       "Social Media Marketing, Pay-Per-Click (PPC) Management, Content Marketing, Email Marketing, Conversion Marketing, Brand Development & Strategy.",
     colour: "#f2fbf5",
@@ -101,6 +102,7 @@ export const Services_Card = [
   {
     logo: "/SEO.png",
     title: "SEO",
+    link: "/services/search-engine-optimization",
     description:
       "Keyword Research, On-page SEO, Off-page SEO, SEO Copywriting, Technical SEO, E-Commerce SEO.",
     colour: "#e9f5fe",
@@ -108,6 +110,7 @@ export const Services_Card = [
   {
     logo: "/Design.png",
     title: "Design",
+    link: "/services/design",
     description:
       "Web Design, Mobile App Design, UI & UX Design, Banner Design, Ad Creatives, Logo Design, 2D/ 3D Animation, Video Editing.",
     colour: "#fff3f2",
@@ -115,6 +118,7 @@ export const Services_Card = [
   {
     logo: "/Web_dev.png",
     title: "Web Development",
+    link: "/services/web-development",
     description:
       "Website Development, E-Commerce Solutions, Web Application Development, Analytics & Reporting, Maintenance & Support.",
     colour: "#fdf9f2",
@@ -122,9 +126,18 @@ export const Services_Card = [
   {
     logo: "/mobile_dev.png",
     title: "Mobile App Development",
+    link: "/services/mobile-app-development",
     description:
       "Native App Development, Cross-Platform Development, Custom App Solutions, App Maintenance & Support.",
     colour: "#faf1f7",
+  },
+  {
+    logo: "/estimastion.png",
+    title: "Construction Cost Estimation",
+    link: "/construction-cost-estimation",
+    description:
+      "At Digital Wave Solutions, we are providing quantities take-off, materials take-off and cost estimation services....",
+    colour: "#f2fbf5",
   },
 ];
 export const Scores_Card = [
