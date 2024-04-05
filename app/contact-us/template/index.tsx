@@ -47,7 +47,7 @@ const ConatctUs = () => {
       <Grid container>
         <Grid item xs={12} lg={5.7}>
           <Card sx={styles.ImageCard}>
-            <CardMedia sx={styles.CardMedia} image={"/contact-bg.webp"}>
+            <CardMedia sx={styles.CardMedia} image={"/contact-bg.png"}>
               <Grid container item xs={11} lg={6.5} sx={styles.ImageContainer}>
                 <Grid item xs={12} sx={{ marginBottom: "42px" }}>
                   <Typography fontFamily={"var(--nunito)"} fontSize={"18.5px"}>

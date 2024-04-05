@@ -17,7 +17,7 @@ import { Link as ScrollLink } from "react-scroll";
 const AboutPage = () => {
   return (
     <Box sx={styles.Card}>
-      <CardMedia sx={styles.CardMedia} image={"/culture_landing.webp"}>
+      <CardMedia sx={styles.CardMedia} image={"/culture_landing.png"}>
         <Container data-aos="fade-up" data-aos-duration={3000}>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={12} lg={10}>
