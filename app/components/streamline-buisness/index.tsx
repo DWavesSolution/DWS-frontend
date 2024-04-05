@@ -10,7 +10,7 @@ const StreamLineBuisness = ({
   DataMapping,
 }: any) => {
   return (
-    <Box sx={styles.MainBox} data-aos="flip-right" data-aos-duration={3000}>
+    <Box sx={styles.MainBox} data-aos="fade-down" data-aos-duration={3000}>
       <Container>
         <Grid container>
           <Grid item xs={12} md={6}>

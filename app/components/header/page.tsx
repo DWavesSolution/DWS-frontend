@@ -57,7 +57,7 @@ const Header = () => {
         <Container>
           <Grid container sx={styles.MainGrid}>
             <Grid item xs={10} sm={9} md={1} lg={1.6}>
-              <Box sx={{ width: 90, height: 50 }} onClick={HomePageRoute}>
+              <Box sx={{ width: 75, height: 64 }} onClick={HomePageRoute}>
                 <DWSImage
                   src={HeaderLogo}
                   alt="Header Logo"

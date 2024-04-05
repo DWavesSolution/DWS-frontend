@@ -23,7 +23,7 @@ const MeticulouslyAccordion = ({ title, dataMapping }: any) => {
     <Grid
       container
       sx={styles.container}
-      data-aos="flip-left"
+      data-aos="fade-up"
       data-aos-duration={3000}
     >
       <Container sx={{ display: "flex", justifyContent: "center" }}>

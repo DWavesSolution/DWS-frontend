@@ -1,6 +1,6 @@
 export const styles = {
   MainBox: {
-    padding: { xs: "50px 0px 0px", md: "100px 0px 0px" },
+    padding: { xs: "50px 0px 0px", md: "80px 0px 0px" },
   },
   MainTitle: {
     color: "black",
