@@ -99,6 +99,24 @@ const ResponsiveHeader = () => {
           })}
           <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
+              href={"/construction-cost-estimation"}
+              onClick={onCloseDrawer}
+              style={{
+                textDecoration: "none",
+                color: "black",
+              }}
+            >
+              <Typography
+                fontFamily={"var(--nunito)"}
+                fontSize={"20px"}
+                sx={styles.LinkTypo}
+              >
+                Construction Cost Estimation
+              </Typography>
+            </Link>
+          </Grid>
+          <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
+            <Link
               href={"tel:+16472362627"}
               onClick={onCloseDrawer}
               style={{
