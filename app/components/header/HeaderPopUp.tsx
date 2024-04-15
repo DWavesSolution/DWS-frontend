@@ -20,7 +20,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
               sx={{ ...styles.ServicesMainGrid, background: item.color }}
             >
               <Link
-                href={`/services/${item.id}`}
+                href={`/services${item.id}`}
                 style={{ textDecoration: "none" }}
               >
                 <Typography
@@ -33,7 +33,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
               {item.content.map((data: any, index: any) => {
                 return (
                   <Link
-                    href={`/services/${data.link}`}
+                    href={`/services${data.link}`}
                     target="_blank"
                     style={{ textDecoration: "none" }}
                     key={`${data?.id}-${index}`}

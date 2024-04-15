@@ -13,9 +13,9 @@ import ContactUs from "@/app/components/contact";
 import ServicesBanner from "@/app/components/services_banner";
 
 export async function generateMetadata() {
-  const PageTitle = "Expert Digital Marketing Packages";
+  const PageTitle = "Expert digital marketing agency in canada";
   const PageDescription =
-    "Elevate your brand with our tailored social media marketing packages. Boost engagement, reach, and results with cost-effective solutions for every business";
+    "Elevate your brand's online presence with Canada's premier digital marketing agency. Our expert team crafts tailored strategies for success in today's digital landscape.";
   const PageKeyword = "Digital Marketing";
   return convertSeo(PageTitle, PageDescription, PageKeyword);
 }

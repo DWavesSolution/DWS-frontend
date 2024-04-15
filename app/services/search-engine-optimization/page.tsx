@@ -9,9 +9,9 @@ import ContactUs from "@/app/components/contact";
 import ServicesBanner from "../../components/services_banner";
 
 export async function generateMetadata() {
-  const PageTitle = "Search Engine Optimization";
+  const PageTitle = "Seo Services in Canada | Best Seo Agency";
   const PageDescription =
-    "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.";
+    "Boost your online presence in Canada with top-notch SEO services from the best agency. Get more visitors to your website and rank higher on search engines.";
   const PageKeyword = "Digital Marketing Company";
   return convertSeo(PageTitle, PageDescription, PageKeyword);
 }

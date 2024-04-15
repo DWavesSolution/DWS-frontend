@@ -12,9 +12,10 @@ import ContactUs from "@/app/components/contact";
 import ServicesBanner from "@/app/components/services_banner";
 
 export async function generateMetadata() {
-  const PageTitle = "Expert Web Development";
+  const PageTitle =
+    "Best Web Development Company Canada | Web Development Agency";
   const PageDescription =
-    "Elevate your brand with our tailored web development packages. Boost engagement, reach, and results with cost-effective solutions for every business";
+    "Discover best web development services in Canada with our leading agency. From innovative designs to flawless execution, our company excellence for your digital presence.";
   const PageKeyword = "Web Development";
   return convertSeo(PageTitle, PageDescription, PageKeyword);
 }

@@ -12,16 +12,22 @@ const TechMarquee = () => {
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12} sx={styles.GridStyle}>
             <Button sx={styles.TechStacksButton}>
-              <Typography sx={styles.Heading}>Tech Stacks</Typography>
+              <Typography fontFamily={"var(--work-Sans)"} sx={styles.Heading}>
+                Tech Stacks
+              </Typography>
             </Button>
           </Grid>
           <Grid item xs={12} sx={styles.GridStyle}>
-            <Typography fontSize={"36px"} fontWeight={600}>
+            <Typography
+              fontFamily={"var(--work-Sans)"}
+              fontSize={"36px"}
+              fontWeight={600}
+            >
               Technologies we used to make innovation
             </Typography>
           </Grid>
           <Grid item xs={12} md={7} sx={styles.GridStyle}>
-            <Typography>
+            <Typography fontFamily={"var(--work-Sans)"}>
               We navigate your product development journey with a
               forward-thinking mindset and strategic roadmaps, ensuring
               efficient, sustainable, and successful outcomes.

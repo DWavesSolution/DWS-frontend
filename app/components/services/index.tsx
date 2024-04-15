@@ -13,18 +13,24 @@ const ServicesSection = () => {
         <Grid container sx={{ display: "flex", justifyContent: "center" }}>
           <Grid item xs={12} sx={styles.GridStyle}>
             <Button sx={styles.ServicesButton}>
-              <Typography sx={{ padding: "0px 6px", fontSize: "12px" }}>
+              <Typography
+                fontFamily={"var(--work-Sans)"}
+                sx={{ padding: "0px 6px", fontSize: "12px" }}
+              >
                 Services
               </Typography>
             </Button>
           </Grid>
           <Grid item xs={12} sx={styles.GridStyle}>
-            <Typography fontSize={"40px"}>
+            <Typography fontFamily={"var(--work-Sans)"} fontSize={"40px"}>
               Building end-to-end product solutions
             </Typography>
           </Grid>
           <Grid item xs={12} lg={7} sx={styles.GridStyle}>
-            <Typography sx={{ color: "#323232" }}>
+            <Typography
+              fontFamily={"var(--work-Sans)"}
+              sx={{ color: "#323232" }}
+            >
               We navigate your product development journey with a
               forward-thinking mindset and strategic roadmaps, ensuring
               efficient, sustainable, and successful outcomes.
@@ -44,12 +50,18 @@ const ServicesSection = () => {
                     <Box sx={styles.CardImage}>
                       <DWSImage src={item.logo} alt={item.title} />
                     </Box>
-                    <Typography sx={styles.CardTitle}>
+                    <Typography
+                      fontFamily={"var(--work-Sans)"}
+                      sx={styles.CardTitle}
+                    >
                       <Link href={item.link} style={{ color: "black" }}>
                         {item.title}
                       </Link>
                     </Typography>
-                    <Typography sx={{ fontSize: "14px" }}>
+                    <Typography
+                      fontFamily={"var(--work-Sans)"}
+                      sx={{ fontSize: "14px" }}
+                    >
                       {item.description}
                     </Typography>
                   </Card>

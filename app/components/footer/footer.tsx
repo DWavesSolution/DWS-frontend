@@ -15,7 +15,10 @@ const Footer = () => {
           {footer_Data.map((item: any, index: any) => {
             return (
               <Grid item xs={12} sm={6} md={3} key={`${item?.id}-${index}`}>
-                <Typography sx={styles.FooterHeading}>
+                <Typography
+                  fontFamily={"var(--work-Sans)"}
+                  sx={styles.FooterHeading}
+                >
                   {item.heading}
                 </Typography>
                 {item.content.map((data: any, index: any) => {
@@ -60,7 +63,11 @@ const Footer = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={8} md={10} sx={styles.Copyrights}>
-            <Typography fontSize={"14px"} sx={{ color: "#DDDDDD" }}>
+            <Typography
+              fontFamily={"var(--work-Sans)"}
+              fontSize={"14px"}
+              sx={{ color: "#DDDDDD" }}
+            >
               © Copyright owned by DWS 2024
             </Typography>
           </Grid>

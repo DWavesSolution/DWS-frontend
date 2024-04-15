@@ -81,7 +81,9 @@ const Header = () => {
                             marginRight: "15px",
                           }}
                         >
-                          <Typography>{item.name}</Typography>
+                          <Typography fontFamily={"var(--work-Sans)"}>
+                            {item.name}
+                          </Typography>
                           <KeyboardArrowDownIcon
                             onMouseEnter={handleClick(index)}
                           />

@@ -12,10 +12,10 @@ import ContactUs from "@/app/components/contact";
 import ServicesBanner from "@/app/components/services_banner";
 
 export async function generateMetadata() {
-  const PageTitle = "Expert Mobile Development Packages";
+  const PageTitle = "Expert mobile app development company in canada";
   const PageDescription =
-    "Elevate your brand with our tailored social media marketing packages. Boost engagement, reach, and results with cost-effective solutions for every business";
-  const PageKeyword = "Mobile Development";
+    "Discover top-tier expertise in mobile app development with Canada's leading company. From innovative concepts to flawless execution, trust our experts for unparalleled solutions.";
+  const PageKeyword = "Mobile App Development";
   return convertSeo(PageTitle, PageDescription, PageKeyword);
 }
 const page = () => {

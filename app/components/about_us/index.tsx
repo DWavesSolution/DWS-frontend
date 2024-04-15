@@ -18,11 +18,14 @@ const AboutUsSection = () => {
           <Grid container item xs={12} sm={5.8} lg={6} sx={styles.TypoGrid}>
             <Grid item xs={12}>
               <Button sx={styles.AboutUsButton}>
-                <Typography sx={styles.Heading}>About Us</Typography>
+                <Typography fontFamily={"var(--work-Sans)"} sx={styles.Heading}>
+                  About Us
+                </Typography>
               </Button>
             </Grid>
             <Grid item xs={12}>
               <Typography
+                fontFamily={"var(--work-Sans)"}
                 fontSize={"40px"}
                 fontWeight={500}
                 sx={{ color: "#fe7958" }}
@@ -31,7 +34,7 @@ const AboutUsSection = () => {
               </Typography>
             </Grid>
             <Grid item xs={12}>
-              <Typography>
+              <Typography fontFamily={"var(--work-Sans)"}>
                 {
                   "At Digital Wave Solutions, we are not just a digital marketing company and a software development house, we are your companions in success in all digital platforms. With our cutting-edge strategies and thorough understanding of the digital landscape, we assist many great businesses ......"
                 }
@@ -40,7 +43,10 @@ const AboutUsSection = () => {
             <Grid item xs={12} sx={{ marginTop: { xs: "10px", sm: "0px" } }}>
               <Link href={"/about-us"} style={{ textDecoration: "none" }}>
                 <Button sx={{ ...styles.BannerButtons, color: "#fe7958" }}>
-                  <Typography sx={styles.BannerButtonsTypo}>
+                  <Typography
+                    sx={styles.BannerButtonsTypo}
+                    fontFamily={"var(--work-Sans)"}
+                  >
                     Learn More
                   </Typography>
                 </Button>

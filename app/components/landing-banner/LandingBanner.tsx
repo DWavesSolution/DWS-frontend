@@ -34,12 +34,18 @@ const LandingBanner = () => {
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography sx={styles.BannerHeading}>
+                <Typography
+                  fontFamily={"var(--work-Sans)"}
+                  sx={styles.BannerHeading}
+                >
                   Transforming businesses with product innovation
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography sx={styles.BannerPara}>
+                <Typography
+                  fontFamily={"var(--work-Sans)"}
+                  sx={styles.BannerPara}
+                >
                   In the fast-paced world of tech, finding a cost-effective
                   solution that does not compromise on quality is crucial for
                   businesses in USA and Canada. We will provide you affordable
@@ -62,6 +68,7 @@ const LandingBanner = () => {
                     }}
                   >
                     <Typography
+                      fontFamily={"var(--work-Sans)"}
                       sx={{
                         ...styles.BannerButtonsTypo,
                         color: "white",
@@ -85,6 +92,7 @@ const LandingBanner = () => {
                     }}
                   >
                     <Typography
+                      fontFamily={"var(--work-Sans)"}
                       sx={{ ...styles.BannerButtonsTypo, color: "#fe7958" }}
                     >
                       Learn More
@@ -94,7 +102,11 @@ const LandingBanner = () => {
               </Grid>
               <Grid container item xs={12}>
                 <Grid item xs={12} sm={2.5} md={3.5}>
-                  <Typography fontSize={"64px"} lineHeight={"64px"}>
+                  <Typography
+                    fontFamily={"var(--work-Sans)"}
+                    fontSize={"64px"}
+                    lineHeight={"64px"}
+                  >
                     4.9
                   </Typography>
                   <Rating value={5} readOnly sx={{ color: "#fe7958" }} />
@@ -104,13 +116,25 @@ const LandingBanner = () => {
                     <Avatar alt="Remy Sharp" src="/user.png" />
                   </Grid>
                   <Grid item xs={6}>
-                    <Typography fontSize={"14px"}>Ali Gohar</Typography>
-                    <Typography fontSize={"12px"} sx={{ color: "#666666" }}>
+                    <Typography
+                      fontFamily={"var(--work-Sans)"}
+                      fontSize={"14px"}
+                    >
+                      Ali Gohar
+                    </Typography>
+                    <Typography
+                      fontFamily={"var(--work-Sans)"}
+                      fontSize={"12px"}
+                      sx={{ color: "#666666" }}
+                    >
                       Lead Product Designer
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography sx={styles.BannerSecondPara}>
+                    <Typography
+                      fontFamily={"var(--work-Sans)"}
+                      sx={styles.BannerSecondPara}
+                    >
                       Effortlessly create stunning SAAS landing pages.
                       User-friendly, customizable, and conversion-driven. A
                       game-changer for your online presence!

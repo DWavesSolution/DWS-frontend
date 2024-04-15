@@ -8,9 +8,9 @@ import ContactUs from "@/app/components/contact";
 import ServicesBanner from "@/app/components/services_banner";
 
 export async function generateMetadata() {
-  const PageTitle = "Expert Design Marketing";
+  const PageTitle = "UI & UX Design Company Canada| Web, Apps, iOS";
   const PageDescription =
-    "Elevate your brand with our tailored design packages. Boost engagement, reach, and results with cost-effective solutions for every business";
+    "Elevate user experiences with Canada's premier UI & UX design company. Crafting seamless interfaces for web, apps, and iOS platforms, we redefine digital engagement.";
   const PageKeyword = "Digital Marketing";
   return convertSeo(PageTitle, PageDescription, PageKeyword);
 }

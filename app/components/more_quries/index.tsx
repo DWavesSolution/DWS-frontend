@@ -18,12 +18,16 @@ const MoreQuries = () => {
           </Box>
         </Grid>
         <Grid item xs={12} sx={styles.Grid}>
-          <Typography fontSize={"20px"} fontWeight={500}>
+          <Typography
+            fontFamily={"var(--work-Sans)"}
+            fontSize={"20px"}
+            fontWeight={500}
+          >
             Still have questions?
           </Typography>
         </Grid>
         <Grid item xs={12} sx={styles.Grid}>
-          <Typography fontSize={"18px"}>
+          <Typography fontFamily={"var(--work-Sans)"} fontSize={"18px"}>
             {
               "Can’t find the answer you’re looking for? Please chat to our friendly team."
             }
@@ -36,6 +40,7 @@ const MoreQuries = () => {
           >
             <Button sx={styles.BannerButtons}>
               <Typography
+                fontFamily={"var(--work-Sans)"}
                 sx={{
                   ...styles.BannerButtonsTypo,
                   color: "white",

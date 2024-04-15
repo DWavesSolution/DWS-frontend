@@ -87,7 +87,7 @@ const ConatctUs = () => {
                     fontSize={"14px"}
                     sx={{ color: "#a5bcd5" }}
                   >
-                    We’re open to signing an NDA, if needed.
+                    {"We’re open to signing an NDA, if needed."}
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sx={styles.TextMargin}>

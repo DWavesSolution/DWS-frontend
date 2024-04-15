@@ -26,13 +26,20 @@ const SeoSubcription = () => {
                 >
                   {item.type}
                 </Typography>
+                <Typography
+                  fontSize={"20px"}
+                  fontFamily={"var(--work-Sans)"}
+                  sx={{ color: "#fe7958", marginBottom: "5px" }}
+                >
+                  {item.price}
+                </Typography>
                 {item.content.map((data) => {
                   return (
                     <Box sx={styles.CardBox} key={`${item?.id}-${index}`}>
                       <KeyboardDoubleArrowRightIcon sx={styles.Icons} />
                       <Typography
                         fontFamily={"var(--nunito)"}
-                        fontSize={"12px"}
+                        fontSize={"14px"}
                       >
                         {data.point}
                       </Typography>

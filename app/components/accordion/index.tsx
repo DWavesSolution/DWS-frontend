@@ -32,7 +32,11 @@ const ContactAccordion = () => {
           >
             Frequently Ask Questions
           </Typography>
-          <Typography fontSize={"18px"} sx={{ marginTop: "20px" }}>
+          <Typography
+            fontFamily={"var(--work-Sans)"}
+            fontSize={"18px"}
+            sx={{ marginTop: "20px" }}
+          >
             Everything you need to know about the product and billing.
           </Typography>
           <Grid item xs={12} sx={styles.block}>

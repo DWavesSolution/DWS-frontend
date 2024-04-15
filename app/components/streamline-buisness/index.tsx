@@ -79,6 +79,7 @@ const StreamLineBuisness = ({
                       </Grid>
                       <Grid item xs={12}>
                         <Typography
+                          fontFamily={"var(--work-Sans)"}
                           fontSize={"28px"}
                           sx={{
                             color: "#fe7958",
