@@ -9,4 +9,12 @@ export const styles = {
     display: "flex",
     justifyContent: "center",
   },
+  BannerButtons: {
+    borderRadius: "30px",
+  },
+  BannerButtonsTypo: {
+    textTransform: "none",
+    fontSize: "13px",
+    padding: "5px 15px",
+  },
 };

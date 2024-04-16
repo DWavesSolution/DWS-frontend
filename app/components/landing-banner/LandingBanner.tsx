@@ -53,7 +53,7 @@ const LandingBanner = () => {
                   online landscape.
                 </Typography>
               </Grid>
-              <Grid item xs={12} sm={4} md={6} lg={5} sx={styles.ButtonGrid}>
+              <Grid item xs={12} sm={4} md={6} lg={5.1} sx={styles.ButtonGrid}>
                 <Link
                   href={"/contact-us"}
                   style={{ textDecoration: "none", color: "white" }}

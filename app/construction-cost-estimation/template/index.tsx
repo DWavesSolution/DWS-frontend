@@ -1,12 +1,13 @@
 "use client";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
+import Link from "next/link";
 
 const CostEstimation = () => {
   return (
     <Box sx={styles.Card}>
-      <Container data-aos="fade-up" data-aos-duration={3000}>
+      <Container data-aos="" data-aos-duration={3000}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12}>
             <Typography
@@ -94,7 +95,7 @@ const CostEstimation = () => {
               {"SOFTWARE WE Use:"}
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={11} sm={12}>
             <Typography
               fontFamily={"var(--work-Sans)"}
               fontSize={"15px"}
@@ -145,6 +146,32 @@ const CostEstimation = () => {
                 "We provide material takeoffs in an excel spreadsheet/ colored PDF. It includes a list of all material quantities/activities required for the project. All the items are listed division-wise and refer to the drawing from which the quantity is measured."
               }
             </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Link
+              href={"/contact-us"}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <Button
+                sx={{
+                  ...styles.BannerButtons,
+                  backgroundColor: "#fe7958",
+                  "&:hover": {
+                    backgroundColor: "#fe7958",
+                  },
+                }}
+              >
+                <Typography
+                  fontFamily={"var(--work-Sans)"}
+                  sx={{
+                    ...styles.BannerButtonsTypo,
+                    color: "white",
+                  }}
+                >
+                  Contact Us
+                </Typography>
+              </Button>
+            </Link>
           </Grid>
         </Grid>
       </Container>
