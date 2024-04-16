@@ -37,9 +37,9 @@ const ConatctUs = () => {
         form.current,
         "ZZlCJusFiMDe4w61_"
       );
-      toast.success("Your Massage has been Send");
+      toast.success("Your Message has been Sent");
     } catch (error) {
-      toast.error("There is some Issue while send your Massage");
+      toast.error("There is some Issue while send your Message");
     }
   };
   return (
