@@ -12,7 +12,7 @@ export const styles = {
     borderRadius: "24px",
     padding: "30px",
     boxShadow: "0px 0px 18px #fdf9f2, 10px 0px 30px #fdf9f2",
-    textAlign: "center",
+    // textAlign: "center",
   },
   CardBox: { display: "flex", marginBottom: "5px" },
   Icons: {

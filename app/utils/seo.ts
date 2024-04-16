@@ -4,8 +4,7 @@ export const convertSeo = (
   PageKeyword?: any
 ) => {
   return {
-    title:
-      `${PageTitle} - Digital Marketing Company` || "Digital Marketing Company",
+    title: `${PageTitle}`,
     description:
       `${PageDescription}` ||
       "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",

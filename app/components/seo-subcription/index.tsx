@@ -39,7 +39,7 @@ const SeoSubcription = () => {
                       <KeyboardDoubleArrowRightIcon sx={styles.Icons} />
                       <Typography
                         fontFamily={"var(--nunito)"}
-                        fontSize={"14px"}
+                        fontSize={"12px"}
                       >
                         {data.point}
                       </Typography>
