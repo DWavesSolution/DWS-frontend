@@ -8,8 +8,8 @@ export const convertSeo = (
     description:
       `${PageDescription}` ||
       "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",
-    publisher: "Digital Marketing Company",
-    keywords: `${PageKeyword}` || "Digital Marketing Company",
+    publisher: "Digital Wave Solutions",
+    keywords: `${PageKeyword}` || "Digital Wave Solutions",
     robots: "index, follow, max-image-preview:large",
     // viewport: "width=device-width, initial-scale=1.0",
     authors: [
@@ -22,7 +22,7 @@ export const convertSeo = (
     },
     openGraph: {
       type: "website",
-      title: "Digital Marketing Company",
+      title: "Digital Wave Solutions",
       description:
         "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",
     },
@@ -32,7 +32,7 @@ export const convertSeo = (
       cardType: "summary_large_image",
       description:
         "Discover success with our best affordable digital marketing company. Tailored solutions, expert strategies, and cost-effective services for your business growth.",
-      title: "Digital Marketing Company",
+      title: "Digital Wave Solutions",
       domain: "https://digitalwavesolutions.ca/",
       images: [
         {

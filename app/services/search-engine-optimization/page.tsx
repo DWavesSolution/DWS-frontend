@@ -12,7 +12,7 @@ export async function generateMetadata() {
   const PageTitle = "Seo Services in Canada | Best Seo Agency";
   const PageDescription =
     "Boost your online presence in Canada with top-notch SEO services from the best agency. Get more visitors to your website and rank higher on search engines.";
-  const PageKeyword = "Digital Marketing Company";
+  const PageKeyword = "Digital Wave Solutions";
   return convertSeo(PageTitle, PageDescription, PageKeyword);
 }
 const page = () => {
@@ -34,10 +34,7 @@ const page = () => {
         description=""
         DataMapping={Why_SEO}
       />
-      <MeticulouslyAccordion
-        title={"Our Process"}
-        dataMapping={Seo_Faq}
-      />
+      <MeticulouslyAccordion title={"Our Process"} dataMapping={Seo_Faq} />
       <ContactUs />
     </Box>
   );
