@@ -22,7 +22,7 @@ const page = () => {
         Pagetitle={"Services > Search Engine Optimization"}
         MainHeading={"Welcome to Digital Waves Solutions SEO Services."}
         description={
-          "In the digital landscape, where visibility is key, we specialize in optimizing your website to not only rank higher on search engines but also to outshine your competitors. Our team of seasoned SEO experts is dedicated to understanding your unique business goals and tailoring our services to meet your specific needs. With a data-driven approach and a focus on sustainable results, we ensure that your online presence not only improves but thrives. As businesses strive to stay ahead, the demand for advanced SEO services has surged. we provide you a cheap and affordable SEO services in USA and Canada."
+          "In the competitive digital realm, our expertise lies in maximizing your website's visibility, surpassing competitors by elevating search engine rankings. Our seasoned SEO team customizes strategies to align with your business objectives, ensuring sustainable growth through data-driven tactics. As businesses seek to lead, the demand for advanced SEO services has surged; we offer affordable solutions tailored for the USA and Canada markets."
         }
         dataMapping={Scores_Card}
         bgColor="#e9f5fe"

@@ -26,7 +26,7 @@ const page = () => {
         Pagetitle={"Services > Web Development"}
         MainHeading={"Are Web Development Essential to Business?"}
         description={
-          "Yes. Web Development are critical components of online success. Although digital and social media marketing strategies vary, these marketing tactics share the same goals: to boost brand awareness and drive more revenue."
+          "Yes, web development is essential to businesses as it facilitates online presence, enables customer engagement, supports e-commerce functionality, and enhances brand visibility and credibility in the digital landscape, all of which are crucial for reaching and serving customers in today's interconnected world."
         }
         dataMapping={Scores_Card}
         bgColor="#fdf9f2"

@@ -44,7 +44,7 @@ const TechMarquee = () => {
         {Technology_Logo.map((item: any, index) => {
           return (
             <Box sx={styles.MarqueeMainBox} key={`${item.id}-${index}`}>
-              <Box sx={{ height: 45, width: 45 }} key={`${item.id}-${index}`}>
+              <Box sx={{ height: 60, width: 60 }} key={`${item.id}-${index}`}>
                 <DWSImage
                   src={item.logo}
                   alt="Tech Logos"
@@ -59,7 +59,7 @@ const TechMarquee = () => {
         {Technology_Logo.map((item: any, index) => {
           return (
             <Box sx={styles.MarqueeMainBox} key={`${item.id}-${index}`}>
-              <Box sx={{ height: 45, width: 45 }} key={`${item.id}-${index}`}>
+              <Box sx={{ height: 60, width: 60 }} key={`${item.id}-${index}`}>
                 <DWSImage
                   src={item.logo}
                   alt="Tech Logos"

@@ -3,11 +3,12 @@ import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { styles } from "./styles";
 import Link from "next/link";
+import { Cost_Estimation_data } from "@/app/static-data/data";
 
 const CostEstimation = () => {
   return (
     <Box sx={styles.Card}>
-      <Container data-aos="" data-aos-duration={3000}>
+      <Container data-aos="fade-up" data-aos-duration={3000}>
         <Grid container sx={styles.MainGrid}>
           <Grid item xs={12}>
             <Typography
@@ -16,7 +17,7 @@ const CostEstimation = () => {
               sx={{ margin: "5px 0px" }}
             >
               {
-                "At Digital Wave Solutions, we are providing quantities take-off, materials take-off and cost estimation services to architects, general contractors and sub-contractors. We have an experienced unit of estimators and civil engineers working on highly rated software."
+                "At Digital Wave Solutions, we are providing quantities take-off, materials take-off and cost estimation services to architects, general contractors and sub-contractors. We have an experienced unit of estimators and civil engineers working on highly rated software."
               }
             </Typography>
           </Grid>
@@ -95,24 +96,22 @@ const CostEstimation = () => {
               {"SOFTWARE WE Use:"}
             </Typography>
           </Grid>
-          <Grid item xs={11} sm={12}>
-            <Typography
-              fontFamily={"var(--work-Sans)"}
-              fontSize={"15px"}
-              sx={{ margin: "5px 0px" }}
-            >
-              <ul
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                }}
-              >
-                <li>BLUEBEAM</li>
-                <li>PlanSwift</li>
-                <li>RSMeans</li>
-              </ul>
-            </Typography>
+          <Grid container gap={2}>
+            {Cost_Estimation_data.map((item: any, index: any) => {
+              return (
+                <Grid
+                  item
+                  xs={12}
+                  sm={3.8}
+                  key={`${item?.id}-${index}`}
+                  sx={{ ...styles.PricingGrid, backgroundColor: item.color }}
+                >
+                  <Box sx={styles.CardBox} key={`${item?.id}-${index}`}>
+                    <Typography>{item.title}</Typography>
+                  </Box>
+                </Grid>
+              );
+            })}
           </Grid>
           <Grid item xs={12}>
             <Typography
@@ -146,32 +145,6 @@ const CostEstimation = () => {
                 "We provide material takeoffs in an excel spreadsheet/ colored PDF. It includes a list of all material quantities/activities required for the project. All the items are listed division-wise and refer to the drawing from which the quantity is measured."
               }
             </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Link
-              href={"/contact-us"}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              <Button
-                sx={{
-                  ...styles.BannerButtons,
-                  backgroundColor: "#fe7958",
-                  "&:hover": {
-                    backgroundColor: "#fe7958",
-                  },
-                }}
-              >
-                <Typography
-                  fontFamily={"var(--work-Sans)"}
-                  sx={{
-                    ...styles.BannerButtonsTypo,
-                    color: "white",
-                  }}
-                >
-                  Contact Us
-                </Typography>
-              </Button>
-            </Link>
           </Grid>
         </Grid>
       </Container>

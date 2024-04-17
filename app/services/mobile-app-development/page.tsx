@@ -25,7 +25,7 @@ const page = () => {
         Pagetitle={"Services > Mobile Development"}
         MainHeading={"Are Mobile Development Essential to Business?"}
         description={
-          "Yes. Digital and social media marketing are critical components of online success. Although digital and social media marketing strategies vary, these marketing tactics share the same goals: to boost brand awareness and drive more revenue."
+          "Yes, mobile development is essential to businesses as it allows them to reach a wider audience through smartphones and tablets, provides convenient access to products and services, enhances customer engagement through mobile apps, and enables businesses to stay competitive in an increasingly mobile-driven market."
         }
         dataMapping={Scores_Card}
         bgColor="#faf1f7"

@@ -62,7 +62,7 @@ const Footer = () => {
               />
             </Box>
           </Grid>
-          <Grid item xs={12} sm={8} md={10} sx={styles.Copyrights}>
+          <Grid item xs={12} sm={8} md={9} sx={styles.Copyrights}>
             <Typography
               fontFamily={"var(--work-Sans)"}
               fontSize={"14px"}
@@ -71,21 +71,12 @@ const Footer = () => {
               © Copyright owned by DWS 2024
             </Typography>
           </Grid>
-          <Grid
-            container
-            item
-            xs={12}
-            sm={2}
-            md={1}
-            sx={styles.SocialIconsStyle}
-          >
+          <Grid container item xs={12} sm={2} sx={styles.SocialIconsStyle}>
             {socialIcons.map((item, index) => {
               return (
                 <Grid
                   item
-                  xs={4}
-                  sm={3}
-                  md={4}
+                  xs={3}
                   key={`${item?.id}-${index}`}
                   sx={{
                     display: "flex",

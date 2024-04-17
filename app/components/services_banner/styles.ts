@@ -15,9 +15,7 @@ export const styles = {
     display: "flex",
   },
   Button: {
-    borderColor: "#004ca2",
-    textTransform: "none",
-    padding: "8px 32px",
+    borderRadius: "30px",
   },
   ScoresMainGrid: {
     display: "flex",
@@ -33,5 +31,10 @@ export const styles = {
     marginBottom: "20px",
     display: "flex",
     justifyContent: "space-evenly",
+  },
+  BannerButtonsTypo: {
+    textTransform: "none",
+    fontSize: "13px",
+    padding: "5px 15px",
   },
 };

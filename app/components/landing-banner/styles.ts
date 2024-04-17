@@ -1,7 +1,6 @@
 export const styles = {
   Box: {
     display: "flex",
-
     padding: "64px 0px",
     alignItems: "center",
   },

@@ -9,7 +9,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { Scores_Card, socialIcons } from "@/app/static-data/data";
+import { socialIcons } from "@/app/static-data/data";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 import DWSImage from "@/app/components/DWSImage";
@@ -64,12 +64,23 @@ const ServicesBanner = ({
                   offset={-150}
                   duration={1000}
                 >
-                  <Button variant="outlined" sx={styles.Button}>
+                  <Button
+                    sx={{
+                      ...styles.Button,
+                      backgroundColor: "#fe7958",
+                      "&:hover": {
+                        backgroundColor: "#fe7958",
+                      },
+                    }}
+                  >
                     <Typography
-                      fontFamily={"var(--nunito)"}
-                      sx={{ color: "#004ca2" }}
+                      fontFamily={"var(--work-Sans)"}
+                      sx={{
+                        ...styles.BannerButtonsTypo,
+                        color: "white",
+                      }}
                     >
-                      {"Contact now"}
+                      Contact Us
                     </Typography>
                   </Button>
                 </ScrollLink>

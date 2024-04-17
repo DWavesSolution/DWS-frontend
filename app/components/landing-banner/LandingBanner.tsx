@@ -14,6 +14,10 @@ import { styles } from "./styles";
 import DWSImage from "../DWSImage";
 import BannerImmage from "../../../public/BannerImage.png";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
+import { User_Review_data } from "@/app/static-data/data";
 
 const LandingBanner = () => {
   return (
@@ -107,13 +111,13 @@ const LandingBanner = () => {
                     fontSize={"64px"}
                     lineHeight={"64px"}
                   >
-                    4.9
+                    4.5
                   </Typography>
                   <Rating value={5} readOnly sx={{ color: "#fe7958" }} />
                 </Grid>
                 <Grid container item xs={12} sm={9} md={8.5}>
                   <Grid item xs={2.5} sm={1.5} md={2}>
-                    <Avatar alt="Remy Sharp" src="/user.png" />
+                    <Avatar alt="Remy Sharp" src={"/user.png"} />
                   </Grid>
                   <Grid item xs={6}>
                     <Typography

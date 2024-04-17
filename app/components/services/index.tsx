@@ -15,25 +15,20 @@ const ServicesSection = () => {
             <Button sx={styles.ServicesButton}>
               <Typography
                 fontFamily={"var(--work-Sans)"}
-                sx={{ padding: "0px 6px", fontSize: "12px" }}
+                sx={{ padding: "0px 6px", fontSize: "22px", fontWeight: 500 }}
               >
                 Services
               </Typography>
             </Button>
-          </Grid>
-          <Grid item xs={12} sx={styles.GridStyle}>
-            <Typography fontFamily={"var(--work-Sans)"} fontSize={"40px"}>
-              Building end-to-end product solutions
-            </Typography>
           </Grid>
           <Grid item xs={12} lg={7} sx={styles.GridStyle}>
             <Typography
               fontFamily={"var(--work-Sans)"}
               sx={{ color: "#323232" }}
             >
-              We navigate your product development journey with a
-              forward-thinking mindset and strategic roadmaps, ensuring
-              efficient, sustainable, and successful outcomes.
+              We navigate your journey with a forward-thinking mindset and
+              strategic roadmaps, ensuring efficient, sustainable, and
+              successful outcomes.
             </Typography>
           </Grid>
           <Grid container item xs={12} sx={styles.CardGrid} gap={2}>
@@ -54,16 +49,31 @@ const ServicesSection = () => {
                       fontFamily={"var(--work-Sans)"}
                       sx={styles.CardTitle}
                     >
-                      <Link href={item.link} style={{ color: "black" }}>
+                      <Link
+                        href={item.link}
+                        style={{ color: "black", textDecoration: "none" }}
+                      >
                         {item.title}
                       </Link>
                     </Typography>
-                    <Typography
-                      fontFamily={"var(--work-Sans)"}
-                      sx={{ fontSize: "14px" }}
-                    >
-                      {item.description}
-                    </Typography>
+                    {item.content.map((data: any, index: any) => {
+                      return (
+                        <Typography
+                          fontFamily={"var(--work-Sans)"}
+                          key={`${data?.id}-${index}`}
+                        >
+                          <ul
+                            style={{
+                              color: "black",
+                              fontSize: "14px",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            <li>{data.points}</li>
+                          </ul>
+                        </Typography>
+                      );
+                    })}
                   </Card>
                 </Grid>
               );

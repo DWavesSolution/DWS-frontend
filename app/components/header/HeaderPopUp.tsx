@@ -15,7 +15,7 @@ const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
             <Grid
               item
               xs={12}
-              md={2}
+              md={2.2}
               key={`${item?.id}-${index}`}
               sx={{ ...styles.ServicesMainGrid, background: item.color }}
             >

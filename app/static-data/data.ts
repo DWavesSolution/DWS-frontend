@@ -16,14 +16,8 @@ export const HeaderData = [
   },
   {
     id: 4,
-    name: "Blogs",
-    link: "/",
-  },
-
-  {
-    id: 5,
     name: "Construction Cost Estimation",
-    link: "/construction-cost-estimation",
+    link: "/services/construction-cost-estimation",
   },
 ];
 export const Services_Menu = [
@@ -33,7 +27,7 @@ export const Services_Menu = [
     color: "#f2fbf5",
     content: [
       { name: "Social Media Marketing", link: "/digital-marketing" },
-      { name: "Pay-Per-Click (PPC) Management", link: "/digital-marketing" },
+      { name: "Pay-Per-Click Management", link: "/digital-marketing" },
       { name: "Content Marketing", link: "/digital-marketing" },
       { name: "Conversion Marketing", link: "/digital-marketing" },
       { name: "Email Marketing", link: "/digital-marketing" },
@@ -95,49 +89,81 @@ export const Services_Card = [
     logo: "/Digital_Marketing.png",
     title: "Digital Marketing",
     link: "/services/digital-marketing",
-    description:
-      "Social Media Marketing, Pay-Per-Click (PPC) Management, Content Marketing, Email Marketing, Conversion Marketing, Brand Development & Strategy.",
     colour: "#f2fbf5",
+    content: [
+      { points: "Social Media Marketing" },
+      { points: "Pay-Per-Click (PPC) Management" },
+      { points: "Content Marketing" },
+      { points: "Email Marketing" },
+      { points: "Conversion Marketing" },
+      { points: "Brand Development & Strategy" },
+    ],
   },
   {
     logo: "/SEO.png",
     title: "SEO",
     link: "/services/search-engine-optimization",
-    description:
-      "Keyword Research, On-page SEO, Off-page SEO, SEO Copywriting, Technical SEO, E-Commerce SEO.",
     colour: "#e9f5fe",
+    content: [
+      { points: "Keyword Research" },
+      { points: "On-page SEO" },
+      { points: "Off-page SEO" },
+      { points: "SEO Copywriting" },
+      { points: "Technical SEO" },
+      { points: "E-Commerce SEO" },
+    ],
   },
   {
     logo: "/Design.png",
     title: "Design",
     link: "/services/design",
-    description:
-      "Web Design, Mobile App Design, UI & UX Design, Banner Design, Ad Creatives, Logo Design, 2D/ 3D Animation, Video Editing.",
     colour: "#fff3f2",
+    content: [
+      { points: "Web / Mobile Design" },
+      { points: "UI & UX Design" },
+      { points: "Banner / Logo Design" },
+      { points: "Ad Creatives" },
+      { points: "2D/ 3D Animation" },
+      { points: "Video Editing" },
+    ],
   },
   {
     logo: "/Web_dev.png",
     title: "Web Development",
     link: "/services/web-development",
-    description:
-      "Website Development, E-Commerce Solutions, Web Application Development, Analytics & Reporting, Maintenance & Support.",
     colour: "#fdf9f2",
+    content: [
+      { points: "Website Development" },
+      { points: "E-Commerce Solutions" },
+      { points: "Web Application Development" },
+      { points: "Analytics & Reporting" },
+      { points: "Maintenance & Support" },
+    ],
   },
   {
     logo: "/mobile_dev.png",
     title: "Mobile App Development",
     link: "/services/mobile-app-development",
-    description:
-      "Native App Development, Cross-Platform Development, Custom App Solutions, App Maintenance & Support.",
     colour: "#faf1f7",
+    content: [
+      { points: "Native App Development" },
+      { points: "Cross-Platform Development" },
+      { points: "Custom App Solutions" },
+      { points: "App Maintenance & Support" },
+    ],
   },
   {
     logo: "/estimastion.png",
     title: "Construction Cost Estimation",
-    link: "/construction-cost-estimation",
+    link: "/services/construction-cost-estimation",
     description:
       "At Digital Wave Solutions, we are providing quantities take-off, materials take-off and cost estimation services....",
     colour: "#f2fbf5",
+    content: [
+      { points: "BlueBeam" },
+      { points: "PlanSwift" },
+      { points: "RSMeans" },
+    ],
   },
 ];
 export const Scores_Card = [
@@ -161,21 +187,27 @@ export const Scores_Card = [
 export const socialIcons = [
   {
     id: 1,
-    name: "See More about us on Linkedin",
-    logo: "/linkedin.svg",
-    link: "https://linkedin.com",
-  },
-  {
-    id: 2,
     name: "See More about us on Twitter",
     logo: "/twitter.webp",
     link: "https://twitter.com/digital_WaveSol",
   },
   {
-    id: 3,
+    id: 2,
     name: "See More about us on Facebook",
     logo: "/facebook.webp",
     link: "https://www.facebook.com/profile.php?id=61555428527968",
+  },
+  {
+    id: 2,
+    name: "See More about us on Instagram",
+    logo: "/instagram.svg",
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: 2,
+    name: "See More about us on Tiktok",
+    logo: "/tiktok.svg",
+    link: "https://www.tiktok.com/",
   },
 ];
 export const Testimonials_Data = [
@@ -929,6 +961,10 @@ export const DropDownServices = [
     name: "Mobile Development",
     value: "Mobile Development",
   },
+  {
+    name: "Construction Cost Estimation",
+    value: "Construction Cost Estimation",
+  },
 ];
 export const footer_Data = [
   {
@@ -936,7 +972,7 @@ export const footer_Data = [
     content: [
       { name: "+1 (647) 236 2627", links: "" },
       { name: "Info@digitalwavesolutions.ca", links: "" },
-      { name: "Address", links: "" },
+      { name: "4149 Pascal Ct, Mississauga, ON L4W 3C4, Canada", links: "" },
     ],
   },
   {
@@ -953,10 +989,9 @@ export const footer_Data = [
     heading: "Site Map",
     content: [
       { name: "About", links: "/about-us" },
-      { name: "Pricing", links: "" },
-      { name: "Career", links: "" },
-      { name: "Blogs", links: "/blog" },
-      { name: "FAQ's", links: "" },
+      { name: "Pricing", links: "/contact-us" },
+      { name: "Career", links: "/careers" },
+      { name: "Blogs", links: "/blogs" },
     ],
   },
   {
@@ -967,7 +1002,48 @@ export const footer_Data = [
         links: "https://www.facebook.com/profile.php?id=61555428527968",
       },
       { name: "Instagram", links: "" },
-      { name: "LinkedIn", links: "https://linkedin.com" },
+      { name: "Twitter", links: "https://twitter.com/digital_WaveSol" },
+      { name: "Tiktok", links: "" },
     ],
+  },
+];
+export const Cost_Estimation_data = [
+  { title: "BLUEBEAM", color: "#faf1f7" },
+  { title: "PlanSwift", color: "#e9f5fe" },
+  { title: "RSMeans", color: "#fff3f2" },
+];
+export const User_Review_data = [
+  {
+    rating: "4.5",
+    value: 5,
+    Avatar: "/user.png",
+    name: "Ali Gohar",
+    designation: "Lead Product Designer",
+    review:
+      "Effortlessly create stunning SAAS landing pages. User-friendly, customizable, and conversion-driven. A game-changer for your online presence!",
+  },
+  {
+    rating: "4.5",
+    value: 4,
+    Avatar: "/user.png",
+    name: "ert",
+    designation: "",
+    review: "",
+  },
+  {
+    rating: "4.8",
+    value: 4,
+    Avatar: "/user.png",
+    name: "fgdf",
+    designation: "",
+    review: "",
+  },
+  {
+    rating: "4.6",
+    value: 5,
+    Avatar: "/user.png",
+    name: "sds",
+    designation: "",
+    review: "",
   },
 ];

@@ -20,12 +20,13 @@ export const styles = {
   },
   Card: {
     padding: "40px 25px",
-    height: "220px",
+    height: "250px",
+    borderRadius: "20px",
   },
   CardImage: { height: 50, width: 50 },
   CardTitle: {
     fontSize: "24px",
     fontWeight: 500,
-    margin: "20px 0px",
+    margin: "20px 0px 10px 0px",
   },
 };

@@ -52,8 +52,6 @@ export const styles = {
   DrawarPapar: {
     width: { xs: "100%", sm: "50%", md: "30%" },
     boxShadow: "none",
-    // background:
-    //   "transparent radial-gradient(farthest-corner at 300% 260%,#004ca2 0,#000 100%) 0 0 no-repeat padding-box",
     background: "#ffede8",
   },
   PopUpMainGrid: { display: "flex", justifyContent: "space-evenly" },
@@ -63,7 +61,7 @@ export const styles = {
     flexDirection: "column",
     justifyContent: "space-evenly",
     margin: "20px 0px",
-    padding: "20px",
+    padding: "16px",
     borderRadius: "25px",
   },
 };
