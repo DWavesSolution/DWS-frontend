@@ -67,7 +67,7 @@ const ConatctUs = () => {
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"14px"}
-                    sx={{ color: "#a5bcd5" }}
+                    sx={{ color: "Black" }}
                   >
                     {"Send your details and we’ll get in touch"}
                   </Typography>
@@ -76,7 +76,7 @@ const ConatctUs = () => {
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"14px"}
-                    sx={{ color: "#a5bcd5" }}
+                    sx={{ color: "Black" }}
                   >
                     Expect a response within 24 hours.
                   </Typography>
@@ -85,7 +85,7 @@ const ConatctUs = () => {
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"14px"}
-                    sx={{ color: "#a5bcd5" }}
+                    sx={{ color: "Black" }}
                   >
                     {"We’re open to signing an NDA, if needed."}
                   </Typography>
@@ -94,7 +94,7 @@ const ConatctUs = () => {
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"14px"}
-                    sx={{ color: "#a5bcd5" }}
+                    sx={{ color: "Black" }}
                   >
                     Engage directly with our product experts, not account
                     managers
@@ -104,7 +104,7 @@ const ConatctUs = () => {
                   <Typography
                     fontFamily={"var(--nunito)"}
                     fontSize={"12px"}
-                    sx={{ color: "#a5bcd5" }}
+                    sx={{ color: "Black" }}
                   >
                     Reach out to us at
                   </Typography>
