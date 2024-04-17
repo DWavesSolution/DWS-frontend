@@ -910,20 +910,24 @@ export const Subscription_Data = [
 ];
 export const DropDownServices = [
   {
-    name: "Digital Product Development",
-    value: "Digital Product Development",
+    name: "Digital Marketing",
+    value: "Digital Marketing",
   },
   {
     name: "Search Engine Optimaization",
     value: "Search Engine Optimaization",
   },
   {
-    name: "Social Media Marketing",
-    value: "Social Media Marketing",
+    name: "Design",
+    value: "Design",
   },
   {
-    name: "AI/ML",
-    value: "AI/ML",
+    name: "Web Development",
+    value: "Web Development",
+  },
+  {
+    name: "Mobile Development",
+    value: "Mobile Development",
   },
 ];
 export const footer_Data = [

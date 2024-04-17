@@ -24,6 +24,9 @@ export const styles = {
     backgroundSize: "200% 100%",
     color: "#fff",
     padding: "0.7rem 1.2rem",
+    "&:hover": {
+      background: "#fe7958",
+    },
   },
   ContactMainGrid: {
     display: "flex",
