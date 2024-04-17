@@ -24,12 +24,11 @@ import emailjs from "@emailjs/browser";
 
 const ConatctUs = () => {
   const [services, setServices] = useState("");
-  const handleChange = (event: any) => {
-    setServices(event.target.value as string);
+  const handleChange = (value: string) => {
+    setServices(value);
   };
   const form: any = useRef();
-  const submitHandler = () => {};
-  const formsubmission = async (values: any) => {
+  const formsubmission = async (values: any, { resetForm }: any) => {
     try {
       await emailjs.sendForm(
         "service_wee4me4",
@@ -38,6 +37,7 @@ const ConatctUs = () => {
         "ZZlCJusFiMDe4w61_"
       );
       toast.success("Your Message has been Sent");
+      resetForm();
     } catch (error) {
       toast.error("There is some Issue while send your Message");
     }
@@ -153,7 +153,7 @@ const ConatctUs = () => {
                     message: "",
                   }}
                   validationSchema={FormValidation}
-                  onSubmit={submitHandler}
+                  onSubmit={formsubmission}
                   dirty={true}
                   isValid={true}
                 >
@@ -204,7 +204,7 @@ const ConatctUs = () => {
                           name="services"
                           value={services}
                           label="Services"
-                          onChange={handleChange}
+                          onChange={(event) => handleChange(event.target.value)}
                           required
                           error={touched?.services && Boolean(errors?.services)}
                         >
@@ -237,7 +237,7 @@ const ConatctUs = () => {
                       />
                       <Button
                         sx={styles.Button}
-                        onClick={formsubmission}
+                        onClick={() => handleSubmit()}
                         value="Send"
                       >
                         <Typography

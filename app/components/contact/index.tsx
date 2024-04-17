@@ -27,8 +27,7 @@ const ContactUs = () => {
     setServices(event.target.value as string);
   };
   const form: any = useRef();
-  const submitHandler = () => {};
-  const formsubmission = async (values: any) => {
+  const formsubmission = async (values: any, { resetForm }: any) => {
     try {
       await emailjs.sendForm(
         "service_wee4me4",
@@ -37,6 +36,7 @@ const ContactUs = () => {
         "ZZlCJusFiMDe4w61_"
       );
       toast.success("Your Message has been Sent");
+      resetForm();
     } catch (error) {
       toast.error("There is some Issue while send your Message");
     }
@@ -118,7 +118,7 @@ const ContactUs = () => {
                 message: "",
               }}
               validationSchema={FormValidation}
-              onSubmit={submitHandler}
+              onSubmit={formsubmission}
               dirty={true}
               isValid={true}
               sx={{ width: "100%" }}
@@ -225,7 +225,7 @@ const ContactUs = () => {
                         color: "white",
                       },
                     }}
-                    onClick={formsubmission}
+                    onClick={() => handleSubmit()}
                     value="Send"
                     disabled={
                       Object.keys(errors).length > 0 ||
