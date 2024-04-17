@@ -6,9 +6,9 @@ import { Services_Menu } from "@/app/static-data/data";
 import "swiper/css";
 import Link from "next/link";
 
-const HeaderPopUp = ({ hideModel, onMouseLeave }: any) => {
+const HeaderPopUp = ({ hideModel }: any) => {
   return (
-    <Grid sx={styles.mainGrid} onClick={hideModel} onMouseLeave={onMouseLeave}>
+    <Grid sx={styles.mainGrid} onClick={hideModel}>
       <Card sx={styles.container}>
         <Grid container sx={styles.PopUpMainGrid}>
           {Services_Menu.map((item, index) => (
