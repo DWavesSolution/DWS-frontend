@@ -27,7 +27,11 @@ const ContactUs = () => {
     setServices(event.target.value as string);
   };
   const form: any = useRef();
-  const formsubmission = async (values: any, { resetForm }: any) => {
+  const resetFormAndMenu = () => {
+    form.current.reset();
+    setServices("");
+  };
+  const formsubmission = async (values: any) => {
     try {
       await emailjs.sendForm(
         "service_wee4me4",
@@ -36,7 +40,7 @@ const ContactUs = () => {
         "ZZlCJusFiMDe4w61_"
       );
       toast.success("Your Message has been Sent");
-      resetForm();
+      resetFormAndMenu();
     } catch (error) {
       toast.error("There is some Issue while send your Message");
     }
