@@ -84,13 +84,11 @@ const Header = () => {
                           <Typography
                             fontFamily={"var(--work-Sans)"}
                             onMouseEnter={handleClick(index)}
-                            onMouseLeave={handlePopoverClose}
                           >
                             {item.name}
                           </Typography>
                           <KeyboardArrowDownIcon
                             onMouseEnter={handleClick(index)}
-                            onMouseLeave={handlePopoverClose}
                           />
                         </Box>
                       ) : (
@@ -134,6 +132,7 @@ const Header = () => {
       </Toolbar>
       {showModal && (
         <CustomMenu
+          onMouseLeave={handlePopoverClose}
           hideModel={() => {
             setShowModal(false);
           }}
