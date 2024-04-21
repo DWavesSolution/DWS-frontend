@@ -99,7 +99,7 @@ const ResponsiveHeader = () => {
           })}
           <Grid item xs={10} sx={styles.ResponsiveDataGrid}>
             <Link
-              href={"/construction-cost-estimation"}
+              href={"/services/construction-cost-estimation"}
               onClick={onCloseDrawer}
               style={{
                 textDecoration: "none",
