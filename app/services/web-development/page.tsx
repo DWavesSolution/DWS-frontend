@@ -26,7 +26,7 @@ const page = () => {
         Pagetitle={"Services > Web Development"}
         MainHeading={"Are Web Development Essential to Business?"}
         description={
-          "Yes, web development is essential to businesses as it facilitates online presence, enables customer engagement, supports e-commerce functionality, and enhances brand visibility and credibility in the digital landscape, all of which are crucial for reaching and serving customers in today's interconnected world."
+          "A strong online presence is essential for organizations to succeed in the digital landscape. You can effectively engage your target audience of your business using web application development services. Our skilled development team specializes in building user-friendly web apps that are customized to meet your particular business requirements. We make sure that your web application offers a seamless user experience and assists you in achieving your business goals."
         }
         dataMapping={Scores_Card}
         bgColor="#fdf9f2"

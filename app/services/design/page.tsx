@@ -21,7 +21,7 @@ const page = () => {
         Pagetitle={"Services > Design"}
         MainHeading={"Are Designs Essential to Business?"}
         description={
-          "Yes. Design are critical components of online success. Although digital and design strategies vary, these marketing tactics share the same goals: to boost brand awareness and drive more revenue."
+          "Design is essential to producing memorable user experiences. A website, or smartphone app can capture and engage users with good design. We offer a wide range of design services, such as graphic design, user interface (UI) design, and user experience (UX) design. Our skilled designers create visually appealing interfaces. Our design process prioritizes brand integrity to produce visually stunning designs that also improve the user experience overall."
         }
         dataMapping={Scores_Card}
         bgColor="#fff3f2"

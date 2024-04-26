@@ -25,7 +25,7 @@ const page = () => {
         Pagetitle={"Services > Mobile Development"}
         MainHeading={"Are Mobile Development Essential to Business?"}
         description={
-          "Yes, mobile development is essential to businesses as it allows them to reach a wider audience through smartphones and tablets, provides convenient access to products and services, enhances customer engagement through mobile apps, and enables businesses to stay competitive in an increasingly mobile-driven market."
+          "Having a mobile application for your business is crucial in the age of smartphones. You may engage directly with your customers and take advantage of the large mobile user base by using mobile application development services. Our talented app developers are adept at building feature-rich mobile apps for the iOS and Android operating systems. We collaborate closely with you to comprehend your objectives and create a unique app."
         }
         dataMapping={Scores_Card}
         bgColor="#faf1f7"
