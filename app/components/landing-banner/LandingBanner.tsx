@@ -14,10 +14,7 @@ import { styles } from "./styles";
 import DWSImage from "../DWSImage";
 import BannerImmage from "../../../public/BannerImage.png";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
-import { User_Review_data } from "@/app/static-data/data";
 
 const LandingBanner = () => {
   return (
