@@ -90,7 +90,7 @@ const ServicesBanner = ({
                   return (
                     <Grid
                       item
-                      xs={2}
+                      xs={4}
                       sm={1}
                       sx={styles.socialIcons}
                       key={`${item?.id}-${index}`}

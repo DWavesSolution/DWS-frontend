@@ -69,12 +69,15 @@ const AboutPage = () => {
                   </Button>
                 </ScrollLink>
               </Grid>
-              <Grid container sx={{ marginTop: "50px", display: "flex" }}>
+              <Grid
+                container
+                sx={{ marginTop: "50px", display: { xs: "none", sm: "flex" } }}
+              >
                 {socialIcons.map((item, index) => {
                   return (
                     <Grid
                       item
-                      xs={2}
+                      xs={4}
                       sm={1}
                       sx={styles.socialIcons}
                       key={`${item?.id}-${index}`}
