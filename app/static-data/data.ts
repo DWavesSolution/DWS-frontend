@@ -198,17 +198,11 @@ export const socialIcons = [
     link: "https://www.facebook.com/profile.php?id=61555428527968",
   },
   {
-    id: 2,
+    id: 3,
     name: "See More about us on Instagram",
     logo: "/instagram.svg",
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: 2,
-    name: "See More about us on Tiktok",
-    logo: "/tiktok.svg",
-    link: "https://www.tiktok.com/",
-  },
+    link: "https://www.instagram.com/digitalwavesolutions.ca?igsh=Nmx5azNrdGp4em15",
+  }
 ];
 export const Testimonials_Data = [
   {

@@ -76,7 +76,7 @@ const Footer = () => {
               return (
                 <Grid
                   item
-                  xs={3}
+                  xs={4}
                   key={`${item?.id}-${index}`}
                   sx={{
                     display: "flex",
