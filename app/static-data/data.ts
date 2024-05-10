@@ -187,22 +187,22 @@ export const Scores_Card = [
 export const socialIcons = [
   {
     id: 1,
-    name: "See More about us on Twitter",
-    logo: "/twitter.webp",
-    link: "https://twitter.com/digital_WaveSol",
-  },
-  {
-    id: 2,
     name: "See More about us on Facebook",
     logo: "/facebook.webp",
     link: "https://www.facebook.com/profile.php?id=61555428527968",
   },
   {
-    id: 3,
+    id: 2,
     name: "See More about us on Instagram",
     logo: "/instagram.svg",
     link: "https://www.instagram.com/digitalwavesolutions.ca?igsh=Nmx5azNrdGp4em15",
-  }
+  },
+  {
+    id: 3,
+    name: "See More about us on Twitter",
+    logo: "/twitter.webp",
+    link: "https://twitter.com/digital_WaveSol",
+  },
 ];
 export const Testimonials_Data = [
   {
@@ -995,9 +995,12 @@ export const footer_Data = [
         name: "Facebook",
         links: "https://www.facebook.com/profile.php?id=61555428527968",
       },
-      { name: "Instagram", links: "" },
+      {
+        name: "Instagram",
+        links:
+          "https://www.instagram.com/digitalwavesolutions.ca?igsh=Nmx5azNrdGp4em15",
+      },
       { name: "Twitter", links: "https://twitter.com/digital_WaveSol" },
-      { name: "Tiktok", links: "" },
     ],
   },
 ];

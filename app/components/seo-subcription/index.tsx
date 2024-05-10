@@ -1,13 +1,26 @@
 "use client";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { styles } from "./styles";
 import { Subscription_Data } from "@/app/static-data/data";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 const SeoSubcription = () => {
+  useEffect(() => {
+    const offset = -150;
+    const element = document.getElementById("pricing");
+    if (element) {
+      const offsetPosition = element.offsetTop + offset;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }
+  }, []);
   return (
-    <Box sx={styles.MainBox} data-aos="fade-up" data-aos-duration={3000}>
+    <Box
+      sx={styles.MainBox}
+      id="pricing"
+      data-aos="fade-up"
+      data-aos-duration={3000}
+    >
       <Container>
         <Grid container gap={2} sx={styles.MainGrid}>
           {Subscription_Data.map((item, index) => {

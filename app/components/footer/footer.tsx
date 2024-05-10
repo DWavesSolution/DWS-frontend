@@ -1,13 +1,25 @@
 "use client";
 import React from "react";
 import { styles } from "./styles";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Typography,
+} from "@mui/material";
 import { footer_Data, socialIcons } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
 import FooterLogo from "../../../public/headerLogo.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const route = useRouter();
+  const HomePageRoute = () => {
+    route.push("/");
+  };
   return (
     <Box sx={styles.MainBox}>
       <Container sx={styles.Container}>
@@ -21,27 +33,47 @@ const Footer = () => {
                 >
                   {item.heading}
                 </Typography>
-                {item.content.map((data: any, index: any) => {
-                  return (
-                    <Link
-                      href={data.links}
-                      target="_blank"
-                      style={{ textDecoration: "none" }}
-                      key={`${data?.id}-${index}`}
-                    >
-                      <ul
-                        style={{
-                          listStyleType: "none",
-                          color: "#DDDDDD",
-                          fontSize: "14px",
-                          marginBottom: "15px",
-                        }}
+                {item.content.map((data: any, index: any) => (
+                  <>
+                    {data.name === "Pricing" ? (
+                      <Link
+                        href="/contact-us#pricing"
+                        passHref
+                        target="_blank"
+                        style={{ textDecoration: "none" }}
                       >
-                        <li>{data.name}</li>
-                      </ul>
-                    </Link>
-                  );
-                })}
+                        <ul
+                          style={{
+                            listStyleType: "none",
+                            color: "#DDDDDD",
+                            fontSize: "14px",
+                            marginBottom: "15px",
+                          }}
+                        >
+                          <li>Pricing</li>
+                        </ul>
+                      </Link>
+                    ) : (
+                      <Link
+                        href={data.links}
+                        target="_blank"
+                        style={{ textDecoration: "none" }}
+                        key={`${data?.id}-${index}`}
+                      >
+                        <ul
+                          style={{
+                            listStyleType: "none",
+                            color: "#DDDDDD",
+                            fontSize: "14px",
+                            marginBottom: "15px",
+                          }}
+                        >
+                          <li>{data.name}</li>
+                        </ul>
+                      </Link>
+                    )}
+                  </>
+                ))}
               </Grid>
             );
           })}
@@ -54,7 +86,7 @@ const Footer = () => {
         />
         <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item xs={12} sm={2} md={1} sx={styles.FooterLogo}>
-            <Box sx={{ height: 50, width: 50 }}>
+            <Box sx={{ height: 50, width: 50 }} onClick={HomePageRoute}>
               <DWSImage
                 src={FooterLogo}
                 alt="Logo"
