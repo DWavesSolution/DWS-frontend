@@ -189,7 +189,7 @@ export const socialIcons = [
     id: 1,
     name: "See More about us on Facebook",
     logo: "/facebook.webp",
-    link: "https://www.facebook.com/profile.php?id=61555428527968",
+    link: "https://m.facebook.com/61559307022086/",
   },
   {
     id: 2,
@@ -993,7 +993,7 @@ export const footer_Data = [
     content: [
       {
         name: "Facebook",
-        links: "https://www.facebook.com/profile.php?id=61555428527968",
+        links: "https://m.facebook.com/61559307022086/",
       },
       {
         name: "Instagram",
