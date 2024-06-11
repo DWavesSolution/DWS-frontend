@@ -1,14 +1,7 @@
 "use client";
 import React from "react";
 import { styles } from "./styles";
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import { footer_Data, socialIcons } from "@/app/static-data/data";
 import DWSImage from "../DWSImage";
 import FooterLogo from "../../../public/headerLogo.png";
